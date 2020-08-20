@@ -21,6 +21,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQt-cT-ibN">
+                                <rect key="frame" x="101" y="233" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="frx-Xw-khl" kind="embed" id="19I-F5-1kN"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -36,6 +43,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAk-PD-gTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="174.77678571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aw6-M8-wi8">
+            <objects>
+                <viewController id="frx-Xw-khl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bGf-xk-Q4o">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tu-B1-r4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="563"/>
         </scene>
     </scenes>
 </document>
