@@ -11,6 +11,17 @@
 		143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */; };
 		143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89E24EED576002D0029 /* UserSettingsModel.swift */; };
 		143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A024EED595002D0029 /* UserSettingsViewController.swift */; };
+		143AB8A324EF183D002D0029 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A224EF183D002D0029 /* constants.swift */; };
+		143AB8A524EF2EFE002D0029 /* testUserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A424EF2EFE002D0029 /* testUserSettingsViewModel.swift */; };
+		143AB8A624EF304D002D0029 /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */; };
+		143AB8A724EF304D002D0029 /* UserSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89E24EED576002D0029 /* UserSettingsModel.swift */; };
+		143AB8A824EF3074002D0029 /* WebServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F5CE24E5EA3900C13817 /* WebServiceConnector.swift */; };
+		143AB8A924EF312B002D0029 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A224EF183D002D0029 /* constants.swift */; };
+		143AB8AA24EF3212002D0029 /* testUserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A424EF2EFE002D0029 /* testUserSettingsViewModel.swift */; };
+		143AB8AB24EF324C002D0029 /* UserSettingsViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */; };
+		143AB8AC24EF324C002D0029 /* UserSettingsModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 143AB89E24EED576002D0029 /* UserSettingsModel.swift */; };
+		143AB8AD24EF324C002D0029 /* WebServiceConnector.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1487F5CE24E5EA3900C13817 /* WebServiceConnector.swift */; };
+		143AB8AE24EF325F002D0029 /* constants.swift in Resources */ = {isa = PBXBuildFile; fileRef = 143AB8A224EF183D002D0029 /* constants.swift */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -48,6 +59,8 @@
 		143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewModel.swift; sourceTree = "<group>"; };
 		143AB89E24EED576002D0029 /* UserSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsModel.swift; sourceTree = "<group>"; };
 		143AB8A024EED595002D0029 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		143AB8A224EF183D002D0029 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		143AB8A424EF2EFE002D0029 /* testUserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUserSettingsViewModel.swift; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +150,7 @@
 				1487F5A424E5E6E400C13817 /* Assets.xcassets */,
 				1487F5A624E5E6E400C13817 /* LaunchScreen.storyboard */,
 				1487F5A924E5E6E400C13817 /* Info.plist */,
+				143AB8A224EF183D002D0029 /* constants.swift */,
 			);
 			path = "modes-mobile-ios";
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 			children = (
 				1487F5BD24E5E6E400C13817 /* modes_mobile_iosUITests.swift */,
 				1487F5BF24E5E6E400C13817 /* Info.plist */,
+				143AB8A424EF2EFE002D0029 /* testUserSettingsViewModel.swift */,
 			);
 			path = "modes-mobile-iosUITests";
 			sourceTree = "<group>";
@@ -286,6 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143AB8AE24EF325F002D0029 /* constants.swift in Resources */,
+				143AB8AB24EF324C002D0029 /* UserSettingsViewModel.swift in Resources */,
+				143AB8AC24EF324C002D0029 /* UserSettingsModel.swift in Resources */,
+				143AB8AD24EF324C002D0029 /* WebServiceConnector.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +326,7 @@
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
+				143AB8A324EF183D002D0029 /* constants.swift in Sources */,
 				1487F5CD24E5E74C00C13817 /* BaseViewModel.swift in Sources */,
 				1487F5CF24E5EA3900C13817 /* WebServiceConnector.swift in Sources */,
 				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
@@ -320,6 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143AB8AA24EF3212002D0029 /* testUserSettingsViewModel.swift in Sources */,
+				143AB8A924EF312B002D0029 /* constants.swift in Sources */,
+				143AB8A824EF3074002D0029 /* WebServiceConnector.swift in Sources */,
+				143AB8A624EF304D002D0029 /* UserSettingsViewModel.swift in Sources */,
+				143AB8A724EF304D002D0029 /* UserSettingsModel.swift in Sources */,
 				1487F5B324E5E6E400C13817 /* modes_mobile_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143AB8A524EF2EFE002D0029 /* testUserSettingsViewModel.swift in Sources */,
 				1487F5BE24E5E6E400C13817 /* modes_mobile_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

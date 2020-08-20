@@ -19,6 +19,9 @@ class WebServiceConnector   {
     var serverUrl:URL?
     var postData:String?
     var authToken: String?
+  
+    
+    
     var delegate:WebServiceConnectorDelegate?
     
     init(urlString:String, delegate:WebServiceConnectorDelegate) {
@@ -101,6 +104,19 @@ class WebServiceConnector   {
             request.addValue("Bearer " + token, forHTTPHeaderField: "authorization")
             
         }
+        
+        
+       
+        
+        let userName = API_USER //Need to be replaced with correct value
+        let password = API_PASSWORD //Need to be replaced with correct value
+        let toEncode = "\(userName):\(password)" //Form the String to be encoded
+        let encoded = toEncode.data(using: .utf8)?.base64EncodedString()
+
+        //Add the header value
+        request.addValue("Basic \(encoded!)", forHTTPHeaderField: "Authorization")
+        
+        
         // Perform HTTP Request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 
