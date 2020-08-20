@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143AB89A24EED54D002D0029 /* UserSettings.storyboard */; };
+		143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */; };
+		143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB89E24EED576002D0029 /* UserSettingsModel.swift */; };
+		143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8A024EED595002D0029 /* UserSettingsViewController.swift */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143AB89A24EED54D002D0029 /* UserSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSettings.storyboard; sourceTree = "<group>"; };
+		143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewModel.swift; sourceTree = "<group>"; };
+		143AB89E24EED576002D0029 /* UserSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsModel.swift; sourceTree = "<group>"; };
+		143AB8A024EED595002D0029 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143AB89924EED520002D0029 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				143AB89A24EED54D002D0029 /* UserSettings.storyboard */,
+				143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */,
+				143AB89E24EED576002D0029 /* UserSettingsModel.swift */,
+				143AB8A024EED595002D0029 /* UserSettingsViewController.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
 		1487F58F24E5E6E300C13817 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
+				143AB89924EED520002D0029 /* UserSettings */,
 				1487F5CB24E5E72000C13817 /* base  */,
 				1487F59B24E5E6E300C13817 /* AppDelegate.swift */,
 				1487F59D24E5E6E300C13817 /* SceneDelegate.swift */,
@@ -254,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
 				1487F5A824E5E6E400C13817 /* LaunchScreen.storyboard in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				1487F5A524E5E6E400C13817 /* Assets.xcassets in Resources */,
@@ -284,8 +305,11 @@
 			files = (
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
+				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
+				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
 				1487F5CD24E5E74C00C13817 /* BaseViewModel.swift in Sources */,
 				1487F5CF24E5EA3900C13817 /* WebServiceConnector.swift in Sources */,
+				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
 				1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */,
 				1487F5D524E5EB0500C13817 /* BaseViewController.swift in Sources */,
 				1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */,
