@@ -22,6 +22,7 @@
 		143AB8AC24EF324C002D0029 /* UserSettingsModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 143AB89E24EED576002D0029 /* UserSettingsModel.swift */; };
 		143AB8AD24EF324C002D0029 /* WebServiceConnector.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1487F5CE24E5EA3900C13817 /* WebServiceConnector.swift */; };
 		143AB8AE24EF325F002D0029 /* constants.swift in Resources */ = {isa = PBXBuildFile; fileRef = 143AB8A224EF183D002D0029 /* constants.swift */; };
+		143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AB8B024EF4F20002D0029 /* PreferencesUtil.swift */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		143AB8A024EED595002D0029 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		143AB8A224EF183D002D0029 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		143AB8A424EF2EFE002D0029 /* testUserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUserSettingsViewModel.swift; sourceTree = "<group>"; };
+		143AB8B024EF4F20002D0029 /* PreferencesUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesUtil.swift; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = UserSettings;
 			sourceTree = "<group>";
 		};
+		143AB8AF24EF4EB2002D0029 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				143AB8B024EF4F20002D0029 /* PreferencesUtil.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		1487F58F24E5E6E300C13817 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
+				143AB8AF24EF4EB2002D0029 /* Utility */,
 				143AB89924EED520002D0029 /* UserSettings */,
 				1487F5CB24E5E72000C13817 /* base  */,
 				1487F59B24E5E6E300C13817 /* AppDelegate.swift */,
@@ -322,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */,
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
