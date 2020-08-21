@@ -69,10 +69,22 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
     }
     
     func getBranches()->[String]{
-        
         return BranchesModel().branches
     }
     
+    
+    func setBranch(branch : String){
+        PreferencesUtil.shared.branch = branch
+    }
+    
+    
+    func setInstallation(installation : String){
+        PreferencesUtil.shared.installation = installation
+    }
+    
+    func setUserDescription(description : String){
+        PreferencesUtil.shared.userDescription = description
+    }
     
 }
 
