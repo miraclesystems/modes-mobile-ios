@@ -36,6 +36,9 @@
 		1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F5D024E5EA9400C13817 /* BaseModel.swift */; };
 		1487F5D524E5EB0500C13817 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F5D424E5EB0500C13817 /* BaseViewController.swift */; };
 		1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1487F5D624E5ED1F00C13817 /* Base.storyboard */; };
+		A93F410824F05AF8004A233A /* Container1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F410724F05AF8004A233A /* Container1VC.swift */; };
+		A9B3738024F069FF00B6D0CC /* Container2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3737E24F069FE00B6D0CC /* Container2VC.swift */; };
+		A9B3738124F069FF00B6D0CC /* Container3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3737F24F069FE00B6D0CC /* Container3VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		1487F5D024E5EA9400C13817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		1487F5D424E5EB0500C13817 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1487F5D624E5ED1F00C13817 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		A93F410724F05AF8004A233A /* Container1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container1VC.swift; sourceTree = "<group>"; };
+		A9B3737E24F069FE00B6D0CC /* Container2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container2VC.swift; sourceTree = "<group>"; };
+		A9B3737F24F069FE00B6D0CC /* Container3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container3VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 				143AB89C24EED566002D0029 /* UserSettingsViewModel.swift */,
 				143AB89E24EED576002D0029 /* UserSettingsModel.swift */,
 				143AB8A024EED595002D0029 /* UserSettingsViewController.swift */,
+				A93F410724F05AF8004A233A /* Container1VC.swift */,
+				A9B3737E24F069FE00B6D0CC /* Container2VC.swift */,
+				A9B3737F24F069FE00B6D0CC /* Container3VC.swift */,
 			);
 			path = UserSettings;
 			sourceTree = "<group>";
@@ -333,12 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B3738124F069FF00B6D0CC /* Container3VC.swift in Sources */,
+				A93F410824F05AF8004A233A /* Container1VC.swift in Sources */,
 				143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */,
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
 				143AB8A324EF183D002D0029 /* constants.swift in Sources */,
+				A9B3738024F069FF00B6D0CC /* Container2VC.swift in Sources */,
 				1487F5CD24E5E74C00C13817 /* BaseViewModel.swift in Sources */,
 				1487F5CF24E5EA3900C13817 /* WebServiceConnector.swift in Sources */,
 				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
