@@ -30,5 +30,5 @@ class Location: Codable{
 
 class BranchesModel : Codable{
     
-    var branches : [String] = ["Army", "Navy", "Air Force", "Marines"]
+    var branches : [String] = ["", "Army", "Navy", "Air Force", "Marines"]
 }
