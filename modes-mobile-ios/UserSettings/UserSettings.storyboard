@@ -36,6 +36,9 @@
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-yk-Ryc" userLabel="1ContainerView">
                                 <rect key="frame" x="40" y="296.5" width="334" height="403"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="403" id="FN3-Fp-bda"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="UzR-0J-XCF" kind="embed" identifier="USto1" id="9LF-8P-zAB"/>
                                 </connections>
@@ -65,7 +68,7 @@
                             <constraint firstItem="bDD-yk-Ryc" firstAttribute="top" secondItem="ThA-5X-ckV" secondAttribute="bottom" constant="22" id="TmA-4b-iai"/>
                             <constraint firstItem="LXo-He-eHa" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="U02-Uz-SX0"/>
                             <constraint firstItem="LXo-He-eHa" firstAttribute="centerY" secondItem="WYG-Qx-c91" secondAttribute="centerY" constant="50" id="eOg-hJ-lbR"/>
-                            <constraint firstItem="bDD-yk-Ryc" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="efX-0E-Gi6"/>
+                            <constraint firstItem="bDD-yk-Ryc" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" priority="750" id="efX-0E-Gi6"/>
                             <constraint firstItem="bDD-yk-Ryc" firstAttribute="centerX" secondItem="WYG-Qx-c91" secondAttribute="centerX" id="f2l-j1-gCH"/>
                             <constraint firstItem="iJv-ui-YF7" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="f4J-li-iWF"/>
                             <constraint firstItem="PQ4-SJ-CpU" firstAttribute="trailing" secondItem="bDD-yk-Ryc" secondAttribute="trailing" constant="40" id="guj-UD-Cve"/>
