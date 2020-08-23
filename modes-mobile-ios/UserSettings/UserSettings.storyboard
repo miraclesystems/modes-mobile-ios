@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUI-M9-FqS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUI-M9-FqS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,22 +25,19 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXo-He-eHa" userLabel="3ContainerView">
                                 <rect key="frame" x="40" y="296.5" width="334" height="403"/>
                                 <connections>
-                                    <segue destination="FJz-QW-bAm" kind="embed" identifier="USto3" id="UhY-56-TEZ"/>
+                                    <segue destination="FJz-QW-bAm" kind="embed" id="UhY-56-TEZ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJv-ui-YF7" userLabel="2ContainerView">
                                 <rect key="frame" x="40" y="296.5" width="334" height="403"/>
                                 <connections>
-                                    <segue destination="5XI-Xw-JS5" kind="embed" identifier="USto2" id="QBv-5V-aYG"/>
+                                    <segue destination="5XI-Xw-JS5" kind="embed" id="QBv-5V-aYG"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-yk-Ryc" userLabel="1ContainerView">
                                 <rect key="frame" x="40" y="296.5" width="334" height="403"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="403" id="FN3-Fp-bda"/>
-                                </constraints>
                                 <connections>
-                                    <segue destination="UzR-0J-XCF" kind="embed" identifier="USto1" id="9LF-8P-zAB"/>
+                                    <segue destination="UzR-0J-XCF" kind="embed" id="9LF-8P-zAB"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyh-4U-pfx">
@@ -68,7 +65,7 @@
                             <constraint firstItem="bDD-yk-Ryc" firstAttribute="top" secondItem="ThA-5X-ckV" secondAttribute="bottom" constant="22" id="TmA-4b-iai"/>
                             <constraint firstItem="LXo-He-eHa" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="U02-Uz-SX0"/>
                             <constraint firstItem="LXo-He-eHa" firstAttribute="centerY" secondItem="WYG-Qx-c91" secondAttribute="centerY" constant="50" id="eOg-hJ-lbR"/>
-                            <constraint firstItem="bDD-yk-Ryc" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" priority="750" id="efX-0E-Gi6"/>
+                            <constraint firstItem="bDD-yk-Ryc" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="efX-0E-Gi6"/>
                             <constraint firstItem="bDD-yk-Ryc" firstAttribute="centerX" secondItem="WYG-Qx-c91" secondAttribute="centerX" id="f2l-j1-gCH"/>
                             <constraint firstItem="iJv-ui-YF7" firstAttribute="height" secondItem="WYG-Qx-c91" secondAttribute="height" multiplier="0.45" id="f4J-li-iWF"/>
                             <constraint firstItem="PQ4-SJ-CpU" firstAttribute="trailing" secondItem="bDD-yk-Ryc" secondAttribute="trailing" constant="40" id="guj-UD-Cve"/>
@@ -77,9 +74,10 @@
                         <viewLayoutGuide key="safeArea" id="PQ4-SJ-CpU"/>
                     </view>
                     <connections>
-                        <outlet property="ContainerView1" destination="bDD-yk-Ryc" id="8al-PF-vXu"/>
-                        <outlet property="ContainerView2" destination="iJv-ui-YF7" id="Fd8-pM-fNY"/>
-                        <outlet property="ContainerView3" destination="LXo-He-eHa" id="cXD-4R-2Lt"/>
+                        <outlet property="buttonSkip" destination="Kyh-4U-pfx" id="Fyy-mu-ZVi"/>
+                        <outlet property="viewContaier3" destination="LXo-He-eHa" id="nDx-YJ-f2d"/>
+                        <outlet property="viewContainer1" destination="bDD-yk-Ryc" id="41o-Ir-yAw"/>
+                        <outlet property="viewContainer2" destination="iJv-ui-YF7" id="leY-Db-6Bt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3l-FU-7Tr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,7 +87,7 @@
         <!--1ContainerVC-->
         <scene sceneID="xDL-YK-fn4">
             <objects>
-                <viewController id="UzR-0J-XCF" userLabel="1ContainerVC" customClass="Container1VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserSettingsDescriptionViewController" id="UzR-0J-XCF" userLabel="1ContainerVC" customClass="UserSettingsDescriptionViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DVf-6x-4UJ">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,11 +129,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="btn_SerMem_Clicked:" destination="UzR-0J-XCF" eventType="touchUpInside" id="0lh-5G-K9Q"/>
+                                    <action selector="touchServiceMember:" destination="UzR-0J-XCF" eventType="touchUpInside" id="Klh-gC-7sB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPq-h1-Ptf">
-                                <rect key="frame" x="40" y="214" width="254" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPq-h1-Ptf">
+                                <rect key="frame" x="40" y="215" width="254" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="b1e-Of-KCu"/>
@@ -145,7 +143,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="btn_MilSpo_Clicked:" destination="UzR-0J-XCF" eventType="touchUpInside" id="o0R-8t-prQ"/>
+                                    <action selector="touchSpouse:" destination="UzR-0J-XCF" eventType="touchUpInside" id="8Ls-rT-cTg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ny-3z-xW9">
@@ -159,7 +157,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="btn_FamMem_Clicked:" destination="UzR-0J-XCF" eventType="touchUpInside" id="JWT-98-qwe"/>
+                                    <action selector="touchFamilyMember:" destination="UzR-0J-XCF" eventType="touchUpInside" id="BtO-n4-ogy"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rvy-0h-dep" userLabel="BottomView">
@@ -190,6 +188,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="2" backgroundImage="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="touch2:" destination="UzR-0J-XCF" eventType="touchUpInside" id="xHq-wn-OVl"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79F-hl-3JQ">
                                         <rect key="frame" x="152.5" y="27" width="40" height="1"/>
@@ -207,6 +208,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="3" backgroundImage="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="touch3:" destination="UzR-0J-XCF" eventType="touchUpInside" id="hA9-MN-fde"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,14 +253,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S0f-Uw-40p"/>
                     </view>
-                    <connections>
-                        <outlet property="btn1" destination="VEt-LQ-VWB" id="amf-Ei-ZEq"/>
-                        <outlet property="btn2" destination="jhk-X4-FfC" id="qZD-xs-Ieb"/>
-                        <outlet property="btn3" destination="rfZ-aF-YYe" id="ovk-bz-06M"/>
-                        <outlet property="btn_FamilyMember" destination="1Ny-3z-xW9" id="S8D-ee-L1F"/>
-                        <outlet property="btn_MilitarySpouse" destination="vPq-h1-Ptf" id="ivn-79-Q2l"/>
-                        <outlet property="btn_ServiceMember" destination="Mw0-Sj-vHQ" id="fpO-lv-IRm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIk-VO-zD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +261,7 @@
         <!--3ContainerVC-->
         <scene sceneID="Swt-Wj-u36">
             <objects>
-                <viewController id="FJz-QW-bAm" userLabel="3ContainerVC" customClass="Container3VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsBranchViewController" id="FJz-QW-bAm" userLabel="3ContainerVC" customClass="UserSettingsBranchViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W38-Km-BM5">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,6 +294,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="1" backgroundImage="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="touch1:" destination="FJz-QW-bAm" eventType="touchUpInside" id="WB6-b2-Fuz"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-Sh-fbp">
                                         <rect key="frame" x="58.5" y="27" width="40" height="1"/>
@@ -315,6 +314,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="2" backgroundImage="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="touch2:" destination="FJz-QW-bAm" eventType="touchUpInside" id="q3H-cJ-xnj"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysn-HV-y5e">
                                         <rect key="frame" x="152.5" y="27" width="40" height="1"/>
@@ -367,6 +369,9 @@
                                 <state key="normal" title="   Select One...">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchSelect:" destination="FJz-QW-bAm" eventType="touchUpInside" id="h5n-gE-yqu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.208070228" green="0.208070228" blue="0.208070228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -387,6 +392,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9lj-ly-U6H"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonSelect" destination="cZN-Cv-U7f" id="S1N-cM-wrM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnC-vi-9X4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,7 +403,7 @@
         <!--2ContainerVC-->
         <scene sceneID="2GF-vq-69c">
             <objects>
-                <viewController id="5XI-Xw-JS5" userLabel="2ContainerVC" customClass="Container2VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserSettingsInstallationsViewController" id="5XI-Xw-JS5" userLabel="2ContainerVC" customClass="UserSettingsInstallationsViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kt4-fA-m6M">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -428,6 +436,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="1" backgroundImage="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="touch1:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="uiG-eW-bmb"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqn-CC-y7Q">
                                         <rect key="frame" x="58.5" y="27" width="40" height="1"/>
@@ -463,7 +474,7 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="3" backgroundImage="circle.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="btn_useLocation_Clicked:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="BjK-bH-U9W"/>
+                                            <action selector="touch3:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="fCp-DM-7pW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -482,15 +493,6 @@
                                     <constraint firstItem="xdx-Wy-KI1" firstAttribute="centerX" secondItem="eQW-gY-H8Y" secondAttribute="centerX" id="x29-Ns-xhQ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your installation?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-Z0-hi7">
-                                <rect key="frame" x="40" y="121" width="254" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="gST-G4-PsP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter installation name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Onp-Oy-FuB">
                                 <rect key="frame" x="40" y="210" width="254" height="34"/>
                                 <constraints>
@@ -511,9 +513,18 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="btn_useLocation_Clicked:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="Rst-ds-RzY"/>
+                                    <action selector="touchLocation:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="5gK-bB-ejG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's your installation?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-Z0-hi7">
+                                <rect key="frame" x="40" y="122" width="254" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gST-G4-PsP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.208070228" green="0.208070228" blue="0.208070228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -539,20 +550,17 @@
                         <viewLayoutGuide key="safeArea" id="ike-yG-ZkU"/>
                     </view>
                     <connections>
-                        <outlet property="btn1" destination="wEb-8w-qMn" id="H4o-fe-hrR"/>
-                        <outlet property="btn2" destination="xdx-Wy-KI1" id="W1z-jw-eYm"/>
-                        <outlet property="btn3" destination="POq-UG-HOS" id="eGA-J2-lxf"/>
-                        <outlet property="btn_useLocation" destination="cPo-0s-DRV" id="aZu-gy-Pgg"/>
+                        <outlet property="textLocatin" destination="Onp-Oy-FuB" id="auZ-nN-cny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb2-ia-x9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1227.536231884058" y="151.67410714285714"/>
+            <point key="canvasLocation" x="1249" y="152"/>
         </scene>
     </scenes>
     <resources>
-        <image name="circle.fill" catalog="system" width="64" height="60"/>
-        <image name="location.circle" catalog="system" width="64" height="60"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="logo_milonesrc" width="810" height="258"/>
     </resources>
 </document>
