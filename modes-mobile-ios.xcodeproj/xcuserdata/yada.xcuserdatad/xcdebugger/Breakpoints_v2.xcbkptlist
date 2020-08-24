@@ -30,8 +30,8 @@
             filePath = "modes-mobile-ios/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,8 +266,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "onError(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,8 +282,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "onSuccess(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,8 +442,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "onSuccess(_:)"
             landmarkType = "7">
             <Locations>
@@ -490,42 +490,10 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "onSuccess(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9B23EB02-050B-48D2-B361-BAAF93FC091F - 497d1aa6e331dfec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "modes_mobile_ios.UserSettingsViewModel.onSuccess(Swift.String) -&gt; ()"
-                  moduleName = "modes-mobile-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yada/Documents/dev/modes-mobile-ios/modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1437">
-               </Location>
-               <Location
-                  uuid = "9B23EB02-050B-48D2-B361-BAAF93FC091F - 3bd496650c14fa7c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "modes_mobile_iosTests.UserSettingsViewModel.onSuccess(Swift.String) -&gt; ()"
-                  moduleName = "modes-mobile-iosTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yada/Documents/dev/modes-mobile-ios/modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1437">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -554,8 +522,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "getInstallations()"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,8 +554,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -602,8 +570,8 @@
             filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -621,6 +589,70 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "showPage2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC1D0868-97C3-4F81-BD33-8F54C7F10109"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modes-mobile-ios/UserSettings/UserSettingsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getInstallationsByPostal(postalCode:distance:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F464FF5E-6047-41D1-A099-6DE68B4AE637"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modes-mobile-ios/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE6E8797-6663-49FC-89DC-9BF8E3D1DAD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFF3034A-9382-4F26-B499-B25A54265A32"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -28,6 +28,18 @@ class Location: Codable{
     var name_seo : String?
 }
 
+
+class LocationsByPostalCode: Codable{
+    var items: [LocationByPostalCode?]?
+}
+
+
+class LocationByPostalCode:Codable{
+    
+    var INST_ID : Int?
+    var INST_NAME : String?
+}
+
 class BranchesModel : Codable{
     
     var branches : [String] = ["", "Army", "Navy", "Air Force", "Marines"]

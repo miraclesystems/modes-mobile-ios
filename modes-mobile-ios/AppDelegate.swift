@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
+        // set the url base
+        BASE_URL = STAGING_BASE_URL
+        
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Base", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "BaseViewController") as! BaseViewController
