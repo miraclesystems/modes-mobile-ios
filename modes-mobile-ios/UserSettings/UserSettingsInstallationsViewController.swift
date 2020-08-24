@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class UserSettingsInstallationsViewController: UIViewController {
 
@@ -15,9 +16,19 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     var filteredArray = [String]()
     
+    let locationManager = CLLocationManager()
+
+    
+    
     @IBOutlet weak var textLocatin: UITextField!
     
     @IBAction func touchLocation(_ sender: Any) {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
+        
     }
 
     @IBAction func touch1(_ sender: Any) {
@@ -76,6 +87,36 @@ class UserSettingsInstallationsViewController: UIViewController {
     }
     */
 
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    
+        if keyPath == "dataLoaded"{
+            print("dataLoaded happend")
+            print(change![NSKeyValueChangeKey.newKey] as!  Bool)
+            let value = change![NSKeyValueChangeKey.newKey] as!  Bool
+            if(!value){
+                return
+            }
+        
+        
+        DispatchQueue.main.async {
+            
+                let names = self.parentVc?.viewModel?.locationsModel.items!.map { $0!.name! }
+                self.filteredArray = names!
+                           
+                           //let names = parentVc?.viewModel?.locationsModel.items.map { $0[0]}
+                //print(names)   //["Apples", "Banana", "Orange"]
+                           
+                           
+                           //self.filteredArray = names!.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
+                           //self.filteredArray.insert("", at: 0)
+                          
+                
+                self.picker.isHidden = false
+                self.picker.reloadAllComponents()
+            }
+        }
+    }
 }
 
 
@@ -127,4 +168,35 @@ extension UserSettingsInstallationsViewController : UIPickerViewDelegate, UIPick
         }
         
     }
+}
+
+extension UserSettingsInstallationsViewController  : CLLocationManagerDelegate{
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.locationManager.stopUpdatingLocation()
+        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
+            if (error != nil) {
+                print("Reverse geocoder failed with error" + error!.localizedDescription)
+                   return
+               }
+        
+            if placemarks!.count > 0 {
+                let pm = placemarks![0] as CLPlacemark
+                self.parentVc?.viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new, .old], context: nil)
+                
+                self.parentVc?.viewModel?.getInstallationsByPostal(postalCode: pm.postalCode!, distance: 50)
+                
+                
+               } else {
+                   print("Problem with the data received from geocoder")
+               }
+           })
+        }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+           print("problem with location \(error.localizedDescription)")
+       }
+    
+    
 }

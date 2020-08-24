@@ -12,6 +12,8 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
     @objc dynamic var dataLoaded : Bool = false
     var hasDataError = false
     var dataError : String = ""
+    var loadingLocations = false
+    var loadingLocationsByPostal = false
     
     
     var locationsModel = LocationsModel()
@@ -22,7 +24,7 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
     
     func onSuccess(_ jsonString: String) {
         print("success")
-        
+    
         
         do{
             let JSONData = try jsonString.data(using: .utf8)!
@@ -32,14 +34,31 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
             let jsonDict = jsonResult as? Dictionary<String, AnyObject>
             
             
-            let model = try JSONDecoder().decode(LocationsModel.self, from: JSONData)
+            if(loadingLocations){
             
-            
-            self.locationsModel = model
+                let model = try JSONDecoder().decode(LocationsModel.self, from: JSONData)
+                self.locationsModel = model
+            }
+            else{
+                self.locationsModel = LocationsModel()
+                self.locationsModel.items =  [Location?]()
+                let model = try JSONDecoder().decode(LocationsByPostalCode.self, from: JSONData)
+                for item in model.items!{
+                    var location = Location()
+                    location.name = item?.INST_NAME
+                    location.id = item?.INST_ID
+                    
+                    self.locationsModel.items?.append(location)
+                    
+                    
+                }
+                dataLoaded = true
+            }
+        
             
             print(self.locationsModel)
             
-            dataLoaded = true
+            
 
         }
         catch let DecodingError.dataCorrupted(context) {
@@ -59,13 +78,27 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
        
     }
     
-
+    func getInstallationsByPostal(postalCode : String, distance : Int){
+        
+        let urlString =  BASE_URL + "/getInstallationContactsbyDistance/\(postalCode)/\(distance)"
+        let webserviceConnector = WebServiceConnector(urlString: urlString, delegate: self)
+        webserviceConnector.get()
+        
+        loadingLocations = false
+        loadingLocationsByPostal = true
+        
+    }
+    
     func getInstallations(){
         
-        let urlString = "https://pre.militaryonesource.mil/omos/pre-production/getInstallations/"
+        
+        let urlString = BASE_URL + "/getInstallations/"
         let webserviceConnector = WebServiceConnector(urlString: urlString, delegate: self)
         webserviceConnector.get()
         dataLoaded = true
+        
+        loadingLocations = true
+        loadingLocationsByPostal = false
     }
     
     func getBranches()->[String]{
