@@ -60,6 +60,7 @@
 		83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
 		83DA073724F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
+		A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */; };
 		A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB6F24F5266100989D70 /* SecondViewController.swift */; };
 		A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7024F5266100989D70 /* ThirdViewController.swift */; };
 		A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A958EB7124F5266100989D70 /* Navigation.storyboard */; };
@@ -140,6 +141,7 @@
 		14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift"; sourceTree = "<group>"; };
 		83DA073224F42DDC0054C817 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		83DA073524F42E000054C817 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		A958EB6F24F5266100989D70 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A958EB7024F5266100989D70 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A958EB7124F5266100989D70 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				A9BF9A8C24F565520073C0DE /* WorkSans-Black.ttf */,
 				A9BF9A8D24F565520073C0DE /* WorkSans-Bold.ttf */,
+				A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */,
 				A9BF9A8F24F565530073C0DE /* WorkSans-Italic.ttf */,
 				A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */,
 				143AB8B024EF4F20002D0029 /* PreferencesUtil.swift */,
@@ -438,6 +441,7 @@
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
 				A9BF9A9324F565530073C0DE /* WorkSans-Italic.ttf in Resources */,
 				1487F5A524E5E6E400C13817 /* Assets.xcassets in Resources */,
+				A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */,
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
 			);
