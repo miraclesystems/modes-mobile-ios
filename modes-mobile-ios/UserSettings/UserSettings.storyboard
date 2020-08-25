@@ -229,7 +229,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What best describes you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEd-Br-wU2">
-                                <rect key="frame" x="40" y="127" width="254" height="80"/>
+                                <rect key="frame" x="30" y="127" width="274" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Q7v-QA-XyR"/>
                                 </constraints>
@@ -243,7 +243,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hru-vf-LkU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="I am a Service Member" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -303,7 +303,7 @@
                             <constraint firstItem="S0f-Uw-40p" firstAttribute="trailing" secondItem="vPq-h1-Ptf" secondAttribute="trailing" constant="40" id="5tk-em-3zl"/>
                             <constraint firstItem="Rvy-0h-dep" firstAttribute="top" secondItem="sxS-D4-7l5" secondAttribute="bottom" constant="5" id="8VQ-3T-Mae"/>
                             <constraint firstItem="sxS-D4-7l5" firstAttribute="trailing" secondItem="S0f-Uw-40p" secondAttribute="trailing" id="FuL-LC-3YR"/>
-                            <constraint firstItem="S0f-Uw-40p" firstAttribute="trailing" secondItem="AEd-Br-wU2" secondAttribute="trailing" constant="40" id="IcK-06-3XK"/>
+                            <constraint firstItem="S0f-Uw-40p" firstAttribute="trailing" secondItem="AEd-Br-wU2" secondAttribute="trailing" constant="30" id="IcK-06-3XK"/>
                             <constraint firstItem="1Ny-3z-xW9" firstAttribute="leading" secondItem="S0f-Uw-40p" secondAttribute="leading" constant="40" id="JvF-su-kPg"/>
                             <constraint firstItem="Mw0-Sj-vHQ" firstAttribute="top" secondItem="AEd-Br-wU2" secondAttribute="bottom" constant="5" id="KJe-Cp-I5N"/>
                             <constraint firstItem="AEd-Br-wU2" firstAttribute="top" secondItem="sxS-D4-7l5" secondAttribute="bottom" constant="77" id="MD1-NF-nbw"/>
@@ -316,7 +316,7 @@
                             <constraint firstItem="S0f-Uw-40p" firstAttribute="trailing" secondItem="Rvy-0h-dep" secondAttribute="trailing" constant="40" id="gCL-sQ-flE"/>
                             <constraint firstItem="S0f-Uw-40p" firstAttribute="trailing" secondItem="Mw0-Sj-vHQ" secondAttribute="trailing" constant="40" id="r0f-Of-oVp"/>
                             <constraint firstItem="sxS-D4-7l5" firstAttribute="top" secondItem="DVf-6x-4UJ" secondAttribute="top" id="stK-7Y-p37"/>
-                            <constraint firstItem="AEd-Br-wU2" firstAttribute="leading" secondItem="S0f-Uw-40p" secondAttribute="leading" constant="40" id="uw6-9x-Un1"/>
+                            <constraint firstItem="AEd-Br-wU2" firstAttribute="leading" secondItem="S0f-Uw-40p" secondAttribute="leading" constant="30" id="uw6-9x-Un1"/>
                             <constraint firstItem="vPq-h1-Ptf" firstAttribute="leading" secondItem="S0f-Uw-40p" secondAttribute="leading" constant="40" id="vBq-LN-RhK"/>
                             <constraint firstItem="Rvy-0h-dep" firstAttribute="leading" secondItem="S0f-Uw-40p" secondAttribute="leading" constant="40" id="yfT-IJ-ijK"/>
                         </constraints>

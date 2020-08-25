@@ -11,6 +11,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //added to change System font to WorkSans
+    override init() {
+           super.init()
+           UIFont.overrideInitialize()
+    }
 
     var window: UIWindow?
     var navigationController: UINavigationController = UINavigationController()
