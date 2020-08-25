@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "selector_highlighted.png",
+      "filename" : "Rectangle 1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "selector_highlighted-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "selector_highlighted-2.png",
       "scale" : "3x"
     }
   ],
