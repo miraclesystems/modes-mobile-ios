@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+//For Left Indenting Search Bar
+extension UITextField {
+    func paddingLeft(inset: CGFloat){
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: inset, height: self.frame.height))
+        self.leftViewMode = UITextField.ViewMode.always
+    }
+}
 
 //Default Font Sub
 struct AppFontName {
