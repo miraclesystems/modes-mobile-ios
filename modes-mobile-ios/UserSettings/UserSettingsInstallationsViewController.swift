@@ -18,6 +18,11 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     let locationManager = CLLocationManager()
 
+    @IBAction func touchSearchInstBtn(_ sender: Any) {
+        //testing layout, go to 3rd question for now
+        print("Search Installations Pressed")
+        self.parentVc?.showPage3()
+    }
     
     
     @IBOutlet weak var textLocatin: UITextField!

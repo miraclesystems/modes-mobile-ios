@@ -14,6 +14,7 @@ struct AppFontName {
     static let regular = "WorkSans-Regular"
     static let bold = "WorkSans-Bold"
     static let italic = "WorkSans-Italic"
+    static let semibold = "WorkSans-SemiBold"
 }
 
 extension UIFontDescriptor.AttributeName {
@@ -34,6 +35,10 @@ extension UIFont {
     @objc class func myItalicSystemFont(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: AppFontName.italic, size: size)!
     }
+    
+    @objc class func mySemiBoldSystemFont(ofSize size: CGFloat) -> UIFont {
+        return UIFont(name: AppFontName.semibold, size: size)!
+    }
 
     @objc convenience init(myCoder aDecoder: NSCoder) {
         guard
@@ -50,6 +55,8 @@ extension UIFont {
             fontName = AppFontName.bold
         case "CTFontObliqueUsage":
             fontName = AppFontName.italic
+        
+        
         default:
             fontName = AppFontName.regular
         }
@@ -76,6 +83,8 @@ extension UIFont {
             let myItalicSystemFontMethod = class_getClassMethod(self, #selector(myItalicSystemFont(ofSize:))) {
             method_exchangeImplementations(italicSystemFontMethod, myItalicSystemFontMethod)
         }
+        
+       
 
         if let initCoderMethod = class_getInstanceMethod(self, #selector(UIFontDescriptor.init(coder:))), // Trick to get over the lack of UIFont.init(coder:))
             let myInitCoderMethod = class_getInstanceMethod(self, #selector(UIFont.init(myCoder:))) {
