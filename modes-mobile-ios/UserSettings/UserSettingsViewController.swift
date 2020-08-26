@@ -34,6 +34,16 @@ class UserSettingsViewController: UIViewController {
         btnBack.isHidden = true
     }
     func showPage2(){
+        
+        //TODO:  Animation?
+        if currentContainer == 1 {
+            //slide animation from right to left of container 2
+            print("Show Animation")
+            
+        } else {
+            print("No Animation")   
+        }
+
         self.view.bringSubviewToFront(viewContainer2)
         currentContainer = 2
         viewContainer1.isHidden = true

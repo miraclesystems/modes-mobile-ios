@@ -15,19 +15,25 @@ class UserSettingsInstallationsViewController: UIViewController {
     let picker: UIPickerView = UIPickerView()
     
     var filteredArray = [String]()
+    var geoLocation = false
     
     let locationManager = CLLocationManager()
 
+    @IBOutlet weak var searchInstBtn: UIButton!
+    
     @IBAction func touchSearchInstBtn(_ sender: Any) {
-        //testing layout, go to 3rd question for now
         print("Search Installations Pressed")
-        self.parentVc?.showPage3()
+        geoLocation = false
+        gotoSearchInstalltions()
+        
     }
     
     
     @IBOutlet weak var textLocatin: UITextField!
     
     @IBAction func touchLocation(_ sender: Any) {
+        geoLocation = true
+        showOverlay()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -44,14 +50,26 @@ class UserSettingsInstallationsViewController: UIViewController {
        self.parentVc?.showPage3()
     }
     
+    func showOverlay(){
+        let alert = UIAlertController(title: nil, message: "Loading Location...", preferredStyle: .alert)
+
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
+        loadingIndicator.startAnimating();
+
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         textLocatin.delegate = self
-        
-        
+                
         picker.delegate = self
         picker.dataSource = self
         
@@ -91,10 +109,15 @@ class UserSettingsInstallationsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func gotoSearchInstalltions(){
+        print("In gotoSearchInstalltions")
+    }
 
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
     
+        
+        
         if keyPath == "dataLoaded"{
             print("dataLoaded happend")
             print(change![NSKeyValueChangeKey.newKey] as!  Bool)
@@ -105,7 +128,9 @@ class UserSettingsInstallationsViewController: UIViewController {
         
         
         DispatchQueue.main.async {
-            
+                //dismiss the overlay
+                self.dismiss(animated: false, completion: nil)
+                 
                 let names = self.parentVc?.viewModel?.locationsModel.items!.map { $0!.name! }
                 self.filteredArray = names!
                            
@@ -117,11 +142,48 @@ class UserSettingsInstallationsViewController: UIViewController {
                            //self.filteredArray.insert("", at: 0)
                           
                 
-                self.picker.isHidden = false
-                self.picker.reloadAllComponents()
+                //self.picker.isHidden = false
+                //self.picker.reloadAllComponents()
+                
+                self.performSegue(withIdentifier: "LocTableSegue", sender: nil)
             }
         }
     }
+    
+    
+    //TableView Installations Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! LocTableViewController
+        vc.fromGeoLoc = geoLocation
+        if geoLocation == false {
+            vc.namesArr = (parentVc?.viewModel?.locationsModel.items!.map { $0!.name! })!
+        } else {
+            vc.namesArr = filteredArray
+        }
+    }
+    
+    //Segue for passing data back
+    // This is your unwind Segue, and it must be a @IBAction
+    @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
+        let source = segue.source as? LocTableViewController // This is the source
+        //textView.text = source?.textField.text // Here we are getting the information and setting it to the textView
+        print("Back on VC with:")
+        //print("title: ", source?.title)
+        let mySelect = source?.mySelection
+        print("mySelect: ", mySelect)
+        
+        searchInstBtn.setTitle(mySelect, for: .normal)
+        self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
+        /*
+        let seconds = 0.75
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            self.parentVc?.showPage3()
+        }
+        */
+        self.parentVc?.showPage3()
+        
+    }
+    
 }
 
 
@@ -201,6 +263,7 @@ extension UserSettingsInstallationsViewController  : CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
            print("problem with location \(error.localizedDescription)")
+            dismiss(animated: false, completion: nil)
        }
     
     
