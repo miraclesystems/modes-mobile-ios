@@ -18,20 +18,75 @@ class UserSettingsViewController: UIViewController {
     // container views
     @IBOutlet weak var viewContainer1: UIView!
     @IBOutlet weak var viewContainer2: UIView!
-    @IBOutlet weak var viewContaier3: UIView!
+    @IBOutlet weak var viewContainer3: UIView!
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var buttonSkipAll: UIButton!
+    @IBOutlet weak var buttonSkipQuestion: UIButton!
     
-    // the skip button
-    @IBOutlet weak var buttonSkip: UIButton!
-    
+    var currentContainer = 1
     
     func showPage1(){
         self.view.bringSubviewToFront(viewContainer1)
+        currentContainer = 1
+        viewContainer1.isHidden = false
+        viewContainer2.isHidden = true
+        viewContainer3.isHidden = true
+        btnBack.isHidden = true
     }
     func showPage2(){
         self.view.bringSubviewToFront(viewContainer2)
+        currentContainer = 2
+        viewContainer1.isHidden = true
+        viewContainer2.isHidden = false
+        viewContainer3.isHidden = true
+        btnBack.isHidden = false
     }
     func showPage3(){
-        self.view.bringSubviewToFront(viewContaier3)
+        self.view.bringSubviewToFront(viewContainer3)
+        currentContainer = 3
+        viewContainer1.isHidden = true
+        viewContainer2.isHidden = true
+        viewContainer3.isHidden = false
+        btnBack.isHidden = false
+        
+    }
+    
+    @IBAction func btnBack_Touched(_ sender: Any) {
+        print("Back Button Touched")
+        switch currentContainer {
+        case 1:
+            print("Current 1")
+        case 2:
+            print("Current 2")
+            showPage1()
+        case 3:
+            print("Current 3")
+            showPage2()
+        default:
+            print("Default Running")
+        }
+    }
+    
+    @IBAction func buttonSkipQuestion_Touached(_ sender: Any) {
+        print("Skip Question Button Touched")
+        switch currentContainer {
+        case 1:
+            print("Current 1")
+            showPage2()
+        case 2:
+            print("Current 2")
+            showPage3()
+        case 3:
+            print("Current 3")
+            
+        default:
+            print("Default Running")
+        }
+    }
+    
+    @IBAction func buttonSkipAll_Touched(_ sender: Any) {
+        print("Skip All Touched")
+        
     }
     
     
@@ -69,6 +124,8 @@ class UserSettingsViewController: UIViewController {
         
         /// go make the api call to get the installations
         viewModel?.getInstallations()
+        
+        showPage1()
         
     }
     

@@ -25,6 +25,11 @@ class UserSettingsDescriptionViewController: UIViewController {
         userDescription = "Family Member"
         updatePrefs()
     }
+   
+    @IBAction func touchOther(_ sender: Any) {
+        userDescription = "Other"
+        updatePrefs()
+    }
     
     
     @IBAction func touch2(_ sender: Any) {
