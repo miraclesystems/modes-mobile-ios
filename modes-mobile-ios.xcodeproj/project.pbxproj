@@ -56,6 +56,13 @@
 		14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D124F1B9C300E2B4CA /* IQToolbar.swift */; };
 		14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */; };
 		14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */; };
+		83B4DD1D24F6927F00EF01B7 /* MilifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD1C24F6927F00EF01B7 /* MilifeViewController.swift */; };
+		83B4DD1F24F6929400EF01B7 /* MilifeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD1E24F6929400EF01B7 /* MilifeModel.swift */; };
+		83B4DD2124F692AA00EF01B7 /* MilifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD2024F692AA00EF01B7 /* MilifeViewModel.swift */; };
+		83B4DD2224F692AA00EF01B7 /* MilifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD2024F692AA00EF01B7 /* MilifeViewModel.swift */; };
+		83B4DD2324F692B200EF01B7 /* MilifeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD1E24F6929400EF01B7 /* MilifeModel.swift */; };
+		83B4DD2424F692B600EF01B7 /* MilifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4DD1C24F6927F00EF01B7 /* MilifeViewController.swift */; };
+		83B4DD2624F692DD00EF01B7 /* Milife.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B4DD2524F692DD00EF01B7 /* Milife.storyboard */; };
 		83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
@@ -128,6 +135,10 @@
 		14A901D124F1B9C300E2B4CA /* IQToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift"; sourceTree = "<group>"; };
 		14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift"; sourceTree = "<group>"; };
+		83B4DD1C24F6927F00EF01B7 /* MilifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilifeViewController.swift; sourceTree = "<group>"; };
+		83B4DD1E24F6929400EF01B7 /* MilifeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilifeModel.swift; sourceTree = "<group>"; };
+		83B4DD2024F692AA00EF01B7 /* MilifeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilifeViewModel.swift; sourceTree = "<group>"; };
+		83B4DD2524F692DD00EF01B7 /* Milife.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Milife.storyboard; sourceTree = "<group>"; };
 		83DA073224F42DDC0054C817 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		83DA073524F42E000054C817 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A9B3738324F3D8D800B6D0CC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -204,6 +215,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
+				83B4DD1B24F6925D00EF01B7 /* Milife */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
 				A9B3738224F3D8A800B6D0CC /* Home */,
@@ -275,6 +287,17 @@
 			);
 			name = IQKeyboardManagerSwift;
 			path = ../IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		83B4DD1B24F6925D00EF01B7 /* Milife */ = {
+			isa = PBXGroup;
+			children = (
+				83B4DD1C24F6927F00EF01B7 /* MilifeViewController.swift */,
+				83B4DD1E24F6929400EF01B7 /* MilifeModel.swift */,
+				83B4DD2024F692AA00EF01B7 /* MilifeViewModel.swift */,
+				83B4DD2524F692DD00EF01B7 /* Milife.storyboard */,
+			);
+			path = Milife;
 			sourceTree = "<group>";
 		};
 		A9B3738224F3D8A800B6D0CC /* Home */ = {
@@ -392,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
+				83B4DD2624F692DD00EF01B7 /* Milife.storyboard in Resources */,
 				1487F5A824E5E6E400C13817 /* LaunchScreen.storyboard in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
@@ -425,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B4DD2124F692AA00EF01B7 /* MilifeViewModel.swift in Sources */,
 				14A901D424F1B9C400E2B4CA /* IQTitleBarButtonItem.swift in Sources */,
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
@@ -448,6 +473,8 @@
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB8B324F1A526002D0029 /* UserSettingsDescriptionViewController.swift in Sources */,
 				143AB8B524F1A53B002D0029 /* UserSettingsInstallationsViewController.swift in Sources */,
+				83B4DD1D24F6927F00EF01B7 /* MilifeViewController.swift in Sources */,
+				83B4DD1F24F6929400EF01B7 /* MilifeModel.swift in Sources */,
 				83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
 				143AB8A324EF183D002D0029 /* constants.swift in Sources */,
@@ -468,10 +495,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				143AB8AA24EF3212002D0029 /* testUserSettingsViewModel.swift in Sources */,
+				83B4DD2224F692AA00EF01B7 /* MilifeViewModel.swift in Sources */,
 				143AB8A924EF312B002D0029 /* constants.swift in Sources */,
+				83B4DD2324F692B200EF01B7 /* MilifeModel.swift in Sources */,
 				143AB8A824EF3074002D0029 /* WebServiceConnector.swift in Sources */,
 				83DA073724F42E000054C817 /* HomeViewModel.swift in Sources */,
 				83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */,
+				83B4DD2424F692B600EF01B7 /* MilifeViewController.swift in Sources */,
 				143AB8A624EF304D002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB8A724EF304D002D0029 /* UserSettingsModel.swift in Sources */,
 				1487F5B324E5E6E400C13817 /* modes_mobile_iosTests.swift in Sources */,
