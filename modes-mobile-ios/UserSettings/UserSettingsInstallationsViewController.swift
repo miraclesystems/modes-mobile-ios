@@ -17,29 +17,21 @@ class UserSettingsInstallationsViewController: UIViewController {
     var filteredArray = [String]()
     var geoLocation = false
     
+    
     let locationManager = CLLocationManager()
 
     @IBOutlet weak var searchInstBtn: UIButton!
     
+    //This Calls the Manual Location Search
     @IBAction func touchSearchInstBtn(_ sender: Any) {
-        print("Search Installations Pressed")
-        geoLocation = false
         gotoSearchInstalltions()
-        
     }
-    
     
     @IBOutlet weak var textLocatin: UITextField!
     
+    //This Calls the GeoLocation Methods
     @IBAction func touchLocation(_ sender: Any) {
-        geoLocation = true
-        showOverlay()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
-        locationManager.startUpdatingLocation()
-        
+        goGeoLocate()
     }
 
     @IBAction func touch1(_ sender: Any) {
@@ -111,6 +103,19 @@ class UserSettingsInstallationsViewController: UIViewController {
     */
     func gotoSearchInstalltions(){
         print("In gotoSearchInstalltions")
+        geoLocation = false
+        self.performSegue(withIdentifier: "LocTableSegue", sender: nil)
+    }
+    
+    func goGeoLocate(){
+        print ("In GeoLocate")
+        geoLocation = true
+        showOverlay()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
     }
 
     
@@ -152,6 +157,7 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     
     //TableView Installations Segue
+    //Segue for passing data forward
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! LocTableViewController
         vc.fromGeoLoc = geoLocation
@@ -166,23 +172,41 @@ class UserSettingsInstallationsViewController: UIViewController {
     // This is your unwind Segue, and it must be a @IBAction
     @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
         let source = segue.source as? LocTableViewController // This is the source
-        //textView.text = source?.textField.text // Here we are getting the information and setting it to the textView
-        print("Back on VC with:")
-        //print("title: ", source?.title)
-        let mySelect = source?.mySelection
-        print("mySelect: ", mySelect)
+        print("Back on presenting VC's unwindtoViewController method")
         
-        searchInstBtn.setTitle(mySelect, for: .normal)
-        self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
-        /*
-        let seconds = 0.75
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+        if source?.backWithData == true {
+            let mySelect = source?.mySelection
+            print("mySelect: ", mySelect)
+            
+            searchInstBtn.setTitle(mySelect, for: .normal)
+            self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
+            /*
+            let seconds = 0.75
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                self.parentVc?.showPage3()
+            }
+            */
             self.parentVc?.showPage3()
+        } else {
+            //back from upper right button press
+            //navigate to the other desired screen
+            print("Switching Location Screens")
+            let seconds = 0.5
+            if source?.fromGeoLoc == true {
+                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                    self.gotoSearchInstalltions()
+                }
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                    self.goGeoLocate()
+                }
+            }
         }
-        */
-        self.parentVc?.showPage3()
+        
         
     }
+    
+    
     
 }
 

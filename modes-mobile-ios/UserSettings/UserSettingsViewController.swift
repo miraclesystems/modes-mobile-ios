@@ -22,6 +22,7 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var buttonSkipAll: UIButton!
     @IBOutlet weak var buttonSkipQuestion: UIButton!
+
     
     var currentContainer = 1
     

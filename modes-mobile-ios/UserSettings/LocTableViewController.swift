@@ -15,7 +15,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     
     
     var mySelection = ""
-    
+    var backWithData = false
     var searching:Bool = false
     
     //from Geo Located
@@ -31,9 +31,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     }
     
     @IBAction func navbtnTouched(_ sender: Any) {
-        //TODO:  Send to Location Finder Page
-        dismiss(animated: true, completion: nil)
-
+       performSegue(withIdentifier: "unwindSegue", sender: title)
     }
     
     
@@ -113,6 +111,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
         print("title: ", title)
         mySelection = title!
+        backWithData = true
         performSegue(withIdentifier: "unwindSegue", sender: title)
     }
 

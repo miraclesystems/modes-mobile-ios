@@ -12,6 +12,14 @@ class UserSettingsBranchViewController: UIViewController {
     
     var picker = UIPickerView()
     @IBAction func touchSelect(_ sender: Any) {
+        //set picker at bottom
+        //TODO:  Is not allowing Touch events
+        /*
+        picker.leadingAnchor.constraint(equalTo: (self.parentVc?.view.safeAreaLayoutGuide.leadingAnchor)!).isActive = true
+        picker.trailingAnchor.constraint(equalTo: (self.parentVc?.view.safeAreaLayoutGuide.trailingAnchor)!).isActive = true
+        picker.bottomAnchor.constraint(equalTo: (self.parentVc?.view.safeAreaLayoutGuide.bottomAnchor)!).isActive = true
+        */
+        
         picker.isHidden = false
     }
     @IBOutlet weak var buttonSelect: UIButton!
@@ -36,10 +44,11 @@ class UserSettingsBranchViewController: UIViewController {
               
         picker.backgroundColor = UIColor.white
 
-
+        
         picker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         picker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         picker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
     }
     
 

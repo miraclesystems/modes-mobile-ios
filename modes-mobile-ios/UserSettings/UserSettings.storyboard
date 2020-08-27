@@ -643,7 +643,6 @@
                                 </state>
                                 <connections>
                                     <action selector="touchSearchInstBtn:" destination="5XI-Xw-JS5" eventType="touchUpInside" id="pmU-sq-nAU"/>
-                                    <segue destination="9XN-gu-Gy5" kind="presentation" identifier="LocTableSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="qZU-RP-SHY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPo-0s-DRV">
@@ -694,6 +693,7 @@
                     <connections>
                         <outlet property="searchInstBtn" destination="xdq-hO-EJ1" id="N9q-Wu-qq7"/>
                         <outlet property="textLocatin" destination="Onp-Oy-FuB" id="auZ-nN-cny"/>
+                        <segue destination="9XN-gu-Gy5" kind="presentation" identifier="LocTableSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Pu0-IA-nNz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb2-ia-x9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
