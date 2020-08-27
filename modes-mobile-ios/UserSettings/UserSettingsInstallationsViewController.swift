@@ -275,7 +275,7 @@ extension UserSettingsInstallationsViewController  : CLLocationManagerDelegate{
                 let pm = placemarks![0] as CLPlacemark
                 self.parentVc?.viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new, .old], context: nil)
                 
-                self.parentVc?.viewModel?.getInstallationsByPostal(postalCode: pm.postalCode!, distance: 50)
+                self.parentVc?.viewModel?.getInstallationsByPostal(postalCode: pm.postalCode!, distance: 20)
                 
                 
                } else {
