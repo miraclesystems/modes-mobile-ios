@@ -1,17 +1,16 @@
 //
-//  LocTableViewController.swift
-
+//  SearchTableViewController.swift
+//  modes-mobile-ios
+//
 
 import UIKit
 
-class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
+class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imgSrch: UIImageView!
     @IBOutlet weak var txtName: UITextField!
-    @IBOutlet weak var lblShowingInst: UILabel!
-    @IBOutlet weak var lblInstallName: UILabel!
-    @IBOutlet weak var btnRightTop: UIButton!
+
     
     
     var mySelection = ""
@@ -23,6 +22,8 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     
     //data
     var namesArr = [String]()
+    
+    
     //filtered data from TextField
     var searchNamesArrRes = [String]()
     
@@ -31,7 +32,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     }
     
     @IBAction func navbtnTouched(_ sender: Any) {
-       performSegue(withIdentifier: "unwindSegue", sender: title)
+       performSegue(withIdentifier: "unwindSearchSegue", sender: title)
     }
     
     
@@ -45,19 +46,10 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        if fromGeoLoc {
-            txtName.isHidden = true
-            imgSrch.isHidden = true
-            btnRightTop.setImage(UIImage(named: "search"), for: .normal)
-        } else {
-            lblShowingInst.isHidden = true
-            lblInstallName.isHidden = true
-            imgSrch.isHidden = true
-            txtName.becomeFirstResponder()
-            
-        }
-        
+        namesArr = ["COVID-19", "New to the Military","Relationships","Moving & Housing", "Personal Finance"]
         print("namesArr:", namesArr)
+        
+        txtName.becomeFirstResponder()
         
     }
     
@@ -113,10 +105,30 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         print("title: ", title)
         mySelection = title!
         backWithData = true
-        performSegue(withIdentifier: "unwindSegue", sender: title)
+        performSegue(withIdentifier: "unwindSearch", sender: title)
     }
 
-    
+   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        headerView.backgroundColor = UIColor(hex: 0xEFF4F7)
+
+        let label = UILabel()
+        label.frame = CGRect.init(x: 10, y: 5, width: headerView.frame.width-10, height: headerView.frame.height-10)
+    if searching == true {
+        label.text = "TOPICS RELATED TO \"" + (txtName.text ?? "") + "\""
+    } else {
+        label.text = "SUGGESTED CONTENT"
+    }
+        label.font = UIFont.boldSystemFont(ofSize:14)
+        label.textColor = UIColor(hex: 0x4A4A4A) // my custom colour
+        headerView.addSubview(label)
+
+        return headerView
+   }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     
 }
+
 
