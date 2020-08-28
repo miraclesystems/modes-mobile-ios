@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,19 +18,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-vQ-ck1">
                                 <rect key="frame" x="0.0" y="116" width="375" height="613"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                        <rect key="frame" x="38.666666666666657" y="74" width="298" height="113"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="298" id="5h3-KB-1Yq"/>
-                                            <constraint firstAttribute="height" constant="113" id="dQ0-Vn-QY0"/>
-                                        </constraints>
-                                        <string key="text">What can we help
-you with today?</string>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Bj-a3E">
                                         <rect key="frame" x="38.666666666666657" y="195" width="298" height="40"/>
                                         <constraints>
@@ -46,13 +32,36 @@ you with today?</string>
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                        <rect key="frame" x="38.666666666666657" y="74" width="298" height="113"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="298" id="5h3-KB-1Yq"/>
+                                            <constraint firstAttribute="height" constant="113" id="dQ0-Vn-QY0"/>
+                                        </constraints>
+                                        <string key="text">What can we help
+you with today?</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hI6-0k-x8f" customClass="HorzCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="333" width="375" height="280"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="7La-YX-PEt"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="9zS-vQ-ck1" secondAttribute="centerX" id="0fh-iF-ib7"/>
+                                    <constraint firstAttribute="trailing" secondItem="hI6-0k-x8f" secondAttribute="trailing" id="1Id-d9-wb0"/>
                                     <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="9zS-vQ-ck1" secondAttribute="top" constant="74" id="M51-Zy-75j"/>
                                     <constraint firstItem="cm0-Bj-a3E" firstAttribute="centerX" secondItem="9zS-vQ-ck1" secondAttribute="centerX" id="W7L-AU-EZz"/>
+                                    <constraint firstItem="hI6-0k-x8f" firstAttribute="leading" secondItem="9zS-vQ-ck1" secondAttribute="leading" id="Xwt-Wf-mna"/>
                                     <constraint firstItem="cm0-Bj-a3E" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" id="ceM-8J-12D"/>
+                                    <constraint firstAttribute="bottom" secondItem="hI6-0k-x8f" secondAttribute="bottom" id="x4X-CD-TLG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
@@ -62,39 +71,12 @@ you with today?</string>
                                     <constraint firstAttribute="height" constant="64" id="dbU-Jw-H7z"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RBj-I6-AKq">
-                                <rect key="frame" x="0.0" y="462" width="375" height="267"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="aLi-cy-eIu"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4EU-5f-nbH">
-                                    <size key="itemSize" width="178" height="259"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yiz-TG-JO9">
-                                        <rect key="frame" x="0.0" y="4" width="178" height="259"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cJG-5V-wKy">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="259"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="178" height="259"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9zS-vQ-ck1" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="3zF-w3-5fu"/>
                             <constraint firstItem="9zS-vQ-ck1" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="G33-Sz-xVv"/>
-                            <constraint firstItem="RBj-I6-AKq" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="I7C-sh-DXK"/>
-                            <constraint firstItem="RBj-I6-AKq" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="V0f-Tx-bj6"/>
                             <constraint firstItem="97v-w8-c1o" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="XlJ-R9-su9"/>
-                            <constraint firstItem="RBj-I6-AKq" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="e8C-VX-Jte"/>
                             <constraint firstItem="97v-w8-c1o" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="i50-t0-F9F"/>
                             <constraint firstItem="97v-w8-c1o" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="qlp-vc-gUo"/>
                             <constraint firstItem="9zS-vQ-ck1" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="t2g-uQ-gb1"/>
@@ -147,7 +129,7 @@ you with today?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CX1-eb-MMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4349.275362318841" y="0.0"/>
+            <point key="canvasLocation" x="1657" y="1107"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -222,11 +204,11 @@ you with today?</string>
             </objects>
             <point key="canvasLocation" x="913" y="-1249"/>
         </scene>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="AZy-Ja-6q5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rdO-3V-3HR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_focused" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="moz-1t-YTu">
                         <autoresizingMask key="autoresizingMask"/>
@@ -277,7 +259,7 @@ you with today?</string>
         <scene sceneID="WMM-Se-JKn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="k7W-TE-IK3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Second" image="millife_ic" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vdn-gy-WI8">
@@ -296,7 +278,7 @@ you with today?</string>
         <scene sceneID="C4L-KY-8LU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rxn-ld-cID" userLabel="Third" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Third" image="third" id="abV-Gy-gnx"/>
+                    <tabBarItem key="tabBarItem" title="Third" image="benefits_ic" id="abV-Gy-gnx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Py6-kp-6m0">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -309,15 +291,15 @@ you with today?</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lva-oD-t0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3439.130434782609" y="0.0"/>
+            <point key="canvasLocation" x="748" y="1107"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="16" height="16"/>
-        <image name="first" width="30" height="30"/>
+        <image name="benefits_ic" width="26" height="23.333333969116211"/>
+        <image name="home_focused" width="17.666666030883789" height="18.333333969116211"/>
+        <image name="millife_ic" width="23.666666030883789" height="23.666666030883789"/>
         <image name="search" width="24" height="24"/>
         <image name="search_bar" width="280" height="41"/>
-        <image name="second" width="30" height="30"/>
-        <image name="third" width="16" height="16"/>
     </resources>
 </document>

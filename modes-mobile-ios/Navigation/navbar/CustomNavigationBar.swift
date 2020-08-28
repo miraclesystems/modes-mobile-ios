@@ -13,7 +13,7 @@ class CustomNavigationBar: UIView {
     @IBOutlet private weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     
-    //var delegate: ButtonTapDelegate
+   // var delegate: ButtonTapDelegate
     
     /*
     var title: String = "" {
@@ -52,9 +52,11 @@ class CustomNavigationBar: UIView {
       //  delegate.didTapButton()
     }
     
-    
+ 
     private func initWithNib() {
         Bundle.main.loadNibNamed(CustomNavigationBar.NIB_NAME, owner: self, options: nil)
+        
+     
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()

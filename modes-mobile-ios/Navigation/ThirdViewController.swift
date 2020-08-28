@@ -1,10 +1,6 @@
 //
 //  ThirdViewController.swift
-//  ndgTabTest
-//
-//  Created by Neal Gentry on 8/24/20.
-//  Copyright © 2020 Neal Gentry. All rights reserved.
-//
+//  
 
 import UIKit
 

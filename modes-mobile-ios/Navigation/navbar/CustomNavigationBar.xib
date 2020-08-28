@@ -19,15 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="460" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
-                    <rect key="frame" x="6" y="10" width="202" height="56"/>
-                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="202" id="5Qy-cu-a13"/>
-                        <constraint firstAttribute="height" constant="56" id="9R3-8y-tAL"/>
-                    </constraints>
-                    <state key="normal" image="modes_logo_main"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-fL-7aq" userLabel="Right Button">
                     <rect key="frame" x="413" y="16" width="32" height="32"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_checkmarkBtn"/>
@@ -35,16 +26,25 @@
                         <constraint firstAttribute="height" constant="32" id="gw5-Qs-hqH"/>
                         <constraint firstAttribute="width" constant="32" id="r8y-MI-Xut"/>
                     </constraints>
-                    <state key="normal" image="navbar_menu"/>
+                    <state key="normal" image="hamburger_menu"/>
                     <connections>
                         <action selector="rightMenuClicked:" destination="-1" eventType="touchUpInside" id="m2S-by-GhL"/>
                     </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
+                    <rect key="frame" x="6" y="4" width="202" height="56"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="5Qy-cu-a13"/>
+                        <constraint firstAttribute="height" constant="56" id="9R3-8y-tAL"/>
+                    </constraints>
+                    <state key="normal" image="modes_logo_appbar"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" constant="6" id="J4b-q8-FZN"/>
-                <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="10" id="TlQ-JK-k9n"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="4" id="TlQ-JK-k9n"/>
                 <constraint firstItem="QFB-fL-7aq" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="16" id="ZIr-g0-IkN"/>
                 <constraint firstItem="wpF-P1-aoN" firstAttribute="trailing" secondItem="QFB-fL-7aq" secondAttribute="trailing" constant="15" id="vM3-cl-Wtl"/>
             </constraints>
@@ -56,7 +56,7 @@
         </view>
     </objects>
     <resources>
-        <image name="modes_logo_main" width="316" height="93"/>
-        <image name="navbar_menu" width="96" height="96"/>
+        <image name="hamburger_menu" width="32" height="32"/>
+        <image name="modes_logo_appbar" width="172" height="30"/>
     </resources>
 </document>
