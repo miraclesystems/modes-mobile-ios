@@ -33,6 +33,15 @@ class UserSettingsViewController: UIViewController {
         viewContainer2.isHidden = true
         viewContainer3.isHidden = true
         btnBack.isHidden = true
+        
+        // DB Testing for SQLlite
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql:"SELECT * FROM benefits")
+        let row = data[0]
+        print(row)
+
+        
     }
     func showPage2(){
         
@@ -97,6 +106,12 @@ class UserSettingsViewController: UIViewController {
     
     @IBAction func buttonSkipAll_Touched(_ sender: Any) {
         print("Skip All Touched")
+       
+        
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil);
+        let vc = storyboard.instantiateViewController(withIdentifier: "sidemenu_sbid") as! SSASideMenu
+        self.present(vc, animated: true, completion: nil);
+
         
     }
     
