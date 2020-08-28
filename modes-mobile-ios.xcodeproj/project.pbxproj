@@ -66,11 +66,20 @@
 		A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7024F5266100989D70 /* ThirdViewController.swift */; };
 		A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A958EB7124F5266100989D70 /* Navigation.storyboard */; };
 		A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7224F5266100989D70 /* SSASideMenu.swift */; };
-		A958EB7924F5266200989D70 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7324F5266100989D70 /* FirstViewController.swift */; };
+		A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7324F5266100989D70 /* HomeViewController.swift */; };
 		A958EB7A24F5266200989D70 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7424F5266200989D70 /* RightMenuViewController.swift */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
+		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
+		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
+		A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B017BA24F82D5A000E2320 /* CustomNavigationBar.xib */; };
+		A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017EC24F90E1E000E2320 /* HorzCollCell.swift */; };
+		A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017ED24F90E1E000E2320 /* HorzCollFlowLayout.swift */; };
+		A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017EE24F90E1E000E2320 /* HorzCollView.swift */; };
+		A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B017EF24F90E1E000E2320 /* HorzCollView.xib */; };
+		A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B017F024F90E1E000E2320 /* HorzCollCell.xib */; };
+		A9B017F724F90E1E000E2320 /* HorzCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017F124F90E1E000E2320 /* HorzCollDataSource.swift */; };
 		A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B3738324F3D8D800B6D0CC /* Home.storyboard */; };
-		A9B373C624F40C8600B6D0CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B373C524F40C8600B6D0CC /* HomeViewController.swift */; };
+		A9B373C624F40C8600B6D0CC /* HomeViewControllerOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */; };
 		A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8C24F565520073C0DE /* WorkSans-Black.ttf */; };
 		A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8D24F565520073C0DE /* WorkSans-Bold.ttf */; };
 		A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */; };
@@ -149,11 +158,20 @@
 		A958EB7024F5266100989D70 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A958EB7124F5266100989D70 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		A958EB7224F5266100989D70 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
-		A958EB7324F5266100989D70 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A958EB7324F5266100989D70 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A958EB7424F5266200989D70 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
+		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		A9B017BA24F82D5A000E2320 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
+		A9B017EC24F90E1E000E2320 /* HorzCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorzCollCell.swift; sourceTree = "<group>"; };
+		A9B017ED24F90E1E000E2320 /* HorzCollFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorzCollFlowLayout.swift; sourceTree = "<group>"; };
+		A9B017EE24F90E1E000E2320 /* HorzCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorzCollView.swift; sourceTree = "<group>"; };
+		A9B017EF24F90E1E000E2320 /* HorzCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorzCollView.xib; sourceTree = "<group>"; };
+		A9B017F024F90E1E000E2320 /* HorzCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorzCollCell.xib; sourceTree = "<group>"; };
+		A9B017F124F90E1E000E2320 /* HorzCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorzCollDataSource.swift; sourceTree = "<group>"; };
 		A9B3738324F3D8D800B6D0CC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		A9B373C524F40C8600B6D0CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerOLD.swift; sourceTree = "<group>"; };
 		A9BF9A8C24F565520073C0DE /* WorkSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.ttf"; sourceTree = "<group>"; };
 		A9BF9A8D24F565520073C0DE /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
 		A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -210,6 +228,7 @@
 				A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */,
 				143AB8B024EF4F20002D0029 /* PreferencesUtil.swift */,
 				A920283924F5BA0700747071 /* Helper.swift */,
+				A9B017B624F7E94E000E2320 /* GradientView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -314,9 +333,9 @@
 		A958EB6E24F5262300989D70 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				A9B017B824F82C6D000E2320 /* navbar */,
 				A958EB7124F5266100989D70 /* Navigation.storyboard */,
 				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
-				A958EB7324F5266100989D70 /* FirstViewController.swift */,
 				A958EB6F24F5266100989D70 /* SecondViewController.swift */,
 				A958EB7024F5266100989D70 /* ThirdViewController.swift */,
 				A958EB7224F5266100989D70 /* SSASideMenu.swift */,
@@ -324,11 +343,35 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A9B017B824F82C6D000E2320 /* navbar */ = {
+			isa = PBXGroup;
+			children = (
+				A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */,
+				A9B017BA24F82D5A000E2320 /* CustomNavigationBar.xib */,
+			);
+			path = navbar;
+			sourceTree = "<group>";
+		};
+		A9B017EB24F90DF9000E2320 /* HorizCollScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A9B017EE24F90E1E000E2320 /* HorzCollView.swift */,
+				A9B017EF24F90E1E000E2320 /* HorzCollView.xib */,
+				A9B017EC24F90E1E000E2320 /* HorzCollCell.swift */,
+				A9B017F024F90E1E000E2320 /* HorzCollCell.xib */,
+				A9B017F124F90E1E000E2320 /* HorzCollDataSource.swift */,
+				A9B017ED24F90E1E000E2320 /* HorzCollFlowLayout.swift */,
+			);
+			path = HorizCollScroll;
+			sourceTree = "<group>";
+		};
 		A9B3738224F3D8A800B6D0CC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A9B017EB24F90DF9000E2320 /* HorizCollScroll */,
 				A9B3738324F3D8D800B6D0CC /* Home.storyboard */,
-				A9B373C524F40C8600B6D0CC /* HomeViewController.swift */,
+				A958EB7324F5266100989D70 /* HomeViewController.swift */,
+				A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */,
 				83DA073224F42DDC0054C817 /* HomeModel.swift */,
 				83DA073524F42E000054C817 /* HomeViewModel.swift */,
 			);
@@ -439,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
+				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
@@ -450,6 +494,8 @@
 				A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */,
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
+				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
+				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,9 +526,11 @@
 			files = (
 				14A901D424F1B9C400E2B4CA /* IQTitleBarButtonItem.swift in Sources */,
 				A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */,
+				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
 				A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */,
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
 				A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */,
+				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
@@ -497,17 +545,20 @@
 				14A901C624F1B98300E2B4CA /* IQUITextFieldView+Additions.swift in Sources */,
 				14A901C724F1B98300E2B4CA /* IQUIView+Hierarchy.swift in Sources */,
 				14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */,
-				A958EB7924F5266200989D70 /* FirstViewController.swift in Sources */,
+				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */,
 				143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */,
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
+				A9B017F724F90E1E000E2320 /* HorzCollDataSource.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB8B324F1A526002D0029 /* UserSettingsDescriptionViewController.swift in Sources */,
+				A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */,
 				A920283A24F5BA0700747071 /* Helper.swift in Sources */,
 				143AB8B524F1A53B002D0029 /* UserSettingsInstallationsViewController.swift in Sources */,
 				83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */,
+				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
 				143AB8A324EF183D002D0029 /* constants.swift in Sources */,
 				1487F5CD24E5E74C00C13817 /* BaseViewModel.swift in Sources */,
@@ -516,9 +567,10 @@
 				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
 				A958EB7A24F5266200989D70 /* RightMenuViewController.swift in Sources */,
 				1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */,
-				A9B373C624F40C8600B6D0CC /* HomeViewController.swift in Sources */,
+				A9B373C624F40C8600B6D0CC /* HomeViewControllerOLD.swift in Sources */,
 				1487F5D524E5EB0500C13817 /* BaseViewController.swift in Sources */,
 				143AB8B724F1A54E002D0029 /* UserSettingsBranchViewController.swift in Sources */,
+				A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */,
 				1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

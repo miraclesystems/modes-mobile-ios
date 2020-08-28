@@ -32,14 +32,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // this is for testing only
         
         //Neal - Testing: Launch Navigation
-        /*
+        
         let mainStoryboard = UIStoryboard(name: "Navigation", bundle: nil)
         let VC = mainStoryboard.instantiateViewController(withIdentifier: "sidemenu_sbid") as! SSASideMenu
-        */
         
+        /*
         let mainStoryboard = UIStoryboard(name: "UserSettings", bundle: nil)
         let VC = mainStoryboard.instantiateViewController(withIdentifier: "UserSettingsViewController") as! UserSettingsViewController
-        
+        */
                 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)

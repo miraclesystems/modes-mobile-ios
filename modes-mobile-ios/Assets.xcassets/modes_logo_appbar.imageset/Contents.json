@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "menu.png",
+      "filename" : "modes_logo_appbar.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "modes_logo_appbar-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "modes_logo_appbar-2.png",
       "scale" : "3x"
     }
   ],
