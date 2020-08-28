@@ -15,36 +15,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-vQ-ck1">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-vQ-ck1" userLabel="MainView1">
                                 <rect key="frame" x="0.0" y="116" width="375" height="613"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Bj-a3E">
-                                        <rect key="frame" x="38.666666666666657" y="195" width="298" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="298" id="Ezt-6L-cgz"/>
-                                            <constraint firstAttribute="height" constant="40" id="bwo-94-7G0"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="10" maxY="0.0"/>
-                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
-                                        <state key="normal" title="Search MilLife Guides &amp; Benefits" image="search" backgroundImage="search_bar">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                        <rect key="frame" x="38.666666666666657" y="74" width="298" height="113"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-7i-Glk" userLabel="TopView">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="325"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                                <rect key="frame" x="30" y="73" width="298" height="113"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="298" id="5h3-KB-1Yq"/>
+                                                    <constraint firstAttribute="height" constant="113" id="dQ0-Vn-QY0"/>
+                                                </constraints>
+                                                <string key="text">What can we help
+you with today?</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Bj-a3E">
+                                                <rect key="frame" x="30" y="211" width="298" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="298" id="Ezt-6L-cgz"/>
+                                                    <constraint firstAttribute="height" constant="40" id="bwo-94-7G0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="10" maxY="0.0"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal" title="Search MilLife Guides &amp; Benefits" image="search" backgroundImage="search_bar">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="298" id="5h3-KB-1Yq"/>
-                                            <constraint firstAttribute="height" constant="113" id="dQ0-Vn-QY0"/>
+                                            <constraint firstItem="cm0-Bj-a3E" firstAttribute="centerY" secondItem="YNq-7i-Glk" secondAttribute="centerY" constant="40" id="BeD-4B-aC1"/>
+                                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerY" secondItem="YNq-7i-Glk" secondAttribute="centerY" constant="-40" id="Jgy-Qo-wtf"/>
+                                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="YNq-7i-Glk" secondAttribute="centerX" id="MeZ-6D-u5q"/>
+                                            <constraint firstItem="cm0-Bj-a3E" firstAttribute="centerX" secondItem="YNq-7i-Glk" secondAttribute="centerX" id="uB1-5Y-0qa"/>
                                         </constraints>
-                                        <string key="text">What can we help
-you with today?</string>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hI6-0k-x8f" customClass="HorzCollView" customModule="modes_mobile_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="333" width="375" height="280"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,12 +67,12 @@ you with today?</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="9zS-vQ-ck1" secondAttribute="centerX" id="0fh-iF-ib7"/>
                                     <constraint firstAttribute="trailing" secondItem="hI6-0k-x8f" secondAttribute="trailing" id="1Id-d9-wb0"/>
-                                    <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="9zS-vQ-ck1" secondAttribute="top" constant="74" id="M51-Zy-75j"/>
-                                    <constraint firstItem="cm0-Bj-a3E" firstAttribute="centerX" secondItem="9zS-vQ-ck1" secondAttribute="centerX" id="W7L-AU-EZz"/>
+                                    <constraint firstItem="YNq-7i-Glk" firstAttribute="top" secondItem="9zS-vQ-ck1" secondAttribute="top" id="5OB-xo-gjt"/>
+                                    <constraint firstItem="hI6-0k-x8f" firstAttribute="top" secondItem="YNq-7i-Glk" secondAttribute="bottom" id="Mmg-Tq-HNw"/>
                                     <constraint firstItem="hI6-0k-x8f" firstAttribute="leading" secondItem="9zS-vQ-ck1" secondAttribute="leading" id="Xwt-Wf-mna"/>
-                                    <constraint firstItem="cm0-Bj-a3E" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" id="ceM-8J-12D"/>
+                                    <constraint firstAttribute="trailing" secondItem="YNq-7i-Glk" secondAttribute="trailing" id="dmH-Jc-Jo9"/>
+                                    <constraint firstItem="YNq-7i-Glk" firstAttribute="leading" secondItem="9zS-vQ-ck1" secondAttribute="leading" id="rMj-35-jBz"/>
                                     <constraint firstAttribute="bottom" secondItem="hI6-0k-x8f" secondAttribute="bottom" id="x4X-CD-TLG"/>
                                 </constraints>
                             </view>
@@ -101,6 +113,7 @@ you with today?</string>
                             </view>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,6 +183,7 @@ you with today?</string>
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController storyboardIdentifier="tabbar_sbid" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -208,8 +222,9 @@ you with today?</string>
         <scene sceneID="AZy-Ja-6q5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rdO-3V-3HR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home_focused" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_focused" selectedImage="home_focused" id="acW-dT-cKf"/>
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="moz-1t-YTu">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
