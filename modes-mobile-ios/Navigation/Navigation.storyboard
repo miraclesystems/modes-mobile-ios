@@ -18,11 +18,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-vQ-ck1" userLabel="MainView1">
                                 <rect key="frame" x="0.0" y="116" width="375" height="613"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-7i-Glk" userLabel="TopView">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-7i-Glk" userLabel="TopView">
                                         <rect key="frame" x="8" y="0.0" width="359" height="325"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                                <rect key="frame" x="30" y="73" width="298" height="113"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                                <rect key="frame" x="38.666666666666657" y="70" width="298" height="113"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="298" id="5h3-KB-1Yq"/>
@@ -34,8 +34,8 @@ you with today?</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Bj-a3E">
-                                                <rect key="frame" x="30" y="211" width="298" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Bj-a3E">
+                                                <rect key="frame" x="38.666666666666657" y="186.66666666666669" width="298" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="298" id="Ezt-6L-cgz"/>
                                                     <constraint firstAttribute="height" constant="40" id="bwo-94-7G0"/>
