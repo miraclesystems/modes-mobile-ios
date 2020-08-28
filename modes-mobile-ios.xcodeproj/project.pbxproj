@@ -90,6 +90,7 @@
 		A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8D24F565520073C0DE /* WorkSans-Bold.ttf */; };
 		A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */; };
 		A9BF9A9324F565530073C0DE /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8F24F565530073C0DE /* WorkSans-Italic.ttf */; };
+		A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +191,7 @@
 		A9BF9A8D24F565520073C0DE /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
 		A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		A9BF9A8F24F565530073C0DE /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic.ttf"; sourceTree = "<group>"; };
+		A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +407,7 @@
 				A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */,
 				83DA073224F42DDC0054C817 /* HomeModel.swift */,
 				83DA073524F42E000054C817 /* HomeViewModel.swift */,
+				A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				A920283A24F5BA0700747071 /* Helper.swift in Sources */,
 				143AB8B524F1A53B002D0029 /* UserSettingsInstallationsViewController.swift in Sources */,
 				83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */,
+				A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */,
 				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
 				143AB8A324EF183D002D0029 /* constants.swift in Sources */,

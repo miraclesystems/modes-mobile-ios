@@ -28,7 +28,12 @@ class HorzCollView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        
         initCollectionView()
+        
+       
+        
+        
     }
     
     private func initCollectionView() {
@@ -39,7 +44,15 @@ class HorzCollView: UIView {
         collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         
-        
+        //move 1st slide to left
+        /*
+        DispatchQueue.main.async {
+                   let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
+                   let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
+                   let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
+                   self.collectionView.scrollToItem(at: nextItem, at: .right, animated: false)
+        }
+        */
     }
 }
 
