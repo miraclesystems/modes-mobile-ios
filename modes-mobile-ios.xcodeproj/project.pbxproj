@@ -62,7 +62,7 @@
 		838EFFDE24F9439200A178A1 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDD24F9439200A178A1 /* SQLiteDB.swift */; };
 		838EFFE024F9440100A178A1 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDF24F9440100A178A1 /* SQLTable.swift */; };
 		838EFFE224F94F7600A178A1 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFE124F94F7600A178A1 /* CloudDB.swift */; };
-		838EFFE524F9530E00A178A1 /* modes.db in Resources */ = {isa = PBXBuildFile; fileRef = 838EFFE424F9530E00A178A1 /* modes.db */; };
+		838EFFE724F96FF900A178A1 /* modes.db in Resources */ = {isa = PBXBuildFile; fileRef = 838EFFE624F96FF900A178A1 /* modes.db */; };
 		83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
@@ -158,14 +158,13 @@
 		14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift"; sourceTree = "<group>"; };
 		838EFFCE24F8C9B500A178A1 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = modes.sqlite3; path = ../../../Desktop/modes.sqlite3; sourceTree = "<group>"; };
-		838EFFD024F8C9C400A178A1 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
 		838EFFDD24F9439200A178A1 /* SQLiteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		838EFFDF24F9440100A178A1 /* SQLTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		838EFFE124F94F7600A178A1 /* CloudDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
 		838EFFE324F9514400A178A1 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		838EFFE424F9530E00A178A1 /* modes.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = modes.db; path = ../../Desktop/modes.db; sourceTree = "<group>"; };
+		838EFFE624F96FF900A178A1 /* modes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.db; sourceTree = "<group>"; };
 		83DA073224F42DDC0054C817 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		83DA073524F42E000054C817 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -275,7 +274,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				838EFFE424F9530E00A178A1 /* modes.db */,
+				838EFFE624F96FF900A178A1 /* modes.db */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
 				A958EB6E24F5262300989D70 /* Navigation */,
@@ -290,7 +289,6 @@
 				1487F5A624E5E6E400C13817 /* LaunchScreen.storyboard */,
 				1487F5A924E5E6E400C13817 /* Info.plist */,
 				143AB8A224EF183D002D0029 /* constants.swift */,
-				838EFFD024F8C9C400A178A1 /* modes.sqlite3 */,
 				838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */,
 				838EFFDD24F9439200A178A1 /* SQLiteDB.swift */,
 				838EFFDF24F9440100A178A1 /* SQLTable.swift */,
@@ -518,7 +516,7 @@
 			files = (
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
-				838EFFE524F9530E00A178A1 /* modes.db in Resources */,
+				838EFFE724F96FF900A178A1 /* modes.db in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
