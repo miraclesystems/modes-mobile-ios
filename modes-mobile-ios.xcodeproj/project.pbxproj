@@ -56,7 +56,6 @@
 		14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D124F1B9C300E2B4CA /* IQToolbar.swift */; };
 		14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */; };
 		14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */; };
-		838EFFCF24F8C9B500A178A1 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 838EFFCE24F8C9B500A178A1 /* modes.sqlite3 */; };
 		838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		838EFFDC24F9433D00A178A1 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */; };
 		838EFFDE24F9439200A178A1 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDD24F9439200A178A1 /* SQLiteDB.swift */; };
@@ -527,7 +526,6 @@
 				1487F5A524E5E6E400C13817 /* Assets.xcassets in Resources */,
 				A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */,
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
-				838EFFCF24F8C9B500A178A1 /* modes.sqlite3 in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
