@@ -8,12 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        /*
         //  This loads the hamburger menu on the right side
                self.navigationController?.navigationBar.tintColor = UIColor.black
                //create a new button
@@ -29,7 +29,7 @@ class FirstViewController: UIViewController {
                self.navigationItem.rightBarButtonItem = barButton
                
               // self.navigationController?.navigationBar.tintColor = UIColor(hex: 0xA74795)
-        
+        */
         
     }
 
