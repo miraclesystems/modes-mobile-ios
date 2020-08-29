@@ -8,22 +8,31 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     @IBOutlet weak var MainView1: UIView!
     @IBOutlet weak var MainView2: UIView!
+    @IBOutlet weak var tableView: UITableView!
     
     
+    
+    @IBOutlet weak var menubutton: UIButton!
+    
+    @IBAction func didtouchbutton(_ sender: Any) {
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Hide the 2nd View
-        //MainView2.isHidden = true
+        //MainView2.isHidden = false
         
-
+        /*
+        menubutton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        */
         // Do any additional setup after loading the view.
         /*
         //  This loads the hamburger menu on the right side
@@ -46,7 +55,7 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ Animated: Bool) {
-        MainView2.isHidden = true
+        MainView2.isHidden = false
     }
     
     //Segue for passing data back
@@ -95,6 +104,21 @@ class HomeViewController: UIViewController {
             }
         }
     */
+    }
+    
+    //Main2View Table View Section
+    
+    
+    var myTableData = ["Moving in the Military", "OCONUS Moves", "Housing"]
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = myTableData[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myTableData.count
     }
 
 }

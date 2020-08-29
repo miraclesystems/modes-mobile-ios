@@ -91,6 +91,12 @@
 		A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */; };
 		A9BF9A9324F565530073C0DE /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BF9A8F24F565530073C0DE /* WorkSans-Italic.ttf */; };
 		A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */; };
+		A9FEEBF324FABB5300EB7CA6 /* VertTwoCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEEBED24FABB5300EB7CA6 /* VertTwoCollView.swift */; };
+		A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FEEBEE24FABB5300EB7CA6 /* VertTwoCollCell.xib */; };
+		A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEEBEF24FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift */; };
+		A9FEEBF624FABB5300EB7CA6 /* VertTwoCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FEEBF024FABB5300EB7CA6 /* VertTwoCollView.xib */; };
+		A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEEBF124FABB5300EB7CA6 /* VertTwoCollCell.swift */; };
+		A9FEEBF824FABB5300EB7CA6 /* VertTwoCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEEBF224FABB5300EB7CA6 /* VertTwoCollDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +198,12 @@
 		A9BF9A8E24F565530073C0DE /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		A9BF9A8F24F565530073C0DE /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic.ttf"; sourceTree = "<group>"; };
 		A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		A9FEEBED24FABB5300EB7CA6 /* VertTwoCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertTwoCollView.swift; sourceTree = "<group>"; };
+		A9FEEBEE24FABB5300EB7CA6 /* VertTwoCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VertTwoCollCell.xib; sourceTree = "<group>"; };
+		A9FEEBEF24FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertTwoCollFlowLayout.swift; sourceTree = "<group>"; };
+		A9FEEBF024FABB5300EB7CA6 /* VertTwoCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VertTwoCollView.xib; sourceTree = "<group>"; };
+		A9FEEBF124FABB5300EB7CA6 /* VertTwoCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertTwoCollCell.swift; sourceTree = "<group>"; };
+		A9FEEBF224FABB5300EB7CA6 /* VertTwoCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertTwoCollDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +413,8 @@
 		A9B3738224F3D8A800B6D0CC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A9FEEBEB24FAA72700EB7CA6 /* TableView */,
+				A9FEEBEC24FAB98B00EB7CA6 /* VertTwoCollScroll */,
 				A9B017EB24F90DF9000E2320 /* HorizCollScroll */,
 				A9B3738324F3D8D800B6D0CC /* Home.storyboard */,
 				A958EB7324F5266100989D70 /* HomeViewController.swift */,
@@ -410,6 +424,26 @@
 				A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A9FEEBEB24FAA72700EB7CA6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		A9FEEBEC24FAB98B00EB7CA6 /* VertTwoCollScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A9FEEBED24FABB5300EB7CA6 /* VertTwoCollView.swift */,
+				A9FEEBF024FABB5300EB7CA6 /* VertTwoCollView.xib */,
+				A9FEEBF124FABB5300EB7CA6 /* VertTwoCollCell.swift */,
+				A9FEEBEE24FABB5300EB7CA6 /* VertTwoCollCell.xib */,
+				A9FEEBF224FABB5300EB7CA6 /* VertTwoCollDataSource.swift */,
+				A9FEEBEF24FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift */,
+			);
+			path = VertTwoCollScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,8 +564,10 @@
 				A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */,
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
+				A9FEEBF624FABB5300EB7CA6 /* VertTwoCollView.xib in Resources */,
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
+				A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +601,7 @@
 				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
 				A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */,
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
+				A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */,
 				838EFFDC24F9433D00A178A1 /* SQLiteBase.swift in Sources */,
 				A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */,
 				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
@@ -574,6 +611,7 @@
 				838EFFDE24F9439200A178A1 /* SQLiteDB.swift in Sources */,
 				14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */,
 				14A901CD24F1B9AB00E2B4CA /* IQTextView.swift in Sources */,
+				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
 				14A901CA24F1B99600E2B4CA /* IQKeyboardManagerConstants.swift in Sources */,
 				14A901CB24F1B99600E2B4CA /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				838EFFE024F9440100A178A1 /* SQLTable.swift in Sources */,
@@ -598,6 +636,7 @@
 				A920283A24F5BA0700747071 /* Helper.swift in Sources */,
 				143AB8B524F1A53B002D0029 /* UserSettingsInstallationsViewController.swift in Sources */,
 				83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */,
+				A9FEEBF324FABB5300EB7CA6 /* VertTwoCollView.swift in Sources */,
 				A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */,
 				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
 				143AB89F24EED576002D0029 /* UserSettingsModel.swift in Sources */,
@@ -606,6 +645,7 @@
 				83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */,
 				1487F5CF24E5EA3900C13817 /* WebServiceConnector.swift in Sources */,
 				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
+				A9FEEBF824FABB5300EB7CA6 /* VertTwoCollDataSource.swift in Sources */,
 				A958EB7A24F5266200989D70 /* RightMenuViewController.swift in Sources */,
 				1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */,
 				A9B373C624F40C8600B6D0CC /* HomeViewControllerOLD.swift in Sources */,
