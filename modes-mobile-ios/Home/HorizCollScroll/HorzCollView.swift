@@ -2,7 +2,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class HorzCollView: UIView {
     
     let collectionDataSource = HorzCollDataSource()
@@ -22,8 +22,12 @@ class HorzCollView: UIView {
     }
     
     private func commonInit() {
-        let bundle = Bundle(for: type(of: self))
+        //let bundle = Bundle(for: UserView.self)
+        //bundle.loadNibNamed("UserView", owner: self, options: nil)
+        let bundle = Bundle(for: HorzCollView.self)
         bundle.loadNibNamed("HorzCollView", owner: self, options: nil)
+        //let bundle = Bundle(for: type(of: self))
+        //bundle.loadNibNamed("HorzCollView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

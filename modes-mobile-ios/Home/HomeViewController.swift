@@ -14,16 +14,42 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var MainView1: UIView!
     @IBOutlet weak var MainView2: UIView!
     
+    @IBOutlet weak var HomeContView1: UIView!
+    @IBOutlet weak var HomeContView2: UIView!
     
+    
+    @IBOutlet weak var menubutton: UIButton!
+    
+    @IBAction func didtouchbutton(_ sender: Any) {
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Hide the 2nd View
-        //MainView2.isHidden = true
+        // set a reference back to the parent vc for contained view controllers
+        // this is how the childeren should reference the view model
+        for child in self.children{
+            
+            switch child{
+                
+            case is HomeContView1VC:
+                (child as! HomeContView1VC).parentVc = self
+            case is HomeContView2VC:
+                (child as! HomeContView2VC).parentVc = self
+            default:
+                break
+            }
+        }
         
-
+        
+        //Hide the 2nd View
+        //MainView2.isHidden = false
+        
+        /*
+        menubutton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        */
         // Do any additional setup after loading the view.
         /*
         //  This loads the hamburger menu on the right side
@@ -46,9 +72,10 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ Animated: Bool) {
-        MainView2.isHidden = true
+        HomeContView2.isHidden = true
     }
     
+    /*
     //Segue for passing data back
     // This is your unwind Segue, and it must be a @IBAction
     @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
@@ -94,8 +121,9 @@ class HomeViewController: UIViewController {
                 }
             }
         }
-    */
+        */
     }
-
+    */
+    
 }
 

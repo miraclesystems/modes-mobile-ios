@@ -31,10 +31,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func navbtnTouched(_ sender: Any) {
-       performSegue(withIdentifier: "unwindSearchSegue", sender: title)
-    }
-    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,7 +102,8 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         print("title: ", title)
         mySelection = title!
         backWithData = true
-        performSegue(withIdentifier: "unwindSearch", sender: title)
+        print("Running Click")
+        performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
     }
 
    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -60,9 +60,9 @@ class CustomNavigationBar: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
-        /*
-        rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
-        */
+        
+        //rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        
     }
     
     private func setupLayout() {

@@ -4,7 +4,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class GradientView: UIView {
     
     private let gradientLayer = CAGradientLayer()
