@@ -2,7 +2,7 @@
 
 import UIKit
 
-class VertTwoCollDataSource: NSObject, UICollectionViewDataSource {
+class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
     
     var myImages = ["Home_Inventory", "Home_Search","Home_Transfer", "Home_Reinstate", "Home_Trash"]
     var myLabels = ["Inventory", "Asset Lookup", "Location Transfer", "Reinstate", "Initiate Disposal", "More", "And More", "And Much More", "Super More", "And Again", "And So Much More"]

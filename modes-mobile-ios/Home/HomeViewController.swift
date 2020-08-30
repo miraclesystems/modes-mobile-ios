@@ -8,12 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
 
     
     @IBOutlet weak var MainView1: UIView!
     @IBOutlet weak var MainView2: UIView!
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var MainContView2: UIView!
     
     
     
@@ -55,7 +56,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewWillAppear(_ Animated: Bool) {
-        MainView2.isHidden = false
+        MainContView2.isHidden = false
     }
     
     //Segue for passing data back
@@ -106,20 +107,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     */
     }
     
-    //Main2View Table View Section
     
-    
-    var myTableData = ["Moving in the Military", "OCONUS Moves", "Housing"]
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = myTableData[indexPath.row]
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myTableData.count
-    }
-
 }
 
