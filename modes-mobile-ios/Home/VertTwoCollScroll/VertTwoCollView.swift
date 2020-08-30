@@ -2,7 +2,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class VertTwoCollView: UIView {
     
     let collectionDataSource = VertTwoCollDataSource()
@@ -22,7 +22,9 @@ class VertTwoCollView: UIView {
     }
     
     private func commonInit() {
-        let bundle = Bundle(for: type(of: self))
+        //let bundle = Bundle(for: type(of: self))
+        //bundle.loadNibNamed("VertTwoCollView", owner: self, options: nil)
+        let bundle = Bundle(for: VertTwoCollView.self)
         bundle.loadNibNamed("VertTwoCollView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds

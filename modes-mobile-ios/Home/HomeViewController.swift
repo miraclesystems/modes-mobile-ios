@@ -14,8 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var MainView1: UIView!
     @IBOutlet weak var MainView2: UIView!
     
-    @IBOutlet weak var MainContView2: UIView!
-    
+    @IBOutlet weak var HomeContView1: UIView!
+    @IBOutlet weak var HomeContView2: UIView!
     
     
     @IBOutlet weak var menubutton: UIButton!
@@ -27,6 +27,22 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // set a reference back to the parent vc for contained view controllers
+        // this is how the childeren should reference the view model
+        for child in self.children{
+            
+            switch child{
+                
+            case is HomeContView1VC:
+                (child as! HomeContView1VC).parentVc = self
+            case is HomeContView2VC:
+                (child as! HomeContView2VC).parentVc = self
+            default:
+                break
+            }
+        }
+        
         
         //Hide the 2nd View
         //MainView2.isHidden = false
@@ -56,9 +72,10 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ Animated: Bool) {
-        MainContView2.isHidden = false
+        HomeContView2.isHidden = true
     }
     
+    /*
     //Segue for passing data back
     // This is your unwind Segue, and it must be a @IBAction
     @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
@@ -104,9 +121,9 @@ class HomeViewController: UIViewController {
                 }
             }
         }
-    */
+        */
     }
-    
+    */
     
 }
 

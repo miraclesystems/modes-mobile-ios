@@ -2,7 +2,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class HomeTableView: UIView {
     
     let tableDataSource = HomeTableDataSource()
@@ -22,7 +22,8 @@ class HomeTableView: UIView {
     }
     
     private func commonInit() {
-        let bundle = Bundle(for: type(of: self))
+        //let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle(for: HomeTableView.self)
         bundle.loadNibNamed("HomeTableView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds

@@ -66,6 +66,8 @@
 		83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
 		83DA073724F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
+		A90A0EB424FBB9D000341C9E /* HomeContView1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A0EB324FBB9D000341C9E /* HomeContView1VC.swift */; };
+		A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A0EB524FBD81E00341C9E /* HomeContView2VC.swift */; };
 		A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */; };
 		A920283A24F5BA0700747071 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920283924F5BA0700747071 /* Helper.swift */; };
 		A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB6F24F5266100989D70 /* SecondViewController.swift */; };
@@ -178,6 +180,8 @@
 		838EFFE624F96FF900A178A1 /* modes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.db; sourceTree = "<group>"; };
 		83DA073224F42DDC0054C817 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		83DA073524F42E000054C817 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A90A0EB324FBB9D000341C9E /* HomeContView1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeContView1VC.swift; path = "modes-mobile-ios/Home/HomeContView1VC.swift"; sourceTree = SOURCE_ROOT; };
+		A90A0EB524FBD81E00341C9E /* HomeContView2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContView2VC.swift; sourceTree = "<group>"; };
 		A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		A920283924F5BA0700747071 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A958EB6F24F5266100989D70 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -426,12 +430,14 @@
 				A9FEEBEB24FAA72700EB7CA6 /* TableView */,
 				A9FEEBEC24FAB98B00EB7CA6 /* VertTwoCollScroll */,
 				A9B017EB24F90DF9000E2320 /* HorizCollScroll */,
-				A9B3738324F3D8D800B6D0CC /* Home.storyboard */,
 				A958EB7324F5266100989D70 /* HomeViewController.swift */,
-				A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */,
+				A90A0EB324FBB9D000341C9E /* HomeContView1VC.swift */,
+				A90A0EB524FBD81E00341C9E /* HomeContView2VC.swift */,
+				A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */,
 				83DA073224F42DDC0054C817 /* HomeModel.swift */,
 				83DA073524F42E000054C817 /* HomeViewModel.swift */,
-				A9F2534F24F987F7001C4176 /* SearchTableViewController.swift */,
+				A9B373C524F40C8600B6D0CC /* HomeViewControllerOLD.swift */,
+				A9B3738324F3D8D800B6D0CC /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
 				A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */,
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
+				A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */,
 				A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */,
 				838EFFDC24F9433D00A178A1 /* SQLiteBase.swift in Sources */,
 				A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */,
@@ -673,6 +680,7 @@
 				143AB8B724F1A54E002D0029 /* UserSettingsBranchViewController.swift in Sources */,
 				A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */,
 				1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */,
+				A90A0EB424FBB9D000341C9E /* HomeContView1VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -110,6 +110,7 @@ class UserSettingsViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Navigation", bundle: nil);
         let vc = storyboard.instantiateViewController(withIdentifier: "sidemenu_sbid") as! SSASideMenu
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil);
 
         
@@ -133,9 +134,9 @@ class UserSettingsViewController: UIViewController {
             case is UserSettingsDescriptionViewController:
                 (child as! UserSettingsDescriptionViewController).parentVc = self
             case is UserSettingsInstallationsViewController:
-            (child as! UserSettingsInstallationsViewController).parentVc = self
+                (child as! UserSettingsInstallationsViewController).parentVc = self
             case is UserSettingsBranchViewController:
-            (child as! UserSettingsBranchViewController).parentVc = self
+                (child as! UserSettingsBranchViewController).parentVc = self
             default:
                 break
             }
