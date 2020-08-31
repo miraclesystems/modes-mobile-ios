@@ -16,27 +16,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="156" height="58"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hU8-8c-BdL">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hU8-8c-BdL">
                         <rect key="frame" x="0.0" y="0.0" width="156" height="58"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two Column Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-5u-Vce">
-                                <rect key="frame" x="0.0" y="0.0" width="156" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two Column Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-5u-Vce">
+                                <rect key="frame" x="16" y="8" width="132" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iou-dj-4mX">
-                                <rect key="frame" x="6" y="130" width="123" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cwb-5u-Vce" secondAttribute="bottom" constant="8" id="m8D-fG-CVQ"/>
+                            <constraint firstItem="cwb-5u-Vce" firstAttribute="leading" secondItem="hU8-8c-BdL" secondAttribute="leading" constant="16" id="qwE-31-iIo"/>
+                            <constraint firstAttribute="trailing" secondItem="cwb-5u-Vce" secondAttribute="trailing" constant="8" id="vrF-q4-pUk"/>
+                            <constraint firstItem="cwb-5u-Vce" firstAttribute="top" secondItem="hU8-8c-BdL" secondAttribute="top" constant="8" id="zbj-sU-9C9"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hU8-8c-BdL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lpa-gR-FQa"/>
+                <constraint firstAttribute="bottom" secondItem="hU8-8c-BdL" secondAttribute="bottom" id="Odg-f8-C4q"/>
+                <constraint firstItem="hU8-8c-BdL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hTU-Xr-XE5"/>
+                <constraint firstAttribute="trailing" secondItem="hU8-8c-BdL" secondAttribute="trailing" id="yde-SD-Ab9"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="137" height="143"/>
             <connections>

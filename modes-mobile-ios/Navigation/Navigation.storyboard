@@ -521,65 +521,6 @@ you with today?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="546"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="U8S-a0-lqk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs9-2G-wsa" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1363.3333333333333"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTg-Rg-NDZ">
-                                                <rect key="frame" x="16" y="50" width="343" height="527.66666666666663"/>
-                                                <string key="text">Praesent a aliquet mi, sit amet posuere neque. Morbi lobortis diam eu risus iaculis, interdum scelerisque tellus tempus. Quisque quis ultricies risus. Praesent eu eros malesuada ipsum rhoncus cursus. Integer odio est, tempor vel ipsum id, blandit convallis felis. Donec vitae posuere tellus. Vestibulum aliquet nunc quam, at condimentum elit fringilla sit amet. Vestibulum orci nulla, pulvinar eleifend dui ut, pellentesque egestas nulla.
-
-Ut sed erat eget ex maximus pellentesque in non diam. Sed laoreet faucibus venenatis. Proin laoreet, lorem sed finibus porttitor, massa est egestas eros, quis luctus ipsum mi sit amet lorem. Phasellus euismod malesuada vehicula. Ut sed sem sed arcu lacinia faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper luctus pellentesque. Vestibulum commodo tincidunt turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_milonesrc" translatesAutoresizingMaskIntoConstraints="NO" id="CHW-6k-ory">
-                                                <rect key="frame" x="107.66666666666669" y="601.66666666666663" width="160" height="160"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="aa8-Nl-M0a"/>
-                                                    <constraint firstAttribute="height" constant="160" id="qU2-XO-IA3"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyO-AR-dFO">
-                                                <rect key="frame" x="16" y="785.66666666666674" width="343" height="527.66666666666674"/>
-                                                <string key="text">Praesent a aliquet mi, sit amet posuere neque. Morbi lobortis diam eu risus iaculis, interdum scelerisque tellus tempus. Quisque quis ultricies risus. Praesent eu eros malesuada ipsum rhoncus cursus. Integer odio est, tempor vel ipsum id, blandit convallis felis. Donec vitae posuere tellus. Vestibulum aliquet nunc quam, at condimentum elit fringilla sit amet. Vestibulum orci nulla, pulvinar eleifend dui ut, pellentesque egestas nulla.
-
-Ut sed erat eget ex maximus pellentesque in non diam. Sed laoreet faucibus venenatis. Proin laoreet, lorem sed finibus porttitor, massa est egestas eros, quis luctus ipsum mi sit amet lorem. Phasellus euismod malesuada vehicula. Ut sed sem sed arcu lacinia faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper luctus pellentesque. Vestibulum commodo tincidunt turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="pyO-AR-dFO" firstAttribute="leading" secondItem="Qs9-2G-wsa" secondAttribute="leading" constant="16" id="5fU-x9-f6M"/>
-                                            <constraint firstItem="YTg-Rg-NDZ" firstAttribute="leading" secondItem="Qs9-2G-wsa" secondAttribute="leading" constant="16" id="BXm-8K-G6s"/>
-                                            <constraint firstAttribute="trailing" secondItem="pyO-AR-dFO" secondAttribute="trailing" constant="16" id="Hi3-AE-dHD"/>
-                                            <constraint firstAttribute="trailing" secondItem="YTg-Rg-NDZ" secondAttribute="trailing" constant="16" id="RHY-Lf-h34"/>
-                                            <constraint firstItem="CHW-6k-ory" firstAttribute="centerX" secondItem="Qs9-2G-wsa" secondAttribute="centerX" id="WLb-ft-tUy"/>
-                                            <constraint firstItem="YTg-Rg-NDZ" firstAttribute="top" secondItem="Qs9-2G-wsa" secondAttribute="top" constant="50" id="b7H-BP-MVV"/>
-                                            <constraint firstAttribute="bottom" secondItem="pyO-AR-dFO" secondAttribute="bottom" constant="50" id="eO3-zh-v6n"/>
-                                            <constraint firstItem="pyO-AR-dFO" firstAttribute="top" secondItem="CHW-6k-ory" secondAttribute="bottom" constant="24" id="m0V-f1-U26"/>
-                                            <constraint firstItem="YTg-Rg-NDZ" firstAttribute="centerX" secondItem="Qs9-2G-wsa" secondAttribute="centerX" id="t4X-4d-g71"/>
-                                            <constraint firstItem="CHW-6k-ory" firstAttribute="top" secondItem="YTg-Rg-NDZ" secondAttribute="bottom" constant="24" id="toa-3i-vft"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Qs9-2G-wsa" firstAttribute="trailing" secondItem="U8S-a0-lqk" secondAttribute="trailing" id="DM9-fM-AI9"/>
-                                    <constraint firstItem="Qs9-2G-wsa" firstAttribute="top" secondItem="U8S-a0-lqk" secondAttribute="top" id="Qzf-UH-tod"/>
-                                    <constraint firstItem="Qs9-2G-wsa" firstAttribute="width" secondItem="U8S-a0-lqk" secondAttribute="width" id="eta-Rs-tP9"/>
-                                    <constraint firstItem="Qs9-2G-wsa" firstAttribute="bottom" secondItem="U8S-a0-lqk" secondAttribute="bottom" id="jU4-Mq-dqh"/>
-                                    <constraint firstItem="Qs9-2G-wsa" firstAttribute="leading" secondItem="U8S-a0-lqk" secondAttribute="leading" id="kfZ-46-Ac1"/>
-                                </constraints>
-                                <viewLayoutGuide key="safeArea" id="WUA-uZ-Ntn"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="8bo-Fn-w4M"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="1Co-Ib-rm1"/>
-                            </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Y-2i-Dyx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="546"/>
                                 <subviews>
@@ -587,16 +528,27 @@ Ut sed erat eget ex maximus pellentesque in non diam. Sed laoreet faucibus venen
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="989"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showing Results for &quot;PCS&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vb-z5-LMA">
-                                                <rect key="frame" x="20" y="8" width="335" height="20"/>
+                                                <rect key="frame" x="20" y="8" width="295" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="8pD-UE-X9G"/>
-                                                    <constraint firstAttribute="width" constant="335" id="Tr7-Kv-v5e"/>
+                                                    <constraint firstAttribute="width" constant="295" id="Tr7-Kv-v5e"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="yT3-pr-aGv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.208070228" green="0.208070228" blue="0.208070228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miL-6u-rmW">
+                                                <rect key="frame" x="337" y="10" width="18" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="f3C-LO-5gc"/>
+                                                    <constraint firstAttribute="width" constant="18" id="ild-0S-Ucs"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="search"/>
+                                                <connections>
+                                                    <segue destination="uB8-5V-7Ux" kind="presentation" identifier="showSearchfrom2VC" modalPresentationStyle="fullScreen" id="DQX-kY-0UM"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-7x-87f" userLabel="GuideViewHeader">
                                                 <rect key="frame" x="20" y="36" width="335" height="34"/>
                                                 <subviews>
@@ -682,7 +634,7 @@ Ut sed erat eget ex maximus pellentesque in non diam. Sed laoreet faucibus venen
                                                 <rect key="frame" x="20" y="537" width="335" height="34"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="eat-j6-dRf">
-                                                        <rect key="frame" x="0.0" y="5" width="24.000000000000007" height="24"/>
+                                                        <rect key="frame" x="0.0" y="5" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="KlC-JV-NJL"/>
                                                             <constraint firstAttribute="height" constant="24" id="tm9-yd-3Q8"/>
@@ -773,7 +725,9 @@ OneSource Consultant</string>
                                                             <constraint firstAttribute="height" constant="65" id="vdJ-YU-4JS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <state key="normal" title="Get more search results on MilitaryOneSource.mil">
+                                                        <state key="normal">
+                                                            <string key="title">Get more search results on
+MilitaryOneSource.mil</string>
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                     </button>
@@ -796,6 +750,7 @@ OneSource Consultant</string>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="F00-ll-Hif" firstAttribute="top" secondItem="1qg-f2-rF8" secondAttribute="bottom" constant="20" id="1tD-hV-a9D"/>
+                                            <constraint firstItem="miL-6u-rmW" firstAttribute="top" secondItem="A0f-vu-IeA" secondAttribute="top" constant="10" id="3zK-kf-DfM"/>
                                             <constraint firstItem="F00-ll-Hif" firstAttribute="leading" secondItem="A0f-vu-IeA" secondAttribute="leading" constant="20" id="5ov-Mw-Igx"/>
                                             <constraint firstAttribute="trailing" secondItem="9e3-Xr-5G6" secondAttribute="trailing" id="7pV-fy-nsD"/>
                                             <constraint firstAttribute="trailing" secondItem="WAK-7x-87f" secondAttribute="trailing" constant="20" id="9GZ-SS-P2W"/>
@@ -803,6 +758,7 @@ OneSource Consultant</string>
                                             <constraint firstAttribute="bottom" secondItem="9e3-Xr-5G6" secondAttribute="bottom" constant="10" id="AKj-1f-m0d"/>
                                             <constraint firstItem="rRE-Cg-je4" firstAttribute="leading" secondItem="A0f-vu-IeA" secondAttribute="leading" id="F0y-hM-MNR"/>
                                             <constraint firstItem="9e3-Xr-5G6" firstAttribute="top" secondItem="zYf-b1-2hI" secondAttribute="bottom" constant="8" id="HQy-fl-adB"/>
+                                            <constraint firstAttribute="trailing" secondItem="miL-6u-rmW" secondAttribute="trailing" constant="20" id="JTW-xJ-frZ"/>
                                             <constraint firstItem="rRE-Cg-je4" firstAttribute="top" secondItem="F00-ll-Hif" secondAttribute="bottom" constant="40" id="QhM-9l-G4z"/>
                                             <constraint firstItem="9Vb-z5-LMA" firstAttribute="top" secondItem="A0f-vu-IeA" secondAttribute="top" constant="8" id="aCz-Tn-eQI"/>
                                             <constraint firstAttribute="trailing" secondItem="F00-ll-Hif" secondAttribute="trailing" constant="20" id="bV6-RC-uvz"/>
@@ -839,11 +795,6 @@ OneSource Consultant</string>
                             <constraint firstItem="T3Y-2i-Dyx" firstAttribute="top" secondItem="gCB-9k-o8X" secondAttribute="top" id="yWY-cv-gHK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gCB-9k-o8X"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="U8S-a0-lqk"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="callButton" destination="MqR-tz-Sin" id="SDj-8o-lxv"/>
@@ -927,7 +878,7 @@ you with today?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ur5-ng-e92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="-1493"/>
+            <point key="canvasLocation" x="2801" y="-1570"/>
         </scene>
     </scenes>
     <resources>
@@ -939,10 +890,12 @@ you with today?</string>
         <image name="connect_focused_ic" width="24.5" height="25"/>
         <image name="home_focused" width="18" height="18.5"/>
         <image name="home_ic" width="18" height="18.5"/>
-        <image name="logo_milonesrc" width="810" height="258"/>
         <image name="millife_focused_ic" width="23.5" height="24"/>
         <image name="millife_ic" width="23.5" height="24"/>
         <image name="search" width="24" height="24"/>
         <image name="search_bar" width="280" height="41"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
 </document>

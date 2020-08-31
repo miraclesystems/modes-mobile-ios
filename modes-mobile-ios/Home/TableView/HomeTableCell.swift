@@ -6,6 +6,8 @@ class HomeTableCell: UITableViewCell {
 
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var guideImage: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

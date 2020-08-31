@@ -4,8 +4,8 @@ import UIKit
 
 class HomeTableDataSource: NSObject, UITableViewDataSource{
     
-    var myImages = ["More", "And More","And Much More"]
-    var myLabels = [ "More", "And More", "And Much More"]
+    var myImages = ["moving", "oconus","housing"]
+    var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myLabels.count
@@ -22,7 +22,7 @@ class HomeTableDataSource: NSObject, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath) as! HomeTableCell
         
        
-
+        cell.guideImage.image = UIImage(named: myImages[indexPath.item])
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
