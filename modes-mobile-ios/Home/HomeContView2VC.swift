@@ -33,8 +33,14 @@ class HomeContView2VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        viewSpeakwith.layer.cornerRadius = 5
+        viewSpeakwith.layer.borderWidth = 0.0
+        viewSpeakwith.layer.shadowColor = UIColor.black.cgColor
+        viewSpeakwith.layer.shadowOffset = CGSize(width: 5, height: 5)
+        viewSpeakwith.layer.shadowRadius = 5.0
+        viewSpeakwith.layer.shadowOpacity = 0.1
+        viewSpeakwith.layer.masksToBounds = false //<-
     }
     
 

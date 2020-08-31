@@ -27,7 +27,7 @@ class HomeTableView: UIView {
         bundle.loadNibNamed("HomeTableView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
-        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.layer.masksToBounds = false
         
         initTableView()
@@ -44,11 +44,11 @@ class HomeTableView: UIView {
         //tableView.register(nib, forCellWithReuseIdentifier: "HomeTableCell")
         tableView.register(nib, forCellReuseIdentifier: "HomeTableCell")
         
-        
+        tableView.delegate = tableDataSource
         //tableView.dataSource = self
         tableView.dataSource = tableDataSource
        //tableView.tableViewLayout = flowLayout
-        tableView.contentInsetAdjustmentBehavior = .always
+        //tableView.contentInsetAdjustmentBehavior = .always
         
        
     }
