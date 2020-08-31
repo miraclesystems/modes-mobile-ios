@@ -72,7 +72,7 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ Animated: Bool) {
-        HomeContView2.isHidden = true
+        HomeContView2.isHidden = false
     }
     
     /*
@@ -82,7 +82,7 @@ class HomeViewController: UIViewController {
         let source = segue.source as? LocTableViewController // This is the source
         print("Back on HomeVC from unwindSearch")
         
-        let seconds = 0.15
+        let seconds = 0.25
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.MainView2.isHidden = false
         }

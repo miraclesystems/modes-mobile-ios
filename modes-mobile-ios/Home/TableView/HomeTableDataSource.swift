@@ -35,6 +35,8 @@ class HomeTableDataSource: NSObject, UITableViewDataSource{
         cell.layer.shadowOpacity = 0.2
         cell.layer.masksToBounds = false //<-
         
+        //cell.layer.backgroundColor = UIColor.blue.cgColor
+        
         //tableView.delaysContentTouches = false
         return cell
     }
