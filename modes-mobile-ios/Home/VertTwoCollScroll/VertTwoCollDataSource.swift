@@ -4,8 +4,8 @@ import UIKit
 
 class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
     
-    var myImages = ["More", "And More", "And Much More", "Again More", "And Again", "And So Much More", "More", "And More", "And Much More"]
-    var myLabels = ["More", "And More", "And Much More", "Again More", "And Again", "And So Much More", "More", "And More", "And Much More"]
+    
+    var myLabels = ["Temporary Lodging Allowance - TLA", "Temporary Lodging Expenses - TLE", "Shipping ", "Again More", "And Again", "And Much More", "More", "And More", "And Much More"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return myLabels.count

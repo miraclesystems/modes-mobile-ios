@@ -39,43 +39,28 @@ class HomeContView1VC: UIViewController {
         let source = segue.source as? SearchTableViewController // This is the source
         print("Back on HomeVC from unwindToContView1VC")
         
-        let seconds = 0.15
+        
+        let seconds = 0.35
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.parentVc?.HomeContView2.isHidden = false
-        }
-        
-        //TODO: 2nd Home Page Functionality
-        
-        /*
-        if source?.backWithData == true {
-            let mySelect = source?.mySelection
-            print("mySelect: ", mySelect)
             
-            searchInstBtn.setTitle(mySelect, for: .normal)
-            self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
-            /*
-            let seconds = 0.75
-            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                self.parentVc?.showPage3()
+            let viewToAnimate2 = self.parentVc?.HomeContView2
+            UIView.animate(withDuration: 0.25){
+                viewToAnimate2!.alpha = 1
             }
-            */
-            self.parentVc?.showPage3()
-        } else {
-            //back from upper right button press
-            //navigate to the other desired screen
-            print("Switching Location Screens")
-            let seconds = 0.5
-            if source?.fromGeoLoc == true {
-                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                    self.gotoSearchInstalltions()
-                }
-            } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                    self.goGeoLocate()
-                }
+            let viewToAnimate1 = self.parentVc?.HomeContView1
+            UIView.animate(withDuration: 0.25, animations: {
+                viewToAnimate1!.alpha = 0
+            }) { _ in
+                viewToAnimate1!.isHidden = true
             }
+            
+            
+            
         }
-        */
+        
+        
+        
     }
     
     

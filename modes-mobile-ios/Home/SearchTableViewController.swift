@@ -11,7 +11,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
     @IBOutlet weak var imgSrch: UIImageView!
     @IBOutlet weak var txtName: UITextField!
 
-    
+    var fromHomeCont1 = true
     
     var mySelection = ""
     var backWithData = false
@@ -101,9 +101,14 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
         print("title: ", title)
         mySelection = title!
-        backWithData = true
+       
         print("Running Click")
-        performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
+        
+        self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
+        
+    
+    
+        
     }
 
    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

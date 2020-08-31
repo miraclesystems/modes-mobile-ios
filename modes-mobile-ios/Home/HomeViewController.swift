@@ -44,8 +44,9 @@ class HomeViewController: UIViewController {
         }
         
         
-        //Hide the 2nd View
-        //MainView2.isHidden = false
+        //Hide the 2nd View on initial Load
+        //HomeContView2.isHidden = true
+        //HomeContView1.isHidden = false
         
         /*
         menubutton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
@@ -73,57 +74,12 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ Animated: Bool) {
         HomeContView2.isHidden = true
+        HomeContView2.alpha = 0
+        HomeContView1.isHidden = false
+        HomeContView1.alpha = 1
     }
     
-    /*
-    //Segue for passing data back
-    // This is your unwind Segue, and it must be a @IBAction
-    @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
-        let source = segue.source as? LocTableViewController // This is the source
-        print("Back on HomeVC from unwindSearch")
-        
-        let seconds = 0.15
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            self.MainView2.isHidden = false
-        }
-        
-        
-        
-        //TODO: 2nd Home Page Functionality
-        
-        
-        /*
-        if source?.backWithData == true {
-            let mySelect = source?.mySelection
-            print("mySelect: ", mySelect)
-            
-            searchInstBtn.setTitle(mySelect, for: .normal)
-            self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
-            /*
-            let seconds = 0.75
-            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                self.parentVc?.showPage3()
-            }
-            */
-            self.parentVc?.showPage3()
-        } else {
-            //back from upper right button press
-            //navigate to the other desired screen
-            print("Switching Location Screens")
-            let seconds = 0.5
-            if source?.fromGeoLoc == true {
-                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                    self.gotoSearchInstalltions()
-                }
-            } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                    self.goGeoLocate()
-                }
-            }
-        }
-        */
-    }
-    */
+    
     
 }
 
