@@ -13,11 +13,23 @@ class HomeContView2VC: UIViewController {
     
     @IBOutlet weak var viewSpeakwith: UIView!
     @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var webLinkButton: UIButton!
     
     @IBAction func callButtonTouched(_ sender: Any) {
         
+        guard let number = URL(string: "tel://" + "8003429647") else { return }
+        UIApplication.shared.open(number)
+        
+       
     }
     
+    @IBAction func webLinkTouched(_ sender: Any) {
+        if let url = URL(string: "http://www.militaryonesource.mil") {
+                   if UIApplication.shared.canOpenURL(url) {
+                       UIApplication.shared.open(url, options: [:])
+                   }
+               }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
