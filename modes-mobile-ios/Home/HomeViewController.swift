@@ -73,6 +73,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ Animated: Bool) {
         HomeContView2.isHidden = false
+        HomeContView1.isHidden = true
     }
     
     /*

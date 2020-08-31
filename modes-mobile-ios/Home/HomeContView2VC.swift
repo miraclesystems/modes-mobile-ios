@@ -11,6 +11,14 @@ class HomeContView2VC: UIViewController {
 
     var parentVc : HomeViewController?
     
+    @IBOutlet weak var viewSpeakwith: UIView!
+    @IBOutlet weak var callButton: UIButton!
+    
+    @IBAction func callButtonTouched(_ sender: Any) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
