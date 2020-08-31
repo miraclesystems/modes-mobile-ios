@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="height" constant="26" id="aGY-Oq-58N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Skip All Setup">
+                                <state key="normal" title="Skip all setup">
                                     <color key="titleColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -76,7 +76,7 @@
                                     <constraint firstAttribute="width" constant="82" id="MEs-rH-Bl8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Skip Question">
+                                <state key="normal" title="Skip question">
                                     <color key="titleColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -265,7 +265,7 @@
                                     <constraint firstAttribute="height" constant="40" id="hru-vf-LkU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="I am a Service Member" backgroundImage="button_round">
+                                <state key="normal" title="I am a service member" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="round_button_highlighted"/>
@@ -279,7 +279,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="b1e-Of-KCu"/>
                                 </constraints>
-                                <state key="normal" title="I am a Military Spouse" backgroundImage="button_round">
+                                <state key="normal" title="I am a military spouse" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="round_button_highlighted"/>
@@ -293,7 +293,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="uv8-Sb-ufc"/>
                                 </constraints>
-                                <state key="normal" title="I am a Family Member" backgroundImage="button_round">
+                                <state key="normal" title="I am a family member" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="round_button_highlighted"/>
@@ -461,8 +461,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="1mu-ot-qAS"/>
                                 </constraints>
-                                <string key="text">What's your Branch
-of Service </string>
+                                <string key="text">What's your branch
+of service </string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -475,7 +475,7 @@ of Service </string>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="4" maxX="60" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="   Select a Branch" image="dropdown_arrow" backgroundImage="dropdown_bckgrnd">
+                                <state key="normal" title="   Select a branch" image="dropdown_arrow" backgroundImage="dropdown_bckgrnd">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -616,7 +616,7 @@ of Service </string>
                                     <constraint firstItem="E8f-Re-7Bv" firstAttribute="centerY" secondItem="qoQ-mL-Mmz" secondAttribute="centerY" id="wjb-Xd-Aj2"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your Installation?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-Z0-hi7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your installation?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-Z0-hi7">
                                 <rect key="frame" x="0.0" y="130" width="295" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gST-G4-PsP"/>
@@ -752,7 +752,7 @@ of Service </string>
                                     <action selector="navbtnTouched:" destination="9XN-gu-Gy5" eventType="touchUpInside" id="mQD-Gc-h5I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showing Installations near" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-4w-UUy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showing installations near" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-4w-UUy">
                                 <rect key="frame" x="47" y="7" width="241" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="aKi-dF-Tly"/>
