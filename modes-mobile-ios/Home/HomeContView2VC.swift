@@ -9,8 +9,11 @@ import UIKit
 
 class HomeContView2VC: UIViewController {
 
+    @IBOutlet weak var labelSearchResults: UILabel!
     var parentVc : HomeViewController?
     
+    @IBOutlet weak var vertTwoCellView: VertTwoCollView!
+    @IBOutlet weak var homeTableView: HomeTableView!
     @IBOutlet weak var viewSpeakwith: UIView!
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var webLinkButton: UIButton!
@@ -22,17 +25,33 @@ class HomeContView2VC: UIViewController {
         
        
     }
-    
+
+    override func viewDidAppear(_ animated: Bool) {
+        homeTableView.viewModel = self.parentVc?.viewModel
+        labelSearchResults.text = "Showing Resuts for \"" + (self.parentVc?.viewModel.topic)! + "\""
+        
+        homeTableView.tableDataSource.viewModel = self.parentVc?.viewModel
+        homeTableView.tableView.reloadData()
+        
+        
+        
+        vertTwoCellView.collectionDataSource.viewModel = self.parentVc?.viewModel
+        vertTwoCellView.collectionView.reloadData()
+        
+        
+
     @IBAction func webLinkTouched(_ sender: Any) {
         if let url = URL(string: "http://www.militaryonesource.mil") {
                    if UIApplication.shared.canOpenURL(url) {
                        UIApplication.shared.open(url, options: [:])
                    }
                }
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
         viewSpeakwith.layer.cornerRadius = 5
         viewSpeakwith.layer.borderWidth = 0.0

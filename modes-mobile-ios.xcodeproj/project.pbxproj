@@ -56,12 +56,13 @@
 		14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D124F1B9C300E2B4CA /* IQToolbar.swift */; };
 		14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */; };
 		14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */; };
+		14C3233224FD7B2E00065579 /* ModesDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233124FD7B2E00065579 /* ModesDb.swift */; };
+		14C3233724FD7C0B00065579 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233424FD7C0A00065579 /* SQLiteDB.swift */; };
+		14C3233824FD7C0B00065579 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233524FD7C0A00065579 /* SQLTable.swift */; };
+		14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233624FD7C0B00065579 /* SQLiteBase.swift */; };
+		14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233A24FD7C2800065579 /* CloudDB.swift */; };
+		14C3233D24FD7D1D00065579 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 14C3233C24FD7D1D00065579 /* modes.sqlite3 */; };
 		838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
-		838EFFDC24F9433D00A178A1 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */; };
-		838EFFDE24F9439200A178A1 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDD24F9439200A178A1 /* SQLiteDB.swift */; };
-		838EFFE024F9440100A178A1 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFDF24F9440100A178A1 /* SQLTable.swift */; };
-		838EFFE224F94F7600A178A1 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EFFE124F94F7600A178A1 /* CloudDB.swift */; };
-		838EFFE724F96FF900A178A1 /* modes.db in Resources */ = {isa = PBXBuildFile; fileRef = 838EFFE624F96FF900A178A1 /* modes.db */; };
 		83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073424F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
 		83DA073624F42E000054C817 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073524F42E000054C817 /* HomeViewModel.swift */; };
@@ -170,14 +171,16 @@
 		14A901D124F1B9C300E2B4CA /* IQToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift"; sourceTree = "<group>"; };
 		14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift"; sourceTree = "<group>"; };
+		14C3233124FD7B2E00065579 /* ModesDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesDb.swift; sourceTree = "<group>"; };
+		14C3233324FD7B9100065579 /* ModesDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModesDb.swift; path = "modes-mobile-ios/SQLite/ModesDb.swift"; sourceTree = "<group>"; };
+		14C3233424FD7C0A00065579 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		14C3233524FD7C0A00065579 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		14C3233624FD7C0B00065579 /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
+		14C3233A24FD7C2800065579 /* CloudDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
+		14C3233C24FD7D1D00065579 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = modes.sqlite3; path = "../../modes-mobile-droid/app/src/main/assets/databases/modes.sqlite3"; sourceTree = "<group>"; };
 		838EFFCE24F8C9B500A178A1 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = modes.sqlite3; path = ../../../Desktop/modes.sqlite3; sourceTree = "<group>"; };
 		838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
-		838EFFDD24F9439200A178A1 /* SQLiteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
-		838EFFDF24F9440100A178A1 /* SQLTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
-		838EFFE124F94F7600A178A1 /* CloudDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
 		838EFFE324F9514400A178A1 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		838EFFE624F96FF900A178A1 /* modes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.db; sourceTree = "<group>"; };
 		83DA073224F42DDC0054C817 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		83DA073524F42E000054C817 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A90A0EB324FBB9D000341C9E /* HomeContView1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeContView1VC.swift; path = "modes-mobile-ios/Home/HomeContView1VC.swift"; sourceTree = SOURCE_ROOT; };
@@ -279,6 +282,7 @@
 		1487F58F24E5E6E300C13817 = {
 			isa = PBXGroup;
 			children = (
+				14C3233324FD7B9100065579 /* ModesDb.swift */,
 				838EFFE324F9514400A178A1 /* Bridging-Header.h */,
 				1487F59A24E5E6E300C13817 /* modes-mobile-ios */,
 				1487F5B124E5E6E400C13817 /* modes-mobile-iosTests */,
@@ -301,7 +305,8 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				838EFFE624F96FF900A178A1 /* modes.db */,
+				14C3233C24FD7D1D00065579 /* modes.sqlite3 */,
+				14C3232224FD6BE800065579 /* SQLite */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
 				A958EB6E24F5262300989D70 /* Navigation */,
@@ -316,10 +321,6 @@
 				1487F5A624E5E6E400C13817 /* LaunchScreen.storyboard */,
 				1487F5A924E5E6E400C13817 /* Info.plist */,
 				143AB8A224EF183D002D0029 /* constants.swift */,
-				838EFFDB24F9433D00A178A1 /* SQLiteBase.swift */,
-				838EFFDD24F9439200A178A1 /* SQLiteDB.swift */,
-				838EFFDF24F9440100A178A1 /* SQLTable.swift */,
-				838EFFE124F94F7600A178A1 /* CloudDB.swift */,
 			);
 			path = "modes-mobile-ios";
 			sourceTree = "<group>";
@@ -379,6 +380,18 @@
 			);
 			name = IQKeyboardManagerSwift;
 			path = ../IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		14C3232224FD6BE800065579 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				14C3233A24FD7C2800065579 /* CloudDB.swift */,
+				14C3233624FD7C0B00065579 /* SQLiteBase.swift */,
+				14C3233424FD7C0A00065579 /* SQLiteDB.swift */,
+				14C3233524FD7C0A00065579 /* SQLTable.swift */,
+				14C3233124FD7B2E00065579 /* ModesDb.swift */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 		838EFFD124F8CAF800A178A1 /* Frameworks */ = {
@@ -447,8 +460,8 @@
 			children = (
 				A9FEEBFB24FB1F2F00EB7CA6 /* HomeTableView.swift */,
 				A9FEEBF924FB1F2F00EB7CA6 /* HomeTableView.xib */,
-				A9FEEBFA24FB1F2F00EB7CA6 /* HomeTableCell.swift */,
 				A9FEEBFC24FB1F2F00EB7CA6 /* HomeTableCell.xib */,
+				A9FEEBFA24FB1F2F00EB7CA6 /* HomeTableCell.swift */,
 				A9FEEBFE24FB1F3000EB7CA6 /* HomeTableDataSource.swift */,
 			);
 			path = TableView;
@@ -573,7 +586,6 @@
 			files = (
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
-				838EFFE724F96FF900A178A1 /* modes.db in Resources */,
 				A9FEEC0224FB1F3000EB7CA6 /* HomeTableCell.xib in Resources */,
 				A9FEEBFF24FB1F3000EB7CA6 /* HomeTableView.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
@@ -588,6 +600,7 @@
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
 				A9FEEBF624FABB5300EB7CA6 /* VertTwoCollView.xib in Resources */,
+				14C3233D24FD7D1D00065579 /* modes.sqlite3 in Resources */,
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
 				A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */,
@@ -619,6 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C3233224FD7B2E00065579 /* ModesDb.swift in Sources */,
 				14A901D424F1B9C400E2B4CA /* IQTitleBarButtonItem.swift in Sources */,
 				A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */,
 				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
@@ -626,19 +640,18 @@
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
 				A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */,
 				A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */,
-				838EFFDC24F9433D00A178A1 /* SQLiteBase.swift in Sources */,
 				A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */,
 				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
-				838EFFDE24F9439200A178A1 /* SQLiteDB.swift in Sources */,
 				14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */,
+				14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */,
 				14A901CD24F1B9AB00E2B4CA /* IQTextView.swift in Sources */,
 				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
+				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
 				14A901CA24F1B99600E2B4CA /* IQKeyboardManagerConstants.swift in Sources */,
 				14A901CB24F1B99600E2B4CA /* IQKeyboardManagerConstantsInternal.swift in Sources */,
-				838EFFE024F9440100A178A1 /* SQLTable.swift in Sources */,
 				14A901C324F1B98300E2B4CA /* IQNSArray+Sort.swift in Sources */,
 				14A901C424F1B98300E2B4CA /* IQUIViewController+Additions.swift in Sources */,
 				A9FEEC0424FB1F3000EB7CA6 /* HomeTableDataSource.swift in Sources */,
@@ -648,7 +661,6 @@
 				14A901C724F1B98300E2B4CA /* IQUIView+Hierarchy.swift in Sources */,
 				14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */,
 				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
-				838EFFE224F94F7600A178A1 /* CloudDB.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */,
 				A9FEEC0124FB1F3000EB7CA6 /* HomeTableView.swift in Sources */,
@@ -679,6 +691,8 @@
 				1487F5D524E5EB0500C13817 /* BaseViewController.swift in Sources */,
 				143AB8B724F1A54E002D0029 /* UserSettingsBranchViewController.swift in Sources */,
 				A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */,
+				14C3233724FD7C0B00065579 /* SQLiteDB.swift in Sources */,
+				14C3233824FD7C0B00065579 /* SQLTable.swift in Sources */,
 				1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */,
 				A90A0EB424FBB9D000341C9E /* HomeContView1VC.swift in Sources */,
 			);

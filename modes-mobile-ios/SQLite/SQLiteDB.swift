@@ -12,7 +12,7 @@ import Foundation
 @objc(SQLiteDB)
 class SQLiteDB: SQLiteBase {
     /// The SQLite database file name - defaults to `data.db`.
-    var DB_NAME = "modes.db"
+    var DB_NAME = "modes.sqlite3"
     /// Does this database have CloudKit support for remote data saving?
     var cloudEnabled = false {
         didSet {

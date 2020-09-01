@@ -12,3 +12,12 @@ class HomeModel : Codable{
     var value : String? = "Hello World"
     
 }
+
+
+class HomePageCardModel : Codable{
+
+    var id : Int?
+    var cardType : String?
+    var cardTitle : String?
+    var recommended : Bool?
+}

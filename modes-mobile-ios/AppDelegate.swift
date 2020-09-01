@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // set the url base
         BASE_URL = STAGING_BASE_URL
         
+        copyDbFromBundleIfNeeded()
+        
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Base", bundle: nil)
@@ -36,6 +38,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         return true
+    }
+    
+    func copyDbFromBundleIfNeeded(){
+        
+        
+
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let destURL = documentsURL!.appendingPathComponent("modes").appendingPathExtension("sqlite3")
+        guard let sourceURL = Bundle.main.url(forResource: "modes", withExtension: "sqlite3")
+            else {
+                print("Source File not found.")
+                return
+        }
+        
+        let fileManager = FileManager.default
+        do {
+            if(!destURL.checkFileExist()){
+                try fileManager.copyItem(at: sourceURL, to: destURL)
+            }
+        } catch {
+            print("Unable to copy file")
+        }
+        
+       
+        
+       
+        
+      
+        
+        
     }
 
     // MARK: UISceneSession Lifecycle
@@ -55,5 +87,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     */
 
 
+}
+
+extension URL    {
+    func checkFileExist() -> Bool {
+        let path = self.path
+        if (FileManager.default.fileExists(atPath: path))   {
+            print("FILE AVAILABLE")
+            return true
+        }else        {
+            print("FILE NOT AVAILABLE")
+            return false;
+        }
+    }
 }
 

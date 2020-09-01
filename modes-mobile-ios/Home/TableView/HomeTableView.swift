@@ -5,6 +5,7 @@ import UIKit
 //@IBDesignable
 class HomeTableView: UIView {
     
+    var viewModel : HomeViewModel?
     let tableDataSource = HomeTableDataSource()
     //let flowLayout = HomeTableFlowLayout()
 
@@ -43,8 +44,9 @@ class HomeTableView: UIView {
         let nib = UINib(nibName: "HomeTableCell", bundle: nil)
         //tableView.register(nib, forCellWithReuseIdentifier: "HomeTableCell")
         tableView.register(nib, forCellReuseIdentifier: "HomeTableCell")
-        
-        tableView.delegate = tableDataSource
+         
+        tableDataSource.viewModel = self.viewModel
+
         //tableView.dataSource = self
         tableView.dataSource = tableDataSource
        //tableView.tableViewLayout = flowLayout
