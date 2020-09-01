@@ -901,12 +901,7 @@ you with today?</string>
             <point key="canvasLocation" x="2801" y="-1"/>
         </scene>
     </scenes>
-<<<<<<< HEAD
-=======
-    <inferredMetricsTieBreakers>
-        <segue reference="jNw-2U-jzd"/>
-    </inferredMetricsTieBreakers>
->>>>>>> master
+
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="back_arrow" width="15" height="12"/>
