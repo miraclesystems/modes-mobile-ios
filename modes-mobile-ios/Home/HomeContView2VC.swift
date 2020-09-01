@@ -37,6 +37,7 @@ class HomeContView2VC: UIViewController {
         
         vertTwoCellView.collectionDataSource.viewModel = self.parentVc?.viewModel
         vertTwoCellView.collectionView.reloadData()
+    }
         
         
 
