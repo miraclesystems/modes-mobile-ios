@@ -50,6 +50,7 @@ extension UIViewController {
 
 class SSASideMenu: UIViewController, UIGestureRecognizerDelegate {
     
+    
     @objc enum SSASideMenuPanDirection: Int {
         case edge = 0
         case everyWhere = 1
@@ -96,9 +97,9 @@ class SSASideMenu: UIViewController, UIGestureRecognizerDelegate {
         var scaleBackground: Bool = true
         var parallaxEnabled: Bool = true
         var bouncesHorizontally: Bool = true
-        var statusBarStyle: SSAStatusBarStyle = .black
+        var statusBarStyle: SSAStatusBarStyle = .light
         
-        init(fade: Bool = true, scale: Bool = true, scaleBackground: Bool = true, parallaxEnabled: Bool = true, bouncesHorizontally: Bool = true, statusBarStyle: SSAStatusBarStyle = .black) {
+        init(fade: Bool = true, scale: Bool = true, scaleBackground: Bool = true, parallaxEnabled: Bool = true, bouncesHorizontally: Bool = true, statusBarStyle: SSAStatusBarStyle = .light) {
             
             self.fade = fade
             self.scale = scale
@@ -204,7 +205,7 @@ class SSASideMenu: UIViewController, UIGestureRecognizerDelegate {
     @IBInspectable var bouncesHorizontally: Bool = true
     
     // MARK : Public Properties: MenuView
-    @IBInspectable var statusBarStyle: SSAStatusBarStyle = .black
+    @IBInspectable var statusBarStyle: SSAStatusBarStyle = .light
     
     // MARK : Private Properties: ContentView
     @IBInspectable var contentViewScaleValue: Float = 0.7
@@ -852,7 +853,10 @@ class SSASideMenu: UIViewController, UIGestureRecognizerDelegate {
         }
         
         if visible || contentViewContainer.frame.origin.y <= 0, let cntViewController = contentViewController {
-            style = cntViewController.preferredStatusBarStyle
+            //style = cntViewController.preferredStatusBarStyle
+            style = .lightContent
+            
+            
         }
         
         return style

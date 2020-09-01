@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTableView" customModule="modes_mobile_ios" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ML_ViewAll_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="IKU-ug-ZRV"/>
                 <outlet property="tableView" destination="cqj-WO-nRV" id="yIB-c1-lWQ"/>
@@ -27,10 +27,10 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="cqj-WO-nRV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="KJr-7N-Dcb"/>
-                <constraint firstItem="cqj-WO-nRV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SZn-yT-dWj"/>
-                <constraint firstItem="cqj-WO-nRV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="klu-Te-e7K"/>
-                <constraint firstItem="cqj-WO-nRV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yQY-5u-RMV"/>
+                <constraint firstItem="cqj-WO-nRV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4W0-gM-oBN"/>
+                <constraint firstItem="cqj-WO-nRV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="IRo-kW-cRs"/>
+                <constraint firstItem="cqj-WO-nRV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ky7-ZS-Pld"/>
+                <constraint firstItem="cqj-WO-nRV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WZP-uP-kIZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -1,13 +1,13 @@
-//  HomeTableView.swift
+//  ML_ViewAll_TableView.swift
 
 import UIKit
 
 //@IBDesignable
-class HomeTableView: UIView {
+class ML_ViewAll_TableView: UIView {
     
     var viewModel : HomeViewModel?
-    let tableDataSource = HomeTableDataSource()
-    //let flowLayout = HomeTableFlowLayout()
+    let tableDataSource = ML_ViewAll_TableDataSource()
+    //let flowLayout = ML_ViewAll_TableFlowLayout()
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -24,8 +24,8 @@ class HomeTableView: UIView {
     
     private func commonInit() {
         //let bundle = Bundle(for: type(of: self))
-        let bundle = Bundle(for: HomeTableView.self)
-        bundle.loadNibNamed("HomeTableView", owner: self, options: nil)
+        let bundle = Bundle(for: ML_ViewAll_TableView.self)
+        bundle.loadNibNamed("ML_ViewAll_TableView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         //contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -41,9 +41,9 @@ class HomeTableView: UIView {
     private func initTableView() {
         //tableView.register(UINib(nibName: "LT_TableViewCell", bundle: nil), forCellReuseIdentifier: "ALCell")
         
-        let nib = UINib(nibName: "HomeTableCell", bundle: nil)
-        //tableView.register(nib, forCellWithReuseIdentifier: "HomeTableCell")
-        tableView.register(nib, forCellReuseIdentifier: "HomeTableCell")
+        let nib = UINib(nibName: "ML_ViewAll_TableCell", bundle: nil)
+        //tableView.register(nib, forCellWithReuseIdentifier: "ML_ViewAll_TableCell")
+        tableView.register(nib, forCellReuseIdentifier: "ML_ViewAll_TableCell")
          
         tableDataSource.viewModel = self.viewModel
 

@@ -9,6 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
+
 
     var viewModel : HomeViewModel = HomeViewModel()
     

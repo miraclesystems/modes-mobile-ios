@@ -13,6 +13,10 @@ class UserSettingsViewController: UIViewController {
     // the view model
     var viewModel : UserSettingsViewModel?
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     /// IBOutlets
     
     // container views
@@ -116,8 +120,6 @@ class UserSettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         
         // set a reference back to the parent vc for contained view controllers
         // this is how the childeren should reference the view model

@@ -28,6 +28,11 @@ class CustomTableViewCell: UITableViewCell {
 
 class RightMenuViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
+    
     //Array of Page Titles
     let titles: [String] = ["First", "Second", "Third"]
     //Array of Page Images
