@@ -6,7 +6,11 @@ class HorzCollCell: UICollectionViewCell {
 
     @IBOutlet weak var labelHeader: UILabel!
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var bottomImage: UIImageView!
+    
     
     @IBOutlet weak var imgRecommended: UIImageView!
     override func awakeFromNib() {

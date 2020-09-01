@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var testMenuButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +68,10 @@ class HomeViewController: UIViewController {
         //HomeContView2.isHidden = true
         //HomeContView1.isHidden = false
         
+        
+        testMenuButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+
+
         /*
         menubutton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
         */

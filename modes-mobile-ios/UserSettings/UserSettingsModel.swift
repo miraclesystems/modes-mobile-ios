@@ -42,5 +42,5 @@ class LocationByPostalCode:Codable{
 
 class BranchesModel : Codable{
     
-    var branches : [String] = ["", "Army", "Navy", "Air Force", "Marines"]
+    var branches : [String] = ["Army", "Marine Corps", "Navy", "Air Force", "Coast Guard", "National Guard", "Reserves", "DOD Civilian", "N/A"]
 }

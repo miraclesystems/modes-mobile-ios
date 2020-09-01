@@ -69,7 +69,13 @@
             <size key="customSize" width="137" height="143"/>
             <connections>
                 <outlet property="backView" destination="hU8-8c-BdL" id="k7p-2L-Sre"/>
+
                 <outlet property="imgRecommended" destination="Iou-dj-4mX" id="neL-MH-Voz"/>
+
+                <outlet property="bottomImage" destination="Iou-dj-4mX" id="yUu-DU-AcR"/>
+                <outlet property="headerImage" destination="8vv-4R-pVU" id="UdT-4l-LYQ"/>
+                <outlet property="headerLabel" destination="Nzf-AR-5Z0" id="CLM-VY-NSz"/>
+
                 <outlet property="label" destination="cwb-5u-Vce" id="8FP-xA-q5r"/>
                 <outlet property="labelHeader" destination="Nzf-AR-5Z0" id="3HI-Xd-XWg"/>
             </connections>

@@ -28,7 +28,7 @@ class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 5, height: 5)
         cell.layer.shadowRadius = 5.0
-        cell.layer.shadowOpacity = 0.2
+        cell.layer.shadowOpacity = 0.1
         cell.layer.masksToBounds = false //<-
         
         collectionView.delaysContentTouches = false
