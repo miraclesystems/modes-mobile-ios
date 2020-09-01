@@ -435,6 +435,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Nu-z43">
                                 <rect key="frame" x="11" y="17" width="15" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="back button" label="back button"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Hsl-fW-Mh8"/>
                                     <constraint firstAttribute="width" constant="15" id="pYI-Tc-tFi"/>
@@ -900,6 +901,12 @@ you with today?</string>
             <point key="canvasLocation" x="2801" y="-1"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
+=======
+    <inferredMetricsTieBreakers>
+        <segue reference="jNw-2U-jzd"/>
+    </inferredMetricsTieBreakers>
+>>>>>>> master
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="back_arrow" width="15" height="12"/>
