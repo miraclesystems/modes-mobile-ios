@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -121,7 +121,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E7m-jc-Fci"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Benefits Finder" image="benefits_ic" selectedImage="benefits_focused_ic" id="NvV-k1-ksA"/>
+                    <tabBarItem key="tabBarItem" title="Benefits" image="benefits_ic" selectedImage="benefits_focused_ic" id="NvV-k1-ksA"/>
                     <navigationItem key="navigationItem" id="jbY-o6-G0h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CX1-eb-MMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -259,7 +259,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MilLife Guides" image="millife_ic" selectedImage="millife_focused_ic" id="Gqj-Qj-rA9"/>
+                    <tabBarItem key="tabBarItem" title="Guides" image="millife_ic" selectedImage="millife_focused_ic" id="Gqj-Qj-rA9"/>
                     <navigationItem key="navigationItem" id="Q3S-W3-DNe"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -880,6 +880,7 @@ you with today?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LaY-yM-cfF"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nol-xZ-3FO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -894,6 +895,7 @@ you with today?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="InB-WO-0EL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUP-8R-cus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -901,7 +903,9 @@ you with today?</string>
             <point key="canvasLocation" x="2801" y="-1"/>
         </scene>
     </scenes>
-
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -920,7 +924,4 @@ you with today?</string>
         <image name="search" width="24" height="24"/>
         <image name="search_bar" width="280" height="41"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
 </document>
