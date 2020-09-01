@@ -92,14 +92,7 @@
                     <connections>
                         <outlet property="HomeContView1" destination="VMG-w6-DOV" id="NGH-an-hNA"/>
                         <outlet property="HomeContView2" destination="t9s-Sc-Sgg" id="Xkb-ud-bGn"/>
-
-                        <outlet property="MainView1" destination="9zS-vQ-ck1" id="0AG-ty-Xsv"/>
-                        <outlet property="MainView2" destination="Fd9-gp-DYY" id="mSg-4J-G2y"/>
-                        <outlet property="homeTableView" destination="FmD-yG-Cun" id="GyU-jZ-bFu"/>
-                        <outlet property="horzCollView" destination="hI6-0k-x8f" id="P6S-Zc-exY"/>
-
                         <outlet property="testMenuButton" destination="whm-cS-ZWP" id="3pU-V9-Oh8"/>
-
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -329,6 +322,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Nu-z43">
                                 <rect key="frame" x="11" y="17" width="15" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="back button" label="back button"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Hsl-fW-Mh8"/>
                                     <constraint firstAttribute="width" constant="15" id="pYI-Tc-tFi"/>
@@ -767,7 +761,7 @@ you with today?</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
+        <segue reference="jNw-2U-jzd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="16" height="16"/>
