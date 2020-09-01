@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -226,6 +226,8 @@ you with today?</string>
                         <outlet property="HomeContView2" destination="t9s-Sc-Sgg" id="Xkb-ud-bGn"/>
                         <outlet property="MainView1" destination="9zS-vQ-ck1" id="0AG-ty-Xsv"/>
                         <outlet property="MainView2" destination="Fd9-gp-DYY" id="mSg-4J-G2y"/>
+                        <outlet property="homeTableView" destination="FmD-yG-Cun" id="GyU-jZ-bFu"/>
+                        <outlet property="horzCollView" destination="hI6-0k-x8f" id="P6S-Zc-exY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -798,6 +800,9 @@ MilitaryOneSource.mil</string>
                     </view>
                     <connections>
                         <outlet property="callButton" destination="MqR-tz-Sin" id="SDj-8o-lxv"/>
+                        <outlet property="homeTableView" destination="1qg-f2-rF8" id="ZiY-jn-Jfa"/>
+                        <outlet property="labelSearchResults" destination="9Vb-z5-LMA" id="ed8-Gq-HKC"/>
+                        <outlet property="vertTwoCellView" destination="rRE-Cg-je4" id="GXM-S9-VBn"/>
                         <outlet property="viewSpeakwith" destination="hir-UA-UF1" id="Wne-9B-vC1"/>
                     </connections>
                 </viewController>
@@ -875,12 +880,18 @@ you with today?</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jii-2p-khc"/>
                     </view>
+                    <connections>
+                        <outlet property="horzCollView" destination="MNL-F6-mNB" id="J8T-dM-tyq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ur5-ng-e92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2801" y="-1570"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -895,7 +906,4 @@ you with today?</string>
         <image name="search" width="24" height="24"/>
         <image name="search_bar" width="280" height="41"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
 </document>

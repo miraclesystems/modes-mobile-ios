@@ -12,6 +12,7 @@ class HomeContView1VC: UIViewController {
 
     var parentVc : HomeViewController?
     
+    @IBOutlet weak var horzCollView: HorzCollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,10 @@ class HomeContView1VC: UIViewController {
     
     //Segue for passing data forward
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let source = segue.destination as? SearchTableViewController
+        source?.viewModel = self.parentVc?.viewModel
+        print("stop")
         /*
         let vc = segue.destination as! LocTableViewController
         vc.fromGeoLoc = geoLocation
@@ -37,7 +42,11 @@ class HomeContView1VC: UIViewController {
     // This is your unwind Segue, and it must be a @IBAction
     @IBAction func unwindToContView1VC(segue: UIStoryboardSegue) {
         let source = segue.source as? SearchTableViewController // This is the source
+        
+        source?.viewModel = parentVc?.viewModel
         print("Back on HomeVC from unwindToContView1VC")
+        
+        
         
         
         let seconds = 0.35

@@ -9,8 +9,11 @@ import UIKit
 
 class HomeContView2VC: UIViewController {
 
+    @IBOutlet weak var labelSearchResults: UILabel!
     var parentVc : HomeViewController?
     
+    @IBOutlet weak var vertTwoCellView: VertTwoCollView!
+    @IBOutlet weak var homeTableView: HomeTableView!
     @IBOutlet weak var viewSpeakwith: UIView!
     @IBOutlet weak var callButton: UIButton!
     
@@ -18,9 +21,26 @@ class HomeContView2VC: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        homeTableView.viewModel = self.parentVc?.viewModel
+        labelSearchResults.text = "Showing Resuts for \"" + (self.parentVc?.viewModel.topic)! + "\""
+        
+        homeTableView.tableDataSource.viewModel = self.parentVc?.viewModel
+        homeTableView.tableView.reloadData()
+        
+        
+        
+        vertTwoCellView.collectionDataSource.viewModel = self.parentVc?.viewModel
+        vertTwoCellView.collectionView.reloadData()
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }

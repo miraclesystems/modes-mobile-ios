@@ -34,12 +34,7 @@ class UserSettingsViewController: UIViewController {
         viewContainer3.isHidden = true
         btnBack.isHidden = true
         
-        // DB Testing for SQLlite
-        let db = SQLiteDB.shared
-        db.open()
-        let data = db.query(sql:"SELECT * FROM benefits")
-        let row = data[0]
-        print(row)
+        
 
         
     }

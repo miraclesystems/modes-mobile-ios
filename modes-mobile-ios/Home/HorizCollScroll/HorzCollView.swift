@@ -5,6 +5,8 @@ import UIKit
 //@IBDesignable
 class HorzCollView: UIView {
     
+    var viewModel : HomeViewModel?
+    
     let collectionDataSource = HorzCollDataSource()
     let flowLayout = HorzCollFlowLayout()
 
@@ -13,9 +15,15 @@ class HorzCollView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        collectionDataSource.viewModel = viewModel
         commonInit()
     }
     
+    func setViewModel(viewModel : HomeViewModel){
+        
+        self.viewModel = viewModel
+        collectionDataSource.viewModel = self.viewModel
+    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -32,6 +40,7 @@ class HorzCollView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        collectionDataSource.viewModel = self.viewModel
         
         initCollectionView()
         
@@ -43,6 +52,7 @@ class HorzCollView: UIView {
     private func initCollectionView() {
         let nib = UINib(nibName: "HorzCollCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "HorzCollCell")
+        
         //collectionView.dataSource = self
         collectionView.dataSource = collectionDataSource
         collectionView.collectionViewLayout = flowLayout

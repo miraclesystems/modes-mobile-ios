@@ -4,11 +4,16 @@ import UIKit
 
 class HomeTableDataSource: NSObject, UITableViewDataSource{
     
+    
+    var viewModel : HomeViewModel?
     var myImages = ["moving", "oconus","housing"]
     var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myLabels.count
+        
+        
+        return viewModel?.getGuides(topic: viewModel?.topic ?? "").count ?? 0
+       
     }
     
     /*
@@ -22,11 +27,11 @@ class HomeTableDataSource: NSObject, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath) as! HomeTableCell
         
        
-        cell.guideImage.image = UIImage(named: myImages[indexPath.item])
+        cell.guideImage.image = UIImage(named: "guide_placeholder")
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
-        cell.label.text = myLabels[indexPath.item]
+        cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
         cell.layer.cornerRadius = 5
         cell.layer.borderWidth = 0.0
         cell.layer.shadowColor = UIColor.black.cgColor

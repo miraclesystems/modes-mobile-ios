@@ -13,6 +13,7 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
     var hasDataError = false
     var dataError : String = ""
     
+    var topic = ""
     
     let model = HomeModel()
     
@@ -31,6 +32,117 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
         dataLoaded = true
     }
     
+    
+    func getGuides(topic: String)-> [String]{
+
+        var list = [String]()
+
+        var results = ModesDb.shared.getGuidesByKeyWordSearch(searchTerm: topic)
+        for result in results{
+    
+            var guide = result["Guide"] as! String
+            list.append(guide)
+
+        }
+        return list
+    }
+    func getBenefits(topic: String)-> [String]{
+
+        var list = [String]()
+
+        var results = ModesDb.shared.getBenefitsByKeyWordSearch(searchTerm: topic)
+        for result in results{
+    
+            var benefit = result["Benefit"] as! String
+            list.append(benefit)
+
+        }
+        return list
+    }
+    
+    func getTopics(topic : String)->[String]{
+        
+        var list = [String]()
+        var results = ModesDb.shared.getGuidesByKeyWordSearch(searchTerm: topic)
+        
+        for item in results{
+            
+            var keywords = item["MilLife Guide Topic Keywords"] as! String
+            var keywords_array = keywords.split(separator: ",")
+
+            for keyword in keywords_array{
+                list.append(String(keyword))
+            }
+        }
+        
+        
+        results = ModesDb.shared.getBenefitsByKeyWordSearch(searchTerm: topic)
+        for item in results{
+            
+            var keywords = item["Keywords"] as! String
+            var keywords_array = keywords.split(separator: ",")
+
+            for keyword in keywords_array{
+                list.append(String(keyword))
+            }
+        }
+
+        return list
+    }
+    
+    func getSuggestedCards()->[HomePageCardModel]{
+        
+       var list = [HomePageCardModel]()
+        
+        var results = ModesDb.shared.getBenefitsByAudience(audience: "spouse")
+        
+        for item in results{
+            
+            var card = HomePageCardModel()
+            card.id = item["ID"] as! Int?
+            card.cardTitle = item["Benefit"] as! String
+            card.cardType = "BENEFIT"
+            card.recommended = true
+                
+            list.append(card)
+        }
+        
+        
+        results = ModesDb.shared.getGuidesByAudience(audience: "spouse")
+        for item in results{
+
+            var card = HomePageCardModel()
+            card.id = item["ID"] as! Int?
+            card.cardTitle = item["Guide"] as! String
+            card.cardType = "MILLIFE GUIDES"
+            card.recommended = true
+
+            list.append(card)
+
+        }
+
+        
+        var card = HomePageCardModel()
+        card.id = 1
+        card.cardTitle = "Speak with a consultant 24/7"
+        card.cardType = "CONNECT"
+        card.recommended = false
+
+        list.append(card)
+        
+        
+        var card1 = HomePageCardModel()
+        card1.id = 1
+        card1.cardTitle = "Give us your feedback"
+        card1.cardType = "ABOUT US"
+        card1.recommended = false
+
+        list.append(card1)
+        
+        print("results returned")
+        
+        return list
+    }
     
 }
 

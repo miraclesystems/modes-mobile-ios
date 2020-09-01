@@ -7,6 +7,9 @@ import UIKit
 
 class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     
+    
+    var viewModel : HomeViewModel?
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imgSrch: UIImageView!
     @IBOutlet weak var txtName: UITextField!
@@ -43,7 +46,23 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         tableView.delegate = self
         tableView.dataSource = self
         
-        namesArr = ["COVID-19", "New to the Military","Relationships","Moving & Housing", "Personal Finance"]
+        namesArr = ["COVID-19",
+                    "Divorce",
+                    "Relationships",
+                    "Finances",
+                    "Personal Finance",
+                    "MilTax",
+                    "Parenting & Child Care",
+                    "MWR Digital Library",
+                    "PCS",
+                    "Deployment",
+                    "Survivor Benefit",
+                    "National Guard",
+                    "Counseling",
+                    "MyCAA"]
+        
+    
+        
         print("namesArr:", namesArr)
         
         txtName.becomeFirstResponder()
@@ -56,18 +75,29 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         return true
     }
     
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+       
+    }
+    
    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
         //input text
+        
        let searchText  = textField.text! + string
         //add matching text to arrays
-        searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
+    
+        if(searchText.count >= 3){
         
-        if(searchNamesArrRes.count == 0){
-            searching = false
-        }else{
-            searching = true
+            searchNamesArrRes = viewModel?.getTopics(topic: searchText) as! [String]
+            
+            //searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
+            
+            if(searchNamesArrRes.count == 0){
+                searching = false
+            }else{
+                searching = true
+            }
+            self.tableView.reloadData();
         }
-        self.tableView.reloadData();
         
         return true
     }
@@ -103,6 +133,8 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         mySelection = title!
        
         print("Running Click")
+    
+        self.viewModel?.topic = title!
         
         self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
         

@@ -4,11 +4,12 @@ import UIKit
 
 class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
     
+    var viewModel : HomeViewModel?
     
     var myLabels = ["Temporary Lodging Allowance - TLA", "Temporary Lodging Expenses - TLE", "Shipping ", "Again More", "And Again", "And Much More", "More", "And More", "And Much More"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return myLabels.count
+        return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -20,7 +21,8 @@ class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
-        cell.label.text = myLabels[indexPath.item]
+        //cell.label.text = myLabels[indexPath.item]
+        cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         cell.layer.cornerRadius = 5
         cell.layer.borderWidth = 0.0
         cell.layer.shadowColor = UIColor.black.cgColor
