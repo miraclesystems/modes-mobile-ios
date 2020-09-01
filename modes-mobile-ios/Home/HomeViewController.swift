@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
         
         // pass the view model to the horzCollView
         
-        horzCollView.setViewModel(viewModel: viewModel)
+        //horzCollView.setViewModel(viewModel: viewModel)
         
         
         
