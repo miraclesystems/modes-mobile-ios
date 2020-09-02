@@ -10,11 +10,18 @@ import UIKit
 class MilLifeByCatContVC: UIViewController {
 
     var parentVc : MilLifeGuidesController?
+    @IBOutlet var ml_verttwocollview: ML_VertTwoCollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    }
+    
+    func showGuidesTableonParent(){
+        print("OnByCatVC")
+        //parentVc?.showGuidesTableView()
     }
     
 

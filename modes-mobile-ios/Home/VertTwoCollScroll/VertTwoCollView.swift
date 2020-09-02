@@ -5,6 +5,7 @@ import UIKit
 //@IBDesignable
 class VertTwoCollView: UIView {
     
+    
     let collectionDataSource = VertTwoCollDataSource()
     let flowLayout = VertTwoCollFlowLayout()
 

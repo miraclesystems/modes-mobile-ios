@@ -14,6 +14,9 @@ class MilLifeGuidesController: UIViewController {
     @IBOutlet weak var MilLifeContView1: UIView!
     @IBOutlet weak var MilLifeContView2: UIView!
     
+    @IBOutlet weak var MainVIew: UIView!
+    @IBOutlet weak var GuidesTableView: UIView!
+    @IBOutlet weak var DetailsGuide: UIView!
     
     @IBAction func btnViewAll_Touched(_ sender: Any) {
         print("btnView all touched")
@@ -24,6 +27,66 @@ class MilLifeGuidesController: UIViewController {
         print("btnByCat tounched")
         showByCat()
     }
+    
+    @IBAction func btnShowGuidesTableTouched(_ sender: Any) {
+        showOverlay(view: GuidesTableView)
+    }
+    @IBAction func btnShowGuidesDetails(_ sender: Any) {
+        showOverlay(view: DetailsGuide)
+    }
+    
+    @IBAction func backfromGuidesTouched(_ sender: Any) {
+        showMainView(view: GuidesTableView)
+    }
+    @IBAction func btn_backfromDetailsTouched(_ sender: Any) {
+        showMainView(view: DetailsGuide)
+    }
+    
+    func showMainView(view:UIView){
+        let seconds = 0.1
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let viewToAnimate2 = view
+            UIView.animate(withDuration: 0.25){
+                viewToAnimate2.alpha = 0
+            }
+            view.isHidden = true
+        }
+    }
+    
+    
+    
+    func showOverlay(view:UIView){
+        let seconds = 0.1
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let viewToAnimate2 = view
+            view.isHidden = false
+            UIView.animate(withDuration: 0.25){
+                view.alpha = 1
+            }
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    func showGuidesDetails(){
+        let seconds = 0.1
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let viewToAnimate2 = self.DetailsGuide
+            viewToAnimate2!.isHidden = false
+            UIView.animate(withDuration: 0.25){
+                viewToAnimate2!.alpha = 1
+            }
+            
+        }
+    }
+    
+    
+    
+    
     
     var vc1 : MilLifeByCatContVC?
     var vc2 : MilLifeViewAllContVC?
@@ -40,7 +103,7 @@ class MilLifeGuidesController: UIViewController {
                    case is MilLifeByCatContVC:
                        vc1 = (child as! MilLifeByCatContVC)
                        (child as! MilLifeByCatContVC).parentVc = self
-                       //(child as! MilLifeByCatContVC).ML_VertTwoCollView.collectionDataSource.viewModel = self.viewModel
+                       //(child as! MilLifeByCatContVC).ml_verttwocollview.parentVc = self
                    case is MilLifeViewAllContVC:
                        vc2 = (child as! MilLifeViewAllContVC)
                        (child as! MilLifeViewAllContVC).parentVc = self
@@ -50,7 +113,9 @@ class MilLifeGuidesController: UIViewController {
                }
         
         
-        
+        //Hide Guides TableVIew
+        GuidesTableView.isHidden = true
+        DetailsGuide.isHidden = true
         
         showByCat()
     

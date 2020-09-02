@@ -2,11 +2,12 @@
 
 import UIKit
 
-class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
+class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate{
     
     var viewModel : HomeViewModel?
     
-    var myLabels = ["COVID-19", "Financial & Legal", "Tile 3", "Again More", "And Again", "And Much More", "More", "And More", "And Much More", "More", "More", "Another", "More"]
+    
+    var myLabels = ["COVID-19", "Financial & Legal", "Tile 3", "Again More", "And Again", "And Much More"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
@@ -34,7 +35,17 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
-    
+        print ("Selected: ", indexPath.row)
+        
+        
+        
+        //performSegue(withIdentifier: "showGuidesTable", sender: nil)
+        /*
+        let VC1 = self.storyboard.instantiateViewController(withIdentifier:"ml_guides_sbid") as! MilLifeGuidesTableVC
+        self.navigationController!.pushViewController(VC1, animated: true)
+        */
+    }
 
 }
