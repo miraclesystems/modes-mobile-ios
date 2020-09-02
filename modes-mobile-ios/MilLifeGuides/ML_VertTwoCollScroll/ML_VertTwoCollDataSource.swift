@@ -6,6 +6,7 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
     
     var viewModel : HomeViewModel?
     
+    var parentVc : MilLifeByCatContVC?
     
     var myLabels = ["COVID-19", "Financial & Legal", "Tile 3", "Again More", "And Again", "And Much More"]
     
@@ -39,6 +40,7 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
     
         print ("Selected: ", indexPath.row)
         
+        parentVc?.showGuidesTableonParent()
         
         
         //performSegue(withIdentifier: "showGuidesTable", sender: nil)

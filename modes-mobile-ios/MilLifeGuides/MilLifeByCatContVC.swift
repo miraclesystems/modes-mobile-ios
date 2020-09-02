@@ -16,12 +16,16 @@ class MilLifeByCatContVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        ml_verttwocollview.parentVc = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        ml_verttwocollview.collectionDataSource.parentVc = self
+        ml_verttwocollview.collectionView.reloadData()
+    }
     func showGuidesTableonParent(){
         print("OnByCatVC")
-        //parentVc?.showGuidesTableView()
+        parentVc?.showOverlay(view: (parentVc?.DetailsGuide)!)
     }
     
 

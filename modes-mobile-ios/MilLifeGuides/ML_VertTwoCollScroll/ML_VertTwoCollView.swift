@@ -33,6 +33,8 @@ class ML_VertTwoCollView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.layer.masksToBounds = false
         
+        
+        
         initCollectionView()
         
 
@@ -46,6 +48,7 @@ class ML_VertTwoCollView: UIView {
        // collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         collectionView.delegate = collectionDataSource
+        collectionDataSource.parentVc = parentVc
        
     }
 }
