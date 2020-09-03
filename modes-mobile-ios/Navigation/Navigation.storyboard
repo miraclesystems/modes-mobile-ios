@@ -679,7 +679,7 @@ MilitaryOneSource.mil</string>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Guides" image="millife_ic" selectedImage="millife_focused_ic" id="Gqj-Qj-rA9"/>
+                    <tabBarItem key="tabBarItem" title="MiLife Guides" image="millife_ic" selectedImage="millife_focused_ic" id="Gqj-Qj-rA9"/>
                     <navigationItem key="navigationItem" id="Q3S-W3-DNe"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
