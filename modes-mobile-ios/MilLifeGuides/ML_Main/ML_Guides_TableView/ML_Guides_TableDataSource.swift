@@ -6,19 +6,21 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
     
 
     
-    var viewModel : HomeViewModel?
+    var viewModel : GuidesViewModel?
     var parentVc : MilLifeGuidesController?
     
     var myImages = ["moving", "oconus","housing"]
-    var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
+    var myLabels = [""]
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
         
+        return guides?.count ?? 0
         //return viewModel?.getGuides(topic: viewModel?.topic ?? "").count ?? 0
         
-        return myLabels.count
+       
        
     }
     
@@ -40,7 +42,11 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
-        cell.label.text = myLabels[indexPath.row]
+        //cell.label.text = myLabels[indexPath.row]
+        
+        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
+
+        cell.label.text = guides?[indexPath.row] as! String
         //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background

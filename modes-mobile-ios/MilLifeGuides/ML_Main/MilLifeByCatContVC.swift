@@ -21,7 +21,7 @@ class MilLifeByCatContVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         ml_verttwocollview.collectionDataSource.parentVc = self
-        //ml_verttwocollview.collectionView.reloadData()
+        ml_verttwocollview.collectionView.reloadData()
     }
     /*
     func showGuidesTableonParent(){

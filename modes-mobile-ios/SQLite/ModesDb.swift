@@ -10,10 +10,12 @@ import Foundation
 class ModesDb{
     
     
+    
     // makes this a siglton
     static let shared = ModesDb()
     private init(){
-        //openDb()
+   
+        
     }
     
     
@@ -79,13 +81,37 @@ class ModesDb{
     func  getGuidesByKeyWordSearch(searchTerm : String)->[[String:Any?]]{
 
         let db = SQLiteDB.shared
-        db.open()
-       
         let data =  db.query(sql:"SELECT * FROM guides WHERE [MilLife Guide Topic Keywords] LIKE '%" + searchTerm + "%'")
         db.closeDB()
         return data
     }
     
+    
+    func getAllGuiides()->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+         db.open()
+        let data = db.query(sql: "SELECT * FROM guides")
+        return data
+    }
+
+    func getGuidesByCategory(category : String)->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT * FROM guides WHERE category LIKE '%" + category + "%'")
+        return data
+    }
+
+
+
+    func getGuideByName(guide : String)->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT * FROM guides WHERE guide LIKE '%" + guide + "%'")
+        return data
+    }
     
     
     

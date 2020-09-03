@@ -20,6 +20,7 @@ class MilLifeViewAllContVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         ml_viewall_tableview.tableDataSource.parentVc = self
+        ml_viewall_tableview.tableView.reloadData()
     }
 
     /*

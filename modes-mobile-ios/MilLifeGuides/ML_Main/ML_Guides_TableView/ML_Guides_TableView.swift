@@ -5,7 +5,7 @@ import UIKit
 //@IBDesignable
 class ML_Guides_TableView: UIView {
     
-    var viewModel : HomeViewModel?
+    var viewModel : GuidesViewModel?
     let tableDataSource = ML_Guides_TableDataSource()
     //let flowLayout = ML_Guides_TableFlowLayout()
 

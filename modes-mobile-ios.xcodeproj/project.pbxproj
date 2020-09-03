@@ -56,6 +56,9 @@
 		14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D124F1B9C300E2B4CA /* IQToolbar.swift */; };
 		14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */; };
 		14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */; };
+		14BC7B1C25016D9E002B5D45 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 14BC7B1B25016D9E002B5D45 /* modes.sqlite3 */; };
+		14BC7B1E25016DE1002B5D45 /* GuidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BC7B1D25016DE1002B5D45 /* GuidesModel.swift */; };
+		14BC7B2025016F47002B5D45 /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BC7B1F25016F47002B5D45 /* GuidesViewModel.swift */; };
 		14C3233224FD7B2E00065579 /* ModesDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233124FD7B2E00065579 /* ModesDb.swift */; };
 		14C3233724FD7C0B00065579 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233424FD7C0A00065579 /* SQLiteDB.swift */; };
 		14C3233824FD7C0B00065579 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233524FD7C0A00065579 /* SQLTable.swift */; };
@@ -76,7 +79,6 @@
 		A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7224F5266100989D70 /* SSASideMenu.swift */; };
 		A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7324F5266100989D70 /* HomeViewController.swift */; };
 		A958EB7A24F5266200989D70 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7424F5266200989D70 /* RightMenuViewController.swift */; };
-		A9620D0624FE896600C599DC /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = A9620D0524FE895400C599DC /* modes.sqlite3 */; };
 		A9620D0924FE9D7A00C599DC /* MilLifeGuidesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */; };
 		A9620D0B24FEC7C000C599DC /* MilLifeByCatContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9620D0A24FEC7C000C599DC /* MilLifeByCatContVC.swift */; };
 		A9620D0D24FEC80C00C599DC /* MilLifeViewAllContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9620D0C24FEC80C00C599DC /* MilLifeViewAllContVC.swift */; };
@@ -196,6 +198,9 @@
 		14A901D124F1B9C300E2B4CA /* IQToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift"; sourceTree = "<group>"; };
 		14A901D224F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		14A901D324F1B9C400E2B4CA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift"; sourceTree = "<group>"; };
+		14BC7B1B25016D9E002B5D45 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
+		14BC7B1D25016DE1002B5D45 /* GuidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesModel.swift; sourceTree = "<group>"; };
+		14BC7B1F25016F47002B5D45 /* GuidesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
 		14C3233124FD7B2E00065579 /* ModesDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesDb.swift; sourceTree = "<group>"; };
 		14C3233324FD7B9100065579 /* ModesDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModesDb.swift; path = "modes-mobile-ios/SQLite/ModesDb.swift"; sourceTree = "<group>"; };
 		14C3233424FD7C0A00065579 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
@@ -217,7 +222,6 @@
 		A958EB7224F5266100989D70 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		A958EB7324F5266100989D70 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A958EB7424F5266200989D70 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
-		A9620D0524FE895400C599DC /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilLifeGuidesController.swift; sourceTree = "<group>"; };
 		A9620D0A24FEC7C000C599DC /* MilLifeByCatContVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilLifeByCatContVC.swift; sourceTree = "<group>"; };
 		A9620D0C24FEC80C00C599DC /* MilLifeViewAllContVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilLifeViewAllContVC.swift; sourceTree = "<group>"; };
@@ -355,7 +359,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A9620D0524FE895400C599DC /* modes.sqlite3 */,
+				14BC7B1B25016D9E002B5D45 /* modes.sqlite3 */,
 				14C3232224FD6BE800065579 /* SQLite */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
@@ -471,6 +475,8 @@
 			children = (
 				A9620D4025010F9B00C599DC /* ML_Main */,
 				A9620D3E25010F1D00C599DC /* ML_Details */,
+				14BC7B1D25016DE1002B5D45 /* GuidesModel.swift */,
+				14BC7B1F25016F47002B5D45 /* GuidesViewModel.swift */,
 			);
 			path = MilLifeGuides;
 			sourceTree = "<group>";
@@ -715,7 +721,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9620D0624FE896600C599DC /* modes.sqlite3 in Resources */,
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
 				A9620D1D24FECA5400C599DC /* ML_VertTwoCollView.xib in Resources */,
@@ -724,6 +729,7 @@
 				A9FEEC0224FB1F3000EB7CA6 /* HomeTableCell.xib in Resources */,
 				A9FEEBFF24FB1F3000EB7CA6 /* HomeTableView.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
+				14BC7B1C25016D9E002B5D45 /* modes.sqlite3 in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
 				1487F5A824E5E6E400C13817 /* LaunchScreen.storyboard in Resources */,
@@ -814,8 +820,10 @@
 				A9FEEC0124FB1F3000EB7CA6 /* HomeTableView.swift in Sources */,
 				143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */,
 				A9620D2724FEDE5900C599DC /* ML_ViewAll_TableCell.swift in Sources */,
+				14BC7B2025016F47002B5D45 /* GuidesViewModel.swift in Sources */,
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
+				14BC7B1E25016DE1002B5D45 /* GuidesModel.swift in Sources */,
 				A9B017F724F90E1E000E2320 /* HorzCollDataSource.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
 				143AB8B324F1A526002D0029 /* UserSettingsDescriptionViewController.swift in Sources */,
