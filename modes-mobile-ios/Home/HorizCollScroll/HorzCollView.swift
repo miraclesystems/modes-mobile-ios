@@ -40,8 +40,7 @@ class HorzCollView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        collectionDataSource.viewModel = self.viewModel
-        
+        collectionDataSource.viewModel = self.viewModel        
         initCollectionView()
         
        
@@ -55,6 +54,7 @@ class HorzCollView: UIView {
         
         //collectionView.dataSource = self
         collectionView.dataSource = collectionDataSource
+        collectionView.delegate = collectionDataSource
         collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         

@@ -8,6 +8,8 @@ class ML_VertTwoCollView: UIView {
     let collectionDataSource = ML_VertTwoCollDataSource()
     let flowLayout = ML_VertTwoCollFlowLayout()
 
+    var parentVc : MilLifeByCatContVC?
+        
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -31,11 +33,11 @@ class ML_VertTwoCollView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.layer.masksToBounds = false
         
+        
+        
         initCollectionView()
         
-       
-        
-        
+
     }
     
     private func initCollectionView() {
@@ -45,7 +47,8 @@ class ML_VertTwoCollView: UIView {
         collectionView.dataSource = collectionDataSource
        // collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
-        
+        collectionView.delegate = collectionDataSource
+        collectionDataSource.parentVc = parentVc
        
     }
 }
