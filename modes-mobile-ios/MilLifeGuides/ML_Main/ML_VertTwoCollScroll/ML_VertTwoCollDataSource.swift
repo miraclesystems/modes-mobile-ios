@@ -11,7 +11,9 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
-        return myLabels.count
+        
+        return parentVc?.parentVc?.viewModel?.categories.count ?? 0
+        //return myLabels.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -19,7 +21,8 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ML_VertTwoCollCell", for: indexPath) as! ML_VertTwoCollCell
         
        
-        cell.label.text = myLabels[indexPath.item]
+        cell.label.text = parentVc?.parentVc?.viewModel?.categories[indexPath.row]
+        //cell.label.text = myLabels[indexPath.item]
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
@@ -39,7 +42,9 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
     
         print ("Selected: ", indexPath.row)
         
+        parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.categories[indexPath.row] as! String
         //parentVc?.showGuidesTableonParent()
+        parentVc?.parentVc?.ml_guides_tableview.tableView.reloadData()
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.GuidesTableView)!)
         
     }

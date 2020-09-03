@@ -18,6 +18,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
         //return viewModel?.getGuides(topic: viewModel?.topic ?? "").count ?? 0
         
+        return parentVc?.parentVc?.viewModel?.getAllGuides().count ?? 0
         return myLabels.count
        
     }
@@ -40,7 +41,8 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
-        cell.label.text = myLabels[indexPath.row]
+        cell.label.text = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row]
+        //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
