@@ -17,6 +17,12 @@ class MilLifeGuidesController: UIViewController {
     @IBOutlet weak var MainVIew: UIView!
     @IBOutlet weak var GuidesTableView: UIView!
     @IBOutlet weak var DetailsGuide: UIView!
+    @IBOutlet weak var DetailsGuideCont: UIView!
+    
+    
+    @IBOutlet weak var ml_guides_tableview: ML_Guides_TableView!
+    
+    
     
     @IBAction func btnViewAll_Touched(_ sender: Any) {
         print("btnView all touched")
@@ -32,14 +38,14 @@ class MilLifeGuidesController: UIViewController {
         showOverlay(view: GuidesTableView)
     }
     @IBAction func btnShowGuidesDetails(_ sender: Any) {
-        showOverlay(view: DetailsGuide)
+        showOverlay(view: DetailsGuideCont)
     }
     
     @IBAction func backfromGuidesTouched(_ sender: Any) {
         showMainView(view: GuidesTableView)
     }
     @IBAction func btn_backfromDetailsTouched(_ sender: Any) {
-        showMainView(view: DetailsGuide)
+        showMainView(view: DetailsGuideCont)
     }
     
     func showMainView(view:UIView){
@@ -75,7 +81,7 @@ class MilLifeGuidesController: UIViewController {
     func showGuidesDetails(){
         let seconds = 0.1
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            let viewToAnimate2 = self.DetailsGuide
+            let viewToAnimate2 = self.DetailsGuideCont
             viewToAnimate2!.isHidden = false
             UIView.animate(withDuration: 0.25){
                 viewToAnimate2!.alpha = 1
@@ -90,6 +96,7 @@ class MilLifeGuidesController: UIViewController {
     
     var vc1 : MilLifeByCatContVC?
     var vc2 : MilLifeViewAllContVC?
+    var vc3 : MilLifeDetailsGuideContVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,6 +114,10 @@ class MilLifeGuidesController: UIViewController {
                    case is MilLifeViewAllContVC:
                        vc2 = (child as! MilLifeViewAllContVC)
                        (child as! MilLifeViewAllContVC).parentVc = self
+                    
+                   case is MilLifeDetailsGuideContVC:
+                       vc3 = (child as! MilLifeDetailsGuideContVC)
+                       (child as! MilLifeDetailsGuideContVC).parentVc = self
                    default:
                        break
                    }
@@ -115,10 +126,14 @@ class MilLifeGuidesController: UIViewController {
         
         //Hide Guides TableVIew
         GuidesTableView.isHidden = true
-        DetailsGuide.isHidden = true
+        DetailsGuideCont.isHidden = true
         
         showByCat()
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        ml_guides_tableview.tableDataSource.parentVc = self
     }
     
     

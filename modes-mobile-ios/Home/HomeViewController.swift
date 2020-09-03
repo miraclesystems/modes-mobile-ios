@@ -117,7 +117,40 @@ class HomeViewController: UIViewController {
         
     }
     
-    
+    func didSelectHorzTile(index: Int){
+        print("Back on Home with selection: ", index)
+        let mySelCardType = viewModel.getSuggestedCards()[index].cardType
+        
+        
+        switch mySelCardType {
+        case "MILLIFE GUIDES":
+                print("Guides")
+                tabBarController!.selectedIndex = 1
+            
+        case "BENEFIT":
+                print("Benefits")
+                tabBarController!.selectedIndex = 2
+            
+        case "FAVORITES":
+                print("Favorites")
+                tabBarController!.selectedIndex = 3
+        
+        case "CONNECT":
+                print("Connect")
+                tabBarController!.selectedIndex = 4
+        
+        case "ABOUT US":
+                print("About Us")
+                //tabBarController!.selectedIndex = 4
+           
+        default:
+            print("selected type: ", mySelCardType)
+            
+            
+            
+        }
+        
+    }
     
 }
 

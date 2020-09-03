@@ -13,5 +13,17 @@ class VertTwoCollCell: UICollectionViewCell {
         backView.layer.cornerRadius = 5;
         backView.layer.masksToBounds = true;
     }
+    
+    override var isHighlighted: Bool {
+           didSet {
+               if self.isHighlighted {
+                   backgroundColor = UIColor.gray
+                   
+               } else {
+                   backgroundColor = UIColor.black
+               }
+           }
+       }
+
 
 }

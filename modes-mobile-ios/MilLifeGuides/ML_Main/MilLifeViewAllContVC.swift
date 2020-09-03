@@ -1,5 +1,5 @@
 //
-//  MilLifeContView1VC.swift
+//  MilLifeViewAllContVC.swift
 //  modes-mobile-ios
 //
 //  Created by Neal Gentry on 9/1/20.
@@ -7,27 +7,20 @@
 
 import UIKit
 
-class MilLifeByCatContVC: UIViewController {
+class MilLifeViewAllContVC: UIViewController {
 
     var parentVc : MilLifeGuidesController?
-    @IBOutlet var ml_verttwocollview: ML_VertTwoCollView!
+    @IBOutlet var ml_viewall_tableview: ML_ViewAll_TableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        ml_verttwocollview.parentVc = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        ml_verttwocollview.collectionDataSource.parentVc = self
-        ml_verttwocollview.collectionView.reloadData()
+        ml_viewall_tableview.tableDataSource.parentVc = self
     }
-    func showGuidesTableonParent(){
-        print("OnByCatVC")
-        parentVc?.showOverlay(view: (parentVc?.DetailsGuide)!)
-    }
-    
 
     /*
     // MARK: - Navigation

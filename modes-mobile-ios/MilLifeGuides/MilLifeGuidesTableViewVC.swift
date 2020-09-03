@@ -1,16 +1,14 @@
 //
-//  MilLifeViewAllContVC.swift
+//  MilLifeGuidesTableViewVC.swift
 //  modes-mobile-ios
 //
-//  Created by Neal Gentry on 9/1/20.
+//  Created by Neal Gentry on 9/3/20.
 //
 
 import UIKit
 
-class MilLifeViewAllContVC: UIViewController {
+class MilLifeGuidesTableViewVC: UIViewController {
 
-    var parentVc : MilLifeGuidesController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,20 +1,22 @@
-//  ML_ViewAll_TableDataSource.swift
+//  ML_Articles_TableDataSource.swift
 
 import UIKit
 
-class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDelegate{
+class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewDelegate{
     
 
     
     var viewModel : HomeViewModel?
-    var myImages = ["moving", "oconus","housing"]
-    var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
+    var parentVc : MilLifeDetailsGuideContVC?
+    
+    var myImages = ["moving", "oconus","housing","housing"]
+    var myLabels = [ "Article1", "Article2", "Article3", "Article4"]
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        //return viewModel?.getGuides(topic: viewModel?.topic ?? "").count ?? 0
+        //return viewModel?.getArticles(topic: viewModel?.topic ?? "").count ?? 0
         
         return myLabels.count
        
@@ -28,7 +30,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TableViewCell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ML_ViewAll_TableCell", for: indexPath) as! ML_ViewAll_TableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ML_Articles_TableCell", for: indexPath) as! ML_Articles_TableCell
         
 
        
@@ -39,7 +41,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
         cell.label.text = myLabels[indexPath.row]
-        //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
+        //cell.label.text = viewModel?.getArticles(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
         cell.layer.cornerRadius = 5
@@ -58,7 +60,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
-        
+        //parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
     }
     
 

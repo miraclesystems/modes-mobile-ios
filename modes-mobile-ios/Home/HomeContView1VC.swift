@@ -19,6 +19,11 @@ class HomeContView1VC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        horzCollView.collectionDataSource.parentVc = self
+        //ml_verttwocollview.collectionView.reloadData()
+    }
+    
     
     //Segue for passing data forward
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

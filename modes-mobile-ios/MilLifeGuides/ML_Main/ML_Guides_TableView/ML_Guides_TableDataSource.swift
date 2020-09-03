@@ -7,6 +7,8 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
 
     
     var viewModel : HomeViewModel?
+    var parentVc : MilLifeGuidesController?
+    
     var myImages = ["moving", "oconus","housing"]
     var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
 
@@ -58,7 +60,7 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
-        
+        parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
     }
     
 
