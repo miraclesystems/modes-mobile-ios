@@ -17,6 +17,11 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var lblTextOverVIew: UILabel!
     
     @IBOutlet weak var lblArticles: UILabel!
+    @IBOutlet weak var btnMoreArticles: UIButton!
+    
+    @IBOutlet weak var lblBenefits: UILabel!
+    @IBOutlet weak var btnMoreBenefits: UIButton!
+    
     
     
     
@@ -31,6 +36,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
     
 
