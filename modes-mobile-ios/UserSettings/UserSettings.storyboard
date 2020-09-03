@@ -483,6 +483,21 @@ of service </string>
                                     <action selector="touchSelect:" destination="FJz-QW-bAm" eventType="touchUpInside" id="h5n-gE-yqu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-xB-Vbo">
+                                <rect key="frame" x="23" y="298" width="248" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="77W-Sc-mDi"/>
+                                </constraints>
+                                <state key="normal" title="Finish setup" backgroundImage="button_round">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="round_button_highlighted"/>
+                                <connections>
+                                    <action selector="finishButton:" destination="FJz-QW-bAm" eventType="touchUpInside" id="A2x-vB-t57"/>
+                                    <action selector="touchFamilyMember:" destination="UzR-0J-XCF" eventType="touchUpInside" id="uSP-M4-4im"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -494,8 +509,11 @@ of service </string>
                             <constraint firstItem="9lj-ly-U6H" firstAttribute="trailing" secondItem="cZN-Cv-U7f" secondAttribute="trailing" constant="40" id="DxM-iK-LqW"/>
                             <constraint firstItem="JPf-mj-d40" firstAttribute="leading" secondItem="9lj-ly-U6H" secondAttribute="leading" id="F5j-iF-csh"/>
                             <constraint firstItem="IMd-Vl-1Z4" firstAttribute="top" secondItem="W38-Km-BM5" secondAttribute="top" id="IDe-hE-4Gk"/>
+                            <constraint firstItem="4e1-xB-Vbo" firstAttribute="centerX" secondItem="cZN-Cv-U7f" secondAttribute="centerX" id="IsA-oO-YSx"/>
                             <constraint firstItem="IMd-Vl-1Z4" firstAttribute="leading" secondItem="9lj-ly-U6H" secondAttribute="leading" id="Q0g-hB-e5x"/>
+                            <constraint firstItem="9lj-ly-U6H" firstAttribute="bottom" secondItem="4e1-xB-Vbo" secondAttribute="bottom" constant="72" id="cx1-CE-fDR"/>
                             <constraint firstItem="x6d-tT-4ME" firstAttribute="leading" secondItem="9lj-ly-U6H" secondAttribute="leading" constant="40" id="diF-tX-1we"/>
+                            <constraint firstItem="4e1-xB-Vbo" firstAttribute="leading" secondItem="9lj-ly-U6H" secondAttribute="leading" constant="7" id="jn6-Qh-lso"/>
                             <constraint firstItem="cZN-Cv-U7f" firstAttribute="top" secondItem="JPf-mj-d40" secondAttribute="bottom" id="v8v-m1-mPd"/>
                             <constraint firstItem="cZN-Cv-U7f" firstAttribute="leading" secondItem="9lj-ly-U6H" secondAttribute="leading" constant="40" id="yg3-b7-4f9"/>
                         </constraints>
@@ -503,6 +521,7 @@ of service </string>
                     </view>
                     <connections>
                         <outlet property="buttonSelect" destination="cZN-Cv-U7f" id="S1N-cM-wrM"/>
+                        <outlet property="finishButton" destination="4e1-xB-Vbo" id="xKP-cr-H94"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnC-vi-9X4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

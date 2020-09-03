@@ -31,6 +31,12 @@ class UserSettingsBranchViewController: UIViewController {
     @IBAction func touch2(_ sender: Any) {
         self.parentVc?.showPage2()
     }
+    
+    @IBOutlet weak var finishButton: UIButton!
+    
+
+    
+    
     var parentVc : UserSettingsViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +47,8 @@ class UserSettingsBranchViewController: UIViewController {
         picker.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(picker)
         picker.isHidden = true
+        
+        finishButton.isHidden = true
               
         picker.backgroundColor = UIColor.white
 
@@ -89,8 +97,21 @@ extension UserSettingsBranchViewController : UIPickerViewDelegate, UIPickerViewD
             pickerView.isHidden = true
             self.parentVc?.viewModel?.setBranch(branch: (self.parentVc?.viewModel?.getBranches()[row])!)
             
+            finishButton.isHidden = false
+            
+
+       
+            
         }
         
     }
+    @IBAction func finishButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil);
+               let vc = storyboard.instantiateViewController(withIdentifier: "sidemenu_sbid") as! SSASideMenu
+               vc.modalPresentationStyle = .fullScreen
+               self.present(vc, animated: true, completion: nil);
+    }
+    
 }
 
