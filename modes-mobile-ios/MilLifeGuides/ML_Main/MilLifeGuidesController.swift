@@ -9,6 +9,9 @@ import UIKit
 
 class MilLifeGuidesController: UIViewController {
 
+    
+    var viewModel : GuidesViewModel?
+    
     @IBOutlet weak var btn_ByCat: UIButton!
     @IBOutlet weak var btn_ViewAll: UIButton!
     @IBOutlet weak var MilLifeContView1: UIView!
@@ -99,6 +102,7 @@ class MilLifeGuidesController: UIViewController {
     var vc3 : MilLifeDetailsGuideContVC?
     
     override func viewDidLoad() {
+        viewModel = GuidesViewModel()
         super.viewDidLoad()
 
                 // set a reference back to the parent vc for contained view controllers
