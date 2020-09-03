@@ -1343,7 +1343,7 @@ you with today?</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Y2-wE-gDL" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1846"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2014"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTs-aZ-Gs8">
                                                 <rect key="frame" x="20" y="8" width="295" height="20"/>
@@ -1502,8 +1502,72 @@ Military</string>
                                                     <constraint firstItem="FHd-eM-8nC" firstAttribute="centerX" secondItem="XGw-Lm-V55" secondAttribute="centerX" id="zIg-xs-jDI"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-b6-pDz" userLabel="Benefits">
+                                                <rect key="frame" x="0.0" y="1102" width="375" height="440"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-dE-nKc">
+                                                        <rect key="frame" x="0.0" y="32" width="375" height="408"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="millife_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-W3-ekl">
+                                                        <rect key="frame" x="20" y="8" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="heh-hG-EOc"/>
+                                                            <constraint firstAttribute="height" constant="24" id="mVQ-4t-guz"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELATED BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ4-80-lhw">
+                                                        <rect key="frame" x="52" y="12" width="210" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="5QX-CE-HTu"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="HUF-Pb-f7A"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="UyY-Ry-y5e"/>
+                                                            <constraint firstAttribute="width" constant="210" id="gyZ-4U-6hF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubk-XC-Wcw" userLabel="Benefits Table View" customClass="ML_Benefits_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="48" width="375" height="320"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="320" id="3dj-o8-jzM"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo9-7e-rQw">
+                                                        <rect key="frame" x="100.5" y="378" width="174" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="3z6-zR-lxY"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Q3D-bc-5e9"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="sjv-Wb-Cnh"/>
+                                                            <constraint firstAttribute="width" constant="174" id="zNm-N4-Q9D"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <state key="normal" title="See more moving benefits" backgroundImage="roundBtn_gray">
+                                                            <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="pJ4-80-lhw" firstAttribute="leading" secondItem="3hZ-W3-ekl" secondAttribute="trailing" constant="8" id="0MG-2Y-bly"/>
+                                                    <constraint firstItem="NMl-dE-nKc" firstAttribute="leading" secondItem="Y2P-b6-pDz" secondAttribute="leading" id="5Am-ul-ilT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NMl-dE-nKc" secondAttribute="trailing" id="7PI-gj-3uB"/>
+                                                    <constraint firstItem="Eo9-7e-rQw" firstAttribute="top" secondItem="Ubk-XC-Wcw" secondAttribute="bottom" constant="10" id="95E-IJ-7so"/>
+                                                    <constraint firstAttribute="height" constant="440" id="Bnv-xp-22o"/>
+                                                    <constraint firstItem="NMl-dE-nKc" firstAttribute="top" secondItem="3hZ-W3-ekl" secondAttribute="bottom" id="DCL-1B-UgG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ubk-XC-Wcw" secondAttribute="trailing" id="FcJ-ok-ffc"/>
+                                                    <constraint firstItem="pJ4-80-lhw" firstAttribute="top" secondItem="Y2P-b6-pDz" secondAttribute="top" constant="12" id="Z8d-k9-UKQ"/>
+                                                    <constraint firstItem="Ubk-XC-Wcw" firstAttribute="leading" secondItem="Y2P-b6-pDz" secondAttribute="leading" id="atI-WZ-spl"/>
+                                                    <constraint firstItem="Eo9-7e-rQw" firstAttribute="centerX" secondItem="Y2P-b6-pDz" secondAttribute="centerX" id="buL-yX-hj6"/>
+                                                    <constraint firstItem="3hZ-W3-ekl" firstAttribute="leading" secondItem="Y2P-b6-pDz" secondAttribute="leading" constant="20" id="bzt-lY-c6y"/>
+                                                    <constraint firstItem="Ubk-XC-Wcw" firstAttribute="top" secondItem="3hZ-W3-ekl" secondAttribute="bottom" constant="16" id="i7D-oj-FeM"/>
+                                                    <constraint firstItem="3hZ-W3-ekl" firstAttribute="top" secondItem="Y2P-b6-pDz" secondAttribute="top" constant="8" id="lVG-Tm-P8p"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NMl-dE-nKc" secondAttribute="bottom" id="wDV-ep-e5F"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVB-62-HC6" userLabel="ConnectViewHeader">
-                                                <rect key="frame" x="20" y="1394" width="335" height="34"/>
+                                                <rect key="frame" x="20" y="1562" width="335" height="34"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-mj-egT">
                                                         <rect key="frame" x="0.0" y="5" width="24.000000000000007" height="24"/>
@@ -1537,7 +1601,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opx-sW-PSr" userLabel="ConnectView">
-                                                <rect key="frame" x="0.0" y="1436" width="375" height="400"/>
+                                                <rect key="frame" x="0.0" y="1604" width="375" height="400"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kg-MT-FiA" userLabel="Our Experts are available 24/7 to help support your MilLife">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -1635,6 +1699,7 @@ MilitaryOneSource.mil</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Y2P-b6-pDz" secondAttribute="trailing" id="2nq-oZ-acE"/>
                                             <constraint firstItem="zQ4-Cc-OSn" firstAttribute="top" secondItem="ZTs-aZ-Gs8" secondAttribute="bottom" constant="16" id="5ed-YC-bFK"/>
                                             <constraint firstItem="XGw-Lm-V55" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" id="5h5-bC-9aX"/>
                                             <constraint firstAttribute="trailing" secondItem="AVB-62-HC6" secondAttribute="trailing" constant="20" id="6U2-ad-cSD"/>
@@ -1645,13 +1710,15 @@ MilitaryOneSource.mil</string>
                                             <constraint firstItem="zQ4-Cc-OSn" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" id="Ikg-PK-Iir"/>
                                             <constraint firstAttribute="trailing" secondItem="zQ4-Cc-OSn" secondAttribute="trailing" id="J6n-Uk-q48"/>
                                             <constraint firstItem="GFU-pz-1In" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" constant="10" id="NxI-zC-lDl"/>
-                                            <constraint firstItem="AVB-62-HC6" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="bottom" constant="300" id="QQt-8W-U13"/>
+                                            <constraint firstItem="AVB-62-HC6" firstAttribute="top" secondItem="Y2P-b6-pDz" secondAttribute="bottom" constant="20" id="QQt-8W-U13"/>
+                                            <constraint firstItem="Y2P-b6-pDz" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="bottom" constant="8" id="T4T-s3-cKe"/>
                                             <constraint firstItem="AVB-62-HC6" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" constant="20" id="aRN-Dc-ULr"/>
                                             <constraint firstItem="GFU-pz-1In" firstAttribute="top" secondItem="3Y2-wE-gDL" secondAttribute="top" constant="4" id="e7q-xP-hpL"/>
                                             <constraint firstItem="opx-sW-PSr" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" id="fy9-K2-Jty"/>
                                             <constraint firstAttribute="trailing" secondItem="opx-sW-PSr" secondAttribute="trailing" id="lfZ-Xr-eWD"/>
                                             <constraint firstItem="opx-sW-PSr" firstAttribute="top" secondItem="AVB-62-HC6" secondAttribute="bottom" constant="8" id="lgo-45-2b6"/>
                                             <constraint firstItem="ZTs-aZ-Gs8" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" constant="20" id="oJZ-ho-2C9"/>
+                                            <constraint firstItem="Y2P-b6-pDz" firstAttribute="leading" secondItem="3Y2-wE-gDL" secondAttribute="leading" id="oXa-sC-PQV"/>
                                             <constraint firstItem="XGw-Lm-V55" firstAttribute="top" secondItem="zQ4-Cc-OSn" secondAttribute="bottom" constant="20" id="v1Z-Ti-K9f"/>
                                             <constraint firstItem="ZTs-aZ-Gs8" firstAttribute="top" secondItem="3Y2-wE-gDL" secondAttribute="top" constant="8" id="vd4-IQ-fFS"/>
                                         </constraints>
@@ -1680,8 +1747,11 @@ MilitaryOneSource.mil</string>
                         <viewLayoutGuide key="safeArea" id="PVX-TH-fHL"/>
                     </view>
                     <connections>
+                        <outlet property="btnMoreArticles" destination="FHd-eM-8nC" id="oSY-js-e24"/>
+                        <outlet property="btnMoreBenefits" destination="Eo9-7e-rQw" id="GqL-kG-k3n"/>
                         <outlet property="favoritesBtn" destination="cjw-GA-Q2V" id="wz1-Fk-YyY"/>
                         <outlet property="lblArticles" destination="KHY-Jq-xXT" id="5B1-Ly-v02"/>
+                        <outlet property="lblBenefits" destination="pJ4-80-lhw" id="aaI-t9-H37"/>
                         <outlet property="lblTextOverVIew" destination="4Ra-zz-cRZ" id="gJe-Zp-fcK"/>
                         <outlet property="lblTitle" destination="MtE-qX-Ez6" id="1mH-il-Ppm"/>
                     </connections>

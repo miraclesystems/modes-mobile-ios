@@ -17,6 +17,11 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var lblTextOverVIew: UILabel!
     
     @IBOutlet weak var lblArticles: UILabel!
+    @IBOutlet weak var btnMoreArticles: UIButton!
+    
+    @IBOutlet weak var lblBenefits: UILabel!
+    @IBOutlet weak var btnMoreBenefits: UIButton!
+    
     
     
     

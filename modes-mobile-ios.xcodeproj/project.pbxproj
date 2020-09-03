@@ -76,6 +76,11 @@
 		A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7224F5266100989D70 /* SSASideMenu.swift */; };
 		A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7324F5266100989D70 /* HomeViewController.swift */; };
 		A958EB7A24F5266200989D70 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7424F5266200989D70 /* RightMenuViewController.swift */; };
+		A95E942325016BEA00233C53 /* ML_Benefits_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E941E25016BE900233C53 /* ML_Benefits_TableCell.swift */; };
+		A95E942425016BEA00233C53 /* ML_Benefits_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E941F25016BE900233C53 /* ML_Benefits_TableView.swift */; };
+		A95E942625016BEA00233C53 /* ML_Benefits_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E942125016BEA00233C53 /* ML_Benefits_TableDataSource.swift */; };
+		A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95E942225016BEA00233C53 /* ML_Benefits_TableCell.xib */; };
+		A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95E942825016EE700233C53 /* ML_Benefits_TableView.xib */; };
 		A9620D0624FE896600C599DC /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = A9620D0524FE895400C599DC /* modes.sqlite3 */; };
 		A9620D0924FE9D7A00C599DC /* MilLifeGuidesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */; };
 		A9620D0B24FEC7C000C599DC /* MilLifeByCatContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9620D0A24FEC7C000C599DC /* MilLifeByCatContVC.swift */; };
@@ -217,6 +222,11 @@
 		A958EB7224F5266100989D70 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		A958EB7324F5266100989D70 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A958EB7424F5266200989D70 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		A95E941E25016BE900233C53 /* ML_Benefits_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_Benefits_TableCell.swift; sourceTree = "<group>"; };
+		A95E941F25016BE900233C53 /* ML_Benefits_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_Benefits_TableView.swift; sourceTree = "<group>"; };
+		A95E942125016BEA00233C53 /* ML_Benefits_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_Benefits_TableDataSource.swift; sourceTree = "<group>"; };
+		A95E942225016BEA00233C53 /* ML_Benefits_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_Benefits_TableCell.xib; sourceTree = "<group>"; };
+		A95E942825016EE700233C53 /* ML_Benefits_TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_Benefits_TableView.xib; sourceTree = "<group>"; };
 		A9620D0524FE895400C599DC /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilLifeGuidesController.swift; sourceTree = "<group>"; };
 		A9620D0A24FEC7C000C599DC /* MilLifeByCatContVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilLifeByCatContVC.swift; sourceTree = "<group>"; };
@@ -466,6 +476,18 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A95E941D25016AFE00233C53 /* ML_Benefits_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A95E941F25016BE900233C53 /* ML_Benefits_TableView.swift */,
+				A95E942825016EE700233C53 /* ML_Benefits_TableView.xib */,
+				A95E941E25016BE900233C53 /* ML_Benefits_TableCell.swift */,
+				A95E942225016BEA00233C53 /* ML_Benefits_TableCell.xib */,
+				A95E942125016BEA00233C53 /* ML_Benefits_TableDataSource.swift */,
+			);
+			path = ML_Benefits_TableView;
+			sourceTree = "<group>";
+		};
 		A9620D0724FE9C1B00C599DC /* MilLifeGuides */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,8 +537,9 @@
 		A9620D3E25010F1D00C599DC /* ML_Details */ = {
 			isa = PBXGroup;
 			children = (
-				A9620D3C2500FF8A00C599DC /* MilLifeDetailsGuideContVC.swift */,
 				A9620D3F25010F4700C599DC /* ML_Articles_TableView */,
+				A95E941D25016AFE00233C53 /* ML_Benefits_TableView */,
+				A9620D3C2500FF8A00C599DC /* MilLifeDetailsGuideContVC.swift */,
 			);
 			path = ML_Details;
 			sourceTree = "<group>";
@@ -723,6 +746,8 @@
 				A9620D2A24FEDE5900C599DC /* ML_ViewAll_TableCell.xib in Resources */,
 				A9FEEC0224FB1F3000EB7CA6 /* HomeTableCell.xib in Resources */,
 				A9FEEBFF24FB1F3000EB7CA6 /* HomeTableView.xib in Resources */,
+				A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */,
+				A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
@@ -786,6 +811,7 @@
 				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
 				A9620D472501108400C599DC /* ML_Articles_TableDataSource.swift in Sources */,
 				A9620D1B24FECA5400C599DC /* ML_VertTwoCollView.swift in Sources */,
+				A95E942325016BEA00233C53 /* ML_Benefits_TableCell.swift in Sources */,
 				A9620D1C24FECA5400C599DC /* ML_VertTwoCollFlowLayout.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
@@ -806,6 +832,7 @@
 				A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */,
 				14A901C624F1B98300E2B4CA /* IQUITextFieldView+Additions.swift in Sources */,
 				14A901C724F1B98300E2B4CA /* IQUIView+Hierarchy.swift in Sources */,
+				A95E942425016BEA00233C53 /* ML_Benefits_TableView.swift in Sources */,
 				14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */,
 				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -829,6 +856,7 @@
 				A9620D3424FF1D0700C599DC /* ML_Guides_TableDataSource.swift in Sources */,
 				A9FEEBF324FABB5300EB7CA6 /* VertTwoCollView.swift in Sources */,
 				A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */,
+				A95E942625016BEA00233C53 /* ML_Benefits_TableDataSource.swift in Sources */,
 				A9620D3D2500FF8A00C599DC /* MilLifeDetailsGuideContVC.swift in Sources */,
 				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
 				A9620D492501108400C599DC /* ML_Articles_TableCell.swift in Sources */,
