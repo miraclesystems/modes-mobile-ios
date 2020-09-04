@@ -42,7 +42,7 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
-        //parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
+        parentVc?.parentVc?.showRelatedWebsites(index: indexPath.item)
     }
     
 
