@@ -94,6 +94,32 @@ class MilLifeGuidesController: UIViewController {
     }
     
     
+    func showInAppBrowser(index: Int){
+        print("Back on Main showInAppBrowser with index: ", index)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Navigation", bundle:nil)
+
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "InAppBrowserVC")
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated:true, completion:nil)
+    }
+    
+    
+    func showRelatedBenefits(index: Int){
+        print("Back on Main showRelatedBenefits with index: ", index)
+        tabBarController!.selectedIndex = 2
+        
+    }
+    
+    func showRelatedWebsites(index: Int){
+        print ("Back on Main showRelatedWEbsites with index: ", index)
+        
+        if let url = URL(string: "http://www.militaryonesource.mil") {
+                   if UIApplication.shared.canOpenURL(url) {
+                       UIApplication.shared.open(url, options: [:])
+                   }
+               }
+        
+    }
     
     
     

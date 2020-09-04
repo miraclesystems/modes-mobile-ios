@@ -1038,7 +1038,7 @@ MilitaryOneSource.mil</string>
                                                 <rect key="frame" x="20" y="562" width="335" height="34"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="eat-j6-dRf">
-                                                        <rect key="frame" x="0.0" y="5" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="5" width="24.000000000000007" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="KlC-JV-NJL"/>
                                                             <constraint firstAttribute="height" constant="24" id="tm9-yd-3Q8"/>
@@ -1482,6 +1482,9 @@ Military</string>
                                                         <state key="normal" title="See more moving articles" backgroundImage="roundBtn_gray">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="didTouchbtnMoreArticles:" destination="mHp-je-He9" eventType="touchUpInside" id="fZb-Ap-VDH"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1546,6 +1549,9 @@ Military</string>
                                                         <state key="normal" title="See more moving benefits" backgroundImage="roundBtn_gray">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="didTouchbtnMoreBenefits:" destination="mHp-je-He9" eventType="touchUpInside" id="HJX-R4-p0x"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1619,7 +1625,7 @@ Military</string>
                                                 <rect key="frame" x="0.0" y="1800" width="375" height="550"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-mj-egT">
-                                                        <rect key="frame" x="20" y="8" width="20" height="20"/>
+                                                        <rect key="frame" x="20" y="8" width="20.000000000000007" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="PLw-Qc-wcH"/>
                                                             <constraint firstAttribute="width" constant="20" id="l8U-cs-HUY"/>
@@ -1687,7 +1693,7 @@ OneSource consultant</string>
                                                                 </constraints>
                                                                 <state key="normal" title="Button" image="call_Button"/>
                                                                 <connections>
-                                                                    <action selector="callButtonTouched:" destination="J5p-It-l85" eventType="touchUpInside" id="Ph8-bK-vFM"/>
+                                                                    <action selector="callButtonTouched:" destination="mHp-je-He9" eventType="touchUpInside" id="8us-7F-a4G"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -1794,11 +1800,86 @@ OneSource consultant</string>
                         <outlet property="lblBenefits" destination="pJ4-80-lhw" id="aaI-t9-H37"/>
                         <outlet property="lblTextOverVIew" destination="4Ra-zz-cRZ" id="gJe-Zp-fcK"/>
                         <outlet property="lblTitle" destination="MtE-qX-Ez6" id="1mH-il-Ppm"/>
+                        <outlet property="ml_articles_tableview" destination="1rR-1q-tZY" id="G0a-Bt-Wip"/>
+                        <outlet property="ml_benefits_tableview" destination="Ubk-XC-Wcw" id="eYy-bu-OTC"/>
+                        <outlet property="ml_connect_tableview" destination="9HY-VJ-qqE" id="Orc-u3-Icp"/>
+                        <outlet property="ml_websites_tableview" destination="GD9-NU-IiI" id="Uqx-a6-8P6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ke4-8W-mgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3652" y="-271.664167916042"/>
+        </scene>
+        <!--In App BrowserVC-->
+        <scene sceneID="Iir-8q-9H7">
+            <objects>
+                <viewController storyboardIdentifier="InAppBrowserVC" id="P4i-nR-qR8" customClass="InAppBrowserVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MSu-XE-xnV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-QH-fbp" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3YP-EZ-FKH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="dcJ-PN-pQm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="mLF-HZ-3Ss"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-tv-xUA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-kk-yDR">
+                                        <rect key="frame" x="20" y="6" width="15" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="4KQ-N8-iEH"/>
+                                            <constraint firstAttribute="width" constant="15" id="ysy-UU-7Us"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back_arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTouched:" destination="P4i-nR-qR8" eventType="touchUpInside" id="6Qh-oc-Hqr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dwx-kk-yDR" firstAttribute="top" secondItem="hEo-tv-xUA" secondAttribute="top" constant="6" id="0z7-Ys-ROx"/>
+                                    <constraint firstItem="dwx-kk-yDR" firstAttribute="leading" secondItem="hEo-tv-xUA" secondAttribute="leading" constant="20" id="6fS-U6-YS7"/>
+                                    <constraint firstAttribute="height" constant="25" id="m8Z-39-k0D"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-s1-kGA">
+                                <rect key="frame" x="0.0" y="89" width="375" height="578"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="top" secondItem="ZyZ-QH-fbp" secondAttribute="bottom" id="FjS-OW-NBO"/>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="FmD-Rk-ZmA"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="Hoo-5w-ulG"/>
+                            <constraint firstAttribute="bottom" secondItem="2GF-s1-kGA" secondAttribute="bottom" id="Kwn-zu-kPA"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="SMB-xz-uwP"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="trailing" secondItem="IPX-Rj-jJ1" secondAttribute="trailing" id="TrR-dO-gcB"/>
+                            <constraint firstItem="hEo-tv-xUA" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="ZKc-Ob-tz8"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="leading" secondItem="IPX-Rj-jJ1" secondAttribute="leading" id="b8i-EU-MeI"/>
+                            <constraint firstItem="ZyZ-QH-fbp" firstAttribute="top" secondItem="IPX-Rj-jJ1" secondAttribute="top" id="nI3-tU-Kwk"/>
+                            <constraint firstItem="2GF-s1-kGA" firstAttribute="top" secondItem="hEo-tv-xUA" secondAttribute="bottom" id="wHU-m4-MNF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPX-Rj-jJ1"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="2GF-s1-kGA" id="5mi-1t-3OH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoU-XS-TAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4631.1999999999998" y="-252.32383808095955"/>
         </scene>
     </scenes>
     <resources>
