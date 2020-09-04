@@ -1516,7 +1516,11 @@ MilitaryOneSource.mil</string>
         <!--Connect-->
         <scene sceneID="xf2-Tl-OB5">
             <objects>
+<<<<<<< HEAD:modes-mobile-ios/Navigation/Navigation.storyboard
                 <viewController storyboardIdentifier="ConnectViewController" interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> wired up connect view controller, fixed branch picker:modes-mobile-ios/Navigation/navbar/Navigation.storyboard
                     <view key="view" contentMode="scaleToFill" id="h18-4L-uDM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1547,10 +1551,16 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
                                         <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
                                         <state key="normal" image="Image"/>
+                                        <connections>
+                                            <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="gbJ-fo-36f"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
                                         <rect key="frame" x="12" y="224" width="351" height="68"/>
                                         <state key="normal" image="button_call_options"/>
+                                        <connections>
+                                            <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="JqN-bX-RgF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
                                         <rect key="frame" x="12" y="287" width="351" height="66"/>
@@ -1559,6 +1569,9 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
                                         <rect key="frame" x="12" y="344" width="351" height="72"/>
                                         <state key="normal" image="buttion_visit"/>
+                                        <connections>
+                                            <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="6Ga-MU-GAx"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter where you serve or live, we are here for you 24/7 online and by telephone. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-t0-to4">
                                         <rect key="frame" x="27" y="96" width="320" height="28.666666666666671"/>
@@ -1569,22 +1582,37 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
                                         <rect key="frame" x="48" y="416" width="33" height="34.333333333333314"/>
                                         <state key="normal" image="facebook"/>
+                                        <connections>
+                                            <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="jm0-ae-6YE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
                                         <rect key="frame" x="103" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="twitter"/>
+                                        <connections>
+                                            <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="90T-Fp-KRc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
                                         <rect key="frame" x="158" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="youtube"/>
+                                        <connections>
+                                            <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="aHv-CH-re0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
                                         <rect key="frame" x="217" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="jsm-gk-7pr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
                                         <rect key="frame" x="277" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="pinterest"/>
+                                        <connections>
+                                            <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="Mc0-w6-AVM"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
                                         <rect key="frame" x="27" y="480" width="320" height="28.666666666666671"/>
