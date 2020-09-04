@@ -495,6 +495,7 @@ of service </string>
                                 <state key="highlighted" backgroundImage="round_button_highlighted"/>
                                 <connections>
                                     <action selector="finishButton:" destination="FJz-QW-bAm" eventType="touchUpInside" id="A2x-vB-t57"/>
+                                    <action selector="touch1:" destination="FJz-QW-bAm" eventType="touchUpInside" id="5bR-qZ-8gY"/>
                                     <action selector="touchFamilyMember:" destination="UzR-0J-XCF" eventType="touchUpInside" id="uSP-M4-4im"/>
                                 </connections>
                             </button>
