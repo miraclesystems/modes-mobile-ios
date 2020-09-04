@@ -13,12 +13,13 @@ class InAppBrowserVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
+    var urlString : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         print("On InAppBrowser")
         
         // Do any additional setup after loading the view.
-        let url = URL(string: "https://www.google.com")
+        let url = URL(string: urlString!)
         webView.load(URLRequest(url: url!))
         
         

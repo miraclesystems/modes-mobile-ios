@@ -151,6 +151,7 @@ class GuidesViewModel{
         
         for item in results{
             list.append(item["Guide"] as! String)
+            
         }
 
         return list
@@ -167,6 +168,152 @@ class GuidesViewModel{
         }
 
         return list
+    }
+    
+    
+    func getBenefitById(id : String)-> RelatedBenefit{
+
+        let benefit = RelatedBenefit()
+        let results = ModesDb.shared.getBenefitById(id: id)
+
+       
+        benefit.id = id
+        benefit.benefit = results[0]["Benefit"] as? String
+        benefit.description = results[0]["Short Description"] as? String
+
+        return benefit
+
+
+    }
+    func getGuide()->Guide{
+        
+        var guide = Guide()
+        
+        var results = ModesDb.shared.getGuideByName(guide: self.selectedGuide)
+        
+        guide.ID = results[0]["ID"] as? Int
+        guide.Category = results[0]["Category"] as? String
+        guide.Guide = results[0]["Guide"] as? String
+        guide.GuideHeader = results[0]["Guide Header"] as? String
+        guide.Overview = results[0]["Overview -- Guide Intro Copy"] as? String
+        guide.GuideImage = results[0]["Guide Image"] as? String
+        guide.ArticleHeader =
+            results[0]["Article block Header (STYLED)"] as? String
+        guide.Article1Text =  results[0]["Article 1 Text"] as? String
+        guide.Article1URL =  results[0]["Article 1 URL"] as? String
+        guide.Article1Image =  results[0]["Article 1 Image"] as? String
+        guide.Article2Text =  results[0]["Article 2 Text"] as? String
+        guide.Article2URL =  results[0]["Article 2 URL"] as? String
+        guide.Article2Image =  results[0]["Article 2 Image"] as? String
+        guide.Article3Text =  results[0]["Article 3 Text"] as? String
+        guide.Article3URL =  results[0]["Article 3 URL"] as? String
+        guide.Article3Image =  results[0]["Article 3 Image"] as? String
+        guide.Article4Text =  results[0]["Article 4 Text"] as? String
+        guide.Article4URL =  results[0]["Article 4 URL"] as? String
+        guide.Article4Image =  results[0]["Article 4 Image"] as? String
+        
+        
+        guide.listArticles = [Article]()
+        for index in 0...3{
+
+            switch index {
+           
+           
+            case 0:
+            
+                let article = Article()
+                article.name = guide.Article1Text
+                article.image = guide.Article1Image
+                article.url = guide.Article1URL
+                    
+                guide.listArticles?.append(article)
+                
+            case 1:
+                
+                let article = Article()
+                article.name = guide.Article2Text
+                article.image = guide.Article2Image
+                article.url = guide.Article2URL
+                    
+                guide.listArticles?.append(article)
+                
+            case 2:
+                let article = Article()
+                article.name = guide.Article3Text
+                article.image = guide.Article3Image
+                article.url = guide.Article3URL
+                    
+                guide.listArticles?.append(article)
+                
+            case 3:
+                let article = Article()
+                article.name = guide.Article4Text
+                article.image = guide.Article4Image
+                article.url = guide.Article4URL
+                    
+                guide.listArticles?.append(article)
+
+            default:
+                print("default do nothing")
+            }
+        }
+        
+        
+        
+        
+        guide.MoreArticlesText =  results[0]["Article Button"] as? String
+        guide.MoreArticlesURL =  results[0]["Article Button URL"] as? String
+        guide.RelatedBenefitsHeader =
+             results[0]["Benefits Section Header Text Styled"] as? String
+
+        let relatedBenefits =  results[0]["Related Benefits"] as? String
+        guide.RelatedBenefits = relatedBenefits?.components(separatedBy: ",")
+
+        guide.listRelatedBenefits = [RelatedBenefit]()
+        for item in guide.RelatedBenefits! {
+            var benefit = getBenefitById(id: item!)
+            guide.listRelatedBenefits?.append(benefit)
+    
+        }
+
+        guide.MoreBenefitsText =  results[0]["Benefits button text"] as? String
+        guide.MoreBenefitsURL =  results[0]["Benefits button URL"] as? String
+
+
+        var relatedWebsites =  results[0]["Related Websites & Tools"] as? String
+        guide.RelatedWebsitesText = relatedWebsites?.components(separatedBy: ",")
+
+        var relatedWebsitesUrls =
+             results[0]["Related Websites & Tools URLs"] as? String
+        guide.RelatedWebsitesURL = relatedWebsitesUrls?.components(separatedBy: ",")
+
+        var expertsText =  results[0]["Experts Text"] as? String
+        guide.ExpertsText = expertsText?.components(separatedBy: "\n")
+
+
+        guide.ExpertsHeader = guide.ExpertsText?[0]
+        guide.ExpertsHeader1 = guide.ExpertsText?[1]
+
+        var list = [String]()
+
+        var count = 0
+        for expert in guide.ExpertsText! {
+            if (count == 0 || count == 1 || expert == " ") {
+                count = count + 1
+                continue
+            } else if (expert == "") {
+                count = count + 1
+                continue
+            }
+            else{
+                count = count + 1
+                list.append(expert!)
+            }
+        }
+
+        guide.ExpertsText = list
+        
+        return guide
     }
 
 
