@@ -6,7 +6,7 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
     
 
     
-    var viewModel : HomeViewModel?
+    
     var parentVc : MilLifeDetailsGuideContVC?
     
     var myImages = ["moving", "oconus","housing","housing"]
@@ -40,7 +40,8 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
-        cell.label.text = myLabels[indexPath.row]
+        cell.label.text = parentVc?.guide?.listArticles?[indexPath.row]?.name
+        //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getArticles(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
@@ -61,7 +62,7 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
         //parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
-        parentVc?.parentVc?.showInAppBrowser(index: indexPath.item)
+        parentVc?.parentVc?.showInAppBrowser(url: (parentVc?.guide?.listArticles?[indexPath.row]?.url)! as String)
     
     }
     

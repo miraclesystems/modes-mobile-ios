@@ -113,6 +113,14 @@ class ModesDb{
         return data
     }
     
+    func getBenefitById(id : String)->[[String:Any?]]{
+        
+        let db = SQLiteDB.shared
+        db.open()
+        let data =  db.query(sql: "SELECT * FROM benefits where ID=" + id)
+        return data
+    }
+    
     
     
     private func openDb(){

@@ -3,42 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ModesDb.getBenefitsByAudience(audience:):ModesDb.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "row[&quot;Benefit&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "data[0][&quot;Benefit&quot;]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "HomeContView1VC.prepare(for:sender:):HomeContView1VC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "HorzCollDataSource.collectionView(_:cellForItemAt:):HorzCollDataSource.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "viewModel">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "HorzCollView.init(coder:):HorzCollView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.superView">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "HomeViewController.viewDidLoad():HomeViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "viewModel">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "MilLifeDetailsGuideContVC.viewDidLoad():MilLifeDetailsGuideContVC.swift">
       </ContextState>
       <ContextState
          contextName = "SearchTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):SearchTableViewController.swift">
@@ -52,6 +17,47 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MilLifeDetailsGuideContVC.loadGuide():MilLifeDetailsGuideContVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "guide">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.viewDidLoad():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ML_ViewAll_TableDataSource.tableView(_:didSelectRowAt:):ML_ViewAll_TableDataSource.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeContView1VC.prepare(for:sender:):HomeContView1VC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HorzCollView.init(coder:):HorzCollView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HorzCollView.commonInit():HorzCollView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HorzCollDataSource.collectionView(_:cellForItemAt:):HorzCollDataSource.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "UserSettingsInstallationsViewController.viewDidLoad():UserSettingsInstallationsViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -60,7 +66,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "HorzCollView.commonInit():HorzCollView.swift">
+         contextName = "ModesDb.getBenefitsByAudience(audience:):ModesDb.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "row[&quot;Benefit&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "data[0][&quot;Benefit&quot;]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "SearchTableViewController.tableView(_:cellForRowAt:):SearchTableViewController.swift">

@@ -10,6 +10,8 @@ import UIKit
 class MilLifeDetailsGuideContVC: UIViewController {
 
     var parentVc : MilLifeGuidesController?
+    
+    var guide: Guide?
     @IBOutlet weak var ml_articles_tableview: ML_Articles_TableView!
     @IBOutlet weak var ml_benefits_tableview: ML_Benefits_TableView!
     @IBOutlet weak var ml_websites_tableview: ML_Websites_TableView!
@@ -21,6 +23,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
     //page elements
     @IBOutlet weak var favoritesBtn: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var lblTextOverVIew: UILabel!
     
     @IBOutlet weak var lblArticles: UILabel!
@@ -28,6 +31,38 @@ class MilLifeDetailsGuideContVC: UIViewController {
     
     @IBOutlet weak var lblBenefits: UILabel!
     @IBOutlet weak var btnMoreBenefits: UIButton!
+    
+    
+    func loadGuide()
+    {
+        
+        guide = Guide()
+        guide = parentVc?.viewModel?.getGuide()
+        
+        self.lblTitle.text = guide?.Guide
+        self.lblHeader.text = guide?.GuideHeader
+        self.lblTextOverVIew.text = guide?.Overview
+        self.lblArticles.text = guide?.ArticleHeader
+        self.btnMoreArticles.setTitle(guide?.MoreArticlesText, for: .normal)
+        self.btnMoreBenefits.setTitle(guide?.MoreBenefitsText, for: .normal)
+        
+        
+        ml_articles_tableview.tableDataSource.parentVc = self
+        ml_articles_tableview.tableView.reloadData()
+
+        ml_benefits_tableview.tableDataSource.parentVc = self
+        ml_benefits_tableview.tableView.reloadData()
+
+        ml_websites_tableview.tableDataSource.parentVc = self
+        ml_websites_tableview.tableView.reloadData()
+
+        ml_connect_tableview.tableDataSource.parentVc = self
+        ml_connect_tableview.tableView.reloadData()
+        
+        print("Debug")
+        
+        
+    }
     
     
     @IBAction func didTouchbtnMoreArticles(_ sender: Any) {

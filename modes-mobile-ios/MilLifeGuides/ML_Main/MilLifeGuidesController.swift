@@ -65,6 +65,11 @@ class MilLifeGuidesController: UIViewController {
     
     
     func showOverlay(view:UIView){
+        
+        
+        if(view == DetailsGuide){
+            vc3?.loadGuide()
+        }
         let seconds = 0.1
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             let viewToAnimate2 = view
@@ -94,11 +99,12 @@ class MilLifeGuidesController: UIViewController {
     }
     
     
-    func showInAppBrowser(index: Int){
+    func showInAppBrowser(url: String){
         print("Back on Main showInAppBrowser with index: ", index)
         let storyBoard : UIStoryboard = UIStoryboard(name: "Navigation", bundle:nil)
 
-        let nextVC = storyBoard.instantiateViewController(withIdentifier: "InAppBrowserVC")
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "InAppBrowserVC") as! InAppBrowserVC
+        nextVC.urlString = url
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion:nil)
     }
@@ -110,15 +116,14 @@ class MilLifeGuidesController: UIViewController {
         
     }
     
-    func showRelatedWebsites(index: Int){
+    func showRelatedWebsites(urlString: String){
         print ("Back on Main showRelatedWEbsites with index: ", index)
         
-        if let url = URL(string: "http://www.militaryonesource.mil") {
+        if let url = URL(string: urlString) {
                    if UIApplication.shared.canOpenURL(url) {
                        UIApplication.shared.open(url, options: [:])
                    }
                }
-        
     }
     
     

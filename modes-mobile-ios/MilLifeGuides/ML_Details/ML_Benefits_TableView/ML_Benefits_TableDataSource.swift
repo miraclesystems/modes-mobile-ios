@@ -18,7 +18,7 @@ class ML_Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         
         //return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
         
-        return myLabels.count
+        return  parentVc?.guide?.listRelatedBenefits?.count ?? 0
        
     }
     
@@ -34,8 +34,11 @@ class ML_Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         
        
         
-        cell.label.text = myLabels[indexPath.row]
-        cell.label2.text = myText[indexPath.row]
+        var benefit = parentVc?.guide?.listRelatedBenefits?[indexPath.row]
+        //cell.label.text = myLabels[indexPath.row]
+        //cell.label2.text = myText[indexPath.row]
+        cell.label.text = benefit?.benefit
+        cell.label2.text = benefit?.description
         
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         

@@ -17,7 +17,8 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         
         //return viewModel?.getWebsites(topic: viewModel?.topic ?? "").count ?? 0
         
-        return myLabels.count
+        //return myLabels.count
+        parentVc?.guide?.RelatedWebsitesText?.count ?? 0
        
     }
     
@@ -32,7 +33,8 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "ML_Websites_TableCell", for: indexPath) as! ML_Websites_TableCell
         
 
-        cell.label.text = myLabels[indexPath.row]
+        //cell.label.text = myLabels[indexPath.row]
+        cell.label.text = parentVc?.guide?.RelatedWebsitesText?[indexPath.row]
         //cell.label.text = viewModel?.getWebsites(topic: viewModel?.topic ?? "")[indexPath.row]
         
 
@@ -41,8 +43,8 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
-        parentVc?.parentVc?.showRelatedWebsites(index: indexPath.item)
+        //print("label: ", myLabels[indexPath.item])
+        parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
     }
     
 
