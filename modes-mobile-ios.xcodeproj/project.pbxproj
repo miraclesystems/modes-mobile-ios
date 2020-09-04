@@ -120,6 +120,26 @@
 		A97BC5B42501A96100312D9D /* ML_Connect_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5AF2501A96100312D9D /* ML_Connect_TableCell.swift */; };
 		A97BC5B52501A96100312D9D /* ML_Connect_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5B02501A96100312D9D /* ML_Connect_TableView.swift */; };
 		A97BC5B825025F9600312D9D /* InAppBrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5B725025F9600312D9D /* InAppBrowserVC.swift */; };
+		A97BC5C225029E0000312D9D /* BenefitsViewAllContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5BF25029E0000312D9D /* BenefitsViewAllContVC.swift */; };
+		A97BC5C325029E0000312D9D /* BenefitsByCatContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5C025029E0000312D9D /* BenefitsByCatContVC.swift */; };
+		A97BC5CF25029EE600312D9D /* Benefits_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5CA25029EE600312D9D /* Benefits_TableDataSource.swift */; };
+		A97BC5D025029EE600312D9D /* Benefits_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5CB25029EE600312D9D /* Benefits_TableView.swift */; };
+		A97BC5D125029EE600312D9D /* Benefits_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5CC25029EE600312D9D /* Benefits_TableCell.swift */; };
+		A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5CD25029EE600312D9D /* Benefits_TableView.xib */; };
+		A97BC5D325029EE600312D9D /* Benefits_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5CE25029EE600312D9D /* Benefits_TableCell.xib */; };
+		A97BC5DC2502A03A00312D9D /* Benefits_VertTwoCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5D62502A03900312D9D /* Benefits_VertTwoCollView.xib */; };
+		A97BC5DD2502A03A00312D9D /* Benefits_VertTwoCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5D72502A03900312D9D /* Benefits_VertTwoCollCell.swift */; };
+		A97BC5DE2502A03A00312D9D /* Benefits_VertTwoCollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5D82502A03900312D9D /* Benefits_VertTwoCollFlowLayout.swift */; };
+		A97BC5DF2502A03A00312D9D /* Benefits_VertTwoCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5D92502A03900312D9D /* Benefits_VertTwoCollCell.xib */; };
+		A97BC5E02502A03A00312D9D /* Benefits_VertTwoCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5DA2502A03900312D9D /* Benefits_VertTwoCollDataSource.swift */; };
+		A97BC5E12502A03A00312D9D /* Benefits_VertTwoCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5DB2502A03A00312D9D /* Benefits_VertTwoCollView.swift */; };
+		A97BC5E82502A10500312D9D /* Benefits_VIewAll_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5E32502A10500312D9D /* Benefits_VIewAll_TableView.swift */; };
+		A97BC5E92502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5E42502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift */; };
+		A97BC5EA2502A10500312D9D /* Benefits_ViewAll_TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5E52502A10500312D9D /* Benefits_ViewAll_TableView.xib */; };
+		A97BC5EB2502A10500312D9D /* Benefits_ViewAll_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5E62502A10500312D9D /* Benefits_ViewAll_TableCell.swift */; };
+		A97BC5EC2502A10500312D9D /* Benefits_ViewAll_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5E72502A10500312D9D /* Benefits_ViewAll_TableCell.xib */; };
+		A97BC5EE2502AC7C00312D9D /* BenefitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5ED2502AC7C00312D9D /* BenefitsController.swift */; };
+		A97BC5F12502DA2800312D9D /* BenefitsDetailsContVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F02502DA2800312D9D /* BenefitsDetailsContVC.swift */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
 		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
 		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
@@ -279,6 +299,26 @@
 		A97BC5AF2501A96100312D9D /* ML_Connect_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_Connect_TableCell.swift; sourceTree = "<group>"; };
 		A97BC5B02501A96100312D9D /* ML_Connect_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_Connect_TableView.swift; sourceTree = "<group>"; };
 		A97BC5B725025F9600312D9D /* InAppBrowserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppBrowserVC.swift; sourceTree = "<group>"; };
+		A97BC5BF25029E0000312D9D /* BenefitsViewAllContVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsViewAllContVC.swift; sourceTree = "<group>"; };
+		A97BC5C025029E0000312D9D /* BenefitsByCatContVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsByCatContVC.swift; sourceTree = "<group>"; };
+		A97BC5CA25029EE600312D9D /* Benefits_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_TableDataSource.swift; sourceTree = "<group>"; };
+		A97BC5CB25029EE600312D9D /* Benefits_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_TableView.swift; sourceTree = "<group>"; };
+		A97BC5CC25029EE600312D9D /* Benefits_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_TableCell.swift; sourceTree = "<group>"; };
+		A97BC5CD25029EE600312D9D /* Benefits_TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_TableView.xib; sourceTree = "<group>"; };
+		A97BC5CE25029EE600312D9D /* Benefits_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_TableCell.xib; sourceTree = "<group>"; };
+		A97BC5D62502A03900312D9D /* Benefits_VertTwoCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_VertTwoCollView.xib; sourceTree = "<group>"; };
+		A97BC5D72502A03900312D9D /* Benefits_VertTwoCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_VertTwoCollCell.swift; sourceTree = "<group>"; };
+		A97BC5D82502A03900312D9D /* Benefits_VertTwoCollFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_VertTwoCollFlowLayout.swift; sourceTree = "<group>"; };
+		A97BC5D92502A03900312D9D /* Benefits_VertTwoCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_VertTwoCollCell.xib; sourceTree = "<group>"; };
+		A97BC5DA2502A03900312D9D /* Benefits_VertTwoCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_VertTwoCollDataSource.swift; sourceTree = "<group>"; };
+		A97BC5DB2502A03A00312D9D /* Benefits_VertTwoCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_VertTwoCollView.swift; sourceTree = "<group>"; };
+		A97BC5E32502A10500312D9D /* Benefits_VIewAll_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_VIewAll_TableView.swift; sourceTree = "<group>"; };
+		A97BC5E42502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ViewAll_TableDataSource.swift; sourceTree = "<group>"; };
+		A97BC5E52502A10500312D9D /* Benefits_ViewAll_TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ViewAll_TableView.xib; sourceTree = "<group>"; };
+		A97BC5E62502A10500312D9D /* Benefits_ViewAll_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ViewAll_TableCell.swift; sourceTree = "<group>"; };
+		A97BC5E72502A10500312D9D /* Benefits_ViewAll_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ViewAll_TableCell.xib; sourceTree = "<group>"; };
+		A97BC5ED2502AC7C00312D9D /* BenefitsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsController.swift; sourceTree = "<group>"; };
+		A97BC5F02502DA2800312D9D /* BenefitsDetailsContVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsDetailsContVC.swift; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
 		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -396,10 +436,11 @@
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
 				A958EB6E24F5262300989D70 /* Navigation */,
-				A9620D0724FE9C1B00C599DC /* MilLifeGuides */,
-				A97BC5B625025F4700312D9D /* InAppBrowser */,
-				A9B3738224F3D8A800B6D0CC /* Home */,
 				143AB89924EED520002D0029 /* UserSettings */,
+				A9B3738224F3D8A800B6D0CC /* Home */,
+				A9620D0724FE9C1B00C599DC /* MilLifeGuides */,
+				A97BC5B925029AF600312D9D /* Benefits */,
+				A97BC5B625025F4700312D9D /* InAppBrowser */,
 				1487F5CB24E5E72000C13817 /* base  */,
 				1487F59B24E5E6E300C13817 /* AppDelegate.swift */,
 				1487F59D24E5E6E300C13817 /* SceneDelegate.swift */,
@@ -593,9 +634,9 @@
 				A9620D2B24FF1C3E00C599DC /* ML_Guides_TableView */,
 				A9620D2024FEDDD500C599DC /* ML_ViewAll_TableView */,
 				A9620D1324FECA1500C599DC /* ML_VertTwoCollScroll */,
-				A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */,
 				A9620D0A24FEC7C000C599DC /* MilLifeByCatContVC.swift */,
 				A9620D0C24FEC80C00C599DC /* MilLifeViewAllContVC.swift */,
+				A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */,
 			);
 			path = ML_Main;
 			sourceTree = "<group>";
@@ -630,6 +671,73 @@
 				A97BC5B725025F9600312D9D /* InAppBrowserVC.swift */,
 			);
 			path = InAppBrowser;
+			sourceTree = "<group>";
+		};
+		A97BC5B925029AF600312D9D /* Benefits */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5EF2502D9B400312D9D /* Benefits_Details */,
+				A97BC5BE25029DA600312D9D /* Benefits_Main */,
+			);
+			path = Benefits;
+			sourceTree = "<group>";
+		};
+		A97BC5BE25029DA600312D9D /* Benefits_Main */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5E22502A0DB00312D9D /* Benefits_ViewAll_TableView */,
+				A97BC5C925029EB100312D9D /* Benefits_TableVIew */,
+				A97BC5D52502A00F00312D9D /* Benefits_VertTwoCollScroll */,
+				A97BC5C025029E0000312D9D /* BenefitsByCatContVC.swift */,
+				A97BC5BF25029E0000312D9D /* BenefitsViewAllContVC.swift */,
+				A97BC5ED2502AC7C00312D9D /* BenefitsController.swift */,
+			);
+			path = Benefits_Main;
+			sourceTree = "<group>";
+		};
+		A97BC5C925029EB100312D9D /* Benefits_TableVIew */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5CB25029EE600312D9D /* Benefits_TableView.swift */,
+				A97BC5CD25029EE600312D9D /* Benefits_TableView.xib */,
+				A97BC5CC25029EE600312D9D /* Benefits_TableCell.swift */,
+				A97BC5CE25029EE600312D9D /* Benefits_TableCell.xib */,
+				A97BC5CA25029EE600312D9D /* Benefits_TableDataSource.swift */,
+			);
+			path = Benefits_TableVIew;
+			sourceTree = "<group>";
+		};
+		A97BC5D52502A00F00312D9D /* Benefits_VertTwoCollScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5DB2502A03A00312D9D /* Benefits_VertTwoCollView.swift */,
+				A97BC5D62502A03900312D9D /* Benefits_VertTwoCollView.xib */,
+				A97BC5D72502A03900312D9D /* Benefits_VertTwoCollCell.swift */,
+				A97BC5D92502A03900312D9D /* Benefits_VertTwoCollCell.xib */,
+				A97BC5DA2502A03900312D9D /* Benefits_VertTwoCollDataSource.swift */,
+				A97BC5D82502A03900312D9D /* Benefits_VertTwoCollFlowLayout.swift */,
+			);
+			path = Benefits_VertTwoCollScroll;
+			sourceTree = "<group>";
+		};
+		A97BC5E22502A0DB00312D9D /* Benefits_ViewAll_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5E32502A10500312D9D /* Benefits_VIewAll_TableView.swift */,
+				A97BC5E52502A10500312D9D /* Benefits_ViewAll_TableView.xib */,
+				A97BC5E62502A10500312D9D /* Benefits_ViewAll_TableCell.swift */,
+				A97BC5E72502A10500312D9D /* Benefits_ViewAll_TableCell.xib */,
+				A97BC5E42502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift */,
+			);
+			path = Benefits_ViewAll_TableView;
+			sourceTree = "<group>";
+		};
+		A97BC5EF2502D9B400312D9D /* Benefits_Details */ = {
+			isa = PBXGroup;
+			children = (
+				A97BC5F02502DA2800312D9D /* BenefitsDetailsContVC.swift */,
+			);
+			path = Benefits_Details;
 			sourceTree = "<group>";
 		};
 		A9B017B824F82C6D000E2320 /* navbar */ = {
@@ -804,24 +912,29 @@
 				A9620D0624FE896600C599DC /* modes.sqlite3 in Resources */,
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
+				A97BC5DF2502A03A00312D9D /* Benefits_VertTwoCollCell.xib in Resources */,
 				A9620D1D24FECA5400C599DC /* ML_VertTwoCollView.xib in Resources */,
 				A9620D4A2501108400C599DC /* ML_Articles_TableCell.xib in Resources */,
 				A9620D2A24FEDE5900C599DC /* ML_ViewAll_TableCell.xib in Resources */,
 				A9FEEC0224FB1F3000EB7CA6 /* HomeTableCell.xib in Resources */,
 				A97BC5B22501A96100312D9D /* ML_Connect_TableView.xib in Resources */,
 				A9FEEBFF24FB1F3000EB7CA6 /* HomeTableView.xib in Resources */,
+				A97BC5DC2502A03A00312D9D /* Benefits_VertTwoCollView.xib in Resources */,
 				A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */,
 				A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */,
 				A97BC5A82501931400312D9D /* ML_Websites_TableView.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
+				A97BC5D325029EE600312D9D /* Benefits_TableCell.xib in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
 				1487F5A824E5E6E400C13817 /* LaunchScreen.storyboard in Resources */,
+				A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
 				A9620D3224FF1D0700C599DC /* ML_Guides_TableCell.xib in Resources */,
 				A97BC5B12501A96100312D9D /* ML_Connect_TableCell.xib in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
+				A97BC5EC2502A10500312D9D /* Benefits_ViewAll_TableCell.xib in Resources */,
 				A9620D462501108400C599DC /* ML_Articles_TableView.xib in Resources */,
 				A9BF9A9324F565530073C0DE /* WorkSans-Italic.ttf in Resources */,
 				1487F5A524E5E6E400C13817 /* Assets.xcassets in Resources */,
@@ -833,6 +946,7 @@
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
 				A97BC5A62501931400312D9D /* ML_Websites_TableCell.xib in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
+				A97BC5EA2502A10500312D9D /* Benefits_ViewAll_TableView.xib in Resources */,
 				A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */,
 				A9620D2924FEDE5900C599DC /* ML_ViewAll_TableView.xib in Resources */,
 			);
@@ -867,10 +981,12 @@
 				14A901D424F1B9C400E2B4CA /* IQTitleBarButtonItem.swift in Sources */,
 				A9620D1F24FECA5400C599DC /* ML_VertTwoCollCell.swift in Sources */,
 				A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */,
+				A97BC5E92502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift in Sources */,
 				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
 				A9620D2624FEDE5900C599DC /* ML_ViewAll_TableDataSource.swift in Sources */,
 				A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */,
 				14A901D524F1B9C400E2B4CA /* IQPreviousNextView.swift in Sources */,
+				A97BC5E12502A03A00312D9D /* Benefits_VertTwoCollView.swift in Sources */,
 				A97BC5B825025F9600312D9D /* InAppBrowserVC.swift in Sources */,
 				A9620D0D24FEC80C00C599DC /* MilLifeViewAllContVC.swift in Sources */,
 				A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */,
@@ -884,6 +1000,8 @@
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				A97BC5C225029E0000312D9D /* BenefitsViewAllContVC.swift in Sources */,
+				A97BC5D125029EE600312D9D /* Benefits_TableCell.swift in Sources */,
 				14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */,
 				14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */,
 				A9620D482501108400C599DC /* ML_Articles_TableView.swift in Sources */,
@@ -898,7 +1016,10 @@
 				14A901C424F1B98300E2B4CA /* IQUIViewController+Additions.swift in Sources */,
 				A9FEEC0424FB1F3000EB7CA6 /* HomeTableDataSource.swift in Sources */,
 				14A901C524F1B98300E2B4CA /* IQUIScrollView+Additions.swift in Sources */,
+				A97BC5F12502DA2800312D9D /* BenefitsDetailsContVC.swift in Sources */,
 				A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */,
+				A97BC5D025029EE600312D9D /* Benefits_TableView.swift in Sources */,
+				A97BC5E82502A10500312D9D /* Benefits_VIewAll_TableView.swift in Sources */,
 				14A901C624F1B98300E2B4CA /* IQUITextFieldView+Additions.swift in Sources */,
 				14A901C724F1B98300E2B4CA /* IQUIView+Hierarchy.swift in Sources */,
 				A95E942425016BEA00233C53 /* ML_Benefits_TableView.swift in Sources */,
@@ -906,12 +1027,15 @@
 				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */,
+				A97BC5EB2502A10500312D9D /* Benefits_ViewAll_TableCell.swift in Sources */,
 				A9620D0924FE9D7A00C599DC /* MilLifeGuidesController.swift in Sources */,
 				A9FEEC0124FB1F3000EB7CA6 /* HomeTableView.swift in Sources */,
 				143AB8B124EF4F20002D0029 /* PreferencesUtil.swift in Sources */,
 				A9620D2724FEDE5900C599DC /* ML_ViewAll_TableCell.swift in Sources */,
 				1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */,
 				A97BC59F2501854200312D9D /* GuidesModel.swift in Sources */,
+				A97BC5E02502A03A00312D9D /* Benefits_VertTwoCollDataSource.swift in Sources */,
+				A97BC5CF25029EE600312D9D /* Benefits_TableDataSource.swift in Sources */,
 				1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */,
 				A9B017F724F90E1E000E2320 /* HorzCollDataSource.swift in Sources */,
 				143AB89D24EED566002D0029 /* UserSettingsViewModel.swift in Sources */,
@@ -928,6 +1052,9 @@
 				A9620D3424FF1D0700C599DC /* ML_Guides_TableDataSource.swift in Sources */,
 				A9FEEBF324FABB5300EB7CA6 /* VertTwoCollView.swift in Sources */,
 				A9F2535024F987F7001C4176 /* SearchTableViewController.swift in Sources */,
+				A97BC5EE2502AC7C00312D9D /* BenefitsController.swift in Sources */,
+				A97BC5DE2502A03A00312D9D /* Benefits_VertTwoCollFlowLayout.swift in Sources */,
+				A97BC5C325029E0000312D9D /* BenefitsByCatContVC.swift in Sources */,
 				A95E942625016BEA00233C53 /* ML_Benefits_TableDataSource.swift in Sources */,
 				A9620D3D2500FF8A00C599DC /* MilLifeDetailsGuideContVC.swift in Sources */,
 				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
@@ -939,6 +1066,7 @@
 				1487F5CD24E5E74C00C13817 /* BaseViewModel.swift in Sources */,
 				83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */,
 				1487F5CF24E5EA3900C13817 /* WebServiceConnector.swift in Sources */,
+				A97BC5DD2502A03A00312D9D /* Benefits_VertTwoCollCell.swift in Sources */,
 				143AB8A124EED595002D0029 /* UserSettingsViewController.swift in Sources */,
 				A9FEEC0024FB1F3000EB7CA6 /* HomeTableCell.swift in Sources */,
 				A9FEEBF824FABB5300EB7CA6 /* VertTwoCollDataSource.swift in Sources */,
