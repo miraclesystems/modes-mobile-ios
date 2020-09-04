@@ -505,7 +505,6 @@
 			isa = PBXGroup;
 			children = (
 				A9B017B824F82C6D000E2320 /* navbar */,
-				A958EB7124F5266100989D70 /* Navigation.storyboard */,
 				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
 				A958EB6F24F5266100989D70 /* SecondViewController.swift */,
 				A958EB7024F5266100989D70 /* ThirdViewController.swift */,
@@ -646,6 +645,7 @@
 		A9B017B824F82C6D000E2320 /* navbar */ = {
 			isa = PBXGroup;
 			children = (
+				A958EB7124F5266100989D70 /* Navigation.storyboard */,
 				A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */,
 				A9B017BA24F82D5A000E2320 /* CustomNavigationBar.xib */,
 			);
