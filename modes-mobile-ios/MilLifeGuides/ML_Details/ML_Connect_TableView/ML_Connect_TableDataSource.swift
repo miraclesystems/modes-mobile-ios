@@ -9,7 +9,7 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
     var viewModel : HomeViewModel?
     var parentVc : MilLifeDetailsGuideContVC?
     
-    var myLabels = [ "Navigation COVID-19 Travel Restrictions", "Foreign-born Spouse Support", "Personalized Moving Plans"]
+    //var myLabels = [ "Navigation COVID-19 Travel Restrictions", "Foreign-born Spouse Support", "Personalized Moving Plans"]
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -17,7 +17,8 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
         //return viewModel?.getConnect(topic: viewModel?.topic ?? "").count ?? 0
         
-        return myLabels.count
+        return parentVc?.guide?.ExpertsText?.count ?? 0
+       
        
     }
     
@@ -32,7 +33,8 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "ML_Connect_TableCell", for: indexPath) as! ML_Connect_TableCell
         
 
-        cell.label.text = myLabels[indexPath.row]
+        cell.label.text = parentVc?.guide?.ExpertsText?[indexPath.row] as? String
+        //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getConnect(topic: viewModel?.topic ?? "")[indexPath.row]
         
 

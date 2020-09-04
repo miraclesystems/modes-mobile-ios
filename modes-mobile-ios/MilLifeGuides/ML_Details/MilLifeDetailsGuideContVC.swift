@@ -17,7 +17,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var ml_websites_tableview: ML_Websites_TableView!
     @IBOutlet weak var ml_connect_tableview: ML_Connect_TableView!
     
+    @IBOutlet weak var lblExpertsHeader1: UILabel!
     
+    @IBOutlet weak var lblExpertOverview: UILabel!
     
     
     //page elements
@@ -59,6 +61,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
         ml_connect_tableview.tableDataSource.parentVc = self
         ml_connect_tableview.tableView.reloadData()
         
+        
+        lblExpertOverview.text = guide?.ExpertsHeader
+        lblExpertsHeader1.text = guide?.ExpertsHeader1
         print("Debug")
         
         

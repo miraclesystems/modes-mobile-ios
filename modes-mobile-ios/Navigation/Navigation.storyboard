@@ -1926,7 +1926,9 @@ OneSource consultant</string>
                         <outlet property="favoritesBtn" destination="cjw-GA-Q2V" id="wz1-Fk-YyY"/>
                         <outlet property="lblArticles" destination="KHY-Jq-xXT" id="5B1-Ly-v02"/>
                         <outlet property="lblBenefits" destination="pJ4-80-lhw" id="aaI-t9-H37"/>
-                        <outlet property="lblHeader" destination="3D9-O6-oJr" id="tB4-VQ-VRe"/>
+                        <outlet property="lblExpertOverview" destination="4kg-MT-FiA" id="hRX-Ol-qa6"/>
+                        <outlet property="lblExpertsHeader1" destination="bKS-ew-Qom" id="NuZ-Rj-Jpd"/>
+                        <outlet property="lblHeader" destination="3D9-O6-oJr" id="LFz-OY-5SK"/>
                         <outlet property="lblTextOverVIew" destination="4Ra-zz-cRZ" id="gJe-Zp-fcK"/>
                         <outlet property="lblTitle" destination="MtE-qX-Ez6" id="1mH-il-Ppm"/>
                         <outlet property="ml_articles_tableview" destination="1rR-1q-tZY" id="G0a-Bt-Wip"/>
