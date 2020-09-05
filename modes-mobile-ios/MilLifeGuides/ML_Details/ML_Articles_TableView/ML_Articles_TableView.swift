@@ -45,7 +45,7 @@ class ML_Articles_TableView: UIView {
         //tableView.register(nib, forCellWithReuseIdentifier: "ML_Articles_TableCell")
         tableView.register(nib, forCellReuseIdentifier: "ML_Articles_TableCell")
          
-        tableDataSource.viewModel = self.viewModel
+       // tableDataSource.viewModel = self.viewModel
 
         //tableView.dataSource = self
         tableView.dataSource = tableDataSource

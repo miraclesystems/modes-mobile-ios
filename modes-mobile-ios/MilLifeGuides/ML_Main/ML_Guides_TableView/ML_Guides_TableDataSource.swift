@@ -65,8 +65,11 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
+        //print("label: ", myLabels[indexPath.item])
+        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
+        parentVc?.viewModel?.selectedGuide = guides?[indexPath.row] as! String
         parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
+        parentVc?.vc3?.loadGuide()
     }
     
 
