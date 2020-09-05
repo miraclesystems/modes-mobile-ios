@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UaG-6k-bH4" customClass="Benefits_ByCat_TableCell" customModule="modes_mobile_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UaG-6k-bH4" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-dj-8MO">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="59"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableviewCell_background" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-hY-lKp" userLabel="backImage">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="104"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
+                        <rect key="frame" x="20" y="12" width="450" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="5g6-iU-cF8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="20" id="WPZ-vn-4dA"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="centerX" secondItem="Esb-dj-8MO" secondAttribute="centerX" id="ccO-1l-lWL"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="20" id="h7d-bf-ee7"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="centerY" secondItem="Esb-dj-8MO" secondAttribute="centerY" constant="-5" id="ke9-zB-gmy"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Sjh-hY-lKp"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Esb-dj-8MO" firstAttribute="leading" secondItem="UaG-6k-bH4" secondAttribute="leading" id="6EG-SH-Jf3"/>
+                <constraint firstAttribute="bottom" secondItem="Esb-dj-8MO" secondAttribute="bottom" id="C37-Mb-ayK"/>
+                <constraint firstItem="Esb-dj-8MO" firstAttribute="top" secondItem="UaG-6k-bH4" secondAttribute="top" id="diL-F6-SHm"/>
+                <constraint firstAttribute="trailing" secondItem="Esb-dj-8MO" secondAttribute="trailing" constant="10" id="xBn-a7-TH2"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="Esb-dj-8MO" id="1Kp-LL-KJ0"/>
+                <outlet property="label" destination="eJ9-Xd-zMk" id="Agh-GS-2jF"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="59.598214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tableviewCell_background" width="352" height="104"/>
+    </resources>
+</document>
