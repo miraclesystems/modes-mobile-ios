@@ -7,6 +7,9 @@ import UIKit
 
 class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     var viewModel : HomeViewModel?
     

@@ -60,9 +60,12 @@ class Benefits_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableVi
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         print("label: ", myLabels[indexPath.item])
     
-        parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
+        parentVc?.parentVc?.benefits_tableview.tableView.reloadData()
+        
+        parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.BenefitsTableView)!)
         
     }
     
