@@ -10,7 +10,8 @@ import UIKit
 class BenefitsByCatContVC: UIViewController {
 
     var parentVc : BenefitsController?
-    @IBOutlet var benefits_verttwocollview: Benefits_VertTwoCollView!
+    //@IBOutlet var benefits_verttwocollview: Benefits_VertTwoCollView!
+    @IBOutlet var benefits_bycat_tableview: Benefits_ByCat_TableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,11 @@ class BenefitsByCatContVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        benefits_verttwocollview.collectionDataSource.parentVc = self
-        benefits_verttwocollview.collectionView.reloadData()
+        //benefits_verttwocollview.collectionDataSource.parentVc = self
+        //benefits_verttwocollview.collectionView.reloadData()
+        benefits_bycat_tableview.tableDataSource.parentVc = self
+        benefits_bycat_tableview.tableView.reloadData()
+        
     }
     /*
     func showBenefitsTableonParent(){

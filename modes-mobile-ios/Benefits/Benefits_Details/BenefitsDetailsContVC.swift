@@ -18,17 +18,21 @@ class BenefitsDetailsContVC: UIViewController {
     
     
     
-    
     @IBAction func backBtnTouched(_ sender: Any) {
-    
+      print("Back Button Touched")
+      parentVc?.showMainView(view: parentVc!.DetailsBenefits)
     }
     
     @IBAction func favoritesBtnTouched(_ sender: Any) {
-    
+        print("Favorites Button Touched")
     }
     
     @IBAction func benefitDetailsBtnTouched(_ sender: Any) {
-        
+        if let url = URL(string: "http://www.militaryonesource.mil") {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
     }
     
     
