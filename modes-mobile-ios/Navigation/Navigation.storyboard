@@ -2775,7 +2775,7 @@ OneSource consultant</string>
         <!--BenefitsDetailsContVC-->
         <scene sceneID="FYg-8h-d5k">
             <objects>
-                <viewController id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BenefitsDetailsContVC" id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPC-Ip-dGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2803,9 +2803,11 @@ OneSource consultant</string>
                                                     <constraint firstAttribute="width" constant="20" id="XAU-In-RcJ"/>
                                                     <constraint firstAttribute="height" constant="20" id="qSG-9T-nBM"/>
                                                 </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" backgroundImage="favorites_red"/>
                                                 <connections>
                                                     <action selector="favoritesBtnTouched:" destination="UMN-Jb-aoq" eventType="touchUpInside" id="EdJ-Kz-7wn"/>
+                                                    <action selector="touchFavorie:" destination="UMN-Jb-aoq" eventType="touchUpInside" id="DJe-Dv-8Jk"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
@@ -2904,6 +2906,7 @@ OneSource consultant</string>
                     <connections>
                         <outlet property="benefitsText" destination="MI3-ao-x62" id="bTl-vP-wis"/>
                         <outlet property="benefitsTitle" destination="eHL-hN-4wd" id="PD4-h2-pX0"/>
+                        <outlet property="buttonFavorite" destination="dPM-8K-REc" id="h3a-eh-HGY"/>
                         <outlet property="favoritesBtn" destination="dPM-8K-REc" id="Qse-om-fqp"/>
                     </connections>
                 </viewController>

@@ -6,7 +6,7 @@ class Benefits_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableVi
     
 
     
-    var viewModel : HomeViewModel?
+   
     var parentVc : BenefitsByCatContVC?
     
     
@@ -17,18 +17,11 @@ class Benefits_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        //return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
-        
-        //return parentVc?.parentVc?.viewModel?.getAllBenefits().count ?? 0
-        return myLabels.count
+        return parentVc?.parentVc?.viewModel?.getCategories().count ?? 0
+        //return myLabels.count
        
     }
     
-    /*
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
- */
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TableViewCell
@@ -41,8 +34,9 @@ class Benefits_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableVi
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
         //cell.label.text = parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row]
-        cell.label.text = myLabels[indexPath.row]
+        //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
+        cell.label.text = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row]
         
         //background
         cell.layer.cornerRadius = 5
@@ -61,8 +55,10 @@ class Benefits_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableVi
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        print("label: ", myLabels[indexPath.item])
-    
+       // print("label: ", myLabels[indexPath.item])
+
+        parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row] as! String
+
         parentVc?.parentVc?.benefits_tableview.tableView.reloadData()
         
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.BenefitsTableView)!)

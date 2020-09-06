@@ -200,7 +200,38 @@ class ModesDb{
     }
 
       
+
+    func getBenefitCategories()->[[String:Any?]]{
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT DISTINCT category from benefits")
+        return data
+    }
+
+    func getBenefitByCategory(category : String)->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT * from benefits WHERE category LIKE '%" + category + "%'")
+        return data
+    }
+
+    func getBenefitByName(name : String)->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT * from benefits WHERE benefit LIKE '%" + name + "%'")
+        return data
+    }
     
+    func getAllBenefits()->[[String:Any?]]{
+
+        let db = SQLiteDB.shared
+        db.open()
+        let data = db.query(sql: "SELECT * FROM benefits")
+        return data
+
+    }
     
     
     

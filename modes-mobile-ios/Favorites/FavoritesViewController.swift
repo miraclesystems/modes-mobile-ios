@@ -197,6 +197,14 @@ extension FavoritesViewController : UITableViewDelegate, UITableViewDataSource{
         }
         else{
             print("beenfits selected")
+            
+            let selectedBenefit = viewModel?.getFavoriteBenefits()[indexPath.row].name
+            
+            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
+            
+            vc.selectedBenefit = selectedBenefit
+            self.present(vc, animated: true)
         }
         return indexPath
     }

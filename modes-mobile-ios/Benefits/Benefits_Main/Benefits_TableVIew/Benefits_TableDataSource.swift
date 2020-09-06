@@ -15,14 +15,9 @@ class Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-       // var benefits =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
-        
+
        // return benefits?.count ?? 0
-        
-        return myLabels.count
-        
-       
-       
+       return  parentVc?.viewModel?.getBenifitsByCategory().count ?? 0
     }
     
     /*
@@ -36,20 +31,14 @@ class Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "Benefits_TableCell", for: indexPath) as! Benefits_TableCell
         
 
-       
-       
+    
         
-        //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
-        //cell.imageView.image = UIImage(named: myImages[indexPath.item])
+        let benefit = parentVc?.viewModel?.getBenifitsByCategory()[indexPath.row]
         
-        cell.label.text = myLabels[indexPath.row]
-        cell.lblText.text = myLabels2[indexPath.row]
+        cell.label.text = benefit?.Benefit
+        cell.lblText.text = benefit?.ShortDescription
         
-        //var benefits =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
-
-        //cell.label.text = benefits?[indexPath.row] as! String
         
-        //cell.label.text = "viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]"
         
         //background
         cell.layer.cornerRadius = 5
@@ -60,14 +49,17 @@ class Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
         cell.layer.shadowOpacity = 0.1
         cell.layer.masksToBounds = false //<-
         
-        //cell.layer.backgroundColor = UIColor.white.cgColor
-        //tableView.delaysContentTouches = false
+        
         return cell
     }
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
+    
+        let benefit = parentVc?.viewModel?.getBenifitsByCategory()[indexPath.row]
+        parentVc?.viewModel?.selectedBenefit = benefit?.Benefit as! String
+    
         parentVc?.showOverlay(view: (parentVc?.DetailsBenefits)!)
     }
     

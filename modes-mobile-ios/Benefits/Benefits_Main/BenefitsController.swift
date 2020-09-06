@@ -10,7 +10,7 @@ import UIKit
 class BenefitsController: UIViewController {
 
     
-    //var viewModel : GuidesViewModel?
+    var viewModel : BenefitsViewModel?
     
     @IBOutlet weak var btn_ByCat: UIButton!
     @IBOutlet weak var btn_ViewAll: UIButton!
@@ -132,6 +132,7 @@ class BenefitsController: UIViewController {
         //viewModel = GuidesViewModel()
         super.viewDidLoad()
 
+                viewModel = BenefitsViewModel()
                 // set a reference back to the parent vc for contained view controllers
                // this is how the childeren should reference the view model
                for child in self.children{

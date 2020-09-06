@@ -45,7 +45,7 @@ class Benefits_ByCat_TableView: UIView {
         //tableView.register(nib, forCellWithReuseIdentifier: "Benefits_ByCat_TableCell")
         tableView.register(nib, forCellReuseIdentifier: "Benefits_ByCat_TableCell")
          
-        tableDataSource.viewModel = self.viewModel
+        //tableDataSource.viewModel = self.viewModel
 
         //tableView.dataSource = self
         tableView.dataSource = tableDataSource
