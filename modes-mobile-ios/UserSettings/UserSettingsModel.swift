@@ -45,6 +45,8 @@ class LocationByPostalCode:Codable{
     
     var INST_ID : Int?
     var INST_NAME : String?
+    var SETY_ID : Int?
+    var SETY_NAME : String?
 }
 
 class BranchesModel : Codable{

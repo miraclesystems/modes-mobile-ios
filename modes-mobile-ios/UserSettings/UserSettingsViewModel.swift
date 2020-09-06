@@ -44,11 +44,14 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
                 self.locationsModel.items =  [Location?]()
                 let model = try JSONDecoder().decode(LocationsByPostalCode.self, from: JSONData)
                 for item in model.items!{
-                    var location = Location()
-                    location.name = item?.INST_NAME
-                    location.id = item?.INST_ID
                     
-                    self.locationsModel.items?.append(location)
+                    if(item!.SETY_ID == 1 && item!.SETY_NAME == " Location"){
+                        let location = Location()
+                        location.name = item?.INST_NAME
+                        location.id = item?.INST_ID
+                        
+                        self.locationsModel.items?.append(location)
+                    }
                     
                     
                 }
