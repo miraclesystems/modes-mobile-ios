@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
         return .lightContent
     }
     
+    @IBOutlet weak var customNavBar: CustomNavigationBar!
     
 
 
@@ -41,6 +42,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //set focus
+        setNeedsFocusUpdate()
+        updateFocusIfNeeded()
         
         // pass the view model to the horzCollView
         
@@ -74,6 +78,8 @@ class HomeViewController: UIViewController {
         
         
         testMenuButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
 
 
         /*
@@ -100,6 +106,11 @@ class HomeViewController: UIViewController {
         
     }
     
+    //Set the Initial Focus
+    override var preferredFocusEnvironments: [UIFocusEnvironment] {
+        return [customNavBar!.leftButton]
+    }
+    
     override func viewWillAppear(_ Animated: Bool) {
         HomeContView2.isHidden = true
         HomeContView2.alpha = 0
@@ -110,6 +121,7 @@ class HomeViewController: UIViewController {
         vc1?.horzCollView.collectionDataSource.viewModel = self.viewModel
         vc1?.horzCollView.collectionView.reloadData()
         
+       
         
     }
     

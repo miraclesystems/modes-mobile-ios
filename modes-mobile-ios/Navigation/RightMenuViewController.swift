@@ -34,7 +34,7 @@ class RightMenuViewController: UIViewController {
 
     
     //Array of Page Titles
-    let titles: [String] = ["First", "Second", "Third"]
+    let titles: [String] = ["Home", "MilLife Guides", "Benefits"]
     //Array of Page Images
     let images: [String] = ["first", "second", "third"]
     

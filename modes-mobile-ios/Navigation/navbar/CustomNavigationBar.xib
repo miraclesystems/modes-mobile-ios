@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
             <connections>
-                <outlet property="leftButton" destination="unR-Ml-tWu" id="ZvL-cz-0O0"/>
+                <outlet property="leftButton" destination="unR-Ml-tWu" id="7JE-za-MQM"/>
                 <outlet property="rightButton" destination="QFB-fL-7aq" id="RUe-Ty-Or6"/>
                 <outlet property="view" destination="AB3-JX-r91" id="1KQ-qZ-z9c"/>
             </connections>
@@ -39,6 +39,9 @@
                         <constraint firstAttribute="height" constant="56" id="9R3-8y-tAL"/>
                     </constraints>
                     <state key="normal" image="modes_logo_appbar"/>
+                    <connections>
+                        <action selector="leftMenuClicked:" destination="-1" eventType="touchUpInside" id="dAb-Fg-LAH"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
