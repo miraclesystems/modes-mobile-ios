@@ -73,6 +73,22 @@ class BenefitsViewModel  {
         }
     return list
     }
+    
+    
+    func getBenefitsByName(title: String)-> [String]{
+        var list = [String]()
+        var results = ModesDb.shared.getBenefitByName(name: title)
+        
+        for item in results{
+            list.append(item["Benefit"] as! String)
+        }
+
+        return list
+        
+    }
+    
+    
+    
 
     func getSelectedBenefit()-> Benefit{
 

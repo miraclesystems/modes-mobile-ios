@@ -10,7 +10,8 @@ class CustomNavigationBar: UIView {
     private static let NIB_NAME = "CustomNavigationBar"
     
     @IBOutlet private var view: UIView!
-    @IBOutlet private weak var leftButton: UIButton!
+    
+    @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     
    // var delegate: ButtonTapDelegate
@@ -45,9 +46,13 @@ class CustomNavigationBar: UIView {
         initWithNib()
     }
     
+    @IBAction func leftMenuClicked(_ sender: Any) {
+        print("On CustomNavigationBar.swift, Left Menu Button Pressed")
+        
+    }
     
     @IBAction func rightMenuClicked(_ sender: Any) {
-        print("Menu Button Pressed")
+        print("On CustomNavigationBar.swift, Right Menu Button Pressed")
        // SSASideMenu._presentRightMenuViewController()
       //  delegate.didTapButton()
     }
