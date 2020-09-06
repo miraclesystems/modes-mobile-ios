@@ -23,9 +23,16 @@ class Location: Codable{
     var id : Int?
     var name : String?
     var branch : String?
+    var phone1 : String?
+    var url1 : String?
+    var email_address1 : String?
+    var address_line1 : String?
+    var city : String?
     var stat_id : String?
+    var postal_code : String?
     var coun_id : String?
     var name_seo : String?
+    
 }
 
 

@@ -160,6 +160,7 @@ class UserSettingsInstallationsViewController: UIViewController {
     //Segue for passing data forward
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! LocTableViewController
+        vc.viewModel = parentVc?.viewModel
         vc.fromGeoLoc = geoLocation
         if geoLocation == false {
             vc.namesArr = (parentVc?.viewModel?.locationsModel.items!.map { $0!.name! })!
@@ -179,7 +180,7 @@ class UserSettingsInstallationsViewController: UIViewController {
             print("mySelect: ", mySelect)
             
             searchInstBtn.setTitle(mySelect, for: .normal)
-            self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
+            //self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
             /*
             let seconds = 0.75
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
@@ -255,7 +256,7 @@ extension UserSettingsInstallationsViewController : UIPickerViewDelegate, UIPick
         else{""
             textLocatin.text = self.filteredArray[row]
             pickerView.isHidden = true
-            self.parentVc?.viewModel?.setInstallation(installation: textLocatin.text ?? "")
+            //self.parentVc?.viewModel?.setInstallation(installation: textLocatin.text ?? "")
         }
         
     }
