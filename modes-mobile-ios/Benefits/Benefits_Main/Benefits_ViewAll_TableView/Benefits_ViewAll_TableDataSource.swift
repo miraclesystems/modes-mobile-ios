@@ -17,10 +17,9 @@ class Benefits_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        //return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
-        
-        //return parentVc?.parentVc?.viewModel?.getAllBenefits().count ?? 0
-        return myLabels.count
+       
+        return parentVc?.parentVc?.viewModel?.getAllBenefits().count ?? 0
+        //return myLabels.count
        
     }
     
@@ -41,8 +40,10 @@ class Benefits_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITable
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
         //cell.label.text = parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row]
-        cell.label.text = myLabels[indexPath.row]
-        cell.lblText.text = myLabels2[indexPath.row]
+        
+        var benefit = (parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row])! as Benefit
+        cell.label.text = benefit.Benefit
+        cell.lblText.text = benefit.ShortDescription
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
@@ -63,6 +64,8 @@ class Benefits_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITable
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
     
+        var benefit = (parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row])! as Benefit
+        parentVc?.parentVc?.viewModel?.selectedBenefit = benefit.Benefit!
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
         
     }

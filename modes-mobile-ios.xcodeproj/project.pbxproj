@@ -32,6 +32,8 @@
 		14413CD12503F6BF00E9FA72 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD02503F6BF00E9FA72 /* FavoritesViewController.swift */; };
 		14413CD3250444AD00E9FA72 /* FavoriteGuidesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD2250444AD00E9FA72 /* FavoriteGuidesTableViewCell.swift */; };
 		14413CD52504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD42504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift */; };
+		14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD62505381700E9FA72 /* BenefitsModel.swift */; };
+		14413CD92505382C00E9FA72 /* BenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -209,6 +211,8 @@
 		14413CD02503F6BF00E9FA72 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		14413CD2250444AD00E9FA72 /* FavoriteGuidesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGuidesTableViewCell.swift; sourceTree = "<group>"; };
 		14413CD42504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBenefitsTableViewCell.swift; sourceTree = "<group>"; };
+		14413CD62505381700E9FA72 /* BenefitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsModel.swift; sourceTree = "<group>"; };
+		14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsViewModel.swift; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -708,6 +712,8 @@
 			children = (
 				A97BC5EF2502D9B400312D9D /* Benefits_Details */,
 				A97BC5BE25029DA600312D9D /* Benefits_Main */,
+				14413CD62505381700E9FA72 /* BenefitsModel.swift */,
+				14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */,
 			);
 			path = Benefits;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				A9620D482501108400C599DC /* ML_Articles_TableView.swift in Sources */,
 				14A901CD24F1B9AB00E2B4CA /* IQTextView.swift in Sources */,
 				A97BC5B52501A96100312D9D /* ML_Connect_TableView.swift in Sources */,
+				14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */,
 				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
 				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
 				8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */,
@@ -1088,6 +1095,7 @@
 				A97BC5C325029E0000312D9D /* BenefitsByCatContVC.swift in Sources */,
 				A95E942625016BEA00233C53 /* ML_Benefits_TableDataSource.swift in Sources */,
 				A9620D3D2500FF8A00C599DC /* MilLifeDetailsGuideContVC.swift in Sources */,
+				14413CD92505382C00E9FA72 /* BenefitsViewModel.swift in Sources */,
 				A9B017F324F90E1E000E2320 /* HorzCollFlowLayout.swift in Sources */,
 				A97BC5FA25038C9500312D9D /* Benefits_ByCat_TableCell.swift in Sources */,
 				A9620D492501108400C599DC /* ML_Articles_TableCell.swift in Sources */,
