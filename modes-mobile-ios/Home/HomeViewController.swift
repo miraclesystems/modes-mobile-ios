@@ -135,6 +135,12 @@ class HomeViewController: UIViewController {
         case "BENEFIT":
                 print("Benefits")
                 tabBarController!.selectedIndex = 2
+                
+                //Pass Data
+                let nextTab = self.tabBarController!.viewControllers![2] as! BenefitsController
+                nextTab.viewModel?.selectedBenefit = (nextTab.viewModel?.getBenefitsByName(title: mySelCardTitle!)[0])!
+                nextTab.showOverlay(view: nextTab.DetailsBenefits)
+                //nextTab.vc3!.loadBenefit()
             
         case "FAVORITES":
                 print("Favorites")
