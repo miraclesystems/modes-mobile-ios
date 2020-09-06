@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UaG-6k-bH4" customClass="Benefits_TableCell" customModule="modes_mobile_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UaG-6k-bH4" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-dj-8MO">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="90"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableviewCell_background" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-hY-lKp" userLabel="backImage">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="104"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
+                        <rect key="frame" x="15" y="12" width="460" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hAv-68-lb0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-u1-ir9">
+                        <rect key="frame" x="15" y="35" width="460" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="15" id="5gB-GD-Ndg"/>
+                    <constraint firstItem="UAe-u1-ir9" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="15" id="6QG-YP-NfD"/>
+                    <constraint firstItem="UAe-u1-ir9" firstAttribute="top" secondItem="eJ9-Xd-zMk" secondAttribute="bottom" constant="2" id="CXQ-eo-rP5"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="15" id="NvC-li-oCF"/>
+                    <constraint firstAttribute="bottom" secondItem="UAe-u1-ir9" secondAttribute="bottom" constant="7" id="Sy0-Fl-Gnn"/>
+                    <constraint firstAttribute="trailing" secondItem="UAe-u1-ir9" secondAttribute="trailing" constant="15" id="bka-Jr-czk"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="top" secondItem="Esb-dj-8MO" secondAttribute="top" constant="12" id="gWb-ap-Yle"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Sjh-hY-lKp"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Esb-dj-8MO" firstAttribute="leading" secondItem="UaG-6k-bH4" secondAttribute="leading" id="6EG-SH-Jf3"/>
+                <constraint firstAttribute="bottom" secondItem="Esb-dj-8MO" secondAttribute="bottom" id="C37-Mb-ayK"/>
+                <constraint firstItem="Esb-dj-8MO" firstAttribute="top" secondItem="UaG-6k-bH4" secondAttribute="top" id="diL-F6-SHm"/>
+                <constraint firstAttribute="trailing" secondItem="Esb-dj-8MO" secondAttribute="trailing" constant="10" id="xBn-a7-TH2"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="Esb-dj-8MO" id="1Kp-LL-KJ0"/>
+                <outlet property="label" destination="eJ9-Xd-zMk" id="Agh-GS-2jF"/>
+                <outlet property="lblText" destination="UAe-u1-ir9" id="QnO-Rv-axd"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="59.598214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tableviewCell_background" width="352" height="104"/>
+    </resources>
+</document>
