@@ -56,5 +56,6 @@ class Guide{
 
     var ExpertsHeader : String?
     var ExpertsHeader1: String?
+    var favorite: Bool?
 }
 

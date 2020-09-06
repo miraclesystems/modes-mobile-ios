@@ -3,9 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MilLifeDetailsGuideContVC.viewDidLoad():MilLifeDetailsGuideContVC.swift">
-      </ContextState>
-      <ContextState
          contextName = "SearchTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):SearchTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -13,6 +10,20 @@
             </PersistentString>
             <PersistentString
                value = "searchText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MilLifeDetailsGuideContVC.viewDidLoad():MilLifeDetailsGuideContVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MilLifeDetailsGuideContVC.didTouchDetailsBackBtn(_:):MilLifeDetailsGuideContVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MilLifeDetailsGuideContVC.touchFavorite(_:):MilLifeDetailsGuideContVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "guide">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -33,12 +44,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ML_ViewAll_TableDataSource.tableView(_:didSelectRowAt:):ML_ViewAll_TableDataSource.swift">
-      </ContextState>
-      <ContextState
-         contextName = "HomeContView1VC.prepare(for:sender:):HomeContView1VC.swift">
-      </ContextState>
-      <ContextState
          contextName = "HorzCollView.init(coder:):HorzCollView.swift">
          <PersistentStrings>
             <PersistentString
@@ -47,7 +52,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "HomeContView1VC.prepare(for:sender:):HomeContView1VC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ML_ViewAll_TableDataSource.tableView(_:didSelectRowAt:):ML_ViewAll_TableDataSource.swift">
+      </ContextState>
+      <ContextState
          contextName = "HorzCollView.commonInit():HorzCollView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LocTableViewController.tableView(_:didSelectRowAt:):LocTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "PreferencesUtil.shared.installation">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "HorzCollDataSource.collectionView(_:cellForItemAt:):HorzCollDataSource.swift">
@@ -66,6 +85,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in FavoritesViewController.observeValue(forKeyPath:of:change:context:):FavoritesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ModesDb.getBenefitsByAudience(audience:):ModesDb.swift">
          <PersistentStrings>
             <PersistentString
@@ -78,6 +105,25 @@
       </ContextState>
       <ContextState
          contextName = "SearchTableViewController.tableView(_:cellForRowAt:):SearchTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesViewController.viewDidLoad():FavoritesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewInstallation.frame">
+            </PersistentString>
+            <PersistentString
+               value = "viewNoInstallation.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesViewController.tableView(_:cellForRowAt:):FavoritesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel?.getFavoriteBenefits()">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

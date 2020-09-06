@@ -13,6 +13,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     @IBOutlet weak var lblInstallName: UILabel!
     @IBOutlet weak var btnRightTop: UIButton!
     
+    var viewModel : UserSettingsViewModel?
     
     var mySelection = ""
     var backWithData = false
@@ -109,11 +110,20 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     }
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
-        print("title: ", title)
-        mySelection = title!
-        backWithData = true
-        performSegue(withIdentifier: "unwindSegue", sender: title)
+    let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
+    print("title: ", title)
+    mySelection = title!
+    backWithData = true
+
+    // get our selected location
+    var location = viewModel?.locationsModel.items?[indexPath.row]
+    var id : String = String(location?.id ?? 0)
+    var installation = PreferencesUtil.shared.installation
+
+    PreferencesUtil.shared.installation = id
+    installation = PreferencesUtil.shared.installation
+
+    performSegue(withIdentifier: "unwindSegue", sender: title)
     }
 
     
