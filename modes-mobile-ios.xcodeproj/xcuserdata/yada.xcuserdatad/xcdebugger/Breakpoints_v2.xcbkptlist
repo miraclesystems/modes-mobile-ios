@@ -568,7 +568,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9DE13683-8F19-4725-91C5-0C9AD66B8E04"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
@@ -616,7 +616,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DBF44F56-2A24-4831-91BC-E22C736A9EAF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "modes-mobile-ios/UserSettings/UserSettingsInstallationsViewController.swift"
