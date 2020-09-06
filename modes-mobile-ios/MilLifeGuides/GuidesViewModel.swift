@@ -312,6 +312,13 @@ class GuidesViewModel{
         }
 
         guide.ExpertsText = list
+        if((results[0]["favorite"] as! Int) == 1){
+            guide.favorite = true
+        }
+        else{
+            guide.favorite = false
+        }
+       
         
         return guide
     }

@@ -122,6 +122,88 @@ class ModesDb{
     }
     
     
+    func getGuidesFavorites()->[[String:Any?]]{
+        
+        let db = SQLiteDB.shared
+        db.open()
+        let data =  db.query(sql: "SELECT * FROM guides where favorite = 1")
+        return data
+    }
+    
+    func getBenefitsFavorites()->[[String:Any?]]{
+        
+        let db = SQLiteDB.shared
+        db.open()
+        let data =  db.query(sql: "SELECT * FROM benefits where favorite = 1")
+        return data
+    }
+    
+    
+    
+    func setGuideFavorite(favorite : Bool, name: String){
+
+            var value = ""
+            if(favorite){
+              value = "1"
+            }
+            else{
+              value = "0"
+            }
+
+            let db = SQLiteDB.shared
+            db.open()
+        db.execute(sql: "UPDATE guides set favorite = " + value + " where guide = '" + name  + "'")
+      }
+    func setBenefitavorite(favorite : Bool, name: String){
+
+        var value = ""
+        if(favorite){
+        value = "1"
+        }
+        else{
+        value = "0"
+        }
+
+        let db = SQLiteDB.shared
+        db.open()
+        db.execute(sql: "UPDATE benefits set favorite = " + value + " where benefit = '" + name  + "'")
+    }
+
+      
+
+    func setBenefitsFavorite(favorite : Bool, id: Int){
+
+        var value = ""
+        if(favorite){
+          value = "1"
+        }
+        else{
+          value = "0"
+        }
+        let db = SQLiteDB.shared
+        db.open()
+        db.execute(sql: "UPDATE benefits set favorite = " + value + " where id = " + String(id) )
+    }
+    
+    func setGuidesFavorite(favorite : Bool, id: Int){
+
+        var value = ""
+        if(favorite){
+          value = "1"
+        }
+        else{
+          value = "0"
+        }
+        let db = SQLiteDB.shared
+        db.open()
+        db.execute(sql: "UPDATE guides set favorite = " + value + " where id = " + String(id) )
+    }
+
+      
+    
+    
+    
+    
     
     private func openDb(){
         

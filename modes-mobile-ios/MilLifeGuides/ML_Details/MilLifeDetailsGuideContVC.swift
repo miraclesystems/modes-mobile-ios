@@ -9,6 +9,8 @@ import UIKit
 
 class MilLifeDetailsGuideContVC: UIViewController {
 
+    
+    var selectedGuide : String?
     var parentVc : MilLifeGuidesController?
     
     var guide: Guide?
@@ -34,6 +36,21 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var lblBenefits: UILabel!
     @IBOutlet weak var btnMoreBenefits: UIButton!
     
+    @IBOutlet weak var buttonFavorite: UIButton!
+    @IBAction func touchFavorite(_ sender: Any) {
+        
+        ModesDb.shared.setGuideFavorite(favorite: !(guide?.favorite ?? false), name: (guide?.Guide)!)
+        guide?.favorite = !(guide?.favorite ?? false)
+        if((guide?.favorite ?? false)){
+            buttonFavorite.setImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+        }
+        else{
+             buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
+        }
+        
+    }
     
     func loadGuide()
     {
@@ -64,8 +81,57 @@ class MilLifeDetailsGuideContVC: UIViewController {
         
         lblExpertOverview.text = guide?.ExpertsHeader
         lblExpertsHeader1.text = guide?.ExpertsHeader1
+        
+        if((guide?.favorite ?? false)){
+            buttonFavorite.setImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+        }
+        else{
+             buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
+        }
+        
         print("Debug")
         
+        
+    }
+    
+    
+    
+    func loadGuide1(){
+        self.lblTitle.text = guide?.Guide
+        self.lblHeader.text = guide?.GuideHeader
+        self.lblTextOverVIew.text = guide?.Overview
+        self.lblArticles.text = guide?.ArticleHeader
+        self.btnMoreArticles.setTitle(guide?.MoreArticlesText, for: .normal)
+        self.btnMoreBenefits.setTitle(guide?.MoreBenefitsText, for: .normal)
+        
+        
+        ml_articles_tableview.tableDataSource.parentVc = self
+        ml_articles_tableview.tableView.reloadData()
+
+        ml_benefits_tableview.tableDataSource.parentVc = self
+        ml_benefits_tableview.tableView.reloadData()
+
+        ml_websites_tableview.tableDataSource.parentVc = self
+        ml_websites_tableview.tableView.reloadData()
+
+        ml_connect_tableview.tableDataSource.parentVc = self
+        ml_connect_tableview.tableView.reloadData()
+        
+        
+        lblExpertOverview.text = guide?.ExpertsHeader
+        lblExpertsHeader1.text = guide?.ExpertsHeader1
+        if((guide?.favorite ?? false)){
+            buttonFavorite.setImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)
+        }
+        else{
+             buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
+            buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
+        }
+        
+        print("Debug")
         
     }
     
@@ -98,7 +164,15 @@ class MilLifeDetailsGuideContVC: UIViewController {
     
     
     @IBAction func didTouchDetailsBackBtn(_ sender: Any) {
-        parentVc?.showMainView(view: parentVc!.DetailsGuideCont)
+        
+        if(!(selectedGuide?.isEmpty ?? true)){
+            self.dismiss(animated: true) {
+                
+            }
+        }
+        else{
+            parentVc?.showMainView(view: parentVc!.DetailsGuideCont)
+        }
     }
     
     
@@ -110,6 +184,12 @@ class MilLifeDetailsGuideContVC: UIViewController {
         // Do any additional setup after loading the view.
         
         
+        if(!(selectedGuide?.isEmpty ?? true)){
+            var viewModel = GuidesViewModel()
+            viewModel.selectedGuide = selectedGuide!
+            guide = viewModel.getGuide()
+            loadGuide1()
+        }
         
     }
     
