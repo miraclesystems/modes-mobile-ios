@@ -21,7 +21,25 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
         
         cell.label.text = card?.cardTitle
         cell.labelHeader.text = card?.cardType
+        cell.imgRecommended.isHidden = !(card?.recommended ?? false)
         
+        switch card?.cardType {
+        case "MILLIFE GUIDES":
+            cell.headerImage.image = UIImage(named: "millife_ic")
+        
+        case "BENEFIT":
+        cell.headerImage.image = UIImage(named: "benefits_ic")
+        cell.headerLabel.text = "BENEFITS"
+        
+        case "CONNECT":
+        cell.headerImage.image = UIImage(named: "connect_ic")
+        
+        case "ABOUT US":
+        cell.headerImage.image = UIImage(named:"home_ic")
+            
+        default:
+            print("default ran")
+        }
         return cell
     }
     

@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="WorkSans-Regular.ttf">
-            <string>WorkSans-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,37 +19,63 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hU8-8c-BdL">
                         <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyr-O5-DTj" userLabel="HeaderView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyr-O5-DTj" userLabel="HeaderView">
                                 <rect key="frame" x="0.0" y="0.0" width="135" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nzf-AR-5Z0">
-                                        <rect key="frame" x="61" y="12" width="30" height="12"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="10"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzf-AR-5Z0">
+                                        <rect key="frame" x="49.5" y="12" width="44" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="93c-3C-REL"/>
+                                            <constraint firstAttribute="height" constant="12" id="ROf-le-Nr2"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="i8S-yt-JiA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="benefits_ic" translatesAutoresizingMaskIntoConstraints="NO" id="8vv-4R-pVU">
-                                        <rect key="frame" x="44" y="9" width="15" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefits_ic" translatesAutoresizingMaskIntoConstraints="NO" id="8vv-4R-pVU">
+                                        <rect key="frame" x="30" y="9" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Zoq-MU-FQc"/>
+                                            <constraint firstAttribute="width" constant="15" id="wpf-wk-Y0I"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Nzf-AR-5Z0" firstAttribute="centerX" secondItem="oyr-O5-DTj" secondAttribute="centerX" constant="4" id="2du-YY-4S7"/>
+                                    <constraint firstItem="8vv-4R-pVU" firstAttribute="top" secondItem="oyr-O5-DTj" secondAttribute="top" constant="9" id="7yf-Zg-wtW"/>
+                                    <constraint firstItem="Nzf-AR-5Z0" firstAttribute="leading" secondItem="8vv-4R-pVU" secondAttribute="trailing" constant="4.5" id="J4h-hR-wB8"/>
+                                    <constraint firstItem="Nzf-AR-5Z0" firstAttribute="top" secondItem="oyr-O5-DTj" secondAttribute="top" constant="12" id="SvS-i0-Amf"/>
+                                    <constraint firstAttribute="height" constant="32" id="skL-ZE-lUf"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-5u-Vce">
-                                <rect key="frame" x="9" y="48" width="116" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-5u-Vce">
+                                <rect key="frame" x="10" y="40" width="115" height="82"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iou-dj-4mX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommended_round_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Iou-dj-4mX">
                                 <rect key="frame" x="6" y="130" width="123" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="4IY-v6-MyC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cwb-5u-Vce" secondAttribute="trailing" constant="10" id="Ajk-2Q-ZYm"/>
+                            <constraint firstItem="cwb-5u-Vce" firstAttribute="leading" secondItem="hU8-8c-BdL" secondAttribute="leading" constant="10" id="D63-d0-7uZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Iou-dj-4mX" secondAttribute="trailing" constant="6" id="JCO-Im-1jO"/>
+                            <constraint firstItem="cwb-5u-Vce" firstAttribute="top" secondItem="oyr-O5-DTj" secondAttribute="bottom" constant="8" id="Ka0-78-5c3"/>
+                            <constraint firstItem="Iou-dj-4mX" firstAttribute="top" secondItem="cwb-5u-Vce" secondAttribute="bottom" constant="8" id="LI3-tD-ZT9"/>
+                            <constraint firstAttribute="trailing" secondItem="oyr-O5-DTj" secondAttribute="trailing" id="OAX-xv-aky"/>
+                            <constraint firstItem="oyr-O5-DTj" firstAttribute="top" secondItem="hU8-8c-BdL" secondAttribute="top" id="S17-qv-XTN"/>
+                            <constraint firstItem="oyr-O5-DTj" firstAttribute="leading" secondItem="hU8-8c-BdL" secondAttribute="leading" id="dBM-rw-Drc"/>
+                            <constraint firstAttribute="bottom" secondItem="Iou-dj-4mX" secondAttribute="bottom" constant="8" id="oeP-Ou-mqg"/>
+                            <constraint firstItem="Iou-dj-4mX" firstAttribute="leading" secondItem="hU8-8c-BdL" secondAttribute="leading" constant="6" id="qaW-eC-Yhk"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -69,13 +90,10 @@
             <size key="customSize" width="137" height="143"/>
             <connections>
                 <outlet property="backView" destination="hU8-8c-BdL" id="k7p-2L-Sre"/>
-
-                <outlet property="imgRecommended" destination="Iou-dj-4mX" id="neL-MH-Voz"/>
-
                 <outlet property="bottomImage" destination="Iou-dj-4mX" id="yUu-DU-AcR"/>
                 <outlet property="headerImage" destination="8vv-4R-pVU" id="UdT-4l-LYQ"/>
                 <outlet property="headerLabel" destination="Nzf-AR-5Z0" id="CLM-VY-NSz"/>
-
+                <outlet property="imgRecommended" destination="Iou-dj-4mX" id="neL-MH-Voz"/>
                 <outlet property="label" destination="cwb-5u-Vce" id="8FP-xA-q5r"/>
                 <outlet property="labelHeader" destination="Nzf-AR-5Z0" id="3HI-Xd-XWg"/>
             </connections>
@@ -84,5 +102,6 @@
     </objects>
     <resources>
         <image name="benefits_ic" width="26" height="23.5"/>
+        <image name="recommended_round_blue" width="185" height="34"/>
     </resources>
 </document>
