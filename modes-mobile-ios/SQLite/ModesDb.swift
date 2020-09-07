@@ -73,7 +73,7 @@ class ModesDb{
         let db = SQLiteDB.shared
         db.open()
        
-        let data =  db.query(sql:"SELECT * FROM benefits WHERE keywords LIKE '%" + searchTerm + "%'")
+        let data =  db.query(sql:"SELECT * FROM benefits WHERE keywords LIKE '%" + searchTerm + "%' COLLATE NOCASE")
         db.closeDB()
         return data
     }
@@ -81,7 +81,9 @@ class ModesDb{
     func  getGuidesByKeyWordSearch(searchTerm : String)->[[String:Any?]]{
 
         let db = SQLiteDB.shared
-        let data =  db.query(sql:"SELECT * FROM guides WHERE [MilLife Guide Topic Keywords] LIKE '%" + searchTerm + "%'")
+        db.open()
+        let data =  db.query(sql:"SELECT * FROM guides WHERE [MilLife Guide Topic Keywords] LIKE '%" + searchTerm + "%' COLLATE NOCASE")
+    
         db.closeDB()
         return data
     }

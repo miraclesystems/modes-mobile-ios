@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // set the url base
-        BASE_URL = STAGING_BASE_URL
+        //BASE_URL = STAGING_BASE_URL
+        BASE_URL = PROD_BASE_URL
         
         copyDbFromBundleIfNeeded()
         

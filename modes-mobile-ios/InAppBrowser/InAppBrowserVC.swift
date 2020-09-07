@@ -19,7 +19,7 @@ class InAppBrowserVC: UIViewController {
         print("On InAppBrowser")
         
         // Do any additional setup after loading the view.
-        let url = URL(string: urlString!)
+        let url = URL(string: urlString!.trimmingCharacters(in: CharacterSet([" "])))
         webView.load(URLRequest(url: url!))
         
         

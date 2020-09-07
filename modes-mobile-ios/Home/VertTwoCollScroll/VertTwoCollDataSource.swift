@@ -2,16 +2,32 @@
 
 import UIKit
 
-class VertTwoCollDataSource: NSObject, UICollectionViewDataSource{
+class VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate{
     
     var viewModel : HomeViewModel?
+    var parentView : VertTwoCollView?
     
-    var myLabels = ["Temporary Lodging Allowance - TLA", "Temporary Lodging Expenses - TLE", "Shipping ", "Again More", "And Again", "And Much More", "More", "And More", "And Much More"]
+   
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.getBenefits(topic: viewModel?.topic ?? "").count ?? 0
     }
 
+   func collectionView(_ collectionView: UICollectionView,
+                       didSelectItemAt indexPath: IndexPath){
+    
+        var selectedBenefit = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
+        
+        
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
+        
+        vc.selectedBenefit = selectedBenefit
+        self.parentView?.parentVc?.present(vc, animated: true)
+    
+        print("selected")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VertTwoCollCell", for: indexPath) as! VertTwoCollCell

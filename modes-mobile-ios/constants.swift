@@ -17,7 +17,7 @@ var BASE_URL = ""
 
 let STAGING_BASE_URL = "https://pre.militaryonesource.mil/omos/pre-production"
 let PREPROD_BASE_URL = ""
-let PROD_BASE_URL = ""
+let PROD_BASE_URL = "https://www.militaryonesource.mil/omos/mcfp-prod"
 
 
 

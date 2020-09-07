@@ -119,7 +119,9 @@ class MilLifeGuidesController: UIViewController {
     func showRelatedWebsites(urlString: String){
         print ("Back on Main showRelatedWEbsites with index: ", index)
         
-        if let url = URL(string: urlString) {
+  
+        let trimmedUrl = urlString.trimmingCharacters(in: CharacterSet([" "]))
+        if let url = URL(string: trimmedUrl) {
                    if UIApplication.shared.canOpenURL(url) {
                        UIApplication.shared.open(url, options: [:])
                    }

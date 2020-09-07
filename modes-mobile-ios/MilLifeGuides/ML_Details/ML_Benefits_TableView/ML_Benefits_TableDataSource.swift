@@ -58,8 +58,20 @@ class ML_Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
-        parentVc?.parentVc?.showRelatedBenefits(index: indexPath.item)
+        
+    
+        
+    
+    
+        let selectedBenefit = parentVc?.guide?.listRelatedBenefits?[indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
+        
+        
+        vc.selectedBenefit = selectedBenefit?.benefit
+        parentVc?.present(vc, animated: true)
+        //parentVc?.parentVc?.showRelatedBenefits(index: indexPath.item)
     }
     
 
