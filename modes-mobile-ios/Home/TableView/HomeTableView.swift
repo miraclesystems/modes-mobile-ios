@@ -5,6 +5,7 @@ import UIKit
 //@IBDesignable
 class HomeTableView: UIView {
     
+    var parentVc : HomeContView2VC?
     var viewModel : HomeViewModel?
     let tableDataSource = HomeTableDataSource()
     //let flowLayout = HomeTableFlowLayout()
@@ -31,6 +32,8 @@ class HomeTableView: UIView {
         //contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.layer.masksToBounds = false
         
+        
+        tableDataSource.parentView = self
         initTableView()
         
        

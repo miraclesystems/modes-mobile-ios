@@ -6,9 +6,9 @@ class HomeTableDataSource: NSObject, UITableViewDataSource, UITableViewDelegate{
     
 
     
+    
     var viewModel : HomeViewModel?
-    var myImages = ["moving", "oconus","housing"]
-    var myLabels = [ "Moving in the Military", "OCONUS Moves", "Housing"]
+    var parentView : HomeTableView?
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,7 +51,15 @@ class HomeTableDataSource: NSObject, UITableViewDataSource, UITableViewDelegate{
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
+        
+    
+        var selectedGuide = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
+
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MilLifeDetailsGuideContVC") as! MilLifeDetailsGuideContVC
+        vc.selectedGuide = selectedGuide
+        self.parentView?.parentVc?.parentVc?.present(vc, animated: true)
+    
         
     }
     

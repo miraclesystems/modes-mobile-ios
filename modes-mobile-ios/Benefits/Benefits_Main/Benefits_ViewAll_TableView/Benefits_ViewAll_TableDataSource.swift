@@ -62,11 +62,21 @@ class Benefits_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITable
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
+        //print("label: ", myLabels[indexPath.item])
     
         var benefit = (parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row])! as Benefit
         parentVc?.parentVc?.viewModel?.selectedBenefit = benefit.Benefit!
-        parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
+    
+    
+        
+        
+        let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
+        
+        vc.selectedBenefit = benefit.Benefit
+        parentVc?.present(vc, animated: true)
+    
+       // parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
         
     }
     

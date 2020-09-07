@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeContView2VC: UIViewController {
+class HomeContView2VC: UIViewController, UICollectionViewDelegate {
 
     @IBOutlet weak var labelSearchResults: UILabel!
     var parentVc : HomeViewController?
@@ -30,11 +30,13 @@ class HomeContView2VC: UIViewController {
         homeTableView.viewModel = self.parentVc?.viewModel
         labelSearchResults.text = "Showing Resuts for \"" + (self.parentVc?.viewModel.topic)! + "\""
         
+        homeTableView.parentVc = self
         homeTableView.tableDataSource.viewModel = self.parentVc?.viewModel
         homeTableView.tableView.reloadData()
         
         
         
+        vertTwoCellView.parentVc = self
         vertTwoCellView.collectionDataSource.viewModel = self.parentVc?.viewModel
         vertTwoCellView.collectionView.reloadData()
     }
@@ -61,8 +63,11 @@ class HomeContView2VC: UIViewController {
         viewSpeakwith.layer.shadowRadius = 5.0
         viewSpeakwith.layer.shadowOpacity = 0.1
         viewSpeakwith.layer.masksToBounds = false //<-
+        
+        
     }
     
+   
 
     /*
     // MARK: - Navigation

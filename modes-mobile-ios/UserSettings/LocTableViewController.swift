@@ -74,11 +74,14 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         //add matching text to arrays
         searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
         
+        /*
         if(searchNamesArrRes.count == 0){
             searching = false
         }else{
             searching = true
         }
+        */
+        searching = true
         self.tableView.reloadData();
         
         return true

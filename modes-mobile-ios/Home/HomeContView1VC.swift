@@ -49,7 +49,10 @@ class HomeContView1VC: UIViewController {
         let source = segue.source as? SearchTableViewController // This is the source
         
         source?.viewModel = parentVc?.viewModel
+        parentVc?.viewModel.topic = source?.mySelection as! String
+        
         print("Back on HomeVC from unwindToContView1VC")
+        
         
         
         

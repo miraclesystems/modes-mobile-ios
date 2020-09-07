@@ -194,6 +194,15 @@ class MilLifeDetailsGuideContVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if(!(selectedGuide?.isEmpty ?? true)){
+            var viewModel = GuidesViewModel()
+            viewModel.selectedGuide = selectedGuide!
+            guide = viewModel.getGuide()
+            loadGuide1()
+        }
+        else{
+            loadGuide()
+        }
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
         

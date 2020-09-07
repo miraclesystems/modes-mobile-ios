@@ -38,6 +38,10 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
     }
     
   
+    override func viewDidAppear(_ animated: Bool) {
+     
+        viewModel = HomeViewModel()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,6 +142,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         print("Running Click")
     
         self.viewModel?.topic = title!
+        
         
         self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
         

@@ -34,6 +34,7 @@
 		14413CD52504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD42504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift */; };
 		14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD62505381700E9FA72 /* BenefitsModel.swift */; };
 		14413CD92505382C00E9FA72 /* BenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */; };
+		14413CDB2506A24F00E9FA72 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14413CDA2506A24F00E9FA72 /* WebKit.framework */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -213,6 +214,7 @@
 		14413CD42504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBenefitsTableViewCell.swift; sourceTree = "<group>"; };
 		14413CD62505381700E9FA72 /* BenefitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsModel.swift; sourceTree = "<group>"; };
 		14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsViewModel.swift; sourceTree = "<group>"; };
+		14413CDA2506A24F00E9FA72 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14413CDB2506A24F00E9FA72 /* WebKit.framework in Frameworks */,
 				838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +563,7 @@
 		838EFFD124F8CAF800A178A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14413CDA2506A24F00E9FA72 /* WebKit.framework */,
 				838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;

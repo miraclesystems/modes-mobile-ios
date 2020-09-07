@@ -8,6 +8,7 @@ class VertTwoCollView: UIView {
     
     let collectionDataSource = VertTwoCollDataSource()
     let flowLayout = VertTwoCollFlowLayout()
+    var parentVc : HomeContView2VC?
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -32,6 +33,7 @@ class VertTwoCollView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.layer.masksToBounds = false
         
+        collectionDataSource.parentView = self
         initCollectionView()
         
        
@@ -43,6 +45,8 @@ class VertTwoCollView: UIView {
         let nib = UINib(nibName: "VertTwoCollCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "VertTwoCollCell")
         //collectionView.dataSource = self
+
+        collectionView.delegate = collectionDataSource as UICollectionViewDelegate
         collectionView.dataSource = collectionDataSource
         collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always

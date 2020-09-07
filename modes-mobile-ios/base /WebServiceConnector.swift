@@ -114,7 +114,7 @@ class WebServiceConnector   {
         let encoded = toEncode.data(using: .utf8)?.base64EncodedString()
 
         //Add the header value
-        request.addValue("Basic \(encoded!)", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic bWNmcFJFU1Q6IzByYWNsZVIzU1RBUCFzIw==", forHTTPHeaderField: "Authorization")
         
         
         // Perform HTTP Request
