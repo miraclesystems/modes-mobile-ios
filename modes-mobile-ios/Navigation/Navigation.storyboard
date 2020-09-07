@@ -19,26 +19,26 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Home" interfaceStyle="dark" id="9pv-A4-QxB" customClass="HomeViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="9pv-A4-QxB" customClass="HomeViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="dbU-Jw-H7z"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-w6-DOV" userLabel="HomeContView1">
-                                <rect key="frame" x="0.0" y="72" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="613"/>
                                 <connections>
                                     <segue destination="jal-YN-89e" kind="embed" id="go9-ih-vLS"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9s-Sc-Sgg" userLabel="HomeContView2">
-                                <rect key="frame" x="0.0" y="72" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="613"/>
                                 <connections>
                                     <segue destination="J5p-It-l85" kind="embed" id="cy6-yj-Y65"/>
                                 </connections>
@@ -87,7 +87,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home_ic" selectedImage="millife_focused_ic" id="5hl-hE-0XW"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_ic" selectedImage="home_focused" id="5hl-hE-0XW"/>
                     <navigationItem key="navigationItem" id="FND-gJ-hZC">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="DUw-eC-Va2">
                             <view key="customView" contentMode="scaleToFill" id="B2t-wp-B6R">
@@ -97,7 +97,7 @@
                             </view>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="HomeContView1" destination="VMG-w6-DOV" id="NGH-an-hNA"/>
                         <outlet property="HomeContView2" destination="t9s-Sc-Sgg" id="Xkb-ud-bGn"/>
@@ -353,6 +353,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Benefits" image="benefits_ic" selectedImage="benefits_focused_ic" id="NvV-k1-ksA"/>
                     <navigationItem key="navigationItem" id="jbY-o6-G0h"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="BenefitsContView1" destination="s7A-kZ-wRY" id="lXz-s6-oJM"/>
                         <outlet property="BenefitsContView2" destination="Y6D-0H-C69" id="iAo-ba-4fV"/>
@@ -1676,7 +1677,7 @@ MilitaryOneSource.mil</string>
             <objects>
                 <viewController interfaceStyle="dark" id="uB8-5V-7Ux" userLabel="Search Controller" customClass="SearchTableViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89H-x3-zID">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" minimumFontSize="17" background="search_bar" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-KB-iFv">
@@ -1710,7 +1711,7 @@ MilitaryOneSource.mil</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-MH-7dW">
-                                <rect key="frame" x="0.0" y="104" width="375" height="465"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="509"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="9Ri-Ku-wSn" rowHeight="74" style="IBUITableViewCellStyleDefault" id="gc7-la-80w" customClass="CustomTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
@@ -1765,11 +1766,11 @@ MilitaryOneSource.mil</string>
             <objects>
                 <viewController id="J5p-It-l85" userLabel="HomeContView2" customClass="HomeContView2VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHg-Th-I5l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Y-2i-Dyx">
-                                <rect key="frame" x="0.0" y="44" width="375" height="525"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="569"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0f-vu-IeA" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1014"/>
@@ -2063,14 +2064,14 @@ OneSource consultant</string>
             <objects>
                 <viewController id="jal-YN-89e" userLabel="HomeContView1" customClass="HomeContView1VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUp-Gs-ez9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-bn-CVR" userLabel="TopView" customClass="GradientView" customModule="modes_mobile_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-Bn-JdY">
-                                        <rect key="frame" x="38.666666666666657" y="48" width="298" height="113"/>
+                                        <rect key="frame" x="38.666666666666657" y="70" width="298" height="113"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="298" id="Raa-jx-X4R"/>
@@ -2083,7 +2084,7 @@ you with today?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb1-nq-geb">
-                                        <rect key="frame" x="38.666666666666657" y="164.66666666666666" width="298" height="40"/>
+                                        <rect key="frame" x="38.666666666666657" y="186.66666666666666" width="298" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="kKs-dx-TMX"/>
                                             <constraint firstAttribute="width" constant="298" id="v2V-hZ-65M"/>
@@ -2117,7 +2118,7 @@ you with today?</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-F6-mNB" customClass="HorzCollView" customModule="modes_mobile_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="289" width="375" height="280"/>
+                                <rect key="frame" x="0.0" y="333" width="375" height="280"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="5Mf-m5-bKx"/>
@@ -2304,12 +2305,9 @@ Military</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
-                                                        <rect key="frame" x="52" y="12" width="210" height="20"/>
+                                                        <rect key="frame" x="52" y="12" width="303" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
-                                                            <constraint firstAttribute="width" constant="210" id="neq-8Q-CgL"/>
-                                                            <constraint firstAttribute="height" constant="20" id="v5F-2d-ATU"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="zYp-hH-hjf"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -2354,6 +2352,7 @@ Military</string>
                                                     <constraint firstItem="C00-Sp-PKo" firstAttribute="top" secondItem="3PU-FO-vqc" secondAttribute="bottom" id="sAk-qv-r3V"/>
                                                     <constraint firstItem="1rR-1q-tZY" firstAttribute="top" secondItem="3PU-FO-vqc" secondAttribute="bottom" constant="16" id="v1n-bi-6Mp"/>
                                                     <constraint firstAttribute="bottom" secondItem="C00-Sp-PKo" secondAttribute="bottom" id="vSz-3Y-qYw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KHY-Jq-xXT" secondAttribute="trailing" constant="20" id="vYM-Nk-j5j"/>
                                                     <constraint firstItem="FHd-eM-8nC" firstAttribute="centerX" secondItem="XGw-Lm-V55" secondAttribute="centerX" id="zIg-xs-jDI"/>
                                                 </constraints>
                                             </view>
@@ -2664,7 +2663,7 @@ OneSource consultant</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ke4-8W-mgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652" y="-271.664167916042"/>
+            <point key="canvasLocation" x="3652" y="-272.29064039408865"/>
         </scene>
         <!--In App BrowserVC-->
         <scene sceneID="Iir-8q-9H7">
@@ -2939,6 +2938,7 @@ OneSource consultant</string>
         <image name="favorites_ic" width="23.333333969116211" height="23.333333969116211"/>
         <image name="favorites_red" width="20" height="18"/>
         <image name="guides_articles" width="24" height="24"/>
+        <image name="home_focused" width="17.666666030883789" height="18.333333969116211"/>
         <image name="home_ic" width="17.666666030883789" height="18.333333969116211"/>
         <image name="instagram" width="34" height="34.333332061767578"/>
         <image name="millife_focused_ic" width="23.666666030883789" height="23.666666030883789"/>
