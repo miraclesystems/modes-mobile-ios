@@ -1035,7 +1035,7 @@ MilitaryOneSource.mil</string>
                                         <rect key="frame" x="0.0" y="-10" width="375" height="1400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Ol-ub2" userLabel="View Header">
-                                                <rect key="frame" x="102.66666666666667" y="15" width="169.66666666666663" height="64"/>
+                                                <rect key="frame" x="102.00000000000001" y="15" width="171.33333333333337" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-uK-lw0">
                                                         <rect key="frame" x="20" y="23" width="22" height="19"/>
@@ -1045,7 +1045,7 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
-                                                        <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="24"/>
+                                                        <rect key="frame" x="43.999999999999993" y="20" width="107.33333333333331" height="24"/>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1547,10 +1547,16 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
                                         <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
                                         <state key="normal" image="Image"/>
+                                        <connections>
+                                            <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
                                         <rect key="frame" x="12" y="224" width="351" height="68"/>
                                         <state key="normal" image="button_call_options"/>
+                                        <connections>
+                                            <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
                                         <rect key="frame" x="12" y="287" width="351" height="66"/>
@@ -1559,6 +1565,9 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
                                         <rect key="frame" x="12" y="344" width="351" height="72"/>
                                         <state key="normal" image="buttion_visit"/>
+                                        <connections>
+                                            <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter where you serve or live, we are here for you 24/7 online and by telephone. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-t0-to4">
                                         <rect key="frame" x="27" y="96" width="320" height="28.666666666666671"/>
@@ -1569,22 +1578,37 @@ MilitaryOneSource.mil</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
                                         <rect key="frame" x="48" y="416" width="33" height="34.333333333333314"/>
                                         <state key="normal" image="facebook"/>
+                                        <connections>
+                                            <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="tNk-FJ-tD8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
                                         <rect key="frame" x="103" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="twitter"/>
+                                        <connections>
+                                            <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
                                         <rect key="frame" x="158" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="youtube"/>
+                                        <connections>
+                                            <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
                                         <rect key="frame" x="217" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
                                         <rect key="frame" x="277" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="pinterest"/>
+                                        <connections>
+                                            <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
                                         <rect key="frame" x="27" y="480" width="320" height="28.666666666666671"/>
