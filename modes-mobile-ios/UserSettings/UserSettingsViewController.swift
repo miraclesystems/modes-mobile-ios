@@ -59,6 +59,8 @@ class UserSettingsViewController: UIViewController {
         viewContainer2.isHidden = false
         viewContainer3.isHidden = true
         btnBack.isHidden = false
+        view.bringSubviewToFront(btnBack)
+        
     }
     func showPage3(){
         self.view.bringSubviewToFront(viewContainer3)
@@ -67,6 +69,8 @@ class UserSettingsViewController: UIViewController {
         viewContainer2.isHidden = true
         viewContainer3.isHidden = false
         btnBack.isHidden = false
+        view.bringSubviewToFront(btnBack)
+        
         
     }
     
@@ -123,7 +127,6 @@ class UserSettingsViewController: UIViewController {
         
         // set a reference back to the parent vc for contained view controllers
         // this is how the childeren should reference the view model
-        
         for child in self.children{
             
             switch child{
