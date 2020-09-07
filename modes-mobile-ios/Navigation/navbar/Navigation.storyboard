@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,6 +26,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
+<<<<<<< HEAD
                 <viewController title="Home" id="9pv-A4-QxB" customClass="HomeViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -26,19 +34,36 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+=======
+                <viewController title="Home" interfaceStyle="dark" id="9pv-A4-QxB" customClass="HomeViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="dbU-Jw-H7z"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-w6-DOV" userLabel="HomeContView1">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="116" width="375" height="613"/>
+=======
+                                <rect key="frame" x="0.0" y="72" width="375" height="569"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <connections>
                                     <segue destination="jal-YN-89e" kind="embed" id="go9-ih-vLS"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9s-Sc-Sgg" userLabel="HomeContView2">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="116" width="375" height="613"/>
+=======
+                                <rect key="frame" x="0.0" y="72" width="375" height="569"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <connections>
                                     <segue destination="J5p-It-l85" kind="embed" id="cy6-yj-Y65"/>
                                 </connections>
@@ -87,7 +112,11 @@
                             </mask>
                         </variation>
                     </view>
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Home" image="home_ic" selectedImage="home_focused" id="5hl-hE-0XW"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Home" image="home_ic" selectedImage="millife_focused_ic" id="5hl-hE-0XW"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                     <navigationItem key="navigationItem" id="FND-gJ-hZC">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="DUw-eC-Va2">
                             <view key="customView" contentMode="scaleToFill" id="B2t-wp-B6R">
@@ -97,11 +126,18 @@
                             </view>
                         </barButtonItem>
                     </navigationItem>
+<<<<<<< HEAD
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="HomeContView1" destination="VMG-w6-DOV" id="NGH-an-hNA"/>
                         <outlet property="HomeContView2" destination="t9s-Sc-Sgg" id="Xkb-ud-bGn"/>
                         <outlet property="customNavBar" destination="97v-w8-c1o" id="QFn-1X-E33"/>
+=======
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="HomeContView1" destination="VMG-w6-DOV" id="NGH-an-hNA"/>
+                        <outlet property="HomeContView2" destination="t9s-Sc-Sgg" id="Xkb-ud-bGn"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                         <outlet property="testMenuButton" destination="whm-cS-ZWP" id="3pU-V9-Oh8"/>
                     </connections>
                 </viewController>
@@ -353,7 +389,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Benefits" image="benefits_ic" selectedImage="benefits_focused_ic" id="NvV-k1-ksA"/>
                     <navigationItem key="navigationItem" id="jbY-o6-G0h"/>
+<<<<<<< HEAD
                     <nil key="simulatedTopBarMetrics"/>
+=======
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                     <connections>
                         <outlet property="BenefitsContView1" destination="s7A-kZ-wRY" id="lXz-s6-oJM"/>
                         <outlet property="BenefitsContView2" destination="Y6D-0H-C69" id="iAo-ba-4fV"/>
@@ -971,7 +1010,11 @@ MilitaryOneSource.mil</string>
                     <view key="view" contentMode="scaleToFill" id="Vas-Gb-SZz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                         <viewLayoutGuide key="safeArea" id="cGt-no-RCG"/>
                     </view>
                 </viewController>
@@ -990,7 +1033,11 @@ MilitaryOneSource.mil</string>
                     <view key="view" contentMode="scaleToFill" id="xtg-S0-JBU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                         <viewLayoutGuide key="safeArea" id="KAa-FV-fVz"/>
                     </view>
                     <userDefinedRuntimeAttributes>
@@ -1516,9 +1563,13 @@ MilitaryOneSource.mil</string>
         <!--Connect-->
         <scene sceneID="xf2-Tl-OB5">
             <objects>
+<<<<<<< HEAD
 
                 <viewController interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
 
+=======
+                <viewController interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                     <view key="view" contentMode="scaleToFill" id="h18-4L-uDM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1547,25 +1598,41 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
+<<<<<<< HEAD
                                         <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
+=======
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="Image"/>
                                         <connections>
                                             <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="gbJ-fo-36f"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
+<<<<<<< HEAD
                                         <rect key="frame" x="12" y="224" width="351" height="68"/>
+=======
+                                        <rect key="frame" x="12" y="224" width="351" height="136"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="button_call_options"/>
                                         <connections>
                                             <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="JqN-bX-RgF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
+<<<<<<< HEAD
                                         <rect key="frame" x="12" y="287" width="351" height="66"/>
                                         <state key="normal" image="button_subscribe"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
                                         <rect key="frame" x="12" y="344" width="351" height="72"/>
+=======
+                                        <rect key="frame" x="12" y="287" width="351" height="132"/>
+                                        <state key="normal" image="button_subscribe"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
+                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
                                             <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="6Ga-MU-GAx"/>
@@ -1578,35 +1645,55 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
+<<<<<<< HEAD
                                         <rect key="frame" x="48" y="416" width="33" height="34.333333333333314"/>
+=======
+                                        <rect key="frame" x="48" y="416" width="33" height="68"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="facebook"/>
                                         <connections>
                                             <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="jm0-ae-6YE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
+<<<<<<< HEAD
                                         <rect key="frame" x="103" y="416" width="34" height="34.333333333333314"/>
+=======
+                                        <rect key="frame" x="103" y="416" width="34" height="68"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="90T-Fp-KRc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
+<<<<<<< HEAD
                                         <rect key="frame" x="158" y="416" width="34" height="34.333333333333314"/>
+=======
+                                        <rect key="frame" x="158" y="416" width="34" height="68"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="aHv-CH-re0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
+<<<<<<< HEAD
                                         <rect key="frame" x="217" y="416" width="34" height="34.333333333333314"/>
+=======
+                                        <rect key="frame" x="217" y="416" width="34" height="68"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="jsm-gk-7pr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
+<<<<<<< HEAD
                                         <rect key="frame" x="277" y="416" width="34" height="34.333333333333314"/>
+=======
+                                        <rect key="frame" x="277" y="416" width="34" height="68"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="Mc0-w6-AVM"/>
@@ -1703,7 +1790,11 @@ MilitaryOneSource.mil</string>
             <objects>
                 <viewController interfaceStyle="dark" id="uB8-5V-7Ux" userLabel="Search Controller" customClass="SearchTableViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89H-x3-zID">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" minimumFontSize="17" background="search_bar" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-KB-iFv">
@@ -1737,7 +1828,11 @@ MilitaryOneSource.mil</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-MH-7dW">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="104" width="375" height="509"/>
+=======
+                                <rect key="frame" x="0.0" y="104" width="375" height="465"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="9Ri-Ku-wSn" rowHeight="74" style="IBUITableViewCellStyleDefault" id="gc7-la-80w" customClass="CustomTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
@@ -1792,11 +1887,19 @@ MilitaryOneSource.mil</string>
             <objects>
                 <viewController id="J5p-It-l85" userLabel="HomeContView2" customClass="HomeContView2VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHg-Th-I5l">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Y-2i-Dyx">
                                 <rect key="frame" x="0.0" y="44" width="375" height="569"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Y-2i-Dyx">
+                                <rect key="frame" x="0.0" y="44" width="375" height="525"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0f-vu-IeA" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1014"/>
@@ -2090,6 +2193,7 @@ OneSource consultant</string>
             <objects>
                 <viewController id="jal-YN-89e" userLabel="HomeContView1" customClass="HomeContView1VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUp-Gs-ez9">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -2098,6 +2202,16 @@ OneSource consultant</string>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-Bn-JdY">
                                         <rect key="frame" x="38.666666666666657" y="70" width="298" height="113"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-bn-CVR" userLabel="TopView" customClass="GradientView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-Bn-JdY">
+                                        <rect key="frame" x="38.666666666666657" y="48" width="298" height="113"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="298" id="Raa-jx-X4R"/>
@@ -2110,7 +2224,11 @@ you with today?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb1-nq-geb">
+<<<<<<< HEAD
                                         <rect key="frame" x="38.666666666666657" y="186.66666666666666" width="298" height="40"/>
+=======
+                                        <rect key="frame" x="38.666666666666657" y="164.66666666666666" width="298" height="40"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="kKs-dx-TMX"/>
                                             <constraint firstAttribute="width" constant="298" id="v2V-hZ-65M"/>
@@ -2144,7 +2262,11 @@ you with today?</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-F6-mNB" customClass="HorzCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="333" width="375" height="280"/>
+=======
+                                <rect key="frame" x="0.0" y="289" width="375" height="280"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="5Mf-m5-bKx"/>
@@ -2267,7 +2389,11 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="170" id="x0P-Ht-Qlr"/>
                                                         </constraints>
                                                     </imageView>
+<<<<<<< HEAD
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moving Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3D9-O6-oJr">
+=======
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moving Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D9-O6-oJr">
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                                         <rect key="frame" x="20" y="266" width="335" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="hrA-h8-AZE"/>
@@ -2331,9 +2457,18 @@ Military</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
+<<<<<<< HEAD
                                                         <rect key="frame" x="52" y="12" width="303" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
+=======
+                                                        <rect key="frame" x="52" y="12" width="210" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
+                                                            <constraint firstAttribute="width" constant="210" id="neq-8Q-CgL"/>
+                                                            <constraint firstAttribute="height" constant="20" id="v5F-2d-ATU"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="zYp-hH-hjf"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -2347,6 +2482,7 @@ Military</string>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-eM-8nC">
+<<<<<<< HEAD
                                                         <rect key="frame" x="90" y="418" width="195" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="IOQ-qa-G0B"/>
@@ -2354,6 +2490,16 @@ Military</string>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="u7W-AC-41n"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="10"/>
+=======
+                                                        <rect key="frame" x="100.66666666666669" y="418" width="174" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="IOQ-qa-G0B"/>
+                                                            <constraint firstAttribute="width" constant="174" id="dnZ-Qx-JXp"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="omO-Td-94z"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="u7W-AC-41n"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                                         <state key="normal" title="See more moving articles" backgroundImage="roundBtn_gray">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
@@ -2377,7 +2523,10 @@ Military</string>
                                                     <constraint firstItem="C00-Sp-PKo" firstAttribute="top" secondItem="3PU-FO-vqc" secondAttribute="bottom" id="sAk-qv-r3V"/>
                                                     <constraint firstItem="1rR-1q-tZY" firstAttribute="top" secondItem="3PU-FO-vqc" secondAttribute="bottom" constant="16" id="v1n-bi-6Mp"/>
                                                     <constraint firstAttribute="bottom" secondItem="C00-Sp-PKo" secondAttribute="bottom" id="vSz-3Y-qYw"/>
+<<<<<<< HEAD
                                                     <constraint firstAttribute="trailing" secondItem="KHY-Jq-xXT" secondAttribute="trailing" constant="20" id="vYM-Nk-j5j"/>
+=======
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                                     <constraint firstItem="FHd-eM-8nC" firstAttribute="centerX" secondItem="XGw-Lm-V55" secondAttribute="centerX" id="zIg-xs-jDI"/>
                                                 </constraints>
                                             </view>
@@ -2688,7 +2837,11 @@ OneSource consultant</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ke4-8W-mgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="3652" y="-272.29064039408865"/>
+=======
+            <point key="canvasLocation" x="3652" y="-271.664167916042"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
         </scene>
         <!--In App BrowserVC-->
         <scene sceneID="Iir-8q-9H7">
@@ -2800,7 +2953,11 @@ OneSource consultant</string>
         <!--BenefitsDetailsContVC-->
         <scene sceneID="FYg-8h-d5k">
             <objects>
+<<<<<<< HEAD
                 <viewController storyboardIdentifier="BenefitsDetailsContVC" id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                     <view key="view" contentMode="scaleToFill" id="pPC-Ip-dGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2809,7 +2966,11 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+=======
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
@@ -2828,6 +2989,7 @@ OneSource consultant</string>
                                                     <constraint firstAttribute="width" constant="20" id="XAU-In-RcJ"/>
                                                     <constraint firstAttribute="height" constant="20" id="qSG-9T-nBM"/>
                                                 </constraints>
+<<<<<<< HEAD
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" backgroundImage="favorites_red"/>
                                                 <connections>
@@ -2840,6 +3002,18 @@ OneSource consultant</string>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+=======
+                                                <state key="normal" backgroundImage="favorites_red"/>
+                                                <connections>
+                                                    <action selector="favoritesBtnTouched:" destination="UMN-Jb-aoq" eventType="touchUpInside" id="EdJ-Kz-7wn"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
+                                                <rect key="frame" x="0.0" y="80" width="375" height="970"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="970"/>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporary Lodging Allowance - TLA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
@@ -2931,7 +3105,10 @@ OneSource consultant</string>
                     <connections>
                         <outlet property="benefitsText" destination="MI3-ao-x62" id="bTl-vP-wis"/>
                         <outlet property="benefitsTitle" destination="eHL-hN-4wd" id="PD4-h2-pX0"/>
+<<<<<<< HEAD
                         <outlet property="buttonFavorite" destination="dPM-8K-REc" id="h3a-eh-HGY"/>
+=======
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
                         <outlet property="favoritesBtn" destination="dPM-8K-REc" id="Qse-om-fqp"/>
                     </connections>
                 </viewController>
@@ -2940,9 +3117,12 @@ OneSource consultant</string>
             <point key="canvasLocation" x="3652" y="671.96401799100454"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="DQX-kY-0UM"/>
     </inferredMetricsTieBreakers>
+=======
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="Image" width="351" height="104"/>
@@ -2966,7 +3146,10 @@ OneSource consultant</string>
         <image name="favorites_ic" width="23.333333969116211" height="23.333333969116211"/>
         <image name="favorites_red" width="20" height="18"/>
         <image name="guides_articles" width="24" height="24"/>
+<<<<<<< HEAD
         <image name="home_focused" width="17.666666030883789" height="18.333333969116211"/>
+=======
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
         <image name="home_ic" width="17.666666030883789" height="18.333333969116211"/>
         <image name="instagram" width="34" height="34.333332061767578"/>
         <image name="millife_focused_ic" width="23.666666030883789" height="23.666666030883789"/>
@@ -2991,4 +3174,10 @@ OneSource consultant</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+<<<<<<< HEAD
+=======
+    <inferredMetricsTieBreakers>
+        <segue reference="jNw-2U-jzd"/>
+    </inferredMetricsTieBreakers>
+>>>>>>> fd11be87f114ffb9e42942fe7a8e9ecead72e257
 </document>
