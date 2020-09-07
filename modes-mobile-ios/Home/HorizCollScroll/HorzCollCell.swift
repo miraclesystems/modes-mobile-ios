@@ -10,9 +10,9 @@ class HorzCollCell: UICollectionViewCell {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var bottomImage: UIImageView!
-    
-    
     @IBOutlet weak var imgRecommended: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

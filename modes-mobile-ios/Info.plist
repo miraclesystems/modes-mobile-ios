@@ -31,7 +31,9 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allow this app to use location?</string>
-	<key>UIAppFonts</key>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+    <key>UIAppFonts</key>
 	<array>
 		<string>WorkSans-Black.ttf</string>
 		<string>WorkSans-Bold.ttf</string>
