@@ -1516,11 +1516,9 @@ MilitaryOneSource.mil</string>
         <!--Connect-->
         <scene sceneID="xf2-Tl-OB5">
             <objects>
-<<<<<<< HEAD:modes-mobile-ios/Navigation/Navigation.storyboard
-                <viewController storyboardIdentifier="ConnectViewController" interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-=======
+
                 <viewController interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> wired up connect view controller, fixed branch picker:modes-mobile-ios/Navigation/navbar/Navigation.storyboard
+
                     <view key="view" contentMode="scaleToFill" id="h18-4L-uDM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
