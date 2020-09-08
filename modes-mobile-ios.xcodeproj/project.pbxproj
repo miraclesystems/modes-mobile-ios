@@ -146,6 +146,7 @@
 		A97BC5FA25038C9500312D9D /* Benefits_ByCat_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F525038C9400312D9D /* Benefits_ByCat_TableCell.swift */; };
 		A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */; };
 		A97BC5FC25038C9500312D9D /* Benefits_ByCat_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */; };
+		A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99044472508181200B6AC26 /* RightSideMenuVC.swift */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
 		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
 		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
@@ -330,6 +331,7 @@
 		A97BC5F525038C9400312D9D /* Benefits_ByCat_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableCell.swift; sourceTree = "<group>"; };
 		A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ByCat_TableCell.xib; sourceTree = "<group>"; };
 		A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableDataSource.swift; sourceTree = "<group>"; };
+		A99044472508181200B6AC26 /* RightSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuVC.swift; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
 		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -570,8 +572,9 @@
 			children = (
 				A9B017B824F82C6D000E2320 /* navbar */,
 				A958EB7124F5266100989D70 /* Navigation.storyboard */,
-				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
 				A958EB7224F5266100989D70 /* SSASideMenu.swift */,
+				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
+				A99044472508181200B6AC26 /* RightSideMenuVC.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -1043,6 +1046,7 @@
 				14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */,
 				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
 				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
+				A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */,
 				8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */,
 				14A901CA24F1B99600E2B4CA /* IQKeyboardManagerConstants.swift in Sources */,
 				A9620D0B24FEC7C000C599DC /* MilLifeByCatContVC.swift in Sources */,
