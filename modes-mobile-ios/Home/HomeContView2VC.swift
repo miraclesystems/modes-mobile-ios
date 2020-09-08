@@ -26,7 +26,7 @@ class HomeContView2VC: UIViewController, UICollectionViewDelegate {
        
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         homeTableView.viewModel = self.parentVc?.viewModel
         labelSearchResults.text = "Showing Resuts for \"" + (self.parentVc?.viewModel.topic)! + "\""
         

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1004,6 +1004,12 @@ MilitaryOneSource.mil</string>
                         <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="Background"/>
                         <userDefinedRuntimeAttribute type="size" keyPath="contentViewShadowOffset">
                             <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentViewScaleValue">
+                            <real key="value" value="0.69999999999999996"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentViewInPortraitOffsetCenterX">
+                            <real key="value" value="50"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </viewController>
@@ -2815,7 +2821,7 @@ OneSource consultant</string>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporary Lodging Allowance - TLA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="1di-uJ-Bg1"/>
@@ -2825,12 +2831,11 @@ OneSource consultant</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-ao-x62">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-ao-x62">
                                                         <rect key="frame" x="20" y="100" width="335" height="300"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="rIc-VZ-pdU"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit id gravida nulla congue a lectus. Nulla quisque orci nunc orci nullam duis arcu volutpat. Facilisi massa mattis at dui. Risus eget justo, sed viverra tortor et. \n  • Etiam libero amet, eu congue.    • Pellentesque aliquam nisi viverra et.      • Diam amet, nulla egestas justo est      commodo eget nunc. \nEnim mattis at amet, a vitae dictum posuere. Non amet, in fringilla varius sagittis viverra pellentesque. Nec at ac lorem massa. Velit et duis placerat quis. Adipiscing sed egestas neque suscipit sagittis vel tristique ultrices. Tortor at aliquam id gravida.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2914,9 +2919,6 @@ OneSource consultant</string>
             <point key="canvasLocation" x="3652" y="671.96401799100454"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="16" height="16"/>
         <image name="Image" width="351" height="104"/>
@@ -2965,4 +2967,7 @@ OneSource consultant</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
 </document>
