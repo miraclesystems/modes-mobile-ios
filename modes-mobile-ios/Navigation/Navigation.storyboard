@@ -1597,17 +1597,10 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="217" y="416" width="34" height="34.333333333333314"/>
+                                        <rect key="frame" x="281" y="416" width="34" height="34"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="277" y="416" width="34" height="34.333333333333314"/>
-                                        <state key="normal" image="pinterest"/>
-                                        <connections>
-                                            <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
@@ -1616,6 +1609,13 @@ MilitaryOneSource.mil</string>
                                         <color key="textColor" name="milGrayText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
+                                        <rect key="frame" x="219" y="416" width="34" height="34.333333333333314"/>
+                                        <state key="normal" image="pinterest"/>
+                                        <connections>
+                                            <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1625,31 +1625,28 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="0cY-3W-Ov6" firstAttribute="width" secondItem="uGy-WT-kpc" secondAttribute="width" id="7PS-wR-RUh"/>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="8Tn-FP-vcs"/>
                                     <constraint firstItem="VXa-AJ-EJq" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="42" id="9Qx-pD-5xp"/>
-                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="width" secondItem="nQh-mY-6B9" secondAttribute="width" id="B6L-4N-W3h"/>
-                                    <constraint firstAttribute="trailing" secondItem="nQh-mY-6B9" secondAttribute="trailing" constant="124" id="BDE-WJ-WOp"/>
-                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="C3i-5H-8Nt"/>
                                     <constraint firstItem="yla-7c-AO2" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="Dfo-cb-Mz7"/>
                                     <constraint firstItem="swb-c6-U8z" firstAttribute="width" secondItem="0cY-3W-Ov6" secondAttribute="width" multiplier="0.970588" id="Eev-fH-y5v"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="trailing" constant="21" id="IOC-ch-w9f"/>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="224" id="JgB-T5-2Ro"/>
-                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="KcV-Pk-DOe"/>
                                     <constraint firstItem="Yzo-1i-eCc" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="287" id="KhS-bJ-vrh"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="NM1-iR-Hqi"/>
                                     <constraint firstAttribute="bottom" secondItem="kaa-KV-Vd5" secondAttribute="bottom" constant="112.33333333333331" id="Ok9-O7-m3M"/>
                                     <constraint firstAttribute="trailing" secondItem="yla-7c-AO2" secondAttribute="trailing" constant="12" id="P4i-8u-hhv"/>
-                                    <constraint firstAttribute="trailing" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="183" id="S2w-46-kzk"/>
-                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="nQh-mY-6B9" secondAttribute="trailing" constant="26" id="Tbp-er-3pN"/>
                                     <constraint firstItem="kaa-KV-Vd5" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="TfE-l8-Gfi"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="UoY-0s-6Vv"/>
                                     <constraint firstItem="Yzo-1i-eCc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="VYY-a5-xHf"/>
-                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="width" secondItem="Ib8-uX-hr4" secondAttribute="width" id="Vww-QD-H1S"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="width" secondItem="Ib8-uX-hr4" secondAttribute="width" id="VlX-ee-Bdc"/>
                                     <constraint firstItem="0cY-3W-Ov6" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="WoP-iu-lhE"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="leading" secondItem="Ib8-uX-hr4" secondAttribute="trailing" constant="28" id="aCc-UO-pn9"/>
                                     <constraint firstAttribute="trailing" secondItem="cLd-t0-to4" secondAttribute="trailing" constant="28" id="bvg-Sq-otl"/>
                                     <constraint firstAttribute="trailing" secondItem="699-Pn-9m7" secondAttribute="trailing" constant="16" id="cec-ik-tJW"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ib8-uX-hr4" secondAttribute="trailing" constant="64" id="d37-CM-SgT"/>
                                     <constraint firstItem="swb-c6-U8z" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="48" id="dLz-A7-T0T"/>
                                     <constraint firstItem="swb-c6-U8z" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="hDS-hY-8qy"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="iFd-f2-Kbe"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="iJF-UY-TA6"/>
                                     <constraint firstItem="kaa-KV-Vd5" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="27" id="j29-I2-kbL"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="jlu-zg-h3p"/>
                                     <constraint firstItem="VXa-AJ-EJq" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="leading" id="nOc-7Y-3Tb"/>
                                     <constraint firstAttribute="trailing" secondItem="Yzo-1i-eCc" secondAttribute="trailing" constant="12" id="okZ-cy-5yS"/>
                                     <constraint firstItem="yla-7c-AO2" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="344" id="pLe-Ep-ElL"/>
@@ -1658,6 +1655,8 @@ MilitaryOneSource.mil</string>
                                     <constraint firstAttribute="width" constant="375" id="sbC-zK-G7V"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="top" secondItem="cLd-t0-to4" secondAttribute="bottom" constant="8" id="sil-JV-izT"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="t1P-xm-AGP"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="width" secondItem="uGy-WT-kpc" secondAttribute="width" id="tHW-cV-k6W"/>
+                                    <constraint firstAttribute="trailing" secondItem="nQh-mY-6B9" secondAttribute="trailing" constant="60" id="tuo-Ke-lyA"/>
                                     <constraint firstItem="cLd-t0-to4" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="27" id="wYf-E4-OjM"/>
                                     <constraint firstAttribute="trailing" secondItem="jgK-p4-SoS" secondAttribute="trailing" constant="12" id="xBR-h3-5qa"/>
                                 </constraints>
