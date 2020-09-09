@@ -231,7 +231,7 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
             let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
             self.present(vc, animated: true)
-            sideMenuViewController?.hideMenuViewController()
+            //sideMenuViewController?.hideMenuViewController()
             return
         }
         
@@ -239,7 +239,7 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
             let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
             self.present(vc, animated: true)
-            sideMenuViewController?.hideMenuViewController()
+            //sideMenuViewController?.hideMenuViewController()
             return
         }
         
