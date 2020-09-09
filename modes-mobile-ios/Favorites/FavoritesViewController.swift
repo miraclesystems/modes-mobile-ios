@@ -11,6 +11,8 @@ class FavoritesViewController: UIViewController {
 
     var viewModel : FavoritesViewModel?
     
+    @IBOutlet weak var customNavBar: CustomNavigationBar!
+    
     @IBOutlet weak var viewContentView: UIView!
     @IBOutlet weak var viewInstallation: UIView!
     
@@ -47,7 +49,10 @@ class FavoritesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //link Hamburger Menu to View
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        
         // instantiate the view model
         viewModel = FavoritesViewModel()
         
