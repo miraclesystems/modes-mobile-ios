@@ -147,6 +147,11 @@
 		A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */; };
 		A97BC5FC25038C9500312D9D /* Benefits_ByCat_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */; };
 		A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99044472508181200B6AC26 /* RightSideMenuVC.swift */; };
+		A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */; };
+		A9904451250862E400B6AC26 /* Right_VertTwoCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */; };
+		A9904453250862E400B6AC26 /* Right_VertTwoCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */; };
+		A9904454250862E400B6AC26 /* Right_VertTwoCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */; };
+		A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
 		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
 		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
@@ -332,6 +337,11 @@
 		A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ByCat_TableCell.xib; sourceTree = "<group>"; };
 		A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableDataSource.swift; sourceTree = "<group>"; };
 		A99044472508181200B6AC26 /* RightSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuVC.swift; sourceTree = "<group>"; };
+		A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollCell.xib; sourceTree = "<group>"; };
+		A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollDataSource.swift; sourceTree = "<group>"; };
+		A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollCell.swift; sourceTree = "<group>"; };
+		A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollView.swift; sourceTree = "<group>"; };
+		A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollView.xib; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
 		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -575,6 +585,7 @@
 				A958EB7224F5266100989D70 /* SSASideMenu.swift */,
 				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
 				A99044472508181200B6AC26 /* RightSideMenuVC.swift */,
+				A99044492508622000B6AC26 /* Right_VertTwoCollScroll */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -776,6 +787,18 @@
 			path = Benefits_ByCat_TableView;
 			sourceTree = "<group>";
 		};
+		A99044492508622000B6AC26 /* Right_VertTwoCollScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */,
+				A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */,
+				A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */,
+				A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */,
+				A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */,
+			);
+			path = Right_VertTwoCollScroll;
+			sourceTree = "<group>";
+		};
 		A9B017B824F82C6D000E2320 /* navbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +979,7 @@
 				A97BC5F825038C9500312D9D /* Benefits_ByCat_TableView.xib in Resources */,
 				A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */,
 				A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */,
+				A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */,
 				A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */,
 				A97BC5A82501931400312D9D /* ML_Websites_TableView.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
@@ -967,6 +991,7 @@
 				A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
 				A9620D3224FF1D0700C599DC /* ML_Guides_TableCell.xib in Resources */,
+				A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */,
 				A97BC5B12501A96100312D9D /* ML_Connect_TableCell.xib in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
@@ -1035,6 +1060,7 @@
 				A9620D1C24FECA5400C599DC /* ML_VertTwoCollFlowLayout.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
+				A9904454250862E400B6AC26 /* Right_VertTwoCollView.swift in Sources */,
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				A97BC5C225029E0000312D9D /* BenefitsViewAllContVC.swift in Sources */,
 				A97BC5D125029EE600312D9D /* Benefits_TableCell.swift in Sources */,
@@ -1045,6 +1071,7 @@
 				A97BC5B52501A96100312D9D /* ML_Connect_TableView.swift in Sources */,
 				14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */,
 				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
+				A9904453250862E400B6AC26 /* Right_VertTwoCollCell.swift in Sources */,
 				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
 				A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */,
 				8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */,
@@ -1063,6 +1090,7 @@
 				A95E942425016BEA00233C53 /* ML_Benefits_TableView.swift in Sources */,
 				14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */,
 				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
+				A9904451250862E400B6AC26 /* Right_VertTwoCollDataSource.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */,
 				A97BC5EB2502A10500312D9D /* Benefits_ViewAll_TableCell.swift in Sources */,

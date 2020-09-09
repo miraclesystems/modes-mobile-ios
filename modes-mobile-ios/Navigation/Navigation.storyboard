@@ -363,6 +363,7 @@
                         <outlet property="benefits_tableview" destination="0u6-Tv-yWK" id="OuS-KZ-Pec"/>
                         <outlet property="btn_ByCat" destination="0nU-dy-9EH" id="eIb-mm-aEJ"/>
                         <outlet property="btn_ViewAll" destination="hYO-Ed-BXT" id="Bh9-nN-8VW"/>
+                        <outlet property="customNavBar" destination="xze-Y8-xFm" id="NHR-MA-m40"/>
                         <outlet property="lblBenefitsHeader" destination="7UN-ym-JfQ" id="sKK-qz-7XK"/>
                     </connections>
                 </viewController>
@@ -931,6 +932,7 @@ MilitaryOneSource.mil</string>
                         <outlet property="MilLifeContView2" destination="dOW-ew-fTA" id="fWE-AH-ziK"/>
                         <outlet property="btn_ByCat" destination="zIa-jb-Hz5" id="qK3-9u-xbX"/>
                         <outlet property="btn_ViewAll" destination="0LJ-ep-0oL" id="0dr-4T-hbT"/>
+                        <outlet property="customNavBar" destination="6pj-m1-Euc" id="gza-GQ-g7o"/>
                         <outlet property="ml_guides_tableview" destination="sIt-nN-Ch0" id="8Ob-P2-bGp"/>
                     </connections>
                 </viewController>
@@ -968,6 +970,17 @@ MilitaryOneSource.mil</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jk-gp-lPm">
+                                <rect key="frame" x="331" y="64" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Bp7-fB-emh"/>
+                                    <constraint firstAttribute="width" constant="24" id="kgo-f0-wmG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_close"/>
+                                <connections>
+                                    <action selector="btnCloseTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="Oz1-PT-NqH"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Snz-Wd-jSK" userLabel="MainAppLeft">
                                 <rect key="frame" x="0.0" y="44" width="100" height="768"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -975,28 +988,118 @@ MilitaryOneSource.mil</string>
                                     <constraint firstAttribute="width" constant="100" id="Qnb-i5-qjb"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jz-aA-vH6">
-                                <rect key="frame" x="120" y="64" width="243" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-4K-SST">
+                                <rect key="frame" x="100" y="89" width="255" height="350"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="brw-Jk-pk2"/>
-                                    <constraint firstAttribute="width" constant="243" id="gMZ-qx-Jaw"/>
+                                    <constraint firstAttribute="height" constant="350" id="T7X-Gp-6GF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-Xd-luQ" customClass="Right_VertTwoCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                <rect key="frame" x="130" y="439" width="245" height="293"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-cD-0G6" userLabel="Footer View">
+                                <rect key="frame" x="130" y="732" width="245" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQC-fw-GpL">
+                                        <rect key="frame" x="0.0" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Neh-8h-413"/>
+                                            <constraint firstAttribute="height" constant="40" id="Qck-Xz-mib"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="facebook"/>
+                                        <connections>
+                                            <action selector="btnFaceBookTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="rat-5z-vQo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2G-ge-vpU">
+                                        <rect key="frame" x="50" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3cO-4X-TfI"/>
+                                            <constraint firstAttribute="width" constant="40" id="f5E-Mi-gcQ"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="twitter"/>
+                                        <connections>
+                                            <action selector="btnTwitterTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="cpr-rk-Bln"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYj-bc-bes">
+                                        <rect key="frame" x="100" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3k8-QS-OoA"/>
+                                            <constraint firstAttribute="width" constant="40" id="IWD-wy-c2F"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="youtube"/>
+                                        <connections>
+                                            <action selector="btnYouTubeTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="hsv-HM-hQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AF-pk-SxL">
+                                        <rect key="frame" x="150" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4N8-oC-jh4"/>
+                                            <constraint firstAttribute="height" constant="40" id="xJ0-FC-O58"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="pinterest"/>
+                                        <connections>
+                                            <action selector="btnPinterestTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="bRx-1s-LXc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHy-1V-e9G">
+                                        <rect key="frame" x="200" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fIk-Y5-Tr2"/>
+                                            <constraint firstAttribute="width" constant="40" id="uno-u2-Icf"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="instagram"/>
+                                        <connections>
+                                            <action selector="btnInstagramTouched:" destination="fqM-ij-If9" eventType="touchUpInside" id="sQC-Jv-9Hm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DHy-1V-e9G" firstAttribute="leading" secondItem="3AF-pk-SxL" secondAttribute="trailing" constant="10" id="4hS-g6-Lb9"/>
+                                    <constraint firstItem="3AF-pk-SxL" firstAttribute="top" secondItem="jKF-cD-0G6" secondAttribute="top" constant="10" id="4wk-81-98m"/>
+                                    <constraint firstItem="NYj-bc-bes" firstAttribute="leading" secondItem="t2G-ge-vpU" secondAttribute="trailing" constant="10" id="BmF-tJ-FmD"/>
+                                    <constraint firstItem="NYj-bc-bes" firstAttribute="top" secondItem="jKF-cD-0G6" secondAttribute="top" constant="10" id="DN1-Yr-chb"/>
+                                    <constraint firstItem="3AF-pk-SxL" firstAttribute="leading" secondItem="NYj-bc-bes" secondAttribute="trailing" constant="10" id="DPM-it-rhR"/>
+                                    <constraint firstItem="uQC-fw-GpL" firstAttribute="leading" secondItem="jKF-cD-0G6" secondAttribute="leading" id="FJX-iH-jnG"/>
+                                    <constraint firstItem="t2G-ge-vpU" firstAttribute="leading" secondItem="uQC-fw-GpL" secondAttribute="trailing" constant="10" id="UVO-85-Hgc"/>
+                                    <constraint firstItem="t2G-ge-vpU" firstAttribute="top" secondItem="jKF-cD-0G6" secondAttribute="top" constant="10" id="Vg3-fT-T1r"/>
+                                    <constraint firstItem="uQC-fw-GpL" firstAttribute="top" secondItem="jKF-cD-0G6" secondAttribute="top" constant="10" id="ZMI-Vs-ih7"/>
+                                    <constraint firstItem="DHy-1V-e9G" firstAttribute="top" secondItem="jKF-cD-0G6" secondAttribute="top" constant="10" id="jxr-Lr-1sD"/>
+                                    <constraint firstAttribute="height" constant="80" id="pV5-Tx-z4n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.20000000000000001" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5Jz-aA-vH6" firstAttribute="top" secondItem="TrR-UI-cy4" secondAttribute="top" constant="20" id="6El-Zv-QDw"/>
+                            <constraint firstItem="jKF-cD-0G6" firstAttribute="leading" secondItem="Snz-Wd-jSK" secondAttribute="trailing" constant="30" id="Fic-4J-PNt"/>
+                            <constraint firstAttribute="bottom" secondItem="jKF-cD-0G6" secondAttribute="bottom" id="K4s-KF-BkW"/>
+                            <constraint firstItem="J3D-Xd-luQ" firstAttribute="leading" secondItem="Snz-Wd-jSK" secondAttribute="trailing" constant="30" id="K92-Xq-YwS"/>
+                            <constraint firstItem="TrR-UI-cy4" firstAttribute="trailing" secondItem="4Jk-gp-lPm" secondAttribute="trailing" constant="20" id="LEc-Pl-FyR"/>
                             <constraint firstItem="Snz-Wd-jSK" firstAttribute="top" secondItem="TrR-UI-cy4" secondAttribute="top" id="MmZ-pd-d9S"/>
                             <constraint firstItem="Snz-Wd-jSK" firstAttribute="leading" secondItem="TrR-UI-cy4" secondAttribute="leading" id="R32-zr-GUP"/>
+                            <constraint firstItem="4Jk-gp-lPm" firstAttribute="top" secondItem="TrR-UI-cy4" secondAttribute="top" constant="20" id="RIN-Lv-1mN"/>
+                            <constraint firstItem="TrR-UI-cy4" firstAttribute="trailing" secondItem="3ol-4K-SST" secondAttribute="trailing" constant="20" id="TKl-C9-7Bd"/>
+                            <constraint firstItem="jKF-cD-0G6" firstAttribute="trailing" secondItem="TrR-UI-cy4" secondAttribute="trailing" id="anN-7c-tao"/>
                             <constraint firstAttribute="bottom" secondItem="Snz-Wd-jSK" secondAttribute="bottom" id="bjf-aI-J4N"/>
-                            <constraint firstItem="5Jz-aA-vH6" firstAttribute="leading" secondItem="Snz-Wd-jSK" secondAttribute="trailing" constant="20" id="eJd-f1-S4o"/>
+                            <constraint firstItem="3ol-4K-SST" firstAttribute="leading" secondItem="Snz-Wd-jSK" secondAttribute="trailing" id="dRC-Pk-UOP"/>
+                            <constraint firstItem="J3D-Xd-luQ" firstAttribute="top" secondItem="3ol-4K-SST" secondAttribute="bottom" id="ed3-ey-M8p"/>
+                            <constraint firstItem="3ol-4K-SST" firstAttribute="top" secondItem="TrR-UI-cy4" secondAttribute="top" constant="45" id="gss-1D-sqM"/>
+                            <constraint firstItem="TrR-UI-cy4" firstAttribute="trailing" secondItem="J3D-Xd-luQ" secondAttribute="trailing" id="jJ2-pO-gOl"/>
+                            <constraint firstItem="jKF-cD-0G6" firstAttribute="top" secondItem="J3D-Xd-luQ" secondAttribute="bottom" id="lBI-95-4cJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TrR-UI-cy4"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnClose" destination="4Jk-gp-lPm" id="CDL-m4-yq8"/>
+                        <outlet property="viewforRightVertTwoCol" destination="J3D-Xd-luQ" id="k61-6I-r23"/>
+                        <outlet property="viewforTable" destination="3ol-4K-SST" id="a8W-Gj-7aL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cQ-ic-De6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1040,7 +1143,7 @@ MilitaryOneSource.mil</string>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="scaleBackgroundImageView" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="scaleMenuView" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="fadeMenuView" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightMenuViewController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightSideMenuVC"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="parallaxEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="bouncesHorizontally" value="YES"/>
                         <userDefinedRuntimeAttribute type="size" keyPath="contentViewShadowOffset">
@@ -1540,6 +1643,7 @@ MilitaryOneSource.mil</string>
                     <connections>
                         <outlet property="constraintInstallationHeigth" destination="ARi-c7-xp2" id="6Hh-bG-Nxr"/>
                         <outlet property="constraintNoInstallationTop" destination="5aZ-Pc-3Uv" id="98V-IC-oX0"/>
+                        <outlet property="customNavBar" destination="dea-cg-bFm" id="cDI-Va-Jgo"/>
                         <outlet property="lblAddress1" destination="V67-An-odZ" id="0fY-vK-mCA"/>
                         <outlet property="lblBranch" destination="V4K-Th-T3i" id="mlV-hZ-8U8"/>
                         <outlet property="lblCityStateZip" destination="wGi-xQ-Mir" id="slL-su-Hld"/>
@@ -1592,25 +1696,25 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
-                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
                                         <state key="normal" image="Image"/>
                                         <connections>
                                             <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
-                                        <rect key="frame" x="12" y="224" width="351" height="136"/>
+                                        <rect key="frame" x="12" y="224" width="351" height="68"/>
                                         <state key="normal" image="button_call_options"/>
                                         <connections>
                                             <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
-                                        <rect key="frame" x="12" y="287" width="351" height="132"/>
+                                        <rect key="frame" x="12" y="287" width="351" height="66"/>
                                         <state key="normal" image="button_subscribe"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
-                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
+                                        <rect key="frame" x="12" y="344" width="351" height="72"/>
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
                                             <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
@@ -1623,28 +1727,28 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48" y="416" width="33" height="68"/>
+                                        <rect key="frame" x="48" y="416" width="33" height="40"/>
                                         <state key="normal" image="facebook"/>
                                         <connections>
                                             <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="tNk-FJ-tD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="103" y="416" width="34" height="68"/>
+                                        <rect key="frame" x="103" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="158" y="416" width="34" height="68"/>
+                                        <rect key="frame" x="158" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="281" y="416" width="34" height="68"/>
+                                        <rect key="frame" x="281" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
@@ -1657,7 +1761,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="219" y="416" width="34" height="68"/>
+                                        <rect key="frame" x="219" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
@@ -1737,6 +1841,9 @@ MilitaryOneSource.mil</string>
                     <tabBarItem key="tabBarItem" title="Connect" image="connect_ic" selectedImage="connect_focused_ic" id="kqb-G4-edL"/>
                     <navigationItem key="navigationItem" id="6qX-7H-h78"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="customNavBar" destination="Rnp-i3-dSv" id="qBq-hH-ID9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kps-z4-Qu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2991,6 +3098,7 @@ OneSource consultant</string>
         <image name="benefits_ic" width="26" height="23.333333969116211"/>
         <image name="buttion_visit" width="351" height="72"/>
         <image name="button_call_options" width="352" height="68"/>
+        <image name="button_close" width="24" height="24"/>
         <image name="button_round" width="280" height="41"/>
         <image name="button_subscribe" width="351" height="66"/>
         <image name="call_Button" width="179" height="46"/>
@@ -3000,7 +3108,7 @@ OneSource consultant</string>
         <image name="connect_focused_ic" width="24.333333969116211" height="24.666666030883789"/>
         <image name="connect_ic" width="24.333333969116211" height="24.666666030883789"/>
         <image name="email" width="16.666666030883789" height="13.333333015441895"/>
-        <image name="facebook" width="33" height="34.333332061767578"/>
+        <image name="facebook" width="40" height="40"/>
         <image name="favorites_focused_ic" width="23.333333969116211" height="23.333333969116211"/>
         <image name="favorites_ic" width="23.333333969116211" height="23.333333969116211"/>
         <image name="favorites_red" width="20" height="18"/>
