@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1146,15 +1146,13 @@ MilitaryOneSource.mil</string>
                         <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightSideMenuVC"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="parallaxEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="bouncesHorizontally" value="YES"/>
-                        <userDefinedRuntimeAttribute type="size" keyPath="contentViewShadowOffset">
-                            <size key="value" width="0.0" height="0.0"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="contentViewScaleValue">
                             <real key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="contentViewInPortraitOffsetCenterX">
                             <real key="value" value="105"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="contentViewShadowEnabled" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeN-lt-ae4" sceneMemberID="firstResponder"/>
@@ -1861,12 +1859,12 @@ MilitaryOneSource.mil</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB3-3L-TWb">
-                                        <rect key="frame" x="14" y="11" width="20" height="20"/>
+                                        <rect key="frame" x="330" y="10" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="ZyA-8V-myg"/>
-                                            <constraint firstAttribute="height" constant="20" id="ePj-Fg-IKB"/>
+                                            <constraint firstAttribute="height" constant="25" id="Kyi-76-C8l"/>
+                                            <constraint firstAttribute="width" constant="25" id="UAm-Dj-sJY"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="back_blue"/>
+                                        <state key="normal" backgroundImage="close_dark"/>
                                         <connections>
                                             <action selector="closeBtnTouched:" destination="Emg-8v-chy" eventType="touchUpInside" id="1ZQ-RI-jjB"/>
                                         </connections>
@@ -1874,8 +1872,8 @@ MilitaryOneSource.mil</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="eB3-3L-TWb" firstAttribute="leading" secondItem="ZEC-EE-AfS" secondAttribute="leading" constant="14" id="FhE-ae-yec"/>
-                                    <constraint firstItem="eB3-3L-TWb" firstAttribute="top" secondItem="ZEC-EE-AfS" secondAttribute="top" constant="11" id="eSZ-0d-aQY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eB3-3L-TWb" secondAttribute="trailing" constant="20" id="g79-dx-FMm"/>
+                                    <constraint firstItem="eB3-3L-TWb" firstAttribute="top" secondItem="ZEC-EE-AfS" secondAttribute="top" constant="10" id="mXJ-m6-bw9"/>
                                     <constraint firstAttribute="height" constant="40" id="pKQ-E7-TzX"/>
                                 </constraints>
                             </view>
@@ -1905,7 +1903,7 @@ ONESOURCE</string>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="qzu-EW-5mu"/>
                                                         </constraints>
-                                                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate ve </mutableString>
+                                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate ve </string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3232,12 +3230,12 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC9-5a-8gD">
-                                        <rect key="frame" x="14" y="11" width="20" height="20"/>
+                                        <rect key="frame" x="330" y="10" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="AWz-N8-6As"/>
-                                            <constraint firstAttribute="width" constant="20" id="P6M-DL-FJS"/>
+                                            <constraint firstAttribute="width" constant="25" id="Tsd-hy-5Kh"/>
+                                            <constraint firstAttribute="height" constant="25" id="oFE-nI-CF8"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="back_blue"/>
+                                        <state key="normal" backgroundImage="close_dark"/>
                                         <connections>
                                             <action selector="backBtnTouched:" destination="pbv-iB-DB7" eventType="touchUpInside" id="6QP-u7-Zhi"/>
                                             <action selector="closeBtnTouched:" destination="Emg-8v-chy" eventType="touchUpInside" id="irS-kv-HPI"/>
@@ -3246,17 +3244,19 @@ OneSource consultant</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="yC9-5a-8gD" firstAttribute="top" secondItem="uaR-Sr-1zp" secondAttribute="top" constant="11" id="Eej-w8-VS4"/>
+                                    <constraint firstAttribute="trailing" secondItem="yC9-5a-8gD" secondAttribute="trailing" constant="20" id="5bE-Zv-VVP"/>
+                                    <constraint firstItem="yC9-5a-8gD" firstAttribute="top" secondItem="uaR-Sr-1zp" secondAttribute="top" constant="10" id="Hwq-ll-ZdQ"/>
                                     <constraint firstAttribute="height" constant="40" id="bAn-Cf-dG5"/>
-                                    <constraint firstItem="yC9-5a-8gD" firstAttribute="leading" secondItem="uaR-Sr-1zp" secondAttribute="leading" constant="14" id="fsj-U3-LO5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ohd-X4-5RV"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-U8-84s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-U8-84s">
                                 <rect key="frame" x="20" y="84" width="335" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="toh-CQ-JWT"/>
                                 </constraints>
+                                <string key="text">My Military OneSource
+SETTINGS</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -3266,7 +3266,7 @@ OneSource consultant</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="226" id="dZS-gZ-JyP"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate ve </mutableString>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate ve </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3387,9 +3387,6 @@ OneSource consultant</string>
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -3405,6 +3402,7 @@ OneSource consultant</string>
         <image name="category_btn" width="120" height="46"/>
         <image name="category_btn_focused" width="120" height="46"/>
         <image name="clear_to_white_grad" width="360" height="485"/>
+        <image name="close_dark" width="8" height="8"/>
         <image name="connect_focused_ic" width="24.333333969116211" height="24.666666030883789"/>
         <image name="connect_ic" width="24.333333969116211" height="24.666666030883789"/>
         <image name="dod_dark" width="142" height="53"/>
@@ -3439,4 +3437,7 @@ OneSource consultant</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
 </document>
