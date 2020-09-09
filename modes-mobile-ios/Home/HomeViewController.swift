@@ -39,8 +39,11 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var testMenuButton: UIButton!
     
-    
-    
+
+    func setFocus(){
+         UIAccessibility.post(notification: .screenChanged, argument: customNavBar.leftButton)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,6 +95,8 @@ class HomeViewController: UIViewController {
         vc1?.horzCollView.collectionDataSource.viewModel = self.viewModel
         vc1?.horzCollView.collectionView.reloadData()
         
+        
+       
        
         
     }

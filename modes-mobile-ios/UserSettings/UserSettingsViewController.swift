@@ -27,8 +27,15 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var buttonSkipAll: UIButton!
     @IBOutlet weak var buttonSkipQuestion: UIButton!
 
+    @IBOutlet weak var imageLogo: UIImageView!
     
     var currentContainer = 1
+    
+    func setFocus(){
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.imageLogo)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.imageLogo)
+    }
+
     
     func showPage1(){
         self.view.bringSubviewToFront(viewContainer1)
@@ -38,8 +45,8 @@ class UserSettingsViewController: UIViewController {
         viewContainer3.isHidden = true
         btnBack.isHidden = true
         
+        setFocus()
         
-
         
     }
     func showPage2(){
@@ -60,17 +67,19 @@ class UserSettingsViewController: UIViewController {
         viewContainer3.isHidden = true
         btnBack.isHidden = false
         view.bringSubviewToFront(btnBack)
+        setFocus()
         
     }
     func showPage3(){
         self.view.bringSubviewToFront(viewContainer3)
+        
         currentContainer = 3
         viewContainer1.isHidden = true
         viewContainer2.isHidden = true
         viewContainer3.isHidden = false
         btnBack.isHidden = false
         view.bringSubviewToFront(btnBack)
-        
+        setFocus()
         
     }
     
@@ -119,11 +128,19 @@ class UserSettingsViewController: UIViewController {
         
     }
     
-    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        // And some actions
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imageLogo.isAccessibilityElement = true
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        imageLogo.isUserInteractionEnabled = true
+        imageLogo.addGestureRecognizer(tapGestureRecognizer)
         
         // set a reference back to the parent vc for contained view controllers
         // this is how the childeren should reference the view model
