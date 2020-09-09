@@ -1035,7 +1035,7 @@ MilitaryOneSource.mil</string>
                                         <rect key="frame" x="0.0" y="-10" width="375" height="1400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Ol-ub2" userLabel="View Header">
-                                                <rect key="frame" x="102.00000000000001" y="15" width="171.33333333333337" height="64"/>
+                                                <rect key="frame" x="102.66666666666667" y="15" width="169.66666666666663" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-uK-lw0">
                                                         <rect key="frame" x="20" y="23" width="22" height="19"/>
@@ -1045,7 +1045,7 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
-                                                        <rect key="frame" x="43.999999999999993" y="20" width="107.33333333333331" height="24"/>
+                                                        <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="24"/>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
