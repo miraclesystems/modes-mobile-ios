@@ -12,6 +12,8 @@ class BenefitsController: UIViewController {
     
     var viewModel : BenefitsViewModel?
     
+    @IBOutlet weak var customNavBar: CustomNavigationBar!
+    
     @IBOutlet weak var btn_ByCat: UIButton!
     @IBOutlet weak var btn_ViewAll: UIButton!
     @IBOutlet weak var BenefitsContView1: UIView!
@@ -131,6 +133,9 @@ class BenefitsController: UIViewController {
     override func viewDidLoad() {
         //viewModel = GuidesViewModel()
         super.viewDidLoad()
+        
+        //link Hamburger Menu to View
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
 
                 viewModel = BenefitsViewModel()
                 // set a reference back to the parent vc for contained view controllers

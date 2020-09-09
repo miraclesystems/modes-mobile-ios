@@ -39,23 +39,25 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var testMenuButton: UIButton!
     
+
     func setFocus(){
          UIAccessibility.post(notification: .screenChanged, argument: customNavBar.leftButton)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //link Hamburger Menu to View
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        
+        //tabBarController!.viewControllers?.remove(at:5)
 
         //set focus
         setNeedsFocusUpdate()
         updateFocusIfNeeded()
         
-        // pass the view model to the horzCollView
         
-        //horzCollView.setViewModel(viewModel: viewModel)
-        
-        
-        
-        
+
         // set a reference back to the parent vc for contained view controllers
         // this is how the childeren should reference the view model
         for child in self.children{
@@ -75,37 +77,6 @@ class HomeViewController: UIViewController {
         }
         
         
-        //Hide the 2nd View on initial Load
-        //HomeContView2.isHidden = true
-        //HomeContView1.isHidden = false
-        
-        
-        testMenuButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
-        
-        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
-
-
-        /*
-        menubutton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
-        */
-        // Do any additional setup after loading the view.
-        /*
-        //  This loads the hamburger menu on the right side
-               self.navigationController?.navigationBar.tintColor = UIColor.black
-               //create a new button
-               let button = UIButton.init(type: .custom)
-               //set image for button
-               button.setImage(UIImage(named: "navbar_menu"), for: UIControl.State.normal)
-               //add function for button
-               button.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
-               //set frame
-               button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-               let barButton = UIBarButtonItem(customView: button)
-               //assign button to navigationbar
-               self.navigationItem.rightBarButtonItem = barButton
-               
-              // self.navigationController?.navigationBar.tintColor = UIColor(hex: 0xA74795)
-        */
         
     }
     

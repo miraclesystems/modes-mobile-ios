@@ -12,6 +12,8 @@ class MilLifeGuidesController: UIViewController {
     
     var viewModel : GuidesViewModel?
     
+    @IBOutlet weak var customNavBar: CustomNavigationBar!
+    
     @IBOutlet weak var btn_ByCat: UIButton!
     @IBOutlet weak var btn_ViewAll: UIButton!
     @IBOutlet weak var MilLifeContView1: UIView!
@@ -137,6 +139,10 @@ class MilLifeGuidesController: UIViewController {
     override func viewDidLoad() {
         viewModel = GuidesViewModel()
         super.viewDidLoad()
+        
+        //link Hamburger Menu to View
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+
 
                 // set a reference back to the parent vc for contained view controllers
                // this is how the childeren should reference the view model

@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="smJ-ub-vTN">
-                    <rect key="frame" x="0.0" y="10" width="375" height="113"/>
+                    <rect key="frame" x="0.0" y="44" width="375" height="56"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xCN-5c-GxC">
                         <size key="itemSize" width="156" height="58"/>
@@ -31,8 +31,8 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="smJ-ub-vTN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-34" id="Aei-88-Uoe"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="smJ-ub-vTN" secondAttribute="bottom" constant="-23" id="PoW-46-j3s"/>
+                <constraint firstItem="smJ-ub-vTN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Aei-88-Uoe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="smJ-ub-vTN" secondAttribute="bottom" id="PoW-46-j3s"/>
                 <constraint firstItem="smJ-ub-vTN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZgF-pV-68R"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="smJ-ub-vTN" secondAttribute="trailing" id="nBu-ad-Wor"/>
             </constraints>
