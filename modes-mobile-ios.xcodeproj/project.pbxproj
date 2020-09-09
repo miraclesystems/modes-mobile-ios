@@ -152,6 +152,8 @@
 		A9904453250862E400B6AC26 /* Right_VertTwoCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */; };
 		A9904454250862E400B6AC26 /* Right_VertTwoCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */; };
 		A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */; };
+		A9904459250922B000B6AC26 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9904458250922B000B6AC26 /* AboutVC.swift */; };
+		A990445B250922E100B6AC26 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990445A250922E100B6AC26 /* SettingsVC.swift */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
 		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
 		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
@@ -342,6 +344,8 @@
 		A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollCell.swift; sourceTree = "<group>"; };
 		A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollView.swift; sourceTree = "<group>"; };
 		A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollView.xib; sourceTree = "<group>"; };
+		A9904458250922B000B6AC26 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A990445A250922E100B6AC26 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
 		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -467,13 +471,15 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A958EB6E24F5262300989D70 /* Navigation */,
+				A99044562509227100B6AC26 /* About */,
+				A99044572509228800B6AC26 /* Settings */,
 				14413CCB2503F66B00E9FA72 /* Favorites */,
 				14413CC92503F2C600E9FA72 /* modes.sqlite3 */,
 				8363D98A25027BFA005ADB46 /* Connect */,
 				14C3232224FD6BE800065579 /* SQLite */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
-				A958EB6E24F5262300989D70 /* Navigation */,
 				143AB89924EED520002D0029 /* UserSettings */,
 				A9B3738224F3D8A800B6D0CC /* Home */,
 				A9620D0724FE9C1B00C599DC /* MilLifeGuides */,
@@ -799,6 +805,22 @@
 			path = Right_VertTwoCollScroll;
 			sourceTree = "<group>";
 		};
+		A99044562509227100B6AC26 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A9904458250922B000B6AC26 /* AboutVC.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		A99044572509228800B6AC26 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A990445A250922E100B6AC26 /* SettingsVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A9B017B824F82C6D000E2320 /* navbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1086,7 @@
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				A97BC5C225029E0000312D9D /* BenefitsViewAllContVC.swift in Sources */,
 				A97BC5D125029EE600312D9D /* Benefits_TableCell.swift in Sources */,
+				A990445B250922E100B6AC26 /* SettingsVC.swift in Sources */,
 				14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */,
 				14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */,
 				A9620D482501108400C599DC /* ML_Articles_TableView.swift in Sources */,
@@ -1082,6 +1105,7 @@
 				14A901C424F1B98300E2B4CA /* IQUIViewController+Additions.swift in Sources */,
 				A9FEEC0424FB1F3000EB7CA6 /* HomeTableDataSource.swift in Sources */,
 				14A901C524F1B98300E2B4CA /* IQUIScrollView+Additions.swift in Sources */,
+				A9904459250922B000B6AC26 /* AboutVC.swift in Sources */,
 				A97BC5F12502DA2800312D9D /* BenefitsDetailsContVC.swift in Sources */,
 				A97BC5D025029EE600312D9D /* Benefits_TableView.swift in Sources */,
 				A97BC5E82502A10500312D9D /* Benefits_VIewAll_TableView.swift in Sources */,

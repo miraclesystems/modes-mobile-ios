@@ -120,14 +120,23 @@ class RightSideMenuVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+        /*
+        if let tabBarController = self.sideMenuViewController!.contentViewController as? UITabBarController {
+                let aboutVC = AboutVC()
+                tabBarController.viewControllers?.insert(aboutVC, at: 5)
+        }
+        */
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.sectionHeaderHeight = 5
        
         viewforTable.addSubview(tableView)
         tableView.frame = CGRect(x: 0, y: 0, width: viewforTable.frame.size.width, height: viewforTable.frame.size.height)
+        
+        
+        
    
         
     }
@@ -203,15 +212,43 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
         if ( indexPath.row == 5 || indexPath.row == 9 || indexPath.row == 10 ) {
           return
         }
-        /*
-        let navController: UINavigationController = (self.sideMenuViewController!.contentViewController as? UINavigationController)!
-        */
         
-            tableView.deselectRow(at: indexPath, animated: true)
-            if let tabBarController = self.sideMenuViewController!.contentViewController as? UITabBarController {
-                tabBarController.selectedIndex = indexPath.row
-                sideMenuViewController?.hideMenuViewController()
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        //Handle Feedback web link
+        if ( indexPath.row == 8 ) {
+            if let url = URL(string: "https://www.militaryonesource.mil/") {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:])
+                }
             }
+            
+          return
+        }
+        
+        //Handle the About/Settings
+        if (indexPath.row == 6) {
+            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
+            self.present(vc, animated: true)
+            sideMenuViewController?.hideMenuViewController()
+            return
+        }
+        
+        if (indexPath.row == 7) {
+            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+            self.present(vc, animated: true)
+            sideMenuViewController?.hideMenuViewController()
+            return
+        }
+        
+        
+        
+        if let tabBarController = self.sideMenuViewController!.contentViewController as? UITabBarController {
+            tabBarController.selectedIndex = indexPath.row
+            sideMenuViewController?.hideMenuViewController()
+        }
         
         
         

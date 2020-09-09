@@ -39,11 +39,15 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var testMenuButton: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //link Hamburger Menu to View
         customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        
+        //tabBarController!.viewControllers?.remove(at:5)
 
         //set focus
         setNeedsFocusUpdate()
