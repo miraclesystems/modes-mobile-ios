@@ -80,8 +80,6 @@
 		A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A0EB524FBD81E00341C9E /* HomeContView2VC.swift */; };
 		A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */; };
 		A920283A24F5BA0700747071 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920283924F5BA0700747071 /* Helper.swift */; };
-		A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB6F24F5266100989D70 /* SecondViewController.swift */; };
-		A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7024F5266100989D70 /* ThirdViewController.swift */; };
 		A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A958EB7124F5266100989D70 /* Navigation.storyboard */; };
 		A958EB7824F5266200989D70 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7224F5266100989D70 /* SSASideMenu.swift */; };
 		A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958EB7324F5266100989D70 /* HomeViewController.swift */; };
@@ -148,6 +146,14 @@
 		A97BC5FA25038C9500312D9D /* Benefits_ByCat_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F525038C9400312D9D /* Benefits_ByCat_TableCell.swift */; };
 		A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */; };
 		A97BC5FC25038C9500312D9D /* Benefits_ByCat_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */; };
+		A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99044472508181200B6AC26 /* RightSideMenuVC.swift */; };
+		A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */; };
+		A9904451250862E400B6AC26 /* Right_VertTwoCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */; };
+		A9904453250862E400B6AC26 /* Right_VertTwoCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */; };
+		A9904454250862E400B6AC26 /* Right_VertTwoCollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */; };
+		A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */; };
+		A9904459250922B000B6AC26 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9904458250922B000B6AC26 /* AboutVC.swift */; };
+		A990445B250922E100B6AC26 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990445A250922E100B6AC26 /* SettingsVC.swift */; };
 		A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */; };
 		A9B017B724F7E94E000E2320 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B624F7E94E000E2320 /* GradientView.swift */; };
 		A9B017BB24F82D5A000E2320 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */; };
@@ -266,8 +272,6 @@
 		A90A0EB524FBD81E00341C9E /* HomeContView2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContView2VC.swift; sourceTree = "<group>"; };
 		A920283724F59FBB00747071 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		A920283924F5BA0700747071 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		A958EB6F24F5266100989D70 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A958EB7024F5266100989D70 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A958EB7124F5266100989D70 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		A958EB7224F5266100989D70 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		A958EB7324F5266100989D70 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +338,14 @@
 		A97BC5F525038C9400312D9D /* Benefits_ByCat_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableCell.swift; sourceTree = "<group>"; };
 		A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ByCat_TableCell.xib; sourceTree = "<group>"; };
 		A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableDataSource.swift; sourceTree = "<group>"; };
+		A99044472508181200B6AC26 /* RightSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuVC.swift; sourceTree = "<group>"; };
+		A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollCell.xib; sourceTree = "<group>"; };
+		A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollDataSource.swift; sourceTree = "<group>"; };
+		A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollCell.swift; sourceTree = "<group>"; };
+		A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollView.swift; sourceTree = "<group>"; };
+		A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollView.xib; sourceTree = "<group>"; };
+		A9904458250922B000B6AC26 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A990445A250922E100B6AC26 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A9B017B224F6C2DD000E2320 /* LocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocTableViewController.swift; sourceTree = "<group>"; };
 		A9B017B624F7E94E000E2320 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9B017B924F82D5A000E2320 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -459,13 +471,15 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A958EB6E24F5262300989D70 /* Navigation */,
+				A99044562509227100B6AC26 /* About */,
+				A99044572509228800B6AC26 /* Settings */,
 				14413CCB2503F66B00E9FA72 /* Favorites */,
 				14413CC92503F2C600E9FA72 /* modes.sqlite3 */,
 				8363D98A25027BFA005ADB46 /* Connect */,
 				14C3232224FD6BE800065579 /* SQLite */,
 				14A901DA24F1B9D300E2B4CA /* IQKeyboardManagerSwift */,
 				143AB8AF24EF4EB2002D0029 /* Utility */,
-				A958EB6E24F5262300989D70 /* Navigation */,
 				143AB89924EED520002D0029 /* UserSettings */,
 				A9B3738224F3D8A800B6D0CC /* Home */,
 				A9620D0724FE9C1B00C599DC /* MilLifeGuides */,
@@ -574,10 +588,10 @@
 			children = (
 				A9B017B824F82C6D000E2320 /* navbar */,
 				A958EB7124F5266100989D70 /* Navigation.storyboard */,
-				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
-				A958EB6F24F5266100989D70 /* SecondViewController.swift */,
-				A958EB7024F5266100989D70 /* ThirdViewController.swift */,
 				A958EB7224F5266100989D70 /* SSASideMenu.swift */,
+				A958EB7424F5266200989D70 /* RightMenuViewController.swift */,
+				A99044472508181200B6AC26 /* RightSideMenuVC.swift */,
+				A99044492508622000B6AC26 /* Right_VertTwoCollScroll */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -779,6 +793,34 @@
 			path = Benefits_ByCat_TableView;
 			sourceTree = "<group>";
 		};
+		A99044492508622000B6AC26 /* Right_VertTwoCollScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A990444E250862E400B6AC26 /* Right_VertTwoCollView.swift */,
+				A990444F250862E400B6AC26 /* Right_VertTwoCollView.xib */,
+				A990444D250862E400B6AC26 /* Right_VertTwoCollCell.swift */,
+				A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */,
+				A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */,
+			);
+			path = Right_VertTwoCollScroll;
+			sourceTree = "<group>";
+		};
+		A99044562509227100B6AC26 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A9904458250922B000B6AC26 /* AboutVC.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		A99044572509228800B6AC26 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A990445A250922E100B6AC26 /* SettingsVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A9B017B824F82C6D000E2320 /* navbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,6 +1001,7 @@
 				A97BC5F825038C9500312D9D /* Benefits_ByCat_TableView.xib in Resources */,
 				A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */,
 				A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */,
+				A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */,
 				A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */,
 				A97BC5A82501931400312D9D /* ML_Websites_TableView.xib in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
@@ -970,6 +1013,7 @@
 				A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
 				A9620D3224FF1D0700C599DC /* ML_Guides_TableCell.xib in Resources */,
+				A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */,
 				A97BC5B12501A96100312D9D /* ML_Connect_TableCell.xib in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
@@ -1031,7 +1075,6 @@
 				A9620D0D24FEC80C00C599DC /* MilLifeViewAllContVC.swift in Sources */,
 				A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */,
 				A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */,
-				A958EB7624F5266200989D70 /* ThirdViewController.swift in Sources */,
 				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
 				A9620D472501108400C599DC /* ML_Articles_TableDataSource.swift in Sources */,
 				A9620D1B24FECA5400C599DC /* ML_VertTwoCollView.swift in Sources */,
@@ -1039,9 +1082,11 @@
 				A9620D1C24FECA5400C599DC /* ML_VertTwoCollFlowLayout.swift in Sources */,
 				14A901D624F1B9C400E2B4CA /* IQInvocation.swift in Sources */,
 				14A901D724F1B9C400E2B4CA /* IQToolbar.swift in Sources */,
+				A9904454250862E400B6AC26 /* Right_VertTwoCollView.swift in Sources */,
 				14A901D824F1B9C400E2B4CA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				A97BC5C225029E0000312D9D /* BenefitsViewAllContVC.swift in Sources */,
 				A97BC5D125029EE600312D9D /* Benefits_TableCell.swift in Sources */,
+				A990445B250922E100B6AC26 /* SettingsVC.swift in Sources */,
 				14A901D924F1B9C400E2B4CA /* IQBarButtonItem.swift in Sources */,
 				14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */,
 				A9620D482501108400C599DC /* ML_Articles_TableView.swift in Sources */,
@@ -1049,7 +1094,9 @@
 				A97BC5B52501A96100312D9D /* ML_Connect_TableView.swift in Sources */,
 				14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */,
 				A9FEEBF524FABB5300EB7CA6 /* VertTwoCollFlowLayout.swift in Sources */,
+				A9904453250862E400B6AC26 /* Right_VertTwoCollCell.swift in Sources */,
 				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
+				A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */,
 				8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */,
 				14A901CA24F1B99600E2B4CA /* IQKeyboardManagerConstants.swift in Sources */,
 				A9620D0B24FEC7C000C599DC /* MilLifeByCatContVC.swift in Sources */,
@@ -1058,8 +1105,8 @@
 				14A901C424F1B98300E2B4CA /* IQUIViewController+Additions.swift in Sources */,
 				A9FEEC0424FB1F3000EB7CA6 /* HomeTableDataSource.swift in Sources */,
 				14A901C524F1B98300E2B4CA /* IQUIScrollView+Additions.swift in Sources */,
+				A9904459250922B000B6AC26 /* AboutVC.swift in Sources */,
 				A97BC5F12502DA2800312D9D /* BenefitsDetailsContVC.swift in Sources */,
-				A958EB7524F5266200989D70 /* SecondViewController.swift in Sources */,
 				A97BC5D025029EE600312D9D /* Benefits_TableView.swift in Sources */,
 				A97BC5E82502A10500312D9D /* Benefits_VIewAll_TableView.swift in Sources */,
 				14A901C624F1B98300E2B4CA /* IQUITextFieldView+Additions.swift in Sources */,
@@ -1067,6 +1114,7 @@
 				A95E942425016BEA00233C53 /* ML_Benefits_TableView.swift in Sources */,
 				14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */,
 				A958EB7924F5266200989D70 /* HomeViewController.swift in Sources */,
+				A9904451250862E400B6AC26 /* Right_VertTwoCollDataSource.swift in Sources */,
 				14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */,
 				A97BC5EB2502A10500312D9D /* Benefits_ViewAll_TableCell.swift in Sources */,

@@ -10,12 +10,13 @@ import UIKit
 
 class ConnectViewController: UIViewController {
 
-
+    @IBOutlet weak var customNavBar: CustomNavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //link Hamburger Menu to View
+        customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
             
     }
     

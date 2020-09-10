@@ -68,7 +68,7 @@ class ML_Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
         
-        
+        //vc.modalPresentationStyle = .fullScreen
         vc.selectedBenefit = selectedBenefit?.benefit
         parentVc?.present(vc, animated: true)
         //parentVc?.parentVc?.showRelatedBenefits(index: indexPath.item)
