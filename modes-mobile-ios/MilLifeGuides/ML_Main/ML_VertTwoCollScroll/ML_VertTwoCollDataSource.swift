@@ -22,6 +22,8 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
         
        
         cell.label.text = parentVc?.parentVc?.viewModel?.categories[indexPath.row]
+        cell.accessibilityLabel = cell.label.text
+        cell.accessibilityValue = cell.label.text
         //cell.label.text = myLabels[indexPath.item]
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         
@@ -33,6 +35,7 @@ class ML_VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollecti
         cell.layer.shadowRadius = 5.0
         cell.layer.shadowOpacity = 0.1
         cell.layer.masksToBounds = false //<-
+        
         
         collectionView.delaysContentTouches = false
         return cell

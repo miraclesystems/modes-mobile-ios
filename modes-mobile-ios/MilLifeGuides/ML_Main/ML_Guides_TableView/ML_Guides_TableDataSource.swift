@@ -58,6 +58,8 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
         cell.layer.shadowOpacity = 0.1
         cell.layer.masksToBounds = false //<-
         
+        cell.accessibilityLabel = cell.label.text
+        
         //cell.layer.backgroundColor = UIColor.white.cgColor
         //tableView.delaysContentTouches = false
         return cell

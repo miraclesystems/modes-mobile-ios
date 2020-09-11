@@ -173,6 +173,8 @@ class BenefitsController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool){
         benefits_tableview.tableDataSource.parentVc = self
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.view)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.view)
     }
     
     

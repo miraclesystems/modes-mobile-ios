@@ -177,6 +177,8 @@ class MilLifeGuidesController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool){
         ml_guides_tableview.tableDataSource.parentVc = self
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.view)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.view)
     }
     
     

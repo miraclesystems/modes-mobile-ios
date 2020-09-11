@@ -20,6 +20,9 @@ class HomeContView1VC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.horzCollView.labelBrowseContent)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.horzCollView.labelBrowseContent)
         horzCollView.collectionDataSource.parentVc = self
         //ml_verttwocollview.collectionView.reloadData()
     }
@@ -47,6 +50,7 @@ class HomeContView1VC: UIViewController {
     // This is your unwind Segue, and it must be a @IBAction
     @IBAction func unwindToContView1VC(segue: UIStoryboardSegue) {
         let source = segue.source as? SearchTableViewController // This is the source
+        
         
         source?.viewModel = parentVc?.viewModel
         parentVc?.viewModel.topic = source?.mySelection as! String

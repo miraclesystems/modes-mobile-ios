@@ -65,7 +65,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
     
         parentVc?.parentVc?.viewModel?.selectedGuide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row] as! String
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsGuideCont)!)
-        parentVc?.parentVc?.vc3?.loadGuide()
+        //parentVc?.parentVc?.vc3?.loadGuide()
         
     }
     

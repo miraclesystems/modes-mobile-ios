@@ -39,8 +39,9 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var testMenuButton: UIButton!
     
-    
-    
+
+  
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,6 +93,9 @@ class HomeViewController: UIViewController {
         vc1?.horzCollView.collectionDataSource.viewModel = self.viewModel
         vc1?.horzCollView.collectionView.reloadData()
         
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.view)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.view)
+       
        
         
     }

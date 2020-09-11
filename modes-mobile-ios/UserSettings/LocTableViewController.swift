@@ -35,6 +35,14 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
        performSegue(withIdentifier: "unwindSegue", sender: title)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.txtName.isAccessibilityElement = true
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.txtName)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.txtName)
+        
+            
+            
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +57,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         if fromGeoLoc {
             txtName.isHidden = true
             imgSrch.isHidden = true
+            lblInstallName.text = viewModel?.city
             btnRightTop.setImage(UIImage(named: "search"), for: .normal)
         } else {
             lblShowingInst.isHidden = true
@@ -83,6 +92,11 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         */
         searching = true
         self.tableView.reloadData();
+    
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.tableView)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.tableView)
+    
+        
         
         return true
     }

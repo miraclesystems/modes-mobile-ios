@@ -71,7 +71,10 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
             var keywords_array = keywords.split(separator: ",")
 
             for keyword in keywords_array{
-                list.append(String(keyword))
+                if(keyword.contains(topic))
+                {
+                    list.append(String(keyword).trimmingCharacters(in: .whitespacesAndNewlines))
+                }
             }
         }
         
@@ -83,11 +86,16 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
             var keywords_array = keywords.split(separator: ",")
 
             for keyword in keywords_array{
-                list.append(String(keyword))
+                if(keyword.contains(topic)){
+                    list.append(String(keyword).trimmingCharacters(in: .whitespacesAndNewlines))
+                }
+                
             }
         }
+        
+        let unique = Array(Set(list))
 
-        return list
+        return unique
     }
     
     func getSuggestedCards()->[HomePageCardModel]{

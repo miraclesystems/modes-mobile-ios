@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUI-M9-FqS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUI-M9-FqS">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Bold.ttf">
+            <string>WorkSans-Bold</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--UserSettingsViewController-->
         <scene sceneID="6ey-k3-fLC">
@@ -42,7 +50,7 @@
                                     <constraint firstAttribute="width" constant="83" id="T6w-aZ-Vyi"/>
                                     <constraint firstAttribute="height" constant="26" id="aGY-Oq-58N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                 <state key="normal" title="Skip all setup">
                                     <color key="titleColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -55,6 +63,9 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modes_logo_main" translatesAutoresizingMaskIntoConstraints="NO" id="ThA-5X-ckV">
                                         <rect key="frame" x="18" y="8" width="221" height="68"/>
+                                        <accessibility key="accessibilityConfiguration" hint="logo" identifier="logo" label="logo">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="221" id="QY2-LS-B81"/>
                                             <constraint firstAttribute="height" constant="68" id="ZIK-l8-gVC"/>
@@ -62,6 +73,9 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="header view" label="header view">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="773-t6-JuB"/>
                                     <constraint firstItem="ThA-5X-ckV" firstAttribute="leading" secondItem="VYZ-j9-BMe" secondAttribute="leading" constant="18" id="8no-KR-tuP"/>
@@ -75,7 +89,7 @@
                                     <constraint firstAttribute="height" constant="26" id="LfK-Kf-KTh"/>
                                     <constraint firstAttribute="width" constant="82" id="MEs-rH-Bl8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                 <state key="normal" title="Skip question">
                                     <color key="titleColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -134,6 +148,7 @@
                         <outlet property="btnBack" destination="tRC-1H-eqn" id="7fv-xR-iPa"/>
                         <outlet property="buttonSkipAll" destination="Kyh-4U-pfx" id="bN9-56-x2v"/>
                         <outlet property="buttonSkipQuestion" destination="tRV-TF-A3L" id="ITq-Eb-iYt"/>
+                        <outlet property="imageLogo" destination="ThA-5X-ckV" id="MUs-XF-tSY"/>
                         <outlet property="viewContainer1" destination="bDD-yk-Ryc" id="41o-Ir-yAw"/>
                         <outlet property="viewContainer2" destination="iJv-ui-YF7" id="leY-Db-6Bt"/>
                         <outlet property="viewContainer3" destination="LXo-He-eHa" id="ct0-wN-Hkd"/>
@@ -155,8 +170,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONALIZE THE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anR-ik-Ql4">
-                                        <rect key="frame" x="97" y="35" width="140" height="14.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <rect key="frame" x="99" y="35" width="136" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                         <color key="textColor" red="0.46274509803921571" green="0.72156862745098038" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -255,7 +270,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Q7v-QA-XyR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -266,7 +281,7 @@
                                     <constraint firstAttribute="height" constant="40" id="hru-vf-LkU"/>
                                     <constraint firstAttribute="width" constant="280" id="sxz-pZ-RoW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <state key="normal" title="I am a service member" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -282,6 +297,7 @@
                                     <constraint firstAttribute="height" constant="40" id="b1e-Of-KCu"/>
                                     <constraint firstAttribute="width" constant="280" id="kDP-1A-nU3"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <state key="normal" title="I am a military spouse" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -297,6 +313,7 @@
                                     <constraint firstAttribute="width" constant="280" id="qjS-ZR-Yqm"/>
                                     <constraint firstAttribute="height" constant="40" id="uv8-Sb-ufc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <state key="normal" title="I am a family member" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -312,6 +329,7 @@
                                     <constraint firstAttribute="height" constant="40" id="az6-ks-gsE"/>
                                     <constraint firstAttribute="width" constant="280" id="wyf-bX-fXe"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <state key="normal" title="Other" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -361,8 +379,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONALIZE THE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="img-WN-18t">
-                                        <rect key="frame" x="97" y="35" width="140" height="14.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <rect key="frame" x="99" y="35" width="136" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                         <color key="textColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -464,7 +482,7 @@
                                 </constraints>
                                 <string key="text">What's your branch
 of service </string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -475,6 +493,7 @@ of service </string>
                                     <constraint firstAttribute="width" constant="280" id="Ixp-hf-HwG"/>
                                     <constraint firstAttribute="height" constant="40" id="N0k-Bg-XmC"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="4" maxX="60" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="12" maxY="0.0"/>
                                 <state key="normal" title="   Select a branch" image="dropdown_arrow" backgroundImage="dropdown_bckgrnd">
@@ -491,6 +510,7 @@ of service </string>
                                     <constraint firstAttribute="height" constant="40" id="Zrg-cs-gDP"/>
                                     <constraint firstAttribute="width" constant="280" id="bDP-1f-vc2"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="18"/>
                                 <state key="normal" title="Finish setup" backgroundImage="button_round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -541,8 +561,8 @@ of service </string>
                                 <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONALIZE THE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOY-De-x46">
-                                        <rect key="frame" x="97" y="35" width="140" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <rect key="frame" x="99" y="35" width="136" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                         <color key="textColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -642,7 +662,7 @@ of service </string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gST-G4-PsP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -660,7 +680,7 @@ of service </string>
                                     <constraint firstAttribute="height" constant="40" id="AY7-BR-Vqm"/>
                                     <constraint firstAttribute="width" constant="280" id="TFg-JE-EJD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="10" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="30" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
@@ -677,7 +697,7 @@ of service </string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="39n-g3-BSZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Use current location " image="near_me">
@@ -736,6 +756,9 @@ of service </string>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" background="search_bar" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-Oq-ILi">
                                 <rect key="frame" x="41" y="54" width="248" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" searchField="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="cvl-KR-bgD"/>
                                 </constraints>
@@ -813,6 +836,9 @@ of service </string>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" label="location result">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
