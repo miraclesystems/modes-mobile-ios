@@ -238,6 +238,7 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
         if (indexPath.row == 7) {
             let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+            vc.delegate = self
             self.present(vc, animated: true)
             //sideMenuViewController?.hideMenuViewController()
             return
@@ -256,6 +257,21 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
     }
  
     
-    
-    
+}
+
+
+//Extension for Adding Return Protocol for Here
+extension RightSideMenuVC: returntoPreviousProtocol {
+    func rtPM_GoUserSettings() {
+        print("Back on Right Side Menu, in returntoPreviousProtocol - rtPM_GoUserSettings")
+        let seconds = 0.2
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let storyboard = UIStoryboard(name: "UserSettings", bundle: nil);
+            let vc = storyboard.instantiateViewController(withIdentifier: "UserSettingsViewController") as! UserSettingsViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil);
+        }
+        
+    }
+
 }
