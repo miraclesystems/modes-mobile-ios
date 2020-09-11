@@ -16,6 +16,7 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
     var loadingLocationsByPostal = false
     
     
+    var city  = ""
     var locationsModel = LocationsModel()
     
     func onError(_ apiError: Error) {

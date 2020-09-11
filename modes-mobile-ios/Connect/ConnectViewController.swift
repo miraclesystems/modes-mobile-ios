@@ -17,6 +17,8 @@ class ConnectViewController: UIViewController {
         
         //link Hamburger Menu to View
         customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.leftButton)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.leftButton)
             
     }
     

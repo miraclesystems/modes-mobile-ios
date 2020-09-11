@@ -111,6 +111,11 @@ class FavoritesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         tableViewGuides.reloadData()
         tableViewBenefits.reloadData()
+        
+        
+       
+        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.view)
+        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.view)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

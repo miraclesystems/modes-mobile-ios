@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
                     <rect key="frame" x="6" y="4" width="202" height="56"/>
-                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn" label="logo"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="202" id="5Qy-cu-a13"/>
                         <constraint firstAttribute="height" constant="56" id="9R3-8y-tAL"/>
@@ -45,6 +45,9 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" label="header">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" constant="6" id="J4b-q8-FZN"/>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="4" id="TlQ-JK-k9n"/>

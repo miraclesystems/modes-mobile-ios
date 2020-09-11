@@ -57,6 +57,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         if fromGeoLoc {
             txtName.isHidden = true
             imgSrch.isHidden = true
+            lblInstallName.text = viewModel?.city
             btnRightTop.setImage(UIImage(named: "search"), for: .normal)
         } else {
             lblShowingInst.isHidden = true
