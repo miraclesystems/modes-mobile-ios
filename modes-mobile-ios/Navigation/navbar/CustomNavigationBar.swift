@@ -9,7 +9,7 @@ class CustomNavigationBar: UIView {
     
     private static let NIB_NAME = "CustomNavigationBar"
     
-    @IBOutlet private var view: UIView!
+    @IBOutlet  var view: UIView!
     
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!

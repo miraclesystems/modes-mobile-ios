@@ -46,7 +46,12 @@ class VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollectionV
         cell.layer.shadowRadius = 5.0
         cell.layer.shadowOpacity = 0.1
         cell.layer.masksToBounds = false //<-
+
         
+        cell.accessibilityActivate()
+        cell.accessibilityLabel = cell.label.text!
+        cell.accessibilityValue = cell.label.text!
+
         collectionView.delaysContentTouches = false
         return cell
     }
