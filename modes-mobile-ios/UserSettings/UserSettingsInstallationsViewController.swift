@@ -17,6 +17,13 @@ class UserSettingsInstallationsViewController: UIViewController {
     var filteredArray = [String]()
     var geoLocation = false
     
+    //Top Buttons
+    @IBOutlet weak var indBtn1Install: UIButton!
+    @IBOutlet weak var indBtn2Install: UIButton!
+    @IBOutlet weak var indBtn3Install: UIButton!
+    
+    
+    
     
     let locationManager = CLLocationManager()
 
@@ -181,13 +188,17 @@ class UserSettingsInstallationsViewController: UIViewController {
             
             searchInstBtn.setTitle(mySelect, for: .normal)
             //self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
-            /*
-            let seconds = 0.75
+            
+            let seconds = 0.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                self.parentVc?.twoComplete = true
                 self.parentVc?.showPage3()
             }
-            */
-            self.parentVc?.showPage3()
+            
+            //self.parentVc?.twoComplete = true
+            //self.parentVc?.showPage3()
+            
+            
         } else {
             //back from upper right button press
             //navigate to the other desired screen
