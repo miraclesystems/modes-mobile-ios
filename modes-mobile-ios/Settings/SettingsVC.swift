@@ -8,13 +8,24 @@
 import UIKit
 
 class SettingsVC: UIViewController {
+    
+    //For Sending Back to Previous Page
+    var delegate : returntoPreviousProtocol?
+    
+    func callDelegate() {
+        print("delegate called")
+        delegate?.rtPM_GoUserSettings?()
+        dismiss(animated: true, completion: nil)
+    }
+    
 
     @IBAction func backBtnTouched(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func editBtnTouched(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        callDelegate()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

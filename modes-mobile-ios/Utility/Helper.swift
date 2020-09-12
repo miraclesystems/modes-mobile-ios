@@ -120,3 +120,11 @@ extension UIColor {
         )
     }
 }
+
+
+
+//Protocol for Returning to Previous
+@objc protocol returntoPreviousProtocol : class
+{
+    @objc optional func rtPM_GoUserSettings()
+}

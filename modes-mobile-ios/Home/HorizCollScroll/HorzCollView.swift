@@ -9,7 +9,7 @@ class HorzCollView: UIView {
     
     @IBOutlet weak var labelBrowseContent: UILabel!
     let collectionDataSource = HorzCollDataSource()
-    let flowLayout = HorzCollFlowLayout()
+    //let flowLayout = HorzCollFlowLayout()
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -56,7 +56,7 @@ class HorzCollView: UIView {
         //collectionView.dataSource = self
         collectionView.dataSource = collectionDataSource
         collectionView.delegate = collectionDataSource
-        collectionView.collectionViewLayout = flowLayout
+        //collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         
         //move 1st slide to left

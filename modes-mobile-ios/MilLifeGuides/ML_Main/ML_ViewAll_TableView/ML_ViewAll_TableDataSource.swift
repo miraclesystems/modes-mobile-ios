@@ -61,7 +61,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
+        //print("label: ", myLabels[indexPath.item])
     
         parentVc?.parentVc?.viewModel?.selectedGuide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row] as! String
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsGuideCont)!)
