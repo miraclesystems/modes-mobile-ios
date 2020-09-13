@@ -18,6 +18,11 @@ class HomeContView2VC: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var webLinkButton: UIButton!
     
+    //TableView and CollectionView Height Constraints on Home
+    @IBOutlet weak var tvHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var colvHeightContraint: NSLayoutConstraint!
+    
+    
     @IBAction func callButtonTouched(_ sender: Any) {
         
         guard let number = URL(string: "tel://" + "8003429647") else { return }
@@ -34,11 +39,27 @@ class HomeContView2VC: UIViewController, UICollectionViewDelegate {
         homeTableView.tableDataSource.viewModel = self.parentVc?.viewModel
         homeTableView.tableView.reloadData()
         
-        
-        
         vertTwoCellView.parentVc = self
         vertTwoCellView.collectionDataSource.viewModel = self.parentVc?.viewModel
         vertTwoCellView.collectionView.reloadData()
+        
+        //TableView and CollectionView Height based on number of articles
+        let myTVCount = self.parentVc?.viewModel.getGuides(topic: self.parentVc?.viewModel.topic ?? "").count
+        tvHeightConstraint.constant = CGFloat(90 * (myTVCount ?? 1))
+        
+        
+        var myColVCount = self.parentVc?.viewModel.getBenefits(topic: self.parentVc?.viewModel.topic ?? "").count
+        print("myColVCount: ", myColVCount)
+        if !(myColVCount! % 2 == 0) {
+            myColVCount = myColVCount! + 1
+        }
+        print("updated myColVCount: ", myColVCount)
+        myColVCount = (myColVCount ?? 1)/2
+        
+        //myColVCount = round(myColVCount ?? 1)
+        colvHeightContraint.constant = CGFloat(70 * (myColVCount ?? 1))
+        
+        
     }
         
         
