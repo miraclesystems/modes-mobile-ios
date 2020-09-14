@@ -172,6 +172,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
         if(!(selectedGuide?.isEmpty ?? true)){
             self.dismiss(animated: true) {
                 
+                
+                NotificationCenter.default.post(name: Notification.Name("guide_closed"), object: nil)
+                
             }
         }
         else{

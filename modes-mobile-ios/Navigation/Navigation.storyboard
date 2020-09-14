@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1194,7 +1194,7 @@ MilitaryOneSource.mil</string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
                                                         <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="24"/>
-                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1213,13 +1213,13 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-nh-8mV">
-                                                <rect key="frame" x="16" y="110" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="103" width="343" height="268"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-Bt-Aa1">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR INSTALLATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-bb-TS4">
-                                                                <rect key="frame" x="10" y="14" width="166" height="10"/>
+                                                                <rect key="frame" x="20" y="14" width="166" height="10"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="g2w-hb-oaP"/>
                                                                 </constraints>
@@ -1233,7 +1233,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstItem="K3g-bb-TS4" firstAttribute="top" secondItem="hCi-Bt-Aa1" secondAttribute="top" constant="14" id="Hbt-cn-iIS"/>
                                                             <constraint firstAttribute="height" constant="40" id="QeQ-b7-D8s"/>
                                                             <constraint firstAttribute="bottom" secondItem="K3g-bb-TS4" secondAttribute="bottom" constant="16" id="ajp-7y-SwU"/>
-                                                            <constraint firstItem="K3g-bb-TS4" firstAttribute="leading" secondItem="hCi-Bt-Aa1" secondAttribute="leading" constant="10" id="ktP-Pn-hOi"/>
+                                                            <constraint firstItem="K3g-bb-TS4" firstAttribute="leading" secondItem="hCi-Bt-Aa1" secondAttribute="leading" constant="20" id="ktP-Pn-hOi"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Installation Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gui-pQ-vMg">
@@ -1255,15 +1255,15 @@ MilitaryOneSource.mil</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLP-so-h2M">
-                                                        <rect key="frame" x="25" y="173.33333333333331" width="17" height="18"/>
+                                                        <rect key="frame" x="25" y="173.33333333333331" width="16" height="13"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="18" id="E6V-9r-5xn"/>
-                                                            <constraint firstAttribute="width" constant="17" id="Nld-Dc-fcl"/>
+                                                            <constraint firstAttribute="height" constant="13" id="E6V-9r-5xn"/>
+                                                            <constraint firstAttribute="width" constant="16" id="Nld-Dc-fcl"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="email"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-3R-hkG">
-                                                        <rect key="frame" x="25" y="206.33333333333331" width="17" height="18"/>
+                                                        <rect key="frame" x="25" y="201.33333333333331" width="17" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="17" id="5KA-IG-CK8"/>
                                                             <constraint firstAttribute="height" constant="18" id="Ieh-Tj-D0k"/>
@@ -1271,15 +1271,15 @@ MilitaryOneSource.mil</string>
                                                         <state key="normal" backgroundImage="website"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-1w-LNd">
-                                                        <rect key="frame" x="25" y="239.33333333333331" width="16" height="18"/>
+                                                        <rect key="frame" x="25" y="234.33333333333331" width="16" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="16" id="0za-TH-jft"/>
                                                             <constraint firstAttribute="height" constant="18" id="LYF-kI-UAq"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="phone"/>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-hD-wkb">
-                                                        <rect key="frame" x="63" y="172.66666666666669" width="200" height="14"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-hD-wkb">
+                                                        <rect key="frame" x="62" y="172.66666666666669" width="200" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="Rlz-bz-sdL"/>
                                                         </constraints>
@@ -1287,7 +1287,7 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEBSITE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiN-ei-iFJ">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEBSITE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiN-ei-iFJ">
                                                         <rect key="frame" x="63" y="204.33333333333331" width="200" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="qBO-os-E6x"/>
@@ -1314,7 +1314,7 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE_NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJw-Zc-HDw">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE_NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJw-Zc-HDw">
                                                         <rect key="frame" x="63" y="241" width="200" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="gMv-Y7-hG9"/>
@@ -1335,12 +1335,12 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstItem="Gui-pQ-vMg" firstAttribute="top" secondItem="hCi-Bt-Aa1" secondAttribute="bottom" constant="24" id="EkK-cT-PZA"/>
                                                     <constraint firstItem="mLl-1w-LNd" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="25" id="KOa-C7-bWO"/>
                                                     <constraint firstItem="wGi-xQ-Mir" firstAttribute="top" secondItem="V67-An-odZ" secondAttribute="bottom" constant="10" id="L9Y-el-FuT"/>
+                                                    <constraint firstItem="qJw-Zc-HDw" firstAttribute="top" secondItem="PiN-ei-iFJ" secondAttribute="bottom" constant="22.670000000000002" id="LUJ-Fe-GSs"/>
                                                     <constraint firstItem="hCi-Bt-Aa1" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" id="PdW-OZ-Dms"/>
                                                     <constraint firstItem="6p5-3R-hkG" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="25" id="Pri-2P-FgI"/>
                                                     <constraint firstItem="6p5-3R-hkG" firstAttribute="top" secondItem="XLP-so-h2M" secondAttribute="bottom" constant="15" id="WLC-ZF-wR5"/>
                                                     <constraint firstAttribute="bottom" secondItem="qJw-Zc-HDw" secondAttribute="bottom" constant="13" id="Xnh-Bh-WlW"/>
                                                     <constraint firstItem="Gui-pQ-vMg" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="24" id="Yxi-aG-Zzh"/>
-                                                    <constraint firstItem="PiN-ei-iFJ" firstAttribute="top" secondItem="zVr-hD-wkb" secondAttribute="bottom" constant="17.670000000000002" id="aLE-aa-Dxv"/>
                                                     <constraint firstItem="V4K-Th-T3i" firstAttribute="top" secondItem="Gui-pQ-vMg" secondAttribute="bottom" constant="3" id="aPR-uR-bEp"/>
                                                     <constraint firstItem="qJw-Zc-HDw" firstAttribute="leading" secondItem="mLl-1w-LNd" secondAttribute="trailing" constant="22" id="abZ-Og-0rx"/>
                                                     <constraint firstItem="zVr-hD-wkb" firstAttribute="top" secondItem="wGi-xQ-Mir" secondAttribute="bottom" constant="14.33" id="die-lU-fpG"/>
@@ -1353,13 +1353,13 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-XG-ogY">
-                                                <rect key="frame" x="16" y="413" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="406" width="343" height="268"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-KF-qtt">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR MILLIFE GUIDES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-de-W9b">
-                                                                <rect key="frame" x="10" y="14" width="166" height="10"/>
+                                                                <rect key="frame" x="20" y="14" width="166" height="10"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="I8y-vl-dbI"/>
                                                                 </constraints>
@@ -1373,7 +1373,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstItem="ahc-de-W9b" firstAttribute="top" secondItem="GNg-KF-qtt" secondAttribute="top" constant="14" id="2Sc-h7-mnD"/>
                                                             <constraint firstAttribute="bottom" secondItem="ahc-de-W9b" secondAttribute="bottom" constant="16" id="PIT-3e-jyV"/>
                                                             <constraint firstAttribute="height" constant="40" id="w5R-gZ-YF2"/>
-                                                            <constraint firstItem="ahc-de-W9b" firstAttribute="leading" secondItem="GNg-KF-qtt" secondAttribute="leading" constant="10" id="wbU-Ya-Pwy"/>
+                                                            <constraint firstItem="ahc-de-W9b" firstAttribute="leading" secondItem="GNg-KF-qtt" secondAttribute="leading" constant="20" id="wbU-Ya-Pwy"/>
                                                         </constraints>
                                                     </view>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Prk-Df-tjM">
@@ -1388,7 +1388,7 @@ MilitaryOneSource.mil</string>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITE_NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Ld-9f7">
-                                                                            <rect key="frame" x="23" y="10.999999999999998" width="200" height="17.333333333333329"/>
+                                                                            <rect key="frame" x="15" y="10.999999999999998" width="200" height="17.333333333333329"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="200" id="uS8-ul-eVv"/>
                                                                             </constraints>
@@ -1414,7 +1414,7 @@ MilitaryOneSource.mil</string>
                                                                         <constraint firstItem="gvt-Ld-9f7" firstAttribute="top" secondItem="KxR-Ra-SXI" secondAttribute="topMargin" id="aXJ-No-pty"/>
                                                                         <constraint firstAttribute="bottom" secondItem="3zc-WZ-5hY" secondAttribute="bottom" constant="8.6699999999999999" id="hBr-Ie-uF6"/>
                                                                         <constraint firstItem="3zc-WZ-5hY" firstAttribute="top" secondItem="KxR-Ra-SXI" secondAttribute="top" constant="13" id="i1k-5n-ugY"/>
-                                                                        <constraint firstItem="gvt-Ld-9f7" firstAttribute="leading" secondItem="KxR-Ra-SXI" secondAttribute="leadingMargin" constant="8" id="uGS-JP-lA8"/>
+                                                                        <constraint firstItem="gvt-Ld-9f7" firstAttribute="leading" secondItem="KxR-Ra-SXI" secondAttribute="leadingMargin" id="uGS-JP-lA8"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
                                                                 <connections>
@@ -1439,13 +1439,13 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-Bp-gXi">
-                                                <rect key="frame" x="16" y="712" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="705" width="343" height="268"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9po-l9-9rO">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Qv-2pv">
-                                                                <rect key="frame" x="10" y="14" width="166" height="10"/>
+                                                                <rect key="frame" x="20" y="14" width="166" height="10"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="MVw-P9-t7M"/>
                                                                 </constraints>
@@ -1457,7 +1457,7 @@ MilitaryOneSource.mil</string>
                                                         <color key="backgroundColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="nrD-Qv-2pv" firstAttribute="top" secondItem="9po-l9-9rO" secondAttribute="top" constant="14" id="CP9-RE-dAQ"/>
-                                                            <constraint firstItem="nrD-Qv-2pv" firstAttribute="leading" secondItem="9po-l9-9rO" secondAttribute="leading" constant="10" id="RaX-Z2-Xci"/>
+                                                            <constraint firstItem="nrD-Qv-2pv" firstAttribute="leading" secondItem="9po-l9-9rO" secondAttribute="leading" constant="20" id="RaX-Z2-Xci"/>
                                                             <constraint firstAttribute="bottom" secondItem="nrD-Qv-2pv" secondAttribute="bottom" constant="16" id="Uke-qk-Px8"/>
                                                             <constraint firstAttribute="height" constant="40" id="zD1-sl-64b"/>
                                                         </constraints>
@@ -1477,7 +1477,7 @@ MilitaryOneSource.mil</string>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITE_NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaM-le-FJZ">
-                                                                            <rect key="frame" x="23" y="11" width="200" height="17"/>
+                                                                            <rect key="frame" x="15" y="11" width="200" height="17"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="200" id="Qv1-lW-qT7"/>
                                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="nfr-Er-1KN"/>
@@ -1506,7 +1506,7 @@ MilitaryOneSource.mil</string>
                                                                         <constraint firstAttribute="bottom" secondItem="JML-yr-P3k" secondAttribute="bottom" constant="11" id="kZl-zq-y0j"/>
                                                                         <constraint firstItem="MaM-le-FJZ" firstAttribute="top" secondItem="4Df-4W-Zxn" secondAttribute="topMargin" id="n9D-sa-Bpx"/>
                                                                         <constraint firstAttribute="bottomMargin" secondItem="MaM-le-FJZ" secondAttribute="bottom" constant="4.3300000000000001" id="nnU-9A-mr4"/>
-                                                                        <constraint firstItem="MaM-le-FJZ" firstAttribute="leading" secondItem="4Df-4W-Zxn" secondAttribute="leadingMargin" constant="8" id="sI4-XQ-irK"/>
+                                                                        <constraint firstItem="MaM-le-FJZ" firstAttribute="leading" secondItem="4Df-4W-Zxn" secondAttribute="leadingMargin" id="sI4-XQ-irK"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
                                                                 <connections>
@@ -1588,7 +1588,7 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="6hD-pD-9fb" firstAttribute="centerX" secondItem="ZVe-cc-TmP" secondAttribute="centerX" id="07J-rS-eII"/>
                                             <constraint firstItem="6hD-pD-9fb" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" priority="1" constant="964" id="5aZ-Pc-3Uv"/>
@@ -1602,14 +1602,14 @@ MilitaryOneSource.mil</string>
                                             <constraint firstItem="uKY-nh-8mV" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="eMu-PY-PtW"/>
                                             <constraint firstItem="tZc-Ol-ub2" firstAttribute="centerX" secondItem="ZVe-cc-TmP" secondAttribute="centerX" id="fgh-Rv-NBr"/>
                                             <constraint firstItem="lf1-XG-ogY" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="gZZ-mJ-xig"/>
-                                            <constraint firstItem="uKY-nh-8mV" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" constant="31" id="iOO-PC-lol"/>
+                                            <constraint firstItem="uKY-nh-8mV" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" constant="24" id="iOO-PC-lol"/>
                                             <constraint firstItem="8ba-Bp-gXi" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="kjU-Eu-np6"/>
                                             <constraint firstAttribute="trailing" secondItem="lf1-XG-ogY" secondAttribute="trailing" constant="16" id="uwm-eI-Ejo"/>
                                             <constraint firstAttribute="trailing" secondItem="8ba-Bp-gXi" secondAttribute="trailing" constant="16" id="v9z-eh-mdh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="n5h-gf-Dsk" firstAttribute="top" secondItem="ZVe-cc-TmP" secondAttribute="top" constant="10" id="58K-21-foY"/>
                                     <constraint firstItem="ZVe-cc-TmP" firstAttribute="width" secondItem="qgV-Aw-i81" secondAttribute="width" id="D9q-9I-qaR"/>
@@ -1677,13 +1677,13 @@ MilitaryOneSource.mil</string>
                                 <rect key="frame" x="0.0" y="108" width="375" height="621"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-AJ-EJq">
-                                        <rect key="frame" x="103" y="42" width="47" height="37"/>
+                                        <rect key="frame" x="109.66666666666669" y="42" width="47" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="47" id="FCK-HM-Ezy"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2b-nK-cG6">
-                                        <rect key="frame" x="158" y="51" width="209" height="21"/>
+                                        <rect key="frame" x="164.66666666666663" y="51" width="209" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="209" id="6GX-TA-Ntl"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gko-AO-ajh"/>
@@ -1725,41 +1725,59 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48" y="416" width="33" height="40"/>
+
+                                        <rect key="frame" x="48.666666666666657" y="416" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="Hsy-ma-1nt"/>
+                                            <constraint firstAttribute="height" constant="34" id="dGT-83-RV3"/>
+                                        </constraints>
+
                                         <state key="normal" image="facebook"/>
                                         <connections>
                                             <action selector="OpenFacebook:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="tNk-FJ-tD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="103" y="416" width="34" height="34.333333333333314"/>
+
+                                        <rect key="frame" x="109.66666666666667" y="416" width="34.000000000000014" height="34"/>
+
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="158" y="416" width="34" height="34.333333333333314"/>
+
+                                        <rect key="frame" x="170.66666666666666" y="416" width="34" height="34.333333333333314"/>
+
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="281" y="416" width="34" height="34.333333333333314"/>
+
+                                        <rect key="frame" x="292.66666666666669" y="416" width="34" height="34.333333333333314"/>
+
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
-                                        <rect key="frame" x="27" y="480" width="320" height="28.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
+                                        <rect key="frame" x="111.00000000000001" y="494.33333333333337" width="153.33333333333337" height="14.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153.33000000000001" id="IRb-q5-l3O"/>
+                                            <constraint firstAttribute="height" constant="14.33" id="lcD-0M-710"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="milGrayText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="219" y="416" width="34" height="34.333333333333314"/>
+
+                                        <rect key="frame" x="231.66666666666666" y="416" width="33.999999999999972" height="34.333333333333314"/>
+
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
@@ -1769,45 +1787,50 @@ MilitaryOneSource.mil</string>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="d2b-nK-cG6" firstAttribute="leading" secondItem="VXa-AJ-EJq" secondAttribute="trailing" constant="8" id="1cc-zY-SxH"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="height" secondItem="swb-c6-U8z" secondAttribute="height" id="4W3-rh-bC5"/>
                                     <constraint firstItem="cLd-t0-to4" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="96" id="4bE-C3-0da"/>
                                     <constraint firstItem="d2b-nK-cG6" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="51" id="6iM-NA-2qo"/>
-                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="width" secondItem="uGy-WT-kpc" secondAttribute="width" id="7PS-wR-RUh"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="leading" secondItem="Ib8-uX-hr4" secondAttribute="trailing" constant="27" id="7Uc-oi-kQd"/>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="8Tn-FP-vcs"/>
                                     <constraint firstItem="VXa-AJ-EJq" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="42" id="9Qx-pD-5xp"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="width" secondItem="Ib8-uX-hr4" secondAttribute="width" id="9t2-d6-Oaz"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="height" secondItem="0cY-3W-Ov6" secondAttribute="height" multiplier="1.0098" id="CXH-bu-5LH"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="DYI-bW-cNx"/>
                                     <constraint firstItem="yla-7c-AO2" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="Dfo-cb-Mz7"/>
-                                    <constraint firstItem="swb-c6-U8z" firstAttribute="width" secondItem="0cY-3W-Ov6" secondAttribute="width" multiplier="0.970588" id="Eev-fH-y5v"/>
-                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="trailing" constant="21" id="IOC-ch-w9f"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="trailing" constant="27" id="Fs0-18-zO6"/>
+                                    <constraint firstItem="swb-c6-U8z" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="JVL-7T-9zA"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="width" secondItem="uGy-WT-kpc" secondAttribute="width" id="JZE-B7-YPj"/>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="224" id="JgB-T5-2Ro"/>
                                     <constraint firstItem="Yzo-1i-eCc" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="287" id="KhS-bJ-vrh"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="NM1-iR-Hqi"/>
                                     <constraint firstAttribute="bottom" secondItem="kaa-KV-Vd5" secondAttribute="bottom" constant="112.33333333333331" id="Ok9-O7-m3M"/>
                                     <constraint firstAttribute="trailing" secondItem="yla-7c-AO2" secondAttribute="trailing" constant="12" id="P4i-8u-hhv"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="width" secondItem="0cY-3W-Ov6" secondAttribute="width" id="PQU-d7-hM7"/>
                                     <constraint firstItem="kaa-KV-Vd5" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="TfE-l8-Gfi"/>
-                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="UoY-0s-6Vv"/>
                                     <constraint firstItem="Yzo-1i-eCc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="VYY-a5-xHf"/>
-                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="width" secondItem="Ib8-uX-hr4" secondAttribute="width" id="VlX-ee-Bdc"/>
-                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="WoP-iu-lhE"/>
-                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="leading" secondItem="Ib8-uX-hr4" secondAttribute="trailing" constant="28" id="aCc-UO-pn9"/>
+                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="height" secondItem="Ib8-uX-hr4" secondAttribute="height" id="XF3-PY-RLA"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="leading" secondItem="swb-c6-U8z" secondAttribute="trailing" constant="27" id="Zbc-VS-Crs"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="leading" secondItem="swb-c6-U8z" secondAttribute="trailing" constant="27" id="aZE-v6-CIs"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="height" secondItem="uGy-WT-kpc" secondAttribute="height" id="amX-G1-N5G"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="width" secondItem="swb-c6-U8z" secondAttribute="width" id="bqy-e9-zA6"/>
                                     <constraint firstAttribute="trailing" secondItem="cLd-t0-to4" secondAttribute="trailing" constant="28" id="bvg-Sq-otl"/>
                                     <constraint firstAttribute="trailing" secondItem="699-Pn-9m7" secondAttribute="trailing" constant="16" id="cec-ik-tJW"/>
-                                    <constraint firstItem="swb-c6-U8z" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="48" id="dLz-A7-T0T"/>
-                                    <constraint firstItem="swb-c6-U8z" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="hDS-hY-8qy"/>
-                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="iFd-f2-Kbe"/>
-                                    <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="iJF-UY-TA6"/>
-                                    <constraint firstItem="kaa-KV-Vd5" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="27" id="j29-I2-kbL"/>
-                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="416" id="jlu-zg-h3p"/>
+                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="eIq-DV-oLt"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="gug-Hu-4T6"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="heR-d3-jdG"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="kQU-pe-3JC"/>
                                     <constraint firstItem="VXa-AJ-EJq" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="leading" id="nOc-7Y-3Tb"/>
                                     <constraint firstAttribute="trailing" secondItem="Yzo-1i-eCc" secondAttribute="trailing" constant="12" id="okZ-cy-5yS"/>
                                     <constraint firstItem="yla-7c-AO2" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="344" id="pLe-Ep-ElL"/>
-                                    <constraint firstItem="0cY-3W-Ov6" firstAttribute="leading" secondItem="swb-c6-U8z" secondAttribute="trailing" constant="22" id="pNn-vH-RdI"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="leading" secondItem="0cY-3W-Ov6" secondAttribute="trailing" constant="27" id="qlT-If-1OJ"/>
                                     <constraint firstItem="cLd-t0-to4" firstAttribute="top" secondItem="VXa-AJ-EJq" secondAttribute="bottom" constant="17" id="rJW-ed-h69"/>
                                     <constraint firstAttribute="width" constant="375" id="sbC-zK-G7V"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="top" secondItem="cLd-t0-to4" secondAttribute="bottom" constant="8" id="sil-JV-izT"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="t1P-xm-AGP"/>
-                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="width" secondItem="uGy-WT-kpc" secondAttribute="width" id="tHW-cV-k6W"/>
-                                    <constraint firstAttribute="trailing" secondItem="nQh-mY-6B9" secondAttribute="trailing" constant="60" id="tuo-Ke-lyA"/>
+                                    <constraint firstItem="uGy-WT-kpc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="uXe-qB-w9D"/>
                                     <constraint firstItem="cLd-t0-to4" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="27" id="wYf-E4-OjM"/>
                                     <constraint firstAttribute="trailing" secondItem="jgK-p4-SoS" secondAttribute="trailing" constant="12" id="xBR-h3-5qa"/>
+                                    <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="zet-l9-Bcy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-i3-dSv" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
@@ -1825,6 +1848,7 @@ MilitaryOneSource.mil</string>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="g5w-cF-IVR" secondAttribute="leading" id="4mB-aW-jb2"/>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" id="GGz-Fw-hhq"/>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="top" secondItem="g5w-cF-IVR" secondAttribute="top" id="HGw-Yp-VHN"/>
+                            <constraint firstItem="Y8w-JM-MXu" firstAttribute="centerX" secondItem="h18-4L-uDM" secondAttribute="centerX" id="HlT-XP-Wbu"/>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="trailing" secondItem="Y8w-JM-MXu" secondAttribute="trailing" id="MV4-U0-y1S"/>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="trailing" secondItem="g5w-cF-IVR" secondAttribute="trailing" id="NMH-Kk-Kvk"/>
                             <constraint firstItem="Rnp-i3-dSv" firstAttribute="leading" secondItem="mdR-dF-BXC" secondAttribute="leading" id="Pva-sv-63A"/>
@@ -1845,7 +1869,7 @@ MilitaryOneSource.mil</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kps-z4-Qu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="2828"/>
+            <point key="canvasLocation" x="2292" y="2827.8325123152708"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="of5-q7-HId">
@@ -3392,6 +3416,9 @@ SETTINGS</string>
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jNw-2U-jzd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -3442,7 +3469,6 @@ SETTINGS</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
+
+
 </document>
