@@ -9,6 +9,7 @@ import UIKit
 
 class MilLifeDetailsGuideContVC: UIViewController {
 
+    @IBOutlet weak var imgGuide: UIImageView!
     
     var selectedGuide : String?
     var parentVc : MilLifeGuidesController?
@@ -206,6 +207,10 @@ class MilLifeDetailsGuideContVC: UIViewController {
         else{
             loadGuide()
         }
+        
+        
+        
+        imgGuide.image = UIImage(named: "12 Ways to Land That Civilian Job-1000x500.jpg", in: nil, compatibleWith: nil)
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
         

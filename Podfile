@@ -7,6 +7,7 @@ target 'modes-mobile-ios' do
 
   # Pods for modes-mobile-ios
 pod 'Firebase/Analytics'
+pod 'GoogleTagManager'
 
   target 'modes-mobile-iosTests' do
     inherit! :search_paths

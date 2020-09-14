@@ -2967,6 +2967,7 @@ OneSource consultant</string>
                         <outlet property="btnMoreBenefits" destination="Eo9-7e-rQw" id="GqL-kG-k3n"/>
                         <outlet property="buttonFavorite" destination="cjw-GA-Q2V" id="L0N-gI-JtK"/>
                         <outlet property="favoritesBtn" destination="cjw-GA-Q2V" id="wz1-Fk-YyY"/>
+                        <outlet property="imgGuide" destination="Fnu-2b-vHD" id="wIT-Q7-arO"/>
                         <outlet property="lblArticles" destination="KHY-Jq-xXT" id="5B1-Ly-v02"/>
                         <outlet property="lblBenefits" destination="pJ4-80-lhw" id="aaI-t9-H37"/>
                         <outlet property="lblExpertOverview" destination="4kg-MT-FiA" id="hRX-Ol-qa6"/>

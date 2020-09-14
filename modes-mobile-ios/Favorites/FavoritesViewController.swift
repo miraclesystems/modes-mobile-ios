@@ -152,6 +152,7 @@ class FavoritesViewController: UIViewController {
     
     @objc private func websiteClicked(_ sender: UITapGestureRecognizer){
         
+        var strUrl = "https://installations.militaryonesource.mil/military-installation/" + (location?.name_seo)! ?? ""
         var error = false
         if(location?.url1 != nil && location?.url1?.count ?? 0 > 0){
             
