@@ -19,6 +19,10 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var ml_websites_tableview: ML_Websites_TableView!
     @IBOutlet weak var ml_connect_tableview: ML_Connect_TableView!
     
+    //Constraint Heights
+    @IBOutlet weak var constraintH_websites_tv: NSLayoutConstraint!
+    @IBOutlet weak var constraintH_connect_tv: NSLayoutConstraint!
+    
     @IBOutlet weak var lblExpertsHeader1: UILabel!
     
     @IBOutlet weak var lblExpertOverview: UILabel!
@@ -193,7 +197,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if(!(selectedGuide?.isEmpty ?? true)){
             var viewModel = GuidesViewModel()
             viewModel.selectedGuide = selectedGuide!
@@ -214,6 +218,15 @@ class MilLifeDetailsGuideContVC: UIViewController {
         
         ml_connect_tableview.tableDataSource.parentVc = self
         ml_connect_tableview.tableView.reloadData()
+        
+        //Constraint Heights
+        var myWebTVCount = self.guide?.RelatedWebsitesText?.count
+        print("Related WebSites Count: ", myWebTVCount)
+        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount ?? 1))
+        
+        var myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
+        print("Connection Count: ", myConnectTVCount)
+        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount ?? 1))
         
         
         

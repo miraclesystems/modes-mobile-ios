@@ -55,7 +55,19 @@ class VertTwoCollDataSource: NSObject, UICollectionViewDataSource, UICollectionV
         collectionView.delaysContentTouches = false
         return cell
     }
-    
+    /*
+    // change background color when user touches cell
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VertTwoCollCell", for: indexPath) as! VertTwoCollCell
+        cell.backView.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
+    }
+    // change background color back when user releases touch
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VertTwoCollCell", for: indexPath) as! VertTwoCollCell
+        cell.backView.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        //cell?.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
+    }
+    */
     
     
 
