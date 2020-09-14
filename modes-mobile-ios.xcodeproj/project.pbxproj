@@ -119,6 +119,11 @@
 		A9620D4A2501108400C599DC /* ML_Articles_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9620D452501108400C599DC /* ML_Articles_TableCell.xib */; };
 		A9689310250D4FC6007FD351 /* GIFSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968930F250D4FC6007FD351 /* GIFSwift.swift */; };
 		A9689312250D5164007FD351 /* animatedPreparing.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9689311250D5164007FD351 /* animatedPreparing.gif */; };
+		A9689319250F84C2007FD351 /* ML_ByCat_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9689314250F84C2007FD351 /* ML_ByCat_TableCell.swift */; };
+		A968931A250F84C2007FD351 /* ML_ByCat_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9689315250F84C2007FD351 /* ML_ByCat_TableView.swift */; };
+		A968931B250F84C2007FD351 /* ML_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9689316250F84C2007FD351 /* ML_ByCat_TableCell.xib */; };
+		A968931C250F84C2007FD351 /* ML_ByCat_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9689317250F84C2007FD351 /* ML_ByCat_TableDataSource.swift */; };
+		A968931D250F84C2007FD351 /* ML_ByCat_TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9689318250F84C2007FD351 /* ML_ByCat_TableView.xib */; };
 		A97BC59E2501854200312D9D /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC59C2501854200312D9D /* GuidesViewModel.swift */; };
 		A97BC59F2501854200312D9D /* GuidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC59D2501854200312D9D /* GuidesModel.swift */; };
 		A97BC5A62501931400312D9D /* ML_Websites_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5A12501931400312D9D /* ML_Websites_TableCell.xib */; };
@@ -321,6 +326,11 @@
 		A9620D452501108400C599DC /* ML_Articles_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_Articles_TableCell.xib; sourceTree = "<group>"; };
 		A968930F250D4FC6007FD351 /* GIFSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFSwift.swift; sourceTree = "<group>"; };
 		A9689311250D5164007FD351 /* animatedPreparing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedPreparing.gif; sourceTree = "<group>"; };
+		A9689314250F84C2007FD351 /* ML_ByCat_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_ByCat_TableCell.swift; sourceTree = "<group>"; };
+		A9689315250F84C2007FD351 /* ML_ByCat_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_ByCat_TableView.swift; sourceTree = "<group>"; };
+		A9689316250F84C2007FD351 /* ML_ByCat_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_ByCat_TableCell.xib; sourceTree = "<group>"; };
+		A9689317250F84C2007FD351 /* ML_ByCat_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML_ByCat_TableDataSource.swift; sourceTree = "<group>"; };
+		A9689318250F84C2007FD351 /* ML_ByCat_TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_ByCat_TableView.xib; sourceTree = "<group>"; };
 		A97BC59C2501854200312D9D /* GuidesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
 		A97BC59D2501854200312D9D /* GuidesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidesModel.swift; sourceTree = "<group>"; };
 		A97BC5A12501931400312D9D /* ML_Websites_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ML_Websites_TableCell.xib; sourceTree = "<group>"; };
@@ -725,6 +735,7 @@
 		A9620D4025010F9B00C599DC /* ML_Main */ = {
 			isa = PBXGroup;
 			children = (
+				A9689313250F842A007FD351 /* ML_ByCat_TableView */,
 				A9620D2B24FF1C3E00C599DC /* ML_Guides_TableView */,
 				A9620D2024FEDDD500C599DC /* ML_ViewAll_TableView */,
 				A9620D1324FECA1500C599DC /* ML_VertTwoCollScroll */,
@@ -733,6 +744,18 @@
 				A9620D0824FE9D7A00C599DC /* MilLifeGuidesController.swift */,
 			);
 			path = ML_Main;
+			sourceTree = "<group>";
+		};
+		A9689313250F842A007FD351 /* ML_ByCat_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A9689315250F84C2007FD351 /* ML_ByCat_TableView.swift */,
+				A9689318250F84C2007FD351 /* ML_ByCat_TableView.xib */,
+				A9689314250F84C2007FD351 /* ML_ByCat_TableCell.swift */,
+				A9689316250F84C2007FD351 /* ML_ByCat_TableCell.xib */,
+				A9689317250F84C2007FD351 /* ML_ByCat_TableDataSource.swift */,
+			);
+			path = ML_ByCat_TableView;
 			sourceTree = "<group>";
 		};
 		A97BC5A02501928400312D9D /* ML_Websites_TableVIew */ = {
@@ -1060,6 +1083,7 @@
 				A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
 				A9620D3224FF1D0700C599DC /* ML_Guides_TableCell.xib in Resources */,
+				A968931D250F84C2007FD351 /* ML_ByCat_TableView.xib in Resources */,
 				A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */,
 				A97BC5B12501A96100312D9D /* ML_Connect_TableCell.xib in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
@@ -1074,6 +1098,7 @@
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
 				A9FEEBF624FABB5300EB7CA6 /* VertTwoCollView.xib in Resources */,
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
+				A968931B250F84C2007FD351 /* ML_ByCat_TableCell.xib in Resources */,
 				14972B2B250BD2510064C745 /* modes.sqlite3 in Resources */,
 				A97BC5A62501931400312D9D /* ML_Websites_TableCell.xib in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
@@ -1217,6 +1242,7 @@
 				A9620D1F24FECA5400C599DC /* ML_VertTwoCollCell.swift in Sources */,
 				A9B017B424F6C2DD000E2320 /* LocTableViewController.swift in Sources */,
 				A97BC5E92502A10500312D9D /* Benefits_ViewAll_TableDataSource.swift in Sources */,
+				A968931C250F84C2007FD351 /* ML_ByCat_TableDataSource.swift in Sources */,
 				A9B017F424F90E1E000E2320 /* HorzCollView.swift in Sources */,
 				A9620D2624FEDE5900C599DC /* ML_ViewAll_TableDataSource.swift in Sources */,
 				14413CD52504453000E9FA72 /* FavoritesBenefitsTableViewCell.swift in Sources */,
@@ -1228,6 +1254,7 @@
 				A90A0EB624FBD81E00341C9E /* HomeContView2VC.swift in Sources */,
 				A9FEEBF724FABB5300EB7CA6 /* VertTwoCollCell.swift in Sources */,
 				A9B017F224F90E1E000E2320 /* HorzCollCell.swift in Sources */,
+				A968931A250F84C2007FD351 /* ML_ByCat_TableView.swift in Sources */,
 				A9620D472501108400C599DC /* ML_Articles_TableDataSource.swift in Sources */,
 				A9620D1B24FECA5400C599DC /* ML_VertTwoCollView.swift in Sources */,
 				A95E942325016BEA00233C53 /* ML_Benefits_TableCell.swift in Sources */,
@@ -1250,6 +1277,7 @@
 				14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */,
 				A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */,
 				8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */,
+				A9689319250F84C2007FD351 /* ML_ByCat_TableCell.swift in Sources */,
 				14A901CA24F1B99600E2B4CA /* IQKeyboardManagerConstants.swift in Sources */,
 				A9620D0B24FEC7C000C599DC /* MilLifeByCatContVC.swift in Sources */,
 				14A901CB24F1B99600E2B4CA /* IQKeyboardManagerConstantsInternal.swift in Sources */,

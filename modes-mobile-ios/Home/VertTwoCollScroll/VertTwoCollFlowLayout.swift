@@ -10,9 +10,13 @@ class VertTwoCollFlowLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
 
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let containerWidth = screenWidth - 70 //20 insets on each side, 30 for middle column...20+20+30=70
+        itemSize = CGSize(width: containerWidth/2, height: 58)
         scrollDirection = .vertical
         minimumLineSpacing = 15
-        itemSize = CGSize(width: 156, height: 58)
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
