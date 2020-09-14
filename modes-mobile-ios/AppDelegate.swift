@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 @UIApplicationMain
@@ -37,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         IQKeyboardManager.shared.enable = true
+        
+        FirebaseApp.configure()
         return true
     }
     

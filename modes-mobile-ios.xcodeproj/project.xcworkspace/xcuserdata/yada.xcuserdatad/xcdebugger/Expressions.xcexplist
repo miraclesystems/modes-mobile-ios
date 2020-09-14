@@ -19,6 +19,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "LocTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):LocTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchNamesArrRes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "FavoritesViewController.viewDidLoad():FavoritesViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -30,48 +38,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LocTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):LocTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "searchNamesArrRes">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "LocTableViewController.tableView(_:didSelectRowAt:):LocTableViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "PreferencesUtil.shared.installation">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MilLifeDetailsGuideContVC.loadGuide1():MilLifeDetailsGuideContVC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ModesDb.getBenefitsByAudience(audience:):ModesDb.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "row[&quot;Benefit&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "data[0][&quot;Benefit&quot;]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SearchTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):SearchTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "searchNamesArrRes">
-            </PersistentString>
-            <PersistentString
-               value = "searchText">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SearchTableViewController.tableView(_:cellForRowAt:):SearchTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "MilLifeDetailsGuideContVC.viewDidAppear(_:):MilLifeDetailsGuideContVC.swift">
@@ -85,12 +57,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "HorzCollView.init(coder:):HorzCollView.swift">
+         contextName = "MilLifeDetailsGuideContVC.loadGuide1():MilLifeDetailsGuideContVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.textField(_:shouldChangeCharactersIn:replacementString:):SearchTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.superView">
+               value = "searchNamesArrRes">
+            </PersistentString>
+            <PersistentString
+               value = "searchText">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserSettingsInstallationsViewController.prepare(for:sender:):UserSettingsInstallationsViewController.swift">
       </ContextState>
       <ContextState
          contextName = "Benefits_ViewAll_TableDataSource.tableView(_:didSelectRowAt:):Benefits_ViewAll_TableDataSource.swift">
@@ -101,13 +82,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UserSettingsInstallationsViewController.prepare(for:sender:):UserSettingsInstallationsViewController.swift">
+         contextName = "HorzCollView.init(coder:):HorzCollView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superView">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MilLifeDetailsGuideContVC.didTouchDetailsBackBtn(_:):MilLifeDetailsGuideContVC.swift">
+         contextName = "ModesDb.getBenefitsByAudience(audience:):ModesDb.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "row[&quot;Benefit&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "data[0][&quot;Benefit&quot;]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MilLifeDetailsGuideContVC.viewDidLoad():MilLifeDetailsGuideContVC.swift">
+         contextName = "SearchTableViewController.tableView(_:cellForRowAt:):SearchTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "MilLifeDetailsGuideContVC.loadGuide():MilLifeDetailsGuideContVC.swift">
@@ -118,7 +112,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MilLifeDetailsGuideContVC.viewDidLoad():MilLifeDetailsGuideContVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MilLifeDetailsGuideContVC.didTouchDetailsBackBtn(_:):MilLifeDetailsGuideContVC.swift">
+      </ContextState>
+      <ContextState
          contextName = "HorzCollView.commonInit():HorzCollView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FavoritesViewController.websiteClicked(_:):FavoritesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location?.url1">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "FavoritesViewController.tableView(_:cellForRowAt:):FavoritesViewController.swift">

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "subscribe_connect.png",
+      "filename" : "1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "subscribe_connect-1.png",
+      "filename" : "2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "subscribe_connect-2.png",
+      "filename" : "3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

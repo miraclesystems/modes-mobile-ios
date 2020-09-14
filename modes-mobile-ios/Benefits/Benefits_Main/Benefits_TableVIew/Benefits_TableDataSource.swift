@@ -55,7 +55,7 @@ class Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("label: ", myLabels[indexPath.item])
+        //print("label: ", myLabels[indexPath.item])
     
  let benefit = parentVc?.viewModel?.getBenifitsByCategory()[indexPath.row]
         parentVc?.viewModel?.selectedBenefit = benefit?.Benefit as! String
