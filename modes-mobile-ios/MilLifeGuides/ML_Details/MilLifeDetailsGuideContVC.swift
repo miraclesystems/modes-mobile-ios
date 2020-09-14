@@ -20,6 +20,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var ml_connect_tableview: ML_Connect_TableView!
     
     //Constraint Heights
+    @IBOutlet weak var constraintH_benefits_tv: NSLayoutConstraint!
     @IBOutlet weak var constraintH_websites_tv: NSLayoutConstraint!
     @IBOutlet weak var constraintH_connect_tv: NSLayoutConstraint!
     
@@ -74,12 +75,24 @@ class MilLifeDetailsGuideContVC: UIViewController {
         ml_articles_tableview.tableView.reloadData()
 
         ml_benefits_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myBenefitsTVCount = self.guide?.listRelatedBenefits?.count ?? 0
+        print("Constraints Benefits Count: ", myBenefitsTVCount)
+        constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
         ml_benefits_tableview.tableView.reloadData()
 
         ml_websites_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myWebTVCount = self.guide?.RelatedWebsitesText?.count ?? 0
+        print("Constraints WebSites Count: ", myWebTVCount)
+        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount))
         ml_websites_tableview.tableView.reloadData()
 
         ml_connect_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
+        print("Constraints Connection Count: ", myConnectTVCount)
+        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount))
         ml_connect_tableview.tableView.reloadData()
         
         
@@ -96,6 +109,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
         }
         
         print("Debug")
+        
+        
         
         
     }
@@ -136,6 +151,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
         }
         
         print("Debug")
+        
+        
         
     }
     
@@ -222,14 +239,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         ml_connect_tableview.tableDataSource.parentVc = self
         ml_connect_tableview.tableView.reloadData()
         
-        //Constraint Heights
-        var myWebTVCount = self.guide?.RelatedWebsitesText?.count
-        print("Related WebSites Count: ", myWebTVCount)
-        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount ?? 1))
         
-        var myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
-        print("Connection Count: ", myConnectTVCount)
-        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount ?? 1))
         
         
         

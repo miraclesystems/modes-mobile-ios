@@ -14,11 +14,13 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
         //return viewModel?.getWebsites(topic: viewModel?.topic ?? "").count ?? 0
-        
         //return myLabels.count
-        parentVc?.guide?.RelatedWebsitesText?.count ?? 0
+        
+        
+        print("Websites Datasource Count: ", parentVc?.guide?.RelatedWebsitesText?.count )
+        
+        return parentVc?.guide?.RelatedWebsitesText?.count ?? 0
        
     }
     
@@ -44,7 +46,16 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         //print("label: ", myLabels[indexPath.item])
-        parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
+        
+        //Error Handling
+        let myIndex = parentVc?.guide?.RelatedWebsitesURL
+    print("indexPath.row: ", indexPath.row)
+    print("myIndex: ", myIndex!.count)
+        if indexPath.row <= myIndex!.count - 1 {
+            parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
+        }
+          
+        //parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
     }
     
 

@@ -16,7 +16,7 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
         
         //return viewModel?.getConnect(topic: viewModel?.topic ?? "").count ?? 0
-        
+        print("Connect Datasource Count: ", parentVc?.guide?.ExpertsText?.count)
         return parentVc?.guide?.ExpertsText?.count ?? 0
        
        
