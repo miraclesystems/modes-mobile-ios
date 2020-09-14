@@ -10,6 +10,7 @@ import UIKit
 class FavoritesViewController: UIViewController {
 
     var viewModel : FavoritesViewModel?
+    var location : Location?
     
     @IBOutlet weak var customNavBar: CustomNavigationBar!
     
@@ -41,6 +42,16 @@ class FavoritesViewController: UIViewController {
     @IBOutlet weak var tableViewGuides: UITableView!
     @IBOutlet weak var tableViewBenefits: UITableView!
     
+    
+    func showError(error : String){
+        
+        let alert = UIAlertController(title: "", message: error, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+       
+
+        self.present(alert, animated: true)
+    }
     
     func reloadTables(){
         self.tableViewBenefits.reloadData()
@@ -91,11 +102,116 @@ class FavoritesViewController: UIViewController {
         tableViewGuides.tableFooterView = UIView()
         tableViewBenefits.tableFooterView = UIView()
         
+        
+        NotificationCenter.default.addObserver(
+        self,selector: #selector(guideClosed),name: Notification.Name("guide_closed"),object: nil)
+        
+        NotificationCenter.default.addObserver(
+        self,selector: #selector(benefitClosed),name: Notification.Name("benefit_closed"),object: nil)
+        
        
+        let emailGesture = UITapGestureRecognizer(target: self, action: #selector(emailClicked(_:)))
+        lblEmail.addGestureRecognizer(emailGesture)
+        
+        let websiteGesture = UITapGestureRecognizer(target: self, action: #selector(websiteClicked(_:)))
+        lblWebsite.addGestureRecognizer(websiteGesture)
+        
+        let phoneGesture = UITapGestureRecognizer(target: self, action: #selector(phoneClicked(_:)))
+        lblPhoneNumber.addGestureRecognizer(phoneGesture)
         
        
     }
     
+    @objc private func emailClicked(_ sender: UITapGestureRecognizer){
+        
+        var error = false
+        if(location?.email_address1 != nil && location?.email_address1?.count ?? 0 > 0){
+            
+            if let url = URL(string: "https://www.google.com") {
+            //if let url = URL(string: location?.url1 ?? "") {
+                
+                
+                UIApplication.shared.open(url)
+            }
+            else{
+                error = true
+            }
+            
+        }
+        else{
+            error = true
+        }
+        
+        
+        if(error){
+            
+            showError(error: "email not available")
+        }
+        
+    }
+    
+    @objc private func websiteClicked(_ sender: UITapGestureRecognizer){
+        
+        var error = false
+        if(location?.url1 != nil && location?.url1?.count ?? 0 > 0){
+            
+            
+          
+            if let url = URL(string: "https://" + (location?.url1!)!) {
+                UIApplication.shared.open(url)
+            }
+            else{
+                error = true
+            }
+            
+        }
+        else{
+            error = true
+        }
+        
+        
+        if(error){
+            
+            showError(error: "Website can not be loaded")
+        }
+        
+        
+    }
+    
+    @objc private func phoneClicked(_ sender: UITapGestureRecognizer){
+        
+        var error = false
+        if(location?.phone1 != nil && location?.phone1?.count ?? 0 > 0){
+            
+            
+            if let url = URL(string: "TEL://" + (location?.phone1!)! ) {
+                UIApplication.shared.open(url)
+            }
+            else{
+                error = true
+            }
+            
+        }
+        else{
+            error = true
+        }
+        
+        
+        if(error){
+            
+            showError(error: "phone number cannot be dialed")
+        }
+    }
+    
+    
+    @objc private func guideClosed(notification: NSNotification){
+        tableViewGuides.reloadData()
+        //do stuff using the userInfo property of the notification object
+    }
+    @objc private func benefitClosed(notification: NSNotification){
+        tableViewBenefits.reloadData()
+        //do stuff using the userInfo property of the notification object
+    }
 
     /*
     // MARK: - Navigation
@@ -124,16 +240,16 @@ class FavoritesViewController: UIViewController {
         if keyPath == "dataLoaded" {
                DispatchQueue.main.async {
                     print("Do some stuff on the ui")
-                    var location = (self.viewModel?.locationsModel?.items?[0])! as Location
+                    self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
                 
-                    self.lblInstallationName.text = location.name
-                    self.lblBranch.text = location.branch
-                    self.lblAddress1.text = location.address_line1
-                    self.lblCityStateZip.text = "\(location.city ?? ""), \(location.stat_id ?? "")  \(location.postal_code ?? "")"
-                    
-                    self.lblEmail.text = location.email_address1
-                    self.lblWebsite.text = location.url1
-                    self.lblPhoneNumber.text = location.phone1
+                    self.lblInstallationName.text = self.location?.name
+                    self.lblBranch.text = self.location?.branch
+                    self.lblAddress1.text = self.location?.address_line1
+                    self.lblCityStateZip.text = "\(self.location?.city ?? ""), \(self.location?.stat_id ?? "")  \(self.location?.postal_code ?? "")"
+                        
+                        //self.lblEmail.text = location.email_address1
+                        //self.lblWebsite.text = location.url1
+                    self.lblPhoneNumber.text = self.location?.phone1
                 }
         }
     }

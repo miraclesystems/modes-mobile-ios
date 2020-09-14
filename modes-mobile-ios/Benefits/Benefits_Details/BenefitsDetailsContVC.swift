@@ -39,7 +39,7 @@ class BenefitsDetailsContVC: UIViewController {
       print("Back Button Touched")
         if(selectedBenefit != nil){
             self.dismiss(animated: true) {
-            
+                 NotificationCenter.default.post(name: Notification.Name("benefit_closed"), object: nil)
             }
         }
         else{
