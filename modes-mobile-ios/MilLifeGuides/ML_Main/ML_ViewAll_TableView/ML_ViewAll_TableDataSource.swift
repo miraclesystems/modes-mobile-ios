@@ -64,8 +64,9 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         //print("label: ", myLabels[indexPath.item])
     
         parentVc?.parentVc?.viewModel?.selectedGuide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row] as! String
+         parentVc?.parentVc?.vc3?.loadGuide()
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsGuideCont)!)
-        //parentVc?.parentVc?.vc3?.loadGuide()
+       
         
     }
     

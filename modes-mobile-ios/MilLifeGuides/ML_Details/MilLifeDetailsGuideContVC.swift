@@ -9,6 +9,7 @@ import UIKit
 
 class MilLifeDetailsGuideContVC: UIViewController {
 
+    @IBOutlet weak var imgGuide: UIImageView!
     
     var selectedGuide : String?
     var parentVc : MilLifeGuidesController?
@@ -108,6 +109,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
         
+        imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
+        
         print("Debug")
         
         
@@ -149,6 +152,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
              buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
+        imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
         
         print("Debug")
         
@@ -227,6 +231,10 @@ class MilLifeDetailsGuideContVC: UIViewController {
         else{
             loadGuide()
         }
+        
+        
+        
+        
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
         

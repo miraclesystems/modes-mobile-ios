@@ -829,6 +829,10 @@ Copyright 2020 Google
    limitations under the License.
 
 
+## GoogleAnalytics
+
+Copyright 2016 Google
+
 ## GoogleAppMeasurement
 
 Copyright 2020 Google
@@ -1038,6 +1042,14 @@ Copyright 2020 Google
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
+## GoogleSymbolUtilities
+
+Copyright 2016 Google
+
+## GoogleTagManager
+
+Copyright 2020 Google
 
 ## GoogleUtilities
 
@@ -1289,6 +1301,10 @@ similar to disable codesignature checks.
 More information at <a href="http://landonf.org/2009/02/index.html">Landon
 Fuller's blog</a>
 
+
+## GoogleUtilitiesLegacy
+
+Copyright 2018 Google
 
 ## PromisesObjC
 

@@ -283,8 +283,11 @@ class GuidesViewModel{
 
         guide.listRelatedBenefits = [RelatedBenefit]()
         for item in guide.RelatedBenefits! {
-            var benefit = getBenefitById(id: item!)
-            guide.listRelatedBenefits?.append(benefit)
+            if(item != ""){
+                var benefit = getBenefitById(id: item!)
+                 guide.listRelatedBenefits?.append(benefit)
+            }
+           
     
         }
 
@@ -303,8 +306,11 @@ class GuidesViewModel{
         guide.ExpertsText = expertsText?.components(separatedBy: "\n")
 
 
-        guide.ExpertsHeader = guide.ExpertsText?[0]
-        guide.ExpertsHeader1 = guide.ExpertsText?[1]
+        
+        if(guide.ExpertsText!.count > 1 ?? 0){
+            guide.ExpertsHeader = guide.ExpertsText?[0]
+            guide.ExpertsHeader1 = guide.ExpertsText?[1]
+        }
 
         var list = [String]()
 

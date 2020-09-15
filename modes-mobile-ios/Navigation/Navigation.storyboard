@@ -2973,6 +2973,7 @@ OneSource consultant</string>
                         <outlet property="constraintH_connect_tv" destination="jMz-pJ-cHh" id="n73-Jh-IFj"/>
                         <outlet property="constraintH_websites_tv" destination="fF8-ty-A9r" id="OCt-S8-rkz"/>
                         <outlet property="favoritesBtn" destination="cjw-GA-Q2V" id="wz1-Fk-YyY"/>
+                        <outlet property="imgGuide" destination="Fnu-2b-vHD" id="wIT-Q7-arO"/>
                         <outlet property="lblArticles" destination="KHY-Jq-xXT" id="5B1-Ly-v02"/>
                         <outlet property="lblBenefits" destination="pJ4-80-lhw" id="aaI-t9-H37"/>
                         <outlet property="lblExpertOverview" destination="4kg-MT-FiA" id="hRX-Ol-qa6"/>

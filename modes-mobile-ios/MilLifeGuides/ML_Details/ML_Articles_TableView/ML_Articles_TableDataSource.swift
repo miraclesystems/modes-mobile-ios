@@ -41,6 +41,12 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
         cell.label.text = parentVc?.guide?.listArticles?[indexPath.row]?.name
+        var imageName = parentVc?.guide?.listArticles?[indexPath.row]?.image
+        
+        if((imageName) != nil){
+            cell.imageView?.image = UIImage(named: imageName! + "-200x200.jpg", in: nil, compatibleWith: nil)
+        }
+        
         //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getArticles(topic: viewModel?.topic ?? "")[indexPath.row]
         
