@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="352" height="104"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
-                        <rect key="frame" x="90" y="29.5" width="390" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
+                        <rect key="frame" x="90" y="8" width="390" height="64"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Bg5-92-BhF"/>
+                            <constraint firstAttribute="height" constant="64" id="Bg5-92-BhF"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,7 +38,7 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="eN8-8Q-quU" secondAttribute="trailing" constant="16" id="JWp-Mb-Wp6"/>
-                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="10" id="iKQ-gL-CKM"/>
+                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="20" id="iKQ-gL-CKM"/>
                     <constraint firstItem="eJ9-Xd-zMk" firstAttribute="centerY" secondItem="Esb-dj-8MO" secondAttribute="centerY" constant="-5" id="lfe-4I-gnz"/>
                     <constraint firstItem="eN8-8Q-quU" firstAttribute="centerY" secondItem="Esb-dj-8MO" secondAttribute="centerY" constant="-5" id="vUe-rh-TcV"/>
                     <constraint firstItem="eN8-8Q-quU" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="10" id="zqF-vf-74Y"/>
@@ -62,7 +62,7 @@
                 <outlet property="guideImage" destination="eN8-8Q-quU" id="9qy-Le-W6k"/>
                 <outlet property="label" destination="eJ9-Xd-zMk" id="Agh-GS-2jF"/>
             </connections>
-            <point key="canvasLocation" x="-3.6231884057971016" y="59.598214285714285"/>
+            <point key="canvasLocation" x="-4.3478260869565224" y="59.598214285714285"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -61,6 +61,8 @@ class ML_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
         //parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row] as! String
     
         parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.categories[indexPath.row] as! String
+    
+         
 
         parentVc?.parentVc?.ml_guides_tableview.tableView.reloadData()
         

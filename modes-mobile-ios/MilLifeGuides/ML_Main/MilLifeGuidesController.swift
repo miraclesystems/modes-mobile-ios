@@ -27,6 +27,9 @@ class MilLifeGuidesController: UIViewController {
     
     @IBOutlet weak var ml_guides_tableview: ML_Guides_TableView!
     
+    @IBOutlet weak var byCat_ImgIcon: UIImageView!
+    @IBOutlet weak var byCat_lblTitle: UILabel!
+    
     
     
     @IBAction func btnViewAll_Touched(_ sender: Any) {
@@ -68,10 +71,16 @@ class MilLifeGuidesController: UIViewController {
     
     func showOverlay(view:UIView){
         
-        
+        //MilLife Guide Details
         if(view == DetailsGuide){
             vc3?.loadGuide()
         }
+        
+        //Guide by Category
+        if(view == GuidesTableView){
+            byCat_lblTitle.text = self.viewModel?.selectedCategory
+        }
+        
         let seconds = 0.1
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             let viewToAnimate2 = view

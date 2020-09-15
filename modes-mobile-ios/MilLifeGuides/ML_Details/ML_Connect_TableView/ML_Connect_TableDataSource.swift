@@ -32,8 +32,13 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         //let cell = tableView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "ML_Connect_TableCell", for: indexPath) as! ML_Connect_TableCell
         
-
+        
         cell.label.text = parentVc?.guide?.ExpertsText?[indexPath.row] as? String
+        
+        if cell.label.text == "Here are a few:"  {
+            cell.label.font = UIFont.boldSystemFont(ofSize:13)
+        }
+        
         //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getConnect(topic: viewModel?.topic ?? "")[indexPath.row]
         
