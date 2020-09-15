@@ -92,7 +92,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
        let searchText  = textField.text! + string
         //add matching text to arrays
     
-        if(searchText.count >= 3){
+        if(searchText.count >= 1){
         
             searchNamesArrRes = viewModel?.getTopics(topic: searchText) as! [String]
             

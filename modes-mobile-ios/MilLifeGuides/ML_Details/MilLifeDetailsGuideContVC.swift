@@ -133,12 +133,24 @@ class MilLifeDetailsGuideContVC: UIViewController {
         ml_articles_tableview.tableView.reloadData()
 
         ml_benefits_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myBenefitsTVCount = self.guide?.listRelatedBenefits?.count ?? 0
+        print("Constraints Benefits Count: ", myBenefitsTVCount)
+        constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
         ml_benefits_tableview.tableView.reloadData()
 
         ml_websites_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myWebTVCount = self.guide?.RelatedWebsitesText?.count ?? 0
+        print("Constraints WebSites Count: ", myWebTVCount)
+        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount))
         ml_websites_tableview.tableView.reloadData()
 
         ml_connect_tableview.tableDataSource.parentVc = self
+        //Constraint Heights
+        let myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
+        print("Constraints Connection Count: ", myConnectTVCount)
+        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount))
         ml_connect_tableview.tableView.reloadData()
         
         
