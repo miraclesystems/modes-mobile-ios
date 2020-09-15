@@ -69,8 +69,17 @@ class MilLifeDetailsGuideContVC: UIViewController {
         self.lblTextOverVIew.text = guide?.Overview
         self.lblArticles.text = guide?.ArticleHeader
         self.btnMoreArticles.setTitle(guide?.MoreArticlesText, for: .normal)
+        self.btnMoreArticles.titleLabel?.textAlignment = .center
         self.btnMoreBenefits.setTitle(guide?.MoreBenefitsText, for: .normal)
+        self.btnMoreBenefits.titleLabel?.textAlignment = .center
         
+        //Show only 3rd word on Button
+        /*
+        let articlesFirstWord = guide?.MoreArticlesText!.components(separatedBy: " ")
+        let benefitsFirstWord = guide?.MoreBenefitsText!.components(separatedBy: " ")
+        self.btnMoreArticles.setTitle("See more " + articlesFirstWord![2].lowercased() + " articles", for: .normal)
+        self.btnMoreBenefits.setTitle("See more " + benefitsFirstWord![2].lowercased() + " benefits", for: .normal)
+        */
         
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
@@ -79,7 +88,12 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myBenefitsTVCount = self.guide?.listRelatedBenefits?.count ?? 0
         print("Constraints Benefits Count: ", myBenefitsTVCount)
-        constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+        //Show Max of 4 Benefits
+        if myBenefitsTVCount > 4 {
+            constraintH_benefits_tv.constant = CGFloat(106 * 4)
+        } else {
+            constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+        }
         ml_benefits_tableview.tableView.reloadData()
 
         ml_websites_tableview.tableDataSource.parentVc = self
@@ -110,6 +124,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         }
         
         imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
+        
         
         print("Debug")
         
@@ -126,8 +141,17 @@ class MilLifeDetailsGuideContVC: UIViewController {
         self.lblTextOverVIew.text = guide?.Overview
         self.lblArticles.text = guide?.ArticleHeader
         self.btnMoreArticles.setTitle(guide?.MoreArticlesText, for: .normal)
+        self.btnMoreArticles.titleLabel?.textAlignment = .center
         self.btnMoreBenefits.setTitle(guide?.MoreBenefitsText, for: .normal)
+        self.btnMoreBenefits.titleLabel?.textAlignment = .center
         
+        //Show only 3rd word on Button
+        /*
+        let articlesFirstWord = guide?.MoreArticlesText!.components(separatedBy: " ")
+        let benefitsFirstWord = guide?.MoreBenefitsText!.components(separatedBy: " ")
+        self.btnMoreArticles.setTitle("See more " + articlesFirstWord![2].lowercased() + " articles", for: .normal)
+        self.btnMoreBenefits.setTitle("See more " + benefitsFirstWord![2].lowercased() + " benefits", for: .normal)
+        */
         
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
@@ -136,7 +160,12 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myBenefitsTVCount = self.guide?.listRelatedBenefits?.count ?? 0
         print("Constraints Benefits Count: ", myBenefitsTVCount)
-        constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+        //Show Max of 4 Benefits
+        if myBenefitsTVCount > 4 {
+            constraintH_benefits_tv.constant = CGFloat(106 * 4)
+        } else {
+            constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+        }
         ml_benefits_tableview.tableView.reloadData()
 
         ml_websites_tableview.tableDataSource.parentVc = self
@@ -165,6 +194,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
         imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
+        
+        
         
         print("Debug")
         

@@ -541,7 +541,7 @@
                                             <constraint firstAttribute="height" constant="52" id="Ttm-Lj-9kT"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING &amp; HOUSING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-3h-kAx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING &amp; HOUSING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-3h-kAx">
                                         <rect key="frame" x="80" y="52" width="271" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="lwY-h1-Upz"/>
@@ -932,6 +932,8 @@ MilitaryOneSource.mil</string>
                         <outlet property="MilLifeContView2" destination="dOW-ew-fTA" id="fWE-AH-ziK"/>
                         <outlet property="btn_ByCat" destination="zIa-jb-Hz5" id="qK3-9u-xbX"/>
                         <outlet property="btn_ViewAll" destination="0LJ-ep-0oL" id="0dr-4T-hbT"/>
+                        <outlet property="byCat_ImgIcon" destination="Hde-7l-gUl" id="T9q-kq-vmQ"/>
+                        <outlet property="byCat_lblTitle" destination="Fii-3h-kAx" id="QV6-OY-lrW"/>
                         <outlet property="customNavBar" destination="6pj-m1-Euc" id="gza-GQ-g7o"/>
                         <outlet property="ml_guides_tableview" destination="sIt-nN-Ch0" id="8Ob-P2-bGp"/>
                     </connections>
@@ -2508,7 +2510,7 @@ you with today?</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Y2-wE-gDL" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2538"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2535.3333333333335"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTs-aZ-Gs8">
                                                 <rect key="frame" x="20" y="8" width="295" height="20"/>
@@ -2533,12 +2535,12 @@ you with today?</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ4-Cc-OSn" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="44" width="375" height="550"/>
+                                                <rect key="frame" x="0.0" y="44" width="375" height="547.33333333333337"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="R7o-Fw-7vV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="550"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="547.33333333333337"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtE-qX-Ez6">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtE-qX-Ez6">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
@@ -2571,11 +2573,8 @@ Military</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ra-zz-cRZ">
-                                                        <rect key="frame" x="20" y="313" width="335" height="220"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="220" id="bGe-a7-bXb"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ra-zz-cRZ">
+                                                        <rect key="frame" x="20" y="313" width="335" height="217.33333333333337"/>
                                                         <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit id gravida nulla congue a lectus. Nulla quisque orci nunc orci nullam duis arcu volutpat. Facilisi massa mattis at dui. Risus eget justo, sed viverra tortor et. \n  • Etiam libero amet, eu congue.    • Pellentesque aliquam nisi viverra et.      • Diam amet, nulla egestas justo est      commodo eget nunc. \nEnim mattis at amet, a vitae dictum posuere. Non amet, in fringilla varius sagittis viverra pellentesque. Nec at ac lorem massa. Velit et duis placerat quis. Adipiscing sed egestas neque suscipit sagittis vel tristique ultrices. Tortor at aliquam id gravida.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
@@ -2590,12 +2589,12 @@ Military</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="R7o-Fw-7vV" secondAttribute="bottom" id="31l-LO-asU"/>
-                                                    <constraint firstAttribute="height" constant="550" id="BnC-8h-I8m"/>
                                                     <constraint firstAttribute="trailing" secondItem="3D9-O6-oJr" secondAttribute="trailing" constant="20" id="DhG-E1-gRt"/>
                                                     <constraint firstItem="MtE-qX-Ez6" firstAttribute="top" secondItem="zQ4-Cc-OSn" secondAttribute="top" id="GxF-6m-aNC"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Ra-zz-cRZ" secondAttribute="trailing" constant="20" id="Hsi-s4-V0e"/>
                                                     <constraint firstItem="R7o-Fw-7vV" firstAttribute="top" secondItem="zQ4-Cc-OSn" secondAttribute="top" id="NEn-m5-uS3"/>
                                                     <constraint firstItem="MtE-qX-Ez6" firstAttribute="leading" secondItem="zQ4-Cc-OSn" secondAttribute="leading" constant="20" id="SFP-iB-EUh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4Ra-zz-cRZ" secondAttribute="bottom" constant="17" id="Tll-P3-FG0"/>
                                                     <constraint firstItem="3D9-O6-oJr" firstAttribute="leading" secondItem="zQ4-Cc-OSn" secondAttribute="leading" constant="20" id="UA6-8W-qfA"/>
                                                     <constraint firstItem="3D9-O6-oJr" firstAttribute="top" secondItem="Fnu-2b-vHD" secondAttribute="bottom" constant="10" id="ah2-X2-Pch"/>
                                                     <constraint firstItem="4Ra-zz-cRZ" firstAttribute="top" secondItem="3D9-O6-oJr" secondAttribute="bottom" constant="13" id="dIY-3O-ndC"/>
@@ -2613,7 +2612,7 @@ Military</string>
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGw-Lm-V55" userLabel="Articles">
-                                                <rect key="frame" x="0.0" y="614" width="375" height="480"/>
+                                                <rect key="frame" x="0.0" y="611.33333333333337" width="375" height="480.00000000000011"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="C00-Sp-PKo">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="448"/>
@@ -2625,12 +2624,12 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="24" id="wjJ-u7-poh"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
-                                                        <rect key="frame" x="52" y="12" width="303" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
+                                                        <rect key="frame" x="52" y="12.000000000000002" width="303" height="21.666666666666671"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2641,14 +2640,16 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="360" id="hwj-3m-cNa"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-eM-8nC">
-                                                        <rect key="frame" x="90" y="418" width="195" height="32"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-eM-8nC">
+                                                        <rect key="frame" x="90" y="417.99999999999989" width="195" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="IOQ-qa-G0B"/>
-                                                            <constraint firstAttribute="width" priority="1" constant="225" id="omO-Td-94z"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="YCR-zy-ws5"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="1" constant="200" id="omO-Td-94z"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="u7W-AC-41n"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="10"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                         <state key="normal" title="See more moving articles" backgroundImage="roundBtn_gray">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
@@ -2677,7 +2678,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-b6-pDz" userLabel="Benefits">
-                                                <rect key="frame" x="0.0" y="1102" width="375" height="440"/>
+                                                <rect key="frame" x="0.0" y="1099.3333333333333" width="375" height="440"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-dE-nKc">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="408"/>
@@ -2697,7 +2698,7 @@ Military</string>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="UyY-Ry-y5e"/>
                                                             <constraint firstAttribute="width" constant="210" id="gyZ-4U-6hF"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2708,14 +2709,16 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="320" id="3dj-o8-jzM"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo9-7e-rQw">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Eo9-7e-rQw">
                                                         <rect key="frame" x="87.666666666666686" y="378" width="200" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="3z6-zR-lxY"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="FVs-hQ-Sie"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Q3D-bc-5e9"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sjv-Wb-Cnh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                         <state key="normal" title="See more moving benefits" backgroundImage="roundBtn_gray">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
@@ -2743,7 +2746,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Lj-Wu6" userLabel="Websites">
-                                                <rect key="frame" x="0.0" y="1550" width="375" height="198"/>
+                                                <rect key="frame" x="0.0" y="1547.3333333333333" width="375" height="198"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="jn9-Ur-124">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="166"/>
@@ -2763,7 +2766,7 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="20" id="be6-ty-2ux"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="hNi-Gj-GEt"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2792,7 +2795,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opx-sW-PSr" userLabel="Connect">
-                                                <rect key="frame" x="0.0" y="1778" width="375" height="750"/>
+                                                <rect key="frame" x="0.0" y="1775.333333333333" width="375" height="750"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-mj-egT">
                                                         <rect key="frame" x="20" y="8" width="20" height="20"/>
@@ -2840,7 +2843,7 @@ for your military move.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWd-oL-idf" userLabel="ViewSpeakwith">
-                                                        <rect key="frame" x="20" y="514" width="325" height="173"/>
+                                                        <rect key="frame" x="20" y="514.00000000000023" width="325" height="173"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-il-zma">
                                                                 <rect key="frame" x="0.0" y="19" width="325" height="60"/>
@@ -3110,7 +3113,7 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
@@ -3137,10 +3140,10 @@ OneSource consultant</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="80" width="375" height="970"/>
+                                                <rect key="frame" x="0.0" y="80" width="375" height="800"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="970"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
