@@ -11,6 +11,7 @@ class MilLifeByCatContVC: UIViewController {
 
     var parentVc : MilLifeGuidesController?
     @IBOutlet var ml_verttwocollview: ML_VertTwoCollView!
+    @IBOutlet var ml_bycat_tableview: ML_ByCat_TableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,10 @@ class MilLifeByCatContVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        ml_verttwocollview.collectionDataSource.parentVc = self
-        ml_verttwocollview.collectionView.reloadData()
+      //  ml_verttwocollview.collectionDataSource.parentVc = self
+      //  ml_verttwocollview.collectionView.reloadData()
+        ml_bycat_tableview.tableDataSource.parentVc = self
+        ml_bycat_tableview.tableView.reloadData()
     }
     /*
     func showGuidesTableonParent(){

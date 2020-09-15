@@ -36,7 +36,7 @@ class VertTwoCollView: UIView {
         collectionDataSource.parentView = self
         initCollectionView()
         
-       
+        
         
         
     }
@@ -50,6 +50,8 @@ class VertTwoCollView: UIView {
         collectionView.dataSource = collectionDataSource
         collectionView.collectionViewLayout = flowLayout
         collectionView.contentInsetAdjustmentBehavior = .always
+        
+        
         
        
     }
