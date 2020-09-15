@@ -2,6 +2,11 @@
 
 import UIKit
 
+extension UIColor {
+    static let myCustomColor = UIColor(red: 0.06, green: 0.15, blue: 0.22, alpha: 1.00)
+}
+
+
 //@IBDesignable
 class HorzCollView: UIView {
     
@@ -40,7 +45,8 @@ class HorzCollView: UIView {
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
+        contentView.backgroundColor = UIColor.myCustomColor
+        collectionView.backgroundColor = UIColor.myCustomColor
         collectionDataSource.viewModel = self.viewModel        
         initCollectionView()
         
