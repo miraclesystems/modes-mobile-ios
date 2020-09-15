@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1164,7 +1164,7 @@ MilitaryOneSource.mil</string>
             <objects>
                 <viewController title="Favorites" id="zcZ-Ll-l0l" userLabel="Favorites" customClass="FavoritesViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icc-ND-kAw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dea-cg-bFm" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
@@ -1177,13 +1177,47 @@ MilitaryOneSource.mil</string>
                                 <viewLayoutGuide key="safeArea" id="mj1-dn-lXR"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lkb-wO-2d7">
-                                <rect key="frame" x="0.0" y="109" width="375" height="1308"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="1808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVe-cc-TmP">
                                         <rect key="frame" x="0.0" y="-10" width="375" height="1400"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-cn-Vmy" userLabel="View No Benefits">
+                                                <rect key="frame" x="15" y="1300" width="344" height="170"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Benefits Favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7X-mWf">
+                                                        <rect key="frame" x="69" y="28" width="206" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="17" id="OrD-lE-1zI"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="T1b-mX-VBe"/>
+                                                            <constraint firstAttribute="width" constant="206" id="wme-q5-s3S"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To favorite and save a benefit, click the ♡ in the corner of the benefit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
+                                                        <rect key="frame" x="43.666666666666657" y="62" width="257" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="c0r-lL-xqH"/>
+                                                            <constraint firstAttribute="width" constant="257" id="lL6-Qs-xKC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="centerX" secondItem="lsy-cn-Vmy" secondAttribute="centerX" id="DfL-As-Adr"/>
+                                                    <constraint firstItem="7VN-7X-mWf" firstAttribute="top" secondItem="lsy-cn-Vmy" secondAttribute="top" constant="28" id="UrH-gq-PAp"/>
+                                                    <constraint firstAttribute="height" constant="170" id="fpK-ds-aZX"/>
+                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="top" secondItem="7VN-7X-mWf" secondAttribute="bottom" constant="17" id="tC6-Vm-ewm"/>
+                                                    <constraint firstItem="7VN-7X-mWf" firstAttribute="centerX" secondItem="lsy-cn-Vmy" secondAttribute="centerX" id="yYH-hS-gBH"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Ol-ub2" userLabel="View Header">
-                                                <rect key="frame" x="102.66666666666667" y="15" width="169.66666666666663" height="64"/>
+                                                <rect key="frame" x="100.66666666666669" y="15" width="174" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-uK-lw0">
                                                         <rect key="frame" x="20" y="23" width="22" height="19"/>
@@ -1193,7 +1227,7 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
-                                                        <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="24"/>
+                                                        <rect key="frame" x="43.999999999999986" y="20" width="110.00000000000001" height="34"/>
                                                         <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1205,7 +1239,7 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstAttribute="bottom" secondItem="qCP-uK-lw0" secondAttribute="bottom" constant="22" id="Epj-yl-tmx"/>
                                                     <constraint firstItem="qCP-uK-lw0" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="top" constant="23" id="Q0T-Dc-0wD"/>
                                                     <constraint firstAttribute="height" constant="64" id="XB2-TU-sqV"/>
-                                                    <constraint firstAttribute="bottom" secondItem="K0O-Qc-fN1" secondAttribute="bottom" constant="20" id="XeV-7Q-VhB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="K0O-Qc-fN1" secondAttribute="bottom" constant="10" id="XeV-7Q-VhB"/>
                                                     <constraint firstItem="K0O-Qc-fN1" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="top" constant="20" id="kfw-BT-lz2"/>
                                                     <constraint firstItem="qCP-uK-lw0" firstAttribute="leading" secondItem="tZc-Ol-ub2" secondAttribute="leading" constant="20" id="vgF-aY-tFy"/>
                                                     <constraint firstAttribute="trailing" secondItem="K0O-Qc-fN1" secondAttribute="trailing" constant="20" id="vh2-1y-Xi5"/>
@@ -1213,7 +1247,7 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-nh-8mV">
-                                                <rect key="frame" x="16" y="103" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="99" width="343" height="268"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-Bt-Aa1">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
@@ -1242,7 +1276,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstAttribute="width" constant="300" id="6DN-66-t8s"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
-                                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4K-Th-T3i">
@@ -1251,7 +1285,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstAttribute="width" constant="300" id="Uo9-TX-xSZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="12"/>
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" red="0.5725490196078431" green="0.63529411764705879" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLP-so-h2M">
@@ -1278,8 +1312,8 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="phone"/>
                                                     </button>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-hD-wkb">
-                                                        <rect key="frame" x="62" y="172.66666666666669" width="200" height="14"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-hD-wkb">
+                                                        <rect key="frame" x="62" y="172.66666666666669" width="200" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="Rlz-bz-sdL"/>
                                                         </constraints>
@@ -1323,6 +1357,13 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_red" translatesAutoresizingMaskIntoConstraints="NO" id="2df-fH-JkO">
+                                                        <rect key="frame" x="317" y="48" width="18" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="Q3F-nc-tGX"/>
+                                                            <constraint firstAttribute="width" constant="18" id="uU7-o1-OHh"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1330,6 +1371,7 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstItem="hCi-Bt-Aa1" firstAttribute="top" secondItem="uKY-nh-8mV" secondAttribute="top" id="5mN-HT-VW7"/>
                                                     <constraint firstItem="V67-An-odZ" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="24" id="5mx-8A-t5S"/>
                                                     <constraint firstItem="V67-An-odZ" firstAttribute="top" secondItem="V4K-Th-T3i" secondAttribute="bottom" constant="10" id="68R-ri-ncM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2df-fH-JkO" secondAttribute="trailing" constant="8" id="6Yw-6w-8rr"/>
                                                     <constraint firstAttribute="height" constant="268" id="ARi-c7-xp2"/>
                                                     <constraint firstItem="mLl-1w-LNd" firstAttribute="top" secondItem="6p5-3R-hkG" secondAttribute="bottom" constant="15" id="Dsu-x4-wfh"/>
                                                     <constraint firstItem="Gui-pQ-vMg" firstAttribute="top" secondItem="hCi-Bt-Aa1" secondAttribute="bottom" constant="24" id="EkK-cT-PZA"/>
@@ -1349,13 +1391,14 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstItem="XLP-so-h2M" firstAttribute="top" secondItem="wGi-xQ-Mir" secondAttribute="bottom" constant="15" id="lO6-vK-EC2"/>
                                                     <constraint firstAttribute="trailing" secondItem="hCi-Bt-Aa1" secondAttribute="trailing" id="oyB-nJ-fdU"/>
                                                     <constraint firstItem="wGi-xQ-Mir" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="24" id="qmG-H6-vgT"/>
+                                                    <constraint firstItem="2df-fH-JkO" firstAttribute="top" secondItem="hCi-Bt-Aa1" secondAttribute="bottom" constant="8" id="t1D-pJ-xGm"/>
                                                     <constraint firstItem="XLP-so-h2M" firstAttribute="leading" secondItem="uKY-nh-8mV" secondAttribute="leading" constant="25" id="yGN-t5-4oh"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-XG-ogY">
-                                                <rect key="frame" x="16" y="406" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="402" width="343" height="268"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-KF-qtt">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-KF-qtt" userLabel="GuidesHeader">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR MILLIFE GUIDES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-de-W9b">
@@ -1371,14 +1414,17 @@ MilitaryOneSource.mil</string>
                                                         <color key="backgroundColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="ahc-de-W9b" firstAttribute="top" secondItem="GNg-KF-qtt" secondAttribute="top" constant="14" id="2Sc-h7-mnD"/>
+                                                            <constraint firstAttribute="height" constant="40" id="HWR-o3-lqb"/>
                                                             <constraint firstAttribute="bottom" secondItem="ahc-de-W9b" secondAttribute="bottom" constant="16" id="PIT-3e-jyV"/>
-                                                            <constraint firstAttribute="height" constant="40" id="w5R-gZ-YF2"/>
                                                             <constraint firstItem="ahc-de-W9b" firstAttribute="leading" secondItem="GNg-KF-qtt" secondAttribute="leading" constant="20" id="wbU-Ya-Pwy"/>
                                                         </constraints>
                                                     </view>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Prk-Df-tjM">
-                                                        <rect key="frame" x="0.0" y="40" width="343" height="228"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <rect key="frame" x="0.0" y="40" width="343" height="212"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="1" constant="212" id="yLr-JC-WdP"/>
+                                                        </constraints>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GUIDES_CELL" id="SQm-Fy-Vik" customClass="FavoriteGuidesTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="28" width="343" height="40"/>
@@ -1427,19 +1473,19 @@ MilitaryOneSource.mil</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="268" id="5lP-NM-3d2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Prk-Df-tjM" secondAttribute="bottom" id="BkP-X0-dsx"/>
+                                                    <constraint firstItem="GNg-KF-qtt" firstAttribute="leading" secondItem="lf1-XG-ogY" secondAttribute="leading" id="9hE-3P-O5W"/>
                                                     <constraint firstAttribute="trailing" secondItem="GNg-KF-qtt" secondAttribute="trailing" id="FAM-JL-QVY"/>
-                                                    <constraint firstItem="GNg-KF-qtt" firstAttribute="top" secondItem="lf1-XG-ogY" secondAttribute="top" id="MYh-te-HSq"/>
                                                     <constraint firstItem="Prk-Df-tjM" firstAttribute="leading" secondItem="lf1-XG-ogY" secondAttribute="leading" id="Vdn-2S-O8t"/>
+                                                    <constraint firstItem="GNg-KF-qtt" firstAttribute="top" secondItem="lf1-XG-ogY" secondAttribute="top" id="f94-aL-JEI"/>
                                                     <constraint firstItem="Prk-Df-tjM" firstAttribute="top" secondItem="GNg-KF-qtt" secondAttribute="bottom" id="fZ3-SW-m9T"/>
                                                     <constraint firstItem="GNg-KF-qtt" firstAttribute="leading" secondItem="lf1-XG-ogY" secondAttribute="leading" id="g8S-T0-dvs"/>
-                                                    <constraint firstAttribute="height" constant="268" id="g9e-TX-sHp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GNg-KF-qtt" secondAttribute="trailing" id="iUL-x0-j2s"/>
                                                     <constraint firstAttribute="trailing" secondItem="Prk-Df-tjM" secondAttribute="trailing" id="pB4-AI-tN9"/>
+                                                    <constraint firstAttribute="height" constant="268" id="qzJ-fE-34Q"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-Bp-gXi">
-                                                <rect key="frame" x="16" y="705" width="343" height="268"/>
+                                                <rect key="frame" x="16" y="701" width="343" height="268"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9po-l9-9rO">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
@@ -1523,7 +1569,6 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstAttribute="trailing" secondItem="9po-l9-9rO" secondAttribute="trailing" id="N5S-lo-cph"/>
                                                     <constraint firstAttribute="trailing" secondItem="kfG-tA-woZ" secondAttribute="trailing" id="aab-IS-iVs"/>
                                                     <constraint firstItem="9po-l9-9rO" firstAttribute="top" secondItem="8ba-Bp-gXi" secondAttribute="top" id="bOQ-Av-DLG"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="268" id="gDu-I3-fhI"/>
                                                     <constraint firstItem="kfG-tA-woZ" firstAttribute="top" secondItem="9po-l9-9rO" secondAttribute="bottom" id="gpa-v7-9Mm"/>
                                                     <constraint firstItem="9po-l9-9rO" firstAttribute="leading" secondItem="8ba-Bp-gXi" secondAttribute="leading" id="jkn-dF-apZ"/>
                                                     <constraint firstAttribute="height" constant="268" id="tKq-Fp-1s5"/>
@@ -1587,25 +1632,65 @@ MilitaryOneSource.mil</string>
                                                     <constraint firstAttribute="height" constant="170" id="vhb-zk-3Ku"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-se-bPo" userLabel="No Guides">
+                                                <rect key="frame" x="16" y="442" width="343" height="170"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No MiLife Guides Favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-8Q-L0p">
+                                                        <rect key="frame" x="68.666666666666686" y="29" width="206" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="17" id="fRB-VB-JeN"/>
+                                                            <constraint firstAttribute="width" constant="206" id="flx-KP-XUH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                                        <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To favorite and save a guide, click the ♡ in the corner of the guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
+                                                        <rect key="frame" x="55" y="54" width="233" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="3cP-bh-wXt"/>
+                                                            <constraint firstAttribute="width" constant="233" id="65K-RM-nXG"/>
+                                                            <constraint firstAttribute="height" constant="45" id="u1d-hv-tqQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                                        <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="YFu-Zh-tUx" firstAttribute="top" secondItem="KBc-8Q-L0p" secondAttribute="bottom" constant="8" id="8NB-lj-x3d"/>
+                                                    <constraint firstAttribute="height" constant="170" id="BQM-oo-KGd"/>
+                                                    <constraint firstItem="KBc-8Q-L0p" firstAttribute="top" secondItem="lyA-se-bPo" secondAttribute="top" constant="29" id="Qcm-Un-xhC"/>
+                                                    <constraint firstItem="YFu-Zh-tUx" firstAttribute="centerX" secondItem="lyA-se-bPo" secondAttribute="centerX" id="RSE-qK-3vd"/>
+                                                    <constraint firstItem="KBc-8Q-L0p" firstAttribute="centerX" secondItem="lyA-se-bPo" secondAttribute="centerX" id="fWJ-dB-ryJ"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.93725490196078431" green="0.95686274509803915" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="6hD-pD-9fb" firstAttribute="centerX" secondItem="ZVe-cc-TmP" secondAttribute="centerX" id="07J-rS-eII"/>
                                             <constraint firstItem="6hD-pD-9fb" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" priority="1" constant="964" id="5aZ-Pc-3Uv"/>
                                             <constraint firstItem="tZc-Ol-ub2" firstAttribute="top" secondItem="ZVe-cc-TmP" secondAttribute="top" constant="15" id="5f5-SK-t4K"/>
+                                            <constraint firstItem="lyA-se-bPo" firstAttribute="leading" secondItem="6hD-pD-9fb" secondAttribute="leading" id="5jp-LK-di6"/>
                                             <constraint firstItem="8ba-Bp-gXi" firstAttribute="top" secondItem="lf1-XG-ogY" secondAttribute="bottom" constant="31" id="C3S-YA-zJi"/>
                                             <constraint firstItem="6hD-pD-9fb" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="CWL-wV-EYB"/>
                                             <constraint firstAttribute="trailing" secondItem="6hD-pD-9fb" secondAttribute="trailing" constant="16" id="IcX-Qf-H3v"/>
                                             <constraint firstItem="lf1-XG-ogY" firstAttribute="top" secondItem="uKY-nh-8mV" secondAttribute="bottom" constant="35" id="KQi-mq-S3o"/>
+                                            <constraint firstItem="lyA-se-bPo" firstAttribute="centerX" secondItem="ZVe-cc-TmP" secondAttribute="centerX" id="Mrc-xn-C7L"/>
                                             <constraint firstAttribute="height" constant="1400" id="Pd2-sw-e4O"/>
+                                            <constraint firstItem="lsy-cn-Vmy" firstAttribute="top" secondItem="8ba-Bp-gXi" secondAttribute="top" constant="40" id="TAo-Ml-913"/>
                                             <constraint firstAttribute="trailing" secondItem="uKY-nh-8mV" secondAttribute="trailing" constant="16" id="crD-6t-oaI"/>
                                             <constraint firstItem="uKY-nh-8mV" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="eMu-PY-PtW"/>
+                                            <constraint firstAttribute="trailing" secondItem="lsy-cn-Vmy" secondAttribute="trailing" constant="16" id="fgR-GB-War"/>
                                             <constraint firstItem="tZc-Ol-ub2" firstAttribute="centerX" secondItem="ZVe-cc-TmP" secondAttribute="centerX" id="fgh-Rv-NBr"/>
                                             <constraint firstItem="lf1-XG-ogY" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="gZZ-mJ-xig"/>
-                                            <constraint firstItem="uKY-nh-8mV" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" constant="24" id="iOO-PC-lol"/>
+                                            <constraint firstItem="uKY-nh-8mV" firstAttribute="top" secondItem="tZc-Ol-ub2" secondAttribute="bottom" constant="20" id="iOO-PC-lol"/>
                                             <constraint firstItem="8ba-Bp-gXi" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="16" id="kjU-Eu-np6"/>
+                                            <constraint firstItem="lsy-cn-Vmy" firstAttribute="leading" secondItem="ZVe-cc-TmP" secondAttribute="leading" constant="15" id="miK-gt-eAo"/>
                                             <constraint firstAttribute="trailing" secondItem="lf1-XG-ogY" secondAttribute="trailing" constant="16" id="uwm-eI-Ejo"/>
                                             <constraint firstAttribute="trailing" secondItem="8ba-Bp-gXi" secondAttribute="trailing" constant="16" id="v9z-eh-mdh"/>
+                                            <constraint firstItem="lyA-se-bPo" firstAttribute="top" secondItem="lf1-XG-ogY" secondAttribute="top" priority="1" constant="40" id="z2F-0J-6LM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1635,9 +1720,9 @@ MilitaryOneSource.mil</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="favorites_ic" selectedImage="favorites_focused_ic" id="00y-CJ-KKf"/>
                     <navigationItem key="navigationItem" id="n3S-sx-x2b"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="375" height="1500"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="2000"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1500"/>
+                    <size key="freeformSize" width="375" height="2000"/>
                     <connections>
                         <outlet property="constraintInstallationHeigth" destination="ARi-c7-xp2" id="6Hh-bG-Nxr"/>
                         <outlet property="constraintNoInstallationTop" destination="5aZ-Pc-3Uv" id="98V-IC-oX0"/>
@@ -1655,7 +1740,9 @@ MilitaryOneSource.mil</string>
                         <outlet property="viewContentView" destination="ZVe-cc-TmP" id="gbt-qI-7Yd"/>
                         <outlet property="viewInstallation" destination="uKY-nh-8mV" id="j0Y-7y-wDJ"/>
                         <outlet property="viewMILLIFEGuides" destination="lf1-XG-ogY" id="rG6-3a-803"/>
-                        <outlet property="viewNoInstallation" destination="6hD-pD-9fb" id="B5p-Ay-4sw"/>
+                        <outlet property="viewNoBenefits" destination="lsy-cn-Vmy" id="oZa-yY-Z7W"/>
+                        <outlet property="viewNoGuides" destination="lyA-se-bPo" id="CHh-vj-Bb4"/>
+                        <outlet property="viewNoInstallation" destination="6hD-pD-9fb" id="bJs-4K-F8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK3-g9-s5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1694,38 +1781,38 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
-                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
                                         <state key="normal" image="Image"/>
                                         <connections>
                                             <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
-                                        <rect key="frame" x="12" y="224" width="351" height="136"/>
+                                        <rect key="frame" x="12" y="224" width="351" height="68"/>
                                         <state key="normal" image="button_call_options"/>
                                         <connections>
                                             <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
-                                        <rect key="frame" x="12" y="287" width="351" height="132"/>
+                                        <rect key="frame" x="12" y="287" width="351" height="66"/>
                                         <state key="normal" image="button_subscribe"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
-                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
+                                        <rect key="frame" x="12" y="344" width="351" height="72"/>
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
                                             <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter where you serve or live, we are here for you 24/7 online and by telephone. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-t0-to4">
-                                        <rect key="frame" x="27" y="96" width="320" height="28.666666666666671"/>
+                                        <rect key="frame" x="48" y="96" width="279" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="milGrayText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48.666666666666657" y="488" width="34" height="34"/>
+                                        <rect key="frame" x="48.666666666666657" y="416" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="Hsy-ma-1nt"/>
                                             <constraint firstAttribute="height" constant="34" id="dGT-83-RV3"/>
@@ -1736,21 +1823,21 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="109.66666666666667" y="488" width="34.000000000000014" height="34"/>
+                                        <rect key="frame" x="109.66666666666667" y="416" width="34.000000000000014" height="34"/>
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="170.66666666666666" y="488" width="34" height="34.333333333333371"/>
+                                        <rect key="frame" x="170.66666666666666" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="292.66666666666669" y="488" width="34" height="34.333333333333371"/>
+                                        <rect key="frame" x="292.66666666666669" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
@@ -1767,7 +1854,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="231.66666666666666" y="488" width="33.999999999999972" height="34.333333333333371"/>
+                                        <rect key="frame" x="231.66666666666666" y="416" width="33.999999999999972" height="34.333333333333314"/>
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
@@ -1803,7 +1890,7 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="0cY-3W-Ov6" firstAttribute="leading" secondItem="swb-c6-U8z" secondAttribute="trailing" constant="27" id="aZE-v6-CIs"/>
                                     <constraint firstItem="Ib8-uX-hr4" firstAttribute="height" secondItem="uGy-WT-kpc" secondAttribute="height" id="amX-G1-N5G"/>
                                     <constraint firstItem="0cY-3W-Ov6" firstAttribute="width" secondItem="swb-c6-U8z" secondAttribute="width" id="bqy-e9-zA6"/>
-                                    <constraint firstAttribute="trailing" secondItem="cLd-t0-to4" secondAttribute="trailing" constant="28" id="bvg-Sq-otl"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLd-t0-to4" secondAttribute="trailing" constant="48" id="bvg-Sq-otl"/>
                                     <constraint firstAttribute="trailing" secondItem="699-Pn-9m7" secondAttribute="trailing" constant="16" id="cec-ik-tJW"/>
                                     <constraint firstItem="0cY-3W-Ov6" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="eIq-DV-oLt"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="gug-Hu-4T6"/>
@@ -1818,7 +1905,7 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="top" secondItem="cLd-t0-to4" secondAttribute="bottom" constant="8" id="sil-JV-izT"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="t1P-xm-AGP"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="uXe-qB-w9D"/>
-                                    <constraint firstItem="cLd-t0-to4" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="27" id="wYf-E4-OjM"/>
+                                    <constraint firstItem="cLd-t0-to4" firstAttribute="leading" secondItem="Y8w-JM-MXu" secondAttribute="leading" constant="48" id="wYf-E4-OjM"/>
                                     <constraint firstAttribute="trailing" secondItem="jgK-p4-SoS" secondAttribute="trailing" constant="12" id="xBR-h3-5qa"/>
                                     <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="zet-l9-Bcy"/>
                                 </constraints>
@@ -1901,7 +1988,7 @@ MilitaryOneSource.mil</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="880"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-0S-huH">
-                                                        <rect key="frame" x="20" y="0.0" width="335" height="80"/>
+                                                        <rect key="frame" x="30" y="40" width="335" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="Lid-wC-hC9"/>
                                                             <constraint firstAttribute="width" constant="335" id="ssa-TO-e1v"/>
@@ -1913,28 +2000,65 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-JY-nfF">
-                                                        <rect key="frame" x="20" y="100" width="335" height="300"/>
+                                                        <rect key="frame" x="30" y="120" width="325" height="70.666666666666686"/>
+                                                        <string key="text">The My Military OneSource app was developed to deliver fast, 24/7 access to a world of resources and support available for service members, military spouses, survivors and other members of the military community. </string>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                                                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d73-pM-f6z">
+                                                        <rect key="frame" x="30" y="282" width="300" height="168"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="300" id="qzu-EW-5mu"/>
+                                                            <constraint firstAttribute="height" constant="168" id="im5-3Y-rdl"/>
+                                                            <constraint firstAttribute="width" constant="300" id="la3-0u-l0j"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. About Military OneSource Duis aute irure dolor in reprehenderit in voluptate ve </string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <string key="text">Military OneSource is a U.S. Department of Defense-funded program that connects the military community to the resources they need to be well, mission-ready and thrive in the MilLife, from relocation planning and tax services to confidential non-medical counseling and spouse employment. Members of our military family are eligible to use this DOD program anytime, anywhere. Services are available online or by telephone 24/7/365 wherever service members live or serve. </string>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onesource" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Nt-XqX">
+                                                        <rect key="frame" x="30" y="223" width="101" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="Nqz-Be-a7t"/>
+                                                            <constraint firstAttribute="width" constant="101" id="qKe-N9-T81"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
+                                                        <rect key="frame" x="30" y="257" width="182" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="182" id="WyE-n2-gMe"/>
+                                                            <constraint firstAttribute="height" constant="17" id="uyO-AG-bWe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
-                                                        <rect key="frame" x="20" y="443" width="240" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
+                                                        <rect key="frame" x="30" y="476" width="142" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="53" id="Pr4-ri-ctE"/>
+                                                            <constraint firstAttribute="width" constant="142" id="xEx-jY-oin"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="6Mb-0S-huH" firstAttribute="top" secondItem="Cjh-cY-xQJ" secondAttribute="top" id="0V6-x9-AfS"/>
-                                                    <constraint firstItem="6Mb-0S-huH" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="20" id="ECW-ys-joG"/>
-                                                    <constraint firstItem="Gqa-JY-nfF" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="20" id="VaR-Jr-0rh"/>
+                                                    <constraint firstItem="6Mb-0S-huH" firstAttribute="top" secondItem="Cjh-cY-xQJ" secondAttribute="top" constant="40" id="0V6-x9-AfS"/>
+                                                    <constraint firstItem="d73-pM-f6z" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="1fO-xB-hOn"/>
+                                                    <constraint firstItem="w9d-Nt-XqX" firstAttribute="top" secondItem="Gqa-JY-nfF" secondAttribute="bottom" constant="32.329999999999998" id="3A6-Fb-h37"/>
+                                                    <constraint firstItem="Gqa-JY-nfF" firstAttribute="top" secondItem="6Mb-0S-huH" secondAttribute="bottom" id="9Wi-Ud-U8Q"/>
+                                                    <constraint firstItem="6Mb-0S-huH" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="ECW-ys-joG"/>
+                                                    <constraint firstItem="d73-pM-f6z" firstAttribute="top" secondItem="MoW-nc-jyj" secondAttribute="bottom" constant="8" id="J5Q-jH-0Jp"/>
+                                                    <constraint firstItem="MoW-nc-jyj" firstAttribute="top" secondItem="w9d-Nt-XqX" secondAttribute="bottom" constant="10" id="OYg-jk-ol9"/>
+                                                    <constraint firstItem="Gqa-JY-nfF" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="VaR-Jr-0rh"/>
+                                                    <constraint firstItem="qCv-sP-nli" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="ZjI-cf-Tbk"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="800" id="afo-bA-50A"/>
+                                                    <constraint firstItem="qCv-sP-nli" firstAttribute="top" secondItem="d73-pM-f6z" secondAttribute="bottom" constant="26" id="bmZ-rZ-CSx"/>
+                                                    <constraint firstItem="w9d-Nt-XqX" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="bzc-qx-79n"/>
+                                                    <constraint firstItem="MoW-nc-jyj" firstAttribute="top" secondItem="w9d-Nt-XqX" secondAttribute="bottom" constant="10" id="jTu-9q-Ocr"/>
                                                     <constraint firstAttribute="trailing" secondItem="Gqa-JY-nfF" secondAttribute="trailing" constant="20" id="php-Hk-m9X"/>
-                                                    <constraint firstItem="Gqa-JY-nfF" firstAttribute="top" secondItem="6Mb-0S-huH" secondAttribute="bottom" constant="20" id="rXG-Vt-kFl"/>
+                                                    <constraint firstItem="MoW-nc-jyj" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="uhH-fy-ePS"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -3110,7 +3234,7 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
@@ -3137,10 +3261,10 @@ OneSource consultant</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="80" width="375" height="970"/>
+                                                <rect key="frame" x="0.0" y="80" width="375" height="800"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="970"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
@@ -3408,6 +3532,9 @@ SETTINGS</string>
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -3439,6 +3566,7 @@ SETTINGS</string>
         <image name="millife_focused_ic" width="23.666666030883789" height="23.666666030883789"/>
         <image name="millife_ic" width="23.666666030883789" height="23.666666030883789"/>
         <image name="moving_photo" width="328" height="150"/>
+        <image name="onesource" width="101" height="24"/>
         <image name="phone" width="15.333333015441895" height="15.333333015441895"/>
         <image name="pinterest" width="34" height="34.333332061767578"/>
         <image name="related_web_icon" width="20" height="24"/>
@@ -3458,7 +3586,4 @@ SETTINGS</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
 </document>
