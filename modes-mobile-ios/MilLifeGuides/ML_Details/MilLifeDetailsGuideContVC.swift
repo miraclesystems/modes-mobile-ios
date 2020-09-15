@@ -92,6 +92,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
         
+        imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
+        
         print("Debug")
         
         
@@ -131,6 +133,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
              buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
+        imgGuide.image = UIImage(named: (self.guide?.GuideImage)! + "-1000x500.jpg", in: nil, compatibleWith: nil)
         
         print("Debug")
         
@@ -210,7 +213,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         
         
         
-        imgGuide.image = UIImage(named: "12 Ways to Land That Civilian Job-1000x500.jpg", in: nil, compatibleWith: nil)
+        
         ml_articles_tableview.tableDataSource.parentVc = self
         ml_articles_tableview.tableView.reloadData()
         

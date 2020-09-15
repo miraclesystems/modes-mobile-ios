@@ -124,6 +124,7 @@ class FavoritesViewController: UIViewController {
     
     @objc private func emailClicked(_ sender: UITapGestureRecognizer){
         
+        var stUrl = "https://apps.militaryonesource.mil/MOS/f?p=AMS:5:0::::P5_APP_NAME,P5_MSG_TYPE,P5_EID:MilitaryINSTALLATIONS,Installation%20Address,\(location!.id!)"
         var error = false
         if(location?.email_address1 != nil && location?.email_address1?.count ?? 0 > 0){
             
