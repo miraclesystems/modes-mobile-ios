@@ -2624,10 +2624,10 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="24" id="wjJ-u7-poh"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
-                                                        <rect key="frame" x="52" y="12.000000000000002" width="303" height="21.666666666666671"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
+                                                        <rect key="frame" x="52" y="2" width="303" height="36"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
+                                                            <constraint firstAttribute="height" constant="36" id="hOm-nV-Lho"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -2661,7 +2661,7 @@ Military</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="FHd-eM-8nC" firstAttribute="top" secondItem="1rR-1q-tZY" secondAttribute="bottom" constant="10" id="2fc-H0-nPj"/>
-                                                    <constraint firstItem="KHY-Jq-xXT" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="12" id="3l3-d0-wwv"/>
+                                                    <constraint firstItem="KHY-Jq-xXT" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="2" id="3l3-d0-wwv"/>
                                                     <constraint firstItem="1rR-1q-tZY" firstAttribute="leading" secondItem="XGw-Lm-V55" secondAttribute="leading" id="7Sj-k1-ZeB"/>
                                                     <constraint firstItem="3PU-FO-vqc" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="8" id="BYf-5s-F0F"/>
                                                     <constraint firstAttribute="trailing" secondItem="1rR-1q-tZY" secondAttribute="trailing" id="CKn-ae-isY"/>
