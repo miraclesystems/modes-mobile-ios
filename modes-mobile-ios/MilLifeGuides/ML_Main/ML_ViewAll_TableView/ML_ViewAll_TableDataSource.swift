@@ -35,13 +35,28 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
 
        
-        cell.guideImage.image = UIImage(named: "guide_placeholder")
+        //cell.guideImage.image = UIImage(named: "guide_placeholder")
 
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
         
-        cell.label.text = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row]
+        var guide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row]
+        
+        cell.label.text = guide?.Guide
+        
+        
+        
+        
+       
+            
+        
+        
+        
+        cell.guideImage.image = UIImage(named: (guide?.GuideImage)! + "-200x200.jpg", in: nil, compatibleWith: nil)
+        cell.guideImage.contentMode = UIImageView.ContentMode.scaleAspectFill
+        cell.guideImage.clipsToBounds = true
+        cell.guideImage.layer.masksToBounds = true
         //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
         
@@ -63,7 +78,7 @@ class ML_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         tableView.deselectRow(at: indexPath, animated: true)
         //print("label: ", myLabels[indexPath.item])
     
-        parentVc?.parentVc?.viewModel?.selectedGuide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row] as! String
+    parentVc?.parentVc?.viewModel?.selectedGuide = parentVc?.parentVc?.viewModel?.getAllGuides()[indexPath.row].Guide as! String
          parentVc?.parentVc?.vc3?.loadGuide()
         parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsGuideCont)!)
        
