@@ -60,20 +60,7 @@ class BenefitsDetailsContVC: UIViewController {
     }
     
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        
-        
-    }
-    
-    //override func viewDidAppear(_ animated: Bool) {
-    override func viewWillAppear(_ animated: Bool) {
-        
+    func loadBenefit(){
         if((selectedBenefit) != nil){
             
             var viewModel = BenefitsViewModel()
@@ -96,6 +83,22 @@ class BenefitsDetailsContVC: UIViewController {
             buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        self.loadBenefit()
+        
+        
+    }
+    
+    //override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
         
         
     }

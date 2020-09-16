@@ -57,10 +57,13 @@ class Benefits_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
         tableView.deselectRow(at: indexPath, animated: true)
         //print("label: ", myLabels[indexPath.item])
     
- let benefit = parentVc?.viewModel?.getBenifitsByCategory()[indexPath.row]
+        let benefit = parentVc?.viewModel?.getBenifitsByCategory()[indexPath.row]
         parentVc?.viewModel?.selectedBenefit = benefit?.Benefit as! String
     
+        parentVc?.vc3?.loadBenefit()
         parentVc?.showOverlay(view: (parentVc?.DetailsBenefits)!)
+        
+    
     }
     
 

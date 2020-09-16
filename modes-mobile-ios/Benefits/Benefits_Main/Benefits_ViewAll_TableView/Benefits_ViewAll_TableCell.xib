@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="352" height="104"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
-                        <rect key="frame" x="15" y="17" width="460" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
+                        <rect key="frame" x="15" y="2" width="460" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Zc7-UX-mvs"/>
+                            <constraint firstAttribute="height" constant="30" id="Zc7-UX-mvs"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line1 Line2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBy-Vd-1Ty">
-                        <rect key="frame" x="15" y="38" width="450" height="45"/>
+                        <rect key="frame" x="15" y="32" width="460" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -37,10 +37,10 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="15" id="34U-5k-oXx"/>
-                    <constraint firstAttribute="bottom" secondItem="uBy-Vd-1Ty" secondAttribute="bottom" constant="7" id="DLD-F9-oWJ"/>
-                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="top" secondItem="Esb-dj-8MO" secondAttribute="top" constant="17" id="c7x-ZC-0AG"/>
+                    <constraint firstAttribute="bottom" secondItem="uBy-Vd-1Ty" secondAttribute="bottom" constant="14" id="DLD-F9-oWJ"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="top" secondItem="Esb-dj-8MO" secondAttribute="top" constant="2" id="c7x-ZC-0AG"/>
                     <constraint firstItem="uBy-Vd-1Ty" firstAttribute="top" secondItem="eJ9-Xd-zMk" secondAttribute="bottom" id="fQ5-9m-MNb"/>
-                    <constraint firstAttribute="trailing" secondItem="uBy-Vd-1Ty" secondAttribute="trailing" constant="25" id="jlz-A2-TxU"/>
+                    <constraint firstAttribute="trailing" secondItem="uBy-Vd-1Ty" secondAttribute="trailing" constant="15" id="jlz-A2-TxU"/>
                     <constraint firstItem="uBy-Vd-1Ty" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="15" id="jvj-eM-7X1"/>
                     <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="15" id="lmM-Vk-3Cl"/>
                 </constraints>
