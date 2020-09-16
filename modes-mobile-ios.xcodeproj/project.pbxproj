@@ -143,7 +143,7 @@
 		145805A025127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */; };
 		145805A125127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */; };
 		145805A225127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */; };
-		145805A4251280C10093DB72 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 145805A3251280C10093DB72 /* modes.sqlite3 */; };
+		145805A62512B6940093DB72 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 145805A52512B6930093DB72 /* modes.sqlite3 */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -448,7 +448,7 @@
 		1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg"; sourceTree = "<group>"; };
 		1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg"; sourceTree = "<group>"; };
 		1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-1000x500.jpg"; sourceTree = "<group>"; };
-		145805A3251280C10093DB72 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
+		145805A52512B6930093DB72 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -829,7 +829,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				145805A3251280C10093DB72 /* modes.sqlite3 */,
+				145805A52512B6930093DB72 /* modes.sqlite3 */,
 				145804C825127F770093DB72 /* small-images */,
 				14D5D5FA250FC7050072A0F9 /* images-large */,
 				A958EB6E24F5262300989D70 /* Navigation */,
@@ -1409,7 +1409,7 @@
 				1458055925127FAE0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg in Resources */,
 				1458056225127FAE0093DB72 /* Stay Fit During Deployment-200x200.jpg in Resources */,
 				1458055725127FAE0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg in Resources */,
-				145805A4251280C10093DB72 /* modes.sqlite3 in Resources */,
+				145805A62512B6940093DB72 /* modes.sqlite3 in Resources */,
 				1458053725127FAE0093DB72 /* The EFMP - D2510599-200x200.jpg in Resources */,
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
