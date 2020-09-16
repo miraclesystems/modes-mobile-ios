@@ -34,6 +34,7 @@ class ModesDb{
         let db = SQLiteDB.shared
         db.open()
         let data = db.query(sql:"SELECT * FROM benefits WHERE audience LIKE '%" + audience + "%'")
+        //let data = db.query(sql:"SELECT * FROM benefits WHERE audience LIKE '%" + audience + "%' ORDER BY RANDOM() LIMIT 4")
         //let row = data[0]
         //print(row)
         
@@ -52,6 +53,7 @@ class ModesDb{
         let db = SQLiteDB.shared
         db.open()
         let data = db.query(sql:"SELECT * FROM GUIDES WHERE audience LIKE '%" + audience + "%'")
+        //let data = db.query(sql:"SELECT * FROM GUIDES WHERE audience LIKE '%" + audience + "%' ORDER BY RANDOM() LIMIT 4")
         //let row = data[0]
         //print(row)
         

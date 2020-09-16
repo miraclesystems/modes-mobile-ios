@@ -69,14 +69,18 @@ class Benefits_ViewAll_TableDataSource: NSObject, UITableViewDataSource, UITable
     
     
         
-        
+        /*
         let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
         
         vc.selectedBenefit = benefit.Benefit
         parentVc?.present(vc, animated: true)
-    
-       // parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
+        */
+        
+        parentVc?.parentVc?.vc3?.loadBenefit()
+        parentVc?.parentVc?.showOverlay(view: (parentVc?.parentVc?.DetailsBenefits)!)
+        
+
         
     }
     

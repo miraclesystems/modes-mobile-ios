@@ -68,6 +68,16 @@ class BenefitsController: UIViewController {
     
     
     func showOverlay(view:UIView){
+        
+        //Benefits by Category
+        if(view == BenefitsTableView){
+            lblBenefitsHeader.text = self.viewModel?.selectedCategory
+        }
+        
+        if(view == DetailsBenefits){
+            print("showing Details Benefits on MainVC")
+        }
+        
         let seconds = 0.1
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             let viewToAnimate2 = view

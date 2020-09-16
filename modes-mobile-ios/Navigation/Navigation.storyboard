@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -175,7 +175,7 @@
                                                     <action selector="btnByCat_Touched:" destination="VNW-vF-bye" eventType="touchUpInside" id="g8J-W9-U7E"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="millife_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="YWx-2P-H0q">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefits_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="YWx-2P-H0q">
                                                 <rect key="frame" x="69.666666666666671" y="24" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="Kyc-qf-h04"/>
@@ -281,7 +281,7 @@
                                             <constraint firstAttribute="height" constant="52" id="6iq-qB-rXu"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING &amp; HOUSING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UN-ym-JfQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING &amp; HOUSING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7UN-ym-JfQ">
                                         <rect key="frame" x="80" y="52" width="271" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="pNZ-qw-qEP"/>
@@ -1783,25 +1783,25 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
-                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
                                         <state key="normal" image="Image"/>
                                         <connections>
                                             <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
-                                        <rect key="frame" x="12" y="224" width="351" height="68"/>
+                                        <rect key="frame" x="12" y="224" width="351" height="136"/>
                                         <state key="normal" image="button_call_options"/>
                                         <connections>
                                             <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
-                                        <rect key="frame" x="12" y="287" width="351" height="66"/>
+                                        <rect key="frame" x="12" y="287" width="351" height="132"/>
                                         <state key="normal" image="button_subscribe"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
-                                        <rect key="frame" x="12" y="344" width="351" height="72"/>
+                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
                                             <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
@@ -1814,7 +1814,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48.666666666666657" y="416" width="34" height="34"/>
+                                        <rect key="frame" x="48.666666666666657" y="488" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="Hsy-ma-1nt"/>
                                             <constraint firstAttribute="height" constant="34" id="dGT-83-RV3"/>
@@ -1825,21 +1825,21 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="109.66666666666667" y="416" width="34.000000000000014" height="34"/>
+                                        <rect key="frame" x="109.66666666666667" y="488" width="34.000000000000014" height="34"/>
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="170.66666666666666" y="416" width="34" height="34.333333333333314"/>
+                                        <rect key="frame" x="170.66666666666666" y="488" width="34" height="34.333333333333371"/>
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="292.66666666666669" y="416" width="34" height="34.333333333333314"/>
+                                        <rect key="frame" x="292.66666666666669" y="488" width="34" height="34.333333333333371"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
@@ -1856,7 +1856,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="231.66666666666666" y="416" width="33.999999999999972" height="34.333333333333314"/>
+                                        <rect key="frame" x="231.66666666666666" y="488" width="33.999999999999972" height="34.333333333333371"/>
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
@@ -2002,14 +2002,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-JY-nfF">
-                                                        <rect key="frame" x="30" y="120" width="325" height="70.666666666666686"/>
+                                                        <rect key="frame" x="30" y="120" width="325" height="56"/>
                                                         <string key="text">The My Military OneSource app was developed to deliver fast, 24/7 access to a world of resources and support available for service members, military spouses, survivors and other members of the military community. </string>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d73-pM-f6z">
-                                                        <rect key="frame" x="30" y="282" width="300" height="168"/>
+                                                        <rect key="frame" x="30" y="267.33333333333331" width="300" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="168" id="im5-3Y-rdl"/>
                                                             <constraint firstAttribute="width" constant="300" id="la3-0u-l0j"/>
@@ -2020,14 +2020,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onesource" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Nt-XqX">
-                                                        <rect key="frame" x="30" y="223" width="101" height="24"/>
+                                                        <rect key="frame" x="30" y="208.33333333333331" width="101" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="Nqz-Be-a7t"/>
                                                             <constraint firstAttribute="width" constant="101" id="qKe-N9-T81"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
-                                                        <rect key="frame" x="30" y="257" width="182" height="17"/>
+                                                        <rect key="frame" x="30" y="242.33333333333331" width="182" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="182" id="WyE-n2-gMe"/>
                                                             <constraint firstAttribute="height" constant="17" id="uyO-AG-bWe"/>
@@ -2037,7 +2037,7 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
-                                                        <rect key="frame" x="30" y="476" width="142" height="53"/>
+                                                        <rect key="frame" x="30" y="461.33333333333337" width="142" height="53"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="53" id="Pr4-ri-ctE"/>
                                                             <constraint firstAttribute="width" constant="142" id="xEx-jY-oin"/>
@@ -2634,7 +2634,7 @@ you with today?</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Y2-wE-gDL" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2535.3333333333335"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2538.3333333333335"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTs-aZ-Gs8">
                                                 <rect key="frame" x="20" y="8" width="295" height="20"/>
@@ -2659,10 +2659,10 @@ you with today?</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ4-Cc-OSn" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="44" width="375" height="547.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="44" width="375" height="550.33333333333337"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="R7o-Fw-7vV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="547.33333333333337"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="550.33333333333337"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtE-qX-Ez6">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
@@ -2685,20 +2685,20 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="170" id="x0P-Ht-Qlr"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moving Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3D9-O6-oJr">
-                                                        <rect key="frame" x="20" y="266" width="335" height="34"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moving Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3D9-O6-oJr">
+                                                        <rect key="frame" x="20" y="266" width="335" height="40"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                         </accessibility>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="34" id="hrA-h8-AZE"/>
+                                                            <constraint firstAttribute="height" constant="40" id="hrA-h8-AZE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ra-zz-cRZ">
-                                                        <rect key="frame" x="20" y="313" width="335" height="217.33333333333337"/>
+                                                        <rect key="frame" x="20" y="316" width="335" height="217.33333333333337"/>
                                                         <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit id gravida nulla congue a lectus. Nulla quisque orci nunc orci nullam duis arcu volutpat. Facilisi massa mattis at dui. Risus eget justo, sed viverra tortor et. \n  • Etiam libero amet, eu congue.    • Pellentesque aliquam nisi viverra et.      • Diam amet, nulla egestas justo est      commodo eget nunc. \nEnim mattis at amet, a vitae dictum posuere. Non amet, in fringilla varius sagittis viverra pellentesque. Nec at ac lorem massa. Velit et duis placerat quis. Adipiscing sed egestas neque suscipit sagittis vel tristique ultrices. Tortor at aliquam id gravida.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
@@ -2721,7 +2721,7 @@ Military</string>
                                                     <constraint firstAttribute="bottom" secondItem="4Ra-zz-cRZ" secondAttribute="bottom" constant="17" id="Tll-P3-FG0"/>
                                                     <constraint firstItem="3D9-O6-oJr" firstAttribute="leading" secondItem="zQ4-Cc-OSn" secondAttribute="leading" constant="20" id="UA6-8W-qfA"/>
                                                     <constraint firstItem="3D9-O6-oJr" firstAttribute="top" secondItem="Fnu-2b-vHD" secondAttribute="bottom" constant="10" id="ah2-X2-Pch"/>
-                                                    <constraint firstItem="4Ra-zz-cRZ" firstAttribute="top" secondItem="3D9-O6-oJr" secondAttribute="bottom" constant="13" id="dIY-3O-ndC"/>
+                                                    <constraint firstItem="4Ra-zz-cRZ" firstAttribute="top" secondItem="3D9-O6-oJr" secondAttribute="bottom" constant="10" id="dIY-3O-ndC"/>
                                                     <constraint firstAttribute="trailing" secondItem="Fnu-2b-vHD" secondAttribute="trailing" constant="20" id="e1a-3o-dpv"/>
                                                     <constraint firstItem="Fnu-2b-vHD" firstAttribute="leading" secondItem="zQ4-Cc-OSn" secondAttribute="leading" constant="20" id="fKy-tN-dOw"/>
                                                     <constraint firstItem="Fnu-2b-vHD" firstAttribute="top" secondItem="MtE-qX-Ez6" secondAttribute="bottom" constant="6" id="lIL-CK-CYD"/>
@@ -2736,7 +2736,7 @@ Military</string>
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGw-Lm-V55" userLabel="Articles">
-                                                <rect key="frame" x="0.0" y="611.33333333333337" width="375" height="480.00000000000011"/>
+                                                <rect key="frame" x="0.0" y="614.33333333333337" width="375" height="480.00000000000011"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="C00-Sp-PKo">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="448"/>
@@ -2748,10 +2748,10 @@ Military</string>
                                                             <constraint firstAttribute="height" constant="24" id="wjJ-u7-poh"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
-                                                        <rect key="frame" x="52" y="12.000000000000002" width="303" height="21.666666666666671"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVING ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Jq-xXT">
+                                                        <rect key="frame" x="52" y="2" width="303" height="36"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hOm-nV-Lho"/>
+                                                            <constraint firstAttribute="height" constant="36" id="hOm-nV-Lho"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -2785,7 +2785,7 @@ Military</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="FHd-eM-8nC" firstAttribute="top" secondItem="1rR-1q-tZY" secondAttribute="bottom" constant="10" id="2fc-H0-nPj"/>
-                                                    <constraint firstItem="KHY-Jq-xXT" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="12" id="3l3-d0-wwv"/>
+                                                    <constraint firstItem="KHY-Jq-xXT" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="2" id="3l3-d0-wwv"/>
                                                     <constraint firstItem="1rR-1q-tZY" firstAttribute="leading" secondItem="XGw-Lm-V55" secondAttribute="leading" id="7Sj-k1-ZeB"/>
                                                     <constraint firstItem="3PU-FO-vqc" firstAttribute="top" secondItem="XGw-Lm-V55" secondAttribute="top" constant="8" id="BYf-5s-F0F"/>
                                                     <constraint firstAttribute="trailing" secondItem="1rR-1q-tZY" secondAttribute="trailing" id="CKn-ae-isY"/>
@@ -2802,7 +2802,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-b6-pDz" userLabel="Benefits">
-                                                <rect key="frame" x="0.0" y="1099.3333333333333" width="375" height="440"/>
+                                                <rect key="frame" x="0.0" y="1102.3333333333333" width="375" height="440"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-dE-nKc">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="408"/>
@@ -2870,7 +2870,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Lj-Wu6" userLabel="Websites">
-                                                <rect key="frame" x="0.0" y="1547.3333333333333" width="375" height="198"/>
+                                                <rect key="frame" x="0.0" y="1550.3333333333333" width="375" height="198"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="jn9-Ur-124">
                                                         <rect key="frame" x="0.0" y="32" width="375" height="166"/>
@@ -2919,7 +2919,7 @@ Military</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opx-sW-PSr" userLabel="Connect">
-                                                <rect key="frame" x="0.0" y="1775.333333333333" width="375" height="750"/>
+                                                <rect key="frame" x="0.0" y="1778.333333333333" width="375" height="750"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-mj-egT">
                                                         <rect key="frame" x="20" y="8" width="20" height="20"/>
@@ -3237,7 +3237,7 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
@@ -3264,12 +3264,12 @@ OneSource consultant</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="80" width="375" height="800"/>
+                                                <rect key="frame" x="0.0" y="60" width="375" height="600"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="1di-uJ-Bg1"/>
@@ -3280,10 +3280,7 @@ OneSource consultant</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-ao-x62">
-                                                        <rect key="frame" x="20" y="100" width="335" height="300"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="300" id="rIc-VZ-pdU"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="20" y="100" width="335" height="288"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3305,10 +3302,11 @@ OneSource consultant</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="15j-WV-kcg" secondAttribute="bottom" constant="150" id="17v-fY-cUd"/>
                                                     <constraint firstItem="15j-WV-kcg" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="1kh-lu-Gxr"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="4rK-Ic-aF1"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="800" id="7YY-zV-NcN"/>
-                                                    <constraint firstItem="15j-WV-kcg" firstAttribute="top" secondItem="MI3-ao-x62" secondAttribute="bottom" constant="8" id="7l9-KU-FMa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="7YY-zV-NcN"/>
+                                                    <constraint firstItem="15j-WV-kcg" firstAttribute="top" secondItem="MI3-ao-x62" secondAttribute="bottom" constant="20" id="7l9-KU-FMa"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="top" secondItem="wGf-Rl-UIe" secondAttribute="top" id="DCt-xc-zoA"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="Fkb-pS-08g"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="top" secondItem="eHL-hN-4wd" secondAttribute="bottom" constant="20" id="i2s-hl-a6N"/>
@@ -3327,7 +3325,7 @@ OneSource consultant</string>
                                             <constraint firstAttribute="trailing" secondItem="dPM-8K-REc" secondAttribute="trailing" constant="20" id="DYA-r6-fOy"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="4" id="V0S-oS-lmX"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" constant="10" id="V4E-6u-0Rg"/>
-                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="80" id="Ywg-Ps-vdM"/>
+                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="60" id="Ywg-Ps-vdM"/>
                                             <constraint firstAttribute="trailing" secondItem="wGf-Rl-UIe" secondAttribute="trailing" id="l8b-Ig-C8b"/>
                                             <constraint firstItem="dPM-8K-REc" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="25" id="ulC-a9-J3a"/>
                                         </constraints>
@@ -3535,9 +3533,6 @@ SETTINGS</string>
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -3589,4 +3584,7 @@ SETTINGS</string>
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
 </document>
