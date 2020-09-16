@@ -143,14 +143,20 @@ class GuidesViewModel{
     }
     */
 
-    func getAllGuides()->[String]{
+    func getAllGuides()->[Guide]{
 
-        var list = [String]()
+        var list = [Guide]()
         var results = ModesDb.shared.getAllGuiides()
 
         
         for item in results{
-            list.append(item["Guide"] as! String)
+            
+            self.selectedGuide = item["Guide"] as! String
+            //list.append(item["Guide"] as! String)
+            
+            
+            var guide =  getGuide()
+            list.append(guide)
             
         }
 

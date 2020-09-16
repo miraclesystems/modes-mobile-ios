@@ -34,7 +34,7 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         
 
        
-        cell.guideImage.image = UIImage(named: "guide_placeholder")
+        //cell.guideImage.image = UIImage(named: "guide_placeholder")
 
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
@@ -44,7 +44,10 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         var imageName = parentVc?.guide?.listArticles?[indexPath.row]?.image
         
         if((imageName) != nil){
-            cell.imageView?.image = UIImage(named: imageName! + "-200x200.jpg", in: nil, compatibleWith: nil)
+            cell.guideImage?.image = UIImage(named: imageName! + "-200x200.jpg", in: nil, compatibleWith: nil)
+            cell.guideImage.contentMode = UIImageView.ContentMode.scaleAspectFill
+            cell.guideImage.clipsToBounds = true
+            cell.guideImage.layer.masksToBounds = true
         }
         
         //cell.label.text = myLabels[indexPath.row]

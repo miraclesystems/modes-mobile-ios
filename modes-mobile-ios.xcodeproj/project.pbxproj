@@ -35,6 +35,115 @@
 		14413CD72505381700E9FA72 /* BenefitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD62505381700E9FA72 /* BenefitsModel.swift */; };
 		14413CD92505382C00E9FA72 /* BenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */; };
 		14413CDB2506A24F00E9FA72 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14413CDA2506A24F00E9FA72 /* WebKit.framework */; };
+		1458052025127FAE0093DB72 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804C925127FA50093DB72 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */; };
+		1458052125127FAE0093DB72 /* outdoor-concert-d4200315-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CA25127FA50093DB72 /* outdoor-concert-d4200315-200x200.jpg */; };
+		1458052225127FAE0093DB72 /* MWR-affordable-fun-D2239112-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CB25127FA50093DB72 /* MWR-affordable-fun-D2239112-200x200.jpg */; };
+		1458052325127FAE0093DB72 /* Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CC25127FA60093DB72 /* Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg */; };
+		1458052425127FAE0093DB72 /* family-advocacy-program-1-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CD25127FA60093DB72 /* family-advocacy-program-1-200x200.jpg */; };
+		1458052525127FAE0093DB72 /* covid-19-military-male-jogging-outside-md2002117892-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CE25127FA60093DB72 /* covid-19-military-male-jogging-outside-md2002117892-200x200.jpg */; };
+		1458052625127FAE0093DB72 /* Moving_OCONUS_Service Family-D935670-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804CF25127FA60093DB72 /* Moving_OCONUS_Service Family-D935670-200x200.jpg */; };
+		1458052725127FAE0093DB72 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D025127FA60093DB72 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */; };
+		1458052825127FAE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D125127FA60093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg */; };
+		1458052925127FAE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D225127FA60093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg */; };
+		1458052A25127FAE0093DB72 /* Commissary On-site Sales D1942052-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D325127FA60093DB72 /* Commissary On-site Sales D1942052-200x200.jpg */; };
+		1458052B25127FAE0093DB72 /* group-of-military-spouses-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D425127FA70093DB72 /* group-of-military-spouses-200x200.jpg */; };
+		1458052C25127FAE0093DB72 /* Recreation Programs and Eligibility D2515122-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D525127FA70093DB72 /* Recreation Programs and Eligibility D2515122-200x200.jpg */; };
+		1458052D25127FAE0093DB72 /* Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D625127FA70093DB72 /* Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg */; };
+		1458052E25127FAE0093DB72 /* How to Get Your Household Goods Overseas-D2632780-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D725127FA70093DB72 /* How to Get Your Household Goods Overseas-D2632780-200x200.jpg */; };
+		1458052F25127FAE0093DB72 /* Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D825127FA70093DB72 /* Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg */; };
+		1458053025127FAE0093DB72 /* group-talking-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804D925127FA70093DB72 /* group-talking-200x200.jpg */; };
+		1458053125127FAE0093DB72 /* american-forces-travel-1-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DA25127FA70093DB72 /* american-forces-travel-1-200x200.jpg */; };
+		1458053225127FAE0093DB72 /* MOS4_Support After the Death D3061396-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DB25127FA70093DB72 /* MOS4_Support After the Death D3061396-200x200.jpg */; };
+		1458053325127FAE0093DB72 /* How to Write a Resume-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DC25127FA70093DB72 /* How to Write a Resume-200x200.jpg */; };
+		1458053425127FAE0093DB72 /* Overview of Casualty Assistance - T5246657174-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DD25127FA70093DB72 /* Overview of Casualty Assistance - T5246657174-200x200.jpg */; };
+		1458053525127FAE0093DB72 /* Personal Financial Management Counseling Options-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DE25127FA70093DB72 /* Personal Financial Management Counseling Options-200x200.jpg */; };
+		1458053625127FAE0093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804DF25127FA80093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg */; };
+		1458053725127FAE0093DB72 /* The EFMP - D2510599-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E025127FA80093DB72 /* The EFMP - D2510599-200x200.jpg */; };
+		1458053825127FAE0093DB72 /* Transferring Your Professional License-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E125127FA80093DB72 /* Transferring Your Professional License-200x200.jpg */; };
+		1458053925127FAE0093DB72 /* service-member-teaching-class-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E225127FA80093DB72 /* service-member-teaching-class-200x200.jpg */; };
+		1458053A25127FAE0093DB72 /* smiling-military-couple-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E325127FA80093DB72 /* smiling-military-couple-200x200.jpg */; };
+		1458053B25127FAE0093DB72 /* service-members-in-field-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E425127FA80093DB72 /* service-members-in-field-200x200.jpg */; };
+		1458053C25127FAE0093DB72 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E525127FA80093DB72 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */; };
+		1458053D25127FAE0093DB72 /* mother-reading-to-child-d6137220-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E625127FA80093DB72 /* mother-reading-to-child-d6137220-200x200.jpg */; };
+		1458053E25127FAE0093DB72 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E725127FA80093DB72 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */; };
+		1458053F25127FAE0093DB72 /* happy-boy-on-bike-g170667-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E825127FA80093DB72 /* happy-boy-on-bike-g170667-200x200.jpg */; };
+		1458054025127FAE0093DB72 /* voting-while-youre-away-from-home-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804E925127FA90093DB72 /* voting-while-youre-away-from-home-200x200.jpg */; };
+		1458054125127FAE0093DB72 /* national-guard-salutes-f4922825665-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804EA25127FA90093DB72 /* national-guard-salutes-f4922825665-200x200.jpg */; };
+		1458054225127FAE0093DB72 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804EB25127FA90093DB72 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */; };
+		1458054325127FAE0093DB72 /* Commissaries and Exchanges-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804EC25127FA90093DB72 /* Commissaries and Exchanges-200x200.jpg */; };
+		1458054425127FAE0093DB72 /* 12 Ways to Land That Civilian Job-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804ED25127FA90093DB72 /* 12 Ways to Land That Civilian Job-200x200.jpg */; };
+		1458054525127FAE0093DB72 /* service-member-with-daughter-d4230835-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804EE25127FA90093DB72 /* service-member-with-daughter-d4230835-200x200.jpg */; };
+		1458054625127FAE0093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804EF25127FA90093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */; };
+		1458054725127FAE0093DB72 /* Service member and woman in wheelchair dancing-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F025127FA90093DB72 /* Service member and woman in wheelchair dancing-200x200.jpg */; };
+		1458054825127FAE0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F125127FA90093DB72 /* Service-Members-Discuss-Around-Table-d4417836-200x200.jpg */; };
+		1458054925127FAE0093DB72 /* 14 Ways F27003551001-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F225127FAA0093DB72 /* 14 Ways F27003551001-200x200.jpg */; };
+		1458054A25127FAE0093DB72 /* jets-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F325127FAA0093DB72 /* jets-200x200.jpg */; };
+		1458054B25127FAE0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F425127FAA0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */; };
+		1458054C25127FAE0093DB72 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F525127FAA0093DB72 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */; };
+		1458054D25127FAE0093DB72 /* Domestic-Abuse-Victims-T164190471-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F625127FAA0093DB72 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */; };
+		1458054E25127FAE0093DB72 /* coronavirus-img-sq-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F725127FAA0093DB72 /* coronavirus-img-sq-200x200.jpg */; };
+		1458054F25127FAE0093DB72 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F825127FAA0093DB72 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */; };
+		1458055025127FAE0093DB72 /* Soldier kisses wife-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804F925127FAA0093DB72 /* Soldier kisses wife-200x200.jpg */; };
+		1458055125127FAE0093DB72 /* Finding a Job Overseas as a Military Spouse-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FA25127FAA0093DB72 /* Finding a Job Overseas as a Military Spouse-200x200.jpg */; };
+		1458055225127FAE0093DB72 /* father-hugs-child-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FB25127FAA0093DB72 /* father-hugs-child-200x200.jpg */; };
+		1458055325127FAE0093DB72 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FC25127FAB0093DB72 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */; };
+		1458055425127FAE0093DB72 /* Must-Dos-for-Separating-Crop-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FD25127FAB0093DB72 /* Must-Dos-for-Separating-Crop-200x200.jpg */; };
+		1458055525127FAE0093DB72 /* MOS4_Family Fitness T514318052-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FE25127FAB0093DB72 /* MOS4_Family Fitness T514318052-200x200.jpg */; };
+		1458055625127FAE0093DB72 /* space-a-travel-tips-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 145804FF25127FAB0093DB72 /* space-a-travel-tips-200x200.jpg */; };
+		1458055725127FAE0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050025127FAB0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg */; };
+		1458055825127FAE0093DB72 /* Status of Forces D2084939-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050125127FAB0093DB72 /* Status of Forces D2084939-200x200.jpg */; };
+		1458055925127FAE0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050225127FAB0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg */; };
+		1458055A25127FAE0093DB72 /* servicemember-on-laptop-g1015450754-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050325127FAB0093DB72 /* servicemember-on-laptop-g1015450754-200x200.jpg */; };
+		1458055B25127FAE0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050425127FAB0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg */; };
+		1458055C25127FAE0093DB72 /* Family using computer and reviewing documents-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050525127FAB0093DB72 /* Family using computer and reviewing documents-200x200.jpg */; };
+		1458055D25127FAE0093DB72 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050625127FAC0093DB72 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */; };
+		1458055E25127FAE0093DB72 /* How to Successfully Communicate as a Couple - D968279-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050725127FAC0093DB72 /* How to Successfully Communicate as a Couple - D968279-200x200.jpg */; };
+		1458055F25127FAE0093DB72 /* Enjoying National Parks as a Military Family-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050825127FAC0093DB72 /* Enjoying National Parks as a Military Family-200x200.jpg */; };
+		1458056025127FAE0093DB72 /* Tax Forgiveness F7598267402-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050925127FAC0093DB72 /* Tax Forgiveness F7598267402-200x200.jpg */; };
+		1458056125127FAE0093DB72 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050A25127FAC0093DB72 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */; };
+		1458056225127FAE0093DB72 /* Stay Fit During Deployment-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050B25127FAC0093DB72 /* Stay Fit During Deployment-200x200.jpg */; };
+		1458056325127FAE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050C25127FAC0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-200x200.jpg */; };
+		1458056425127FAE0093DB72 /* Sesame Street for Military Families-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050D25127FAC0093DB72 /* Sesame Street for Military Families-200x200.jpg */; };
+		1458056525127FAE0093DB72 /* two-women-talking-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050E25127FAC0093DB72 /* two-women-talking-200x200.jpg */; };
+		1458056625127FAE0093DB72 /* Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458050F25127FAD0093DB72 /* Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg */; };
+		1458056725127FAE0093DB72 /* couple-looking-out-over-bay-g 979457898-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051025127FAD0093DB72 /* couple-looking-out-over-bay-g 979457898-200x200.jpg */; };
+		1458056825127FAE0093DB72 /* Vacation First Class D550919-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051125127FAD0093DB72 /* Vacation First Class D550919-200x200.jpg */; };
+		1458056925127FAE0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051225127FAD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg */; };
+		1458056A25127FAE0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051325127FAD0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg */; };
+		1458056B25127FAE0093DB72 /* The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051425127FAD0093DB72 /* The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg */; };
+		1458056C25127FAE0093DB72 /* End-Abusive-Relationship-T479704765-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051525127FAD0093DB72 /* End-Abusive-Relationship-T479704765-200x200.jpg */; };
+		1458056D25127FAE0093DB72 /* Military OneSource call center professional-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051625127FAD0093DB72 /* Military OneSource call center professional-200x200.jpg */; };
+		1458056E25127FAE0093DB72 /* PCS The Basics About Permanent Change of Station-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051725127FAD0093DB72 /* PCS The Basics About Permanent Change of Station-200x200.jpg */; };
+		1458056F25127FAE0093DB72 /* Relationship Tool Helps You Love Every Day-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051825127FAD0093DB72 /* Relationship Tool Helps You Love Every Day-200x200.jpg */; };
+		1458057025127FAE0093DB72 /* service-member-horizon-working-dog-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051925127FAE0093DB72 /* service-member-horizon-working-dog-200x200.jpg */; };
+		1458057125127FAE0093DB72 /* two-girls-cooking-df2000893480-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051A25127FAE0093DB72 /* two-girls-cooking-df2000893480-200x200.jpg */; };
+		1458057225127FAE0093DB72 /* mother-child-in-kitchen-T843972432-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051B25127FAE0093DB72 /* mother-child-in-kitchen-T843972432-200x200.jpg */; };
+		1458057325127FAE0093DB72 /* service-members-learning-about-programs-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051C25127FAE0093DB72 /* service-members-learning-about-programs-200x200.jpg */; };
+		1458057425127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051D25127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg */; };
+		1458057525127FAE0093DB72 /* GoldStarOnBlueShirt-3-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051E25127FAE0093DB72 /* GoldStarOnBlueShirt-3-200x200.jpg */; };
+		1458057625127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458051F25127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg */; };
+		1458058E25127FFE0093DB72 /* 12 Ways to Land That Civilian Job-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057925127FFC0093DB72 /* 12 Ways to Land That Civilian Job-1000x500.jpg */; };
+		1458058F25127FFE0093DB72 /* mother-child-in-kitchen-T843972432-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057A25127FFC0093DB72 /* mother-child-in-kitchen-T843972432-1000x500.jpg */; };
+		1458059025127FFE0093DB72 /* group-of-military-spouses-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057B25127FFC0093DB72 /* group-of-military-spouses-1000x500.jpg */; };
+		1458059125127FFE0093DB72 /* Overview of Casualty Assistance - T5246657174-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057C25127FFC0093DB72 /* Overview of Casualty Assistance - T5246657174-1000x500.jpg */; };
+		1458059225127FFE0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057D25127FFD0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */; };
+		1458059325127FFE0093DB72 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057E25127FFD0093DB72 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */; };
+		1458059425127FFE0093DB72 /* smiling-military-couple-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458057F25127FFD0093DB72 /* smiling-military-couple-1000x500.jpg */; };
+		1458059525127FFE0093DB72 /* Vacation First Class D550919-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058025127FFD0093DB72 /* Vacation First Class D550919-1000x500.jpg */; };
+		1458059625127FFE0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058125127FFD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */; };
+		1458059725127FFE0093DB72 /* Enjoying National Parks as a Military Family-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058225127FFD0093DB72 /* Enjoying National Parks as a Military Family-1000x500.jpg */; };
+		1458059825127FFE0093DB72 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058325127FFD0093DB72 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */; };
+		1458059925127FFE0093DB72 /* PCS The Basics About Permanent Change of Station-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058425127FFD0093DB72 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */; };
+		1458059A25127FFE0093DB72 /* Tax Forgiveness F7598267402-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058525127FFD0093DB72 /* Tax Forgiveness F7598267402-1000x500.jpg */; };
+		1458059B25127FFE0093DB72 /* service-members-in-field-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058625127FFE0093DB72 /* service-members-in-field-1000x500.jpg */; };
+		1458059C25127FFE0093DB72 /* Family using computer and reviewing documents-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058725127FFE0093DB72 /* Family using computer and reviewing documents-1000x500.jpg */; };
+		1458059D25127FFE0093DB72 /* outdoor-concert-d4200315-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058825127FFE0093DB72 /* outdoor-concert-d4200315-1000x500.jpg */; };
+		1458059E25127FFE0093DB72 /* The EFMP - D2510599-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058925127FFE0093DB72 /* The EFMP - D2510599-1000x500.jpg */; };
+		1458059F25127FFE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058A25127FFE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg */; };
+		145805A025127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */; };
+		145805A125127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */; };
+		145805A225127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */; };
+		145805A4251280C10093DB72 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 145805A3251280C10093DB72 /* modes.sqlite3 */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -48,16 +157,6 @@
 		1487F5D124E5EA9400C13817 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F5D024E5EA9400C13817 /* BaseModel.swift */; };
 		1487F5D524E5EB0500C13817 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F5D424E5EB0500C13817 /* BaseViewController.swift */; };
 		1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1487F5D624E5ED1F00C13817 /* Base.storyboard */; };
-		149B927D25101F0900E19445 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 149B927C25101F0900E19445 /* modes.sqlite3 */; };
-		149B92922510262900E19445 /* Tax Forgiveness F7598267402-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B92802510262800E19445 /* Tax Forgiveness F7598267402-1000x500.jpg */; };
-		149B92932510262900E19445 /* Family using computer and reviewing documents-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B92812510262800E19445 /* Family using computer and reviewing documents-1000x500.jpg */; };
-		149B92992510262900E19445 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B92872510262800E19445 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */; };
-		149B929A2510262900E19445 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B92882510262800E19445 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */; };
-		149B929C2510262900E19445 /* mother-child-in-kitchen-T843972432-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B928A2510262900E19445 /* mother-child-in-kitchen-T843972432-1000x500.jpg */; };
-		149B929D2510262900E19445 /* The EFMP - D2510599-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B928B2510262900E19445 /* The EFMP - D2510599-1000x500.jpg */; };
-		149B929E2510262900E19445 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B928C2510262900E19445 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */; };
-		149B929F2510262900E19445 /* service-members-in-field-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B928D2510262900E19445 /* service-members-in-field-1000x500.jpg */; };
-		149B92A12510262900E19445 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149B928F2510262900E19445 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */; };
 		14A901BB24F1B96E00E2B4CA /* IQKeyboardManagerSwift.h in Sources */ = {isa = PBXBuildFile; fileRef = 14A901B824F1B96E00E2B4CA /* IQKeyboardManagerSwift.h */; };
 		14A901BC24F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901B924F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift */; };
 		14A901BD24F1B96E00E2B4CA /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A901BA24F1B96E00E2B4CA /* IQKeyboardManager.swift */; };
@@ -81,43 +180,6 @@
 		14C3233924FD7C0B00065579 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233624FD7C0B00065579 /* SQLiteBase.swift */; };
 		14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233A24FD7C2800065579 /* CloudDB.swift */; };
 		14D5D5F9250EE51C0072A0F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */; };
-		14D5D633250FC7830072A0F9 /* Recreation Programs and Eligibility D2515122-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D60E250FC77F0072A0F9 /* Recreation Programs and Eligibility D2515122-200x200.jpg */; };
-		14D5D634250FC7830072A0F9 /* two-girls-cooking-df2000893480-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D60F250FC77F0072A0F9 /* two-girls-cooking-df2000893480-200x200.jpg */; };
-		14D5D635250FC7830072A0F9 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D610250FC77F0072A0F9 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */; };
-		14D5D636250FC7830072A0F9 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D611250FC77F0072A0F9 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */; };
-		14D5D637250FC7830072A0F9 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D612250FC7800072A0F9 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */; };
-		14D5D638250FC7830072A0F9 /* Must-Dos-for-Separating-Crop-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D613250FC7800072A0F9 /* Must-Dos-for-Separating-Crop-200x200.jpg */; };
-		14D5D639250FC7830072A0F9 /* group-of-military-spouses-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D614250FC7800072A0F9 /* group-of-military-spouses-200x200.jpg */; };
-		14D5D63A250FC7830072A0F9 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D615250FC7800072A0F9 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */; };
-		14D5D63B250FC7830072A0F9 /* 12 Ways to Land That Civilian Job-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D616250FC7800072A0F9 /* 12 Ways to Land That Civilian Job-200x200.jpg */; };
-		14D5D63C250FC7830072A0F9 /* family-advocacy-program-1-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D617250FC7800072A0F9 /* family-advocacy-program-1-200x200.jpg */; };
-		14D5D63D250FC7830072A0F9 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D618250FC7800072A0F9 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */; };
-		14D5D63E250FC7830072A0F9 /* End-Abusive-Relationship-T479704765-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D619250FC7800072A0F9 /* End-Abusive-Relationship-T479704765-200x200.jpg */; };
-		14D5D63F250FC7830072A0F9 /* mother-child-in-kitchen-T843972432-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61A250FC7800072A0F9 /* mother-child-in-kitchen-T843972432-200x200.jpg */; };
-		14D5D640250FC7830072A0F9 /* mother-reading-to-child-d6137220-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61B250FC7800072A0F9 /* mother-reading-to-child-d6137220-200x200.jpg */; };
-		14D5D641250FC7830072A0F9 /* outdoor-concert-d4200315-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61C250FC7810072A0F9 /* outdoor-concert-d4200315-200x200.jpg */; };
-		14D5D642250FC7830072A0F9 /* MWR-affordable-fun-D2239112-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61D250FC7810072A0F9 /* MWR-affordable-fun-D2239112-200x200.jpg */; };
-		14D5D643250FC7830072A0F9 /* How to Write a Resume-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61E250FC7810072A0F9 /* How to Write a Resume-200x200.jpg */; };
-		14D5D644250FC7830072A0F9 /* Transferring Your Professional License-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D61F250FC7810072A0F9 /* Transferring Your Professional License-200x200.jpg */; };
-		14D5D645250FC7830072A0F9 /* WhatYouNeedtoKnow - D2402051-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D620250FC7810072A0F9 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */; };
-		14D5D646250FC7830072A0F9 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D621250FC7810072A0F9 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */; };
-		14D5D647250FC7830072A0F9 /* american-forces-travel-1-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D622250FC7810072A0F9 /* american-forces-travel-1-200x200.jpg */; };
-		14D5D648250FC7830072A0F9 /* MOS4_Family Fitness T514318052-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D623250FC7810072A0F9 /* MOS4_Family Fitness T514318052-200x200.jpg */; };
-		14D5D649250FC7830072A0F9 /* Vacation First Class D550919-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D624250FC7810072A0F9 /* Vacation First Class D550919-200x200.jpg */; };
-		14D5D64A250FC7830072A0F9 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D625250FC7810072A0F9 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */; };
-		14D5D64B250FC7830072A0F9 /* servicemember-on-laptop-g1015450754-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D626250FC7810072A0F9 /* servicemember-on-laptop-g1015450754-200x200.jpg */; };
-		14D5D64C250FC7830072A0F9 /* smiling-military-couple-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D627250FC7820072A0F9 /* smiling-military-couple-200x200.jpg */; };
-		14D5D64D250FC7830072A0F9 /* space-a-travel-tips-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D628250FC7820072A0F9 /* space-a-travel-tips-200x200.jpg */; };
-		14D5D64E250FC7830072A0F9 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D629250FC7820072A0F9 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */; };
-		14D5D64F250FC7830072A0F9 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62A250FC7820072A0F9 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */; };
-		14D5D650250FC7830072A0F9 /* Enjoying National Parks as a Military Family-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62B250FC7820072A0F9 /* Enjoying National Parks as a Military Family-200x200.jpg */; };
-		14D5D651250FC7830072A0F9 /* Domestic-Abuse-Victims-T164190471-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62C250FC7820072A0F9 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */; };
-		14D5D652250FC7830072A0F9 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62D250FC7820072A0F9 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */; };
-		14D5D653250FC7830072A0F9 /* service-member-horizon-working-dog-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62E250FC7820072A0F9 /* service-member-horizon-working-dog-200x200.jpg */; };
-		14D5D654250FC7830072A0F9 /* Status of Forces D2084939-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D62F250FC7820072A0F9 /* Status of Forces D2084939-200x200.jpg */; };
-		14D5D655250FC7830072A0F9 /* service-members-learning-about-programs-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D630250FC7820072A0F9 /* service-members-learning-about-programs-200x200.jpg */; };
-		14D5D656250FC7830072A0F9 /* PCS The Basics About Permanent Change of Station-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D631250FC7830072A0F9 /* PCS The Basics About Permanent Change of Station-200x200.jpg */; };
-		14D5D657250FC7830072A0F9 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D632250FC7830072A0F9 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */; };
 		8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363D98B25027C15005ADB46 /* ConnectViewController.swift */; };
 		838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
@@ -202,15 +264,6 @@
 		A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */; };
 		A97BC5FC25038C9500312D9D /* Benefits_ByCat_TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */; };
 		A987EDDF2510C8E80027A7D4 /* ML_ByCat_TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9689316250F84C2007FD351 /* ML_ByCat_TableCell.xib */; };
-		A987EDE92510C9DE0027A7D4 /* outdoor-concert-d4200315-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE02510C9DD0027A7D4 /* outdoor-concert-d4200315-1000x500.jpg */; };
-		A987EDEA2510C9DE0027A7D4 /* group-of-military-spouses-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE12510C9DD0027A7D4 /* group-of-military-spouses-1000x500.jpg */; };
-		A987EDEB2510C9DE0027A7D4 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE22510C9DD0027A7D4 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */; };
-		A987EDEC2510C9DE0027A7D4 /* PCS The Basics About Permanent Change of Station-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE32510C9DE0027A7D4 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */; };
-		A987EDED2510C9DE0027A7D4 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE42510C9DE0027A7D4 /* servicemember-on-laptop-g1015450754-1000x500.jpg */; };
-		A987EDEE2510C9DE0027A7D4 /* smiling-military-couple-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE52510C9DE0027A7D4 /* smiling-military-couple-1000x500.jpg */; };
-		A987EDEF2510C9DE0027A7D4 /* Vacation First Class D550919-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE62510C9DE0027A7D4 /* Vacation First Class D550919-1000x500.jpg */; };
-		A987EDF02510C9DE0027A7D4 /* 12 Ways to Land That Civilian Job-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE72510C9DE0027A7D4 /* 12 Ways to Land That Civilian Job-1000x500.jpg */; };
-		A987EDF12510C9DE0027A7D4 /* Enjoying National Parks as a Military Family-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A987EDE82510C9DE0027A7D4 /* Enjoying National Parks as a Military Family-1000x500.jpg */; };
 		A99044482508181200B6AC26 /* RightSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99044472508181200B6AC26 /* RightSideMenuVC.swift */; };
 		A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */; };
 		A9904451250862E400B6AC26 /* Right_VertTwoCollDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */; };
@@ -287,6 +340,115 @@
 		14413CD62505381700E9FA72 /* BenefitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsModel.swift; sourceTree = "<group>"; };
 		14413CD82505382C00E9FA72 /* BenefitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsViewModel.swift; sourceTree = "<group>"; };
 		14413CDA2506A24F00E9FA72 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		145804C925127FA50093DB72 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg"; sourceTree = "<group>"; };
+		145804CA25127FA50093DB72 /* outdoor-concert-d4200315-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "outdoor-concert-d4200315-200x200.jpg"; sourceTree = "<group>"; };
+		145804CB25127FA50093DB72 /* MWR-affordable-fun-D2239112-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MWR-affordable-fun-D2239112-200x200.jpg"; sourceTree = "<group>"; };
+		145804CC25127FA60093DB72 /* Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg"; sourceTree = "<group>"; };
+		145804CD25127FA60093DB72 /* family-advocacy-program-1-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "family-advocacy-program-1-200x200.jpg"; sourceTree = "<group>"; };
+		145804CE25127FA60093DB72 /* covid-19-military-male-jogging-outside-md2002117892-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "covid-19-military-male-jogging-outside-md2002117892-200x200.jpg"; sourceTree = "<group>"; };
+		145804CF25127FA60093DB72 /* Moving_OCONUS_Service Family-D935670-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Moving_OCONUS_Service Family-D935670-200x200.jpg"; sourceTree = "<group>"; };
+		145804D025127FA60093DB72 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mflc-group-discussion-i1014182332-273023990-200x200.jpg"; sourceTree = "<group>"; };
+		145804D125127FA60093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg"; sourceTree = "<group>"; };
+		145804D225127FA60093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg"; sourceTree = "<group>"; };
+		145804D325127FA60093DB72 /* Commissary On-site Sales D1942052-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Commissary On-site Sales D1942052-200x200.jpg"; sourceTree = "<group>"; };
+		145804D425127FA70093DB72 /* group-of-military-spouses-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "group-of-military-spouses-200x200.jpg"; sourceTree = "<group>"; };
+		145804D525127FA70093DB72 /* Recreation Programs and Eligibility D2515122-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Recreation Programs and Eligibility D2515122-200x200.jpg"; sourceTree = "<group>"; };
+		145804D625127FA70093DB72 /* Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg"; sourceTree = "<group>"; };
+		145804D725127FA70093DB72 /* How to Get Your Household Goods Overseas-D2632780-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "How to Get Your Household Goods Overseas-D2632780-200x200.jpg"; sourceTree = "<group>"; };
+		145804D825127FA70093DB72 /* Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg"; sourceTree = "<group>"; };
+		145804D925127FA70093DB72 /* group-talking-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "group-talking-200x200.jpg"; sourceTree = "<group>"; };
+		145804DA25127FA70093DB72 /* american-forces-travel-1-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "american-forces-travel-1-200x200.jpg"; sourceTree = "<group>"; };
+		145804DB25127FA70093DB72 /* MOS4_Support After the Death D3061396-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_Support After the Death D3061396-200x200.jpg"; sourceTree = "<group>"; };
+		145804DC25127FA70093DB72 /* How to Write a Resume-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "How to Write a Resume-200x200.jpg"; sourceTree = "<group>"; };
+		145804DD25127FA70093DB72 /* Overview of Casualty Assistance - T5246657174-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Overview of Casualty Assistance - T5246657174-200x200.jpg"; sourceTree = "<group>"; };
+		145804DE25127FA70093DB72 /* Personal Financial Management Counseling Options-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Personal Financial Management Counseling Options-200x200.jpg"; sourceTree = "<group>"; };
+		145804DF25127FA80093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg"; sourceTree = "<group>"; };
+		145804E025127FA80093DB72 /* The EFMP - D2510599-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The EFMP - D2510599-200x200.jpg"; sourceTree = "<group>"; };
+		145804E125127FA80093DB72 /* Transferring Your Professional License-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Transferring Your Professional License-200x200.jpg"; sourceTree = "<group>"; };
+		145804E225127FA80093DB72 /* service-member-teaching-class-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-teaching-class-200x200.jpg"; sourceTree = "<group>"; };
+		145804E325127FA80093DB72 /* smiling-military-couple-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "smiling-military-couple-200x200.jpg"; sourceTree = "<group>"; };
+		145804E425127FA80093DB72 /* service-members-in-field-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-members-in-field-200x200.jpg"; sourceTree = "<group>"; };
+		145804E525127FA80093DB72 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Take Command of Your Move With These 8 Tips - D394733-200x200.jpg"; sourceTree = "<group>"; };
+		145804E625127FA80093DB72 /* mother-reading-to-child-d6137220-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-reading-to-child-d6137220-200x200.jpg"; sourceTree = "<group>"; };
+		145804E725127FA80093DB72 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg"; sourceTree = "<group>"; };
+		145804E825127FA80093DB72 /* happy-boy-on-bike-g170667-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy-boy-on-bike-g170667-200x200.jpg"; sourceTree = "<group>"; };
+		145804E925127FA90093DB72 /* voting-while-youre-away-from-home-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "voting-while-youre-away-from-home-200x200.jpg"; sourceTree = "<group>"; };
+		145804EA25127FA90093DB72 /* national-guard-salutes-f4922825665-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "national-guard-salutes-f4922825665-200x200.jpg"; sourceTree = "<group>"; };
+		145804EB25127FA90093DB72 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg"; sourceTree = "<group>"; };
+		145804EC25127FA90093DB72 /* Commissaries and Exchanges-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Commissaries and Exchanges-200x200.jpg"; sourceTree = "<group>"; };
+		145804ED25127FA90093DB72 /* 12 Ways to Land That Civilian Job-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Ways to Land That Civilian Job-200x200.jpg"; sourceTree = "<group>"; };
+		145804EE25127FA90093DB72 /* service-member-with-daughter-d4230835-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-with-daughter-d4230835-200x200.jpg"; sourceTree = "<group>"; };
+		145804EF25127FA90093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WhatYouNeedtoKnow - D2402051-200x200.jpg"; sourceTree = "<group>"; };
+		145804F025127FA90093DB72 /* Service member and woman in wheelchair dancing-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Service member and woman in wheelchair dancing-200x200.jpg"; sourceTree = "<group>"; };
+		145804F125127FA90093DB72 /* Service-Members-Discuss-Around-Table-d4417836-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Service-Members-Discuss-Around-Table-d4417836-200x200.jpg"; sourceTree = "<group>"; };
+		145804F225127FAA0093DB72 /* 14 Ways F27003551001-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "14 Ways F27003551001-200x200.jpg"; sourceTree = "<group>"; };
+		145804F325127FAA0093DB72 /* jets-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jets-200x200.jpg"; sourceTree = "<group>"; };
+		145804F425127FAA0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg"; sourceTree = "<group>"; };
+		145804F525127FAA0093DB72 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg"; sourceTree = "<group>"; };
+		145804F625127FAA0093DB72 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Domestic-Abuse-Victims-T164190471-200x200.jpg"; sourceTree = "<group>"; };
+		145804F725127FAA0093DB72 /* coronavirus-img-sq-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "coronavirus-img-sq-200x200.jpg"; sourceTree = "<group>"; };
+		145804F825127FAA0093DB72 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nine Ways to Help Your Kids Cope with Moving-200x200.jpg"; sourceTree = "<group>"; };
+		145804F925127FAA0093DB72 /* Soldier kisses wife-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Soldier kisses wife-200x200.jpg"; sourceTree = "<group>"; };
+		145804FA25127FAA0093DB72 /* Finding a Job Overseas as a Military Spouse-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Finding a Job Overseas as a Military Spouse-200x200.jpg"; sourceTree = "<group>"; };
+		145804FB25127FAA0093DB72 /* father-hugs-child-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "father-hugs-child-200x200.jpg"; sourceTree = "<group>"; };
+		145804FC25127FAB0093DB72 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg"; sourceTree = "<group>"; };
+		145804FD25127FAB0093DB72 /* Must-Dos-for-Separating-Crop-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Must-Dos-for-Separating-Crop-200x200.jpg"; sourceTree = "<group>"; };
+		145804FE25127FAB0093DB72 /* MOS4_Family Fitness T514318052-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_Family Fitness T514318052-200x200.jpg"; sourceTree = "<group>"; };
+		145804FF25127FAB0093DB72 /* space-a-travel-tips-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "space-a-travel-tips-200x200.jpg"; sourceTree = "<group>"; };
+		1458050025127FAB0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-getting-covid19-tested-d6241568-200x200.jpg"; sourceTree = "<group>"; };
+		1458050125127FAB0093DB72 /* Status of Forces D2084939-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Status of Forces D2084939-200x200.jpg"; sourceTree = "<group>"; };
+		1458050225127FAB0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Survivor Financial Planning - D1722083-200x200.jpg"; sourceTree = "<group>"; };
+		1458050325127FAB0093DB72 /* servicemember-on-laptop-g1015450754-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-200x200.jpg"; sourceTree = "<group>"; };
+		1458050425127FAB0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Teacher-working-with-special-needs-child-g891832646-200x200.jpg"; sourceTree = "<group>"; };
+		1458050525127FAB0093DB72 /* Family using computer and reviewing documents-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Family using computer and reviewing documents-200x200.jpg"; sourceTree = "<group>"; };
+		1458050625127FAC0093DB72 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg"; sourceTree = "<group>"; };
+		1458050725127FAC0093DB72 /* How to Successfully Communicate as a Couple - D968279-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "How to Successfully Communicate as a Couple - D968279-200x200.jpg"; sourceTree = "<group>"; };
+		1458050825127FAC0093DB72 /* Enjoying National Parks as a Military Family-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Enjoying National Parks as a Military Family-200x200.jpg"; sourceTree = "<group>"; };
+		1458050925127FAC0093DB72 /* Tax Forgiveness F7598267402-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tax Forgiveness F7598267402-200x200.jpg"; sourceTree = "<group>"; };
+		1458050A25127FAC0093DB72 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg"; sourceTree = "<group>"; };
+		1458050B25127FAC0093DB72 /* Stay Fit During Deployment-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Stay Fit During Deployment-200x200.jpg"; sourceTree = "<group>"; };
+		1458050C25127FAC0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "moving-men-with-protective-face-masks-a235368-v2-200x200.jpg"; sourceTree = "<group>"; };
+		1458050D25127FAC0093DB72 /* Sesame Street for Military Families-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sesame Street for Military Families-200x200.jpg"; sourceTree = "<group>"; };
+		1458050E25127FAC0093DB72 /* two-women-talking-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-women-talking-200x200.jpg"; sourceTree = "<group>"; };
+		1458050F25127FAD0093DB72 /* Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg"; sourceTree = "<group>"; };
+		1458051025127FAD0093DB72 /* couple-looking-out-over-bay-g 979457898-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "couple-looking-out-over-bay-g 979457898-200x200.jpg"; sourceTree = "<group>"; };
+		1458051125127FAD0093DB72 /* Vacation First Class D550919-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vacation First Class D550919-200x200.jpg"; sourceTree = "<group>"; };
+		1458051225127FAD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg"; sourceTree = "<group>"; };
+		1458051325127FAD0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg"; sourceTree = "<group>"; };
+		1458051425127FAD0093DB72 /* The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg"; sourceTree = "<group>"; };
+		1458051525127FAD0093DB72 /* End-Abusive-Relationship-T479704765-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "End-Abusive-Relationship-T479704765-200x200.jpg"; sourceTree = "<group>"; };
+		1458051625127FAD0093DB72 /* Military OneSource call center professional-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Military OneSource call center professional-200x200.jpg"; sourceTree = "<group>"; };
+		1458051725127FAD0093DB72 /* PCS The Basics About Permanent Change of Station-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PCS The Basics About Permanent Change of Station-200x200.jpg"; sourceTree = "<group>"; };
+		1458051825127FAD0093DB72 /* Relationship Tool Helps You Love Every Day-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Relationship Tool Helps You Love Every Day-200x200.jpg"; sourceTree = "<group>"; };
+		1458051925127FAE0093DB72 /* service-member-horizon-working-dog-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-horizon-working-dog-200x200.jpg"; sourceTree = "<group>"; };
+		1458051A25127FAE0093DB72 /* two-girls-cooking-df2000893480-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-girls-cooking-df2000893480-200x200.jpg"; sourceTree = "<group>"; };
+		1458051B25127FAE0093DB72 /* mother-child-in-kitchen-T843972432-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-child-in-kitchen-T843972432-200x200.jpg"; sourceTree = "<group>"; };
+		1458051C25127FAE0093DB72 /* service-members-learning-about-programs-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-members-learning-about-programs-200x200.jpg"; sourceTree = "<group>"; };
+		1458051D25127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-holiday-d5887954-200x200.jpg"; sourceTree = "<group>"; };
+		1458051E25127FAE0093DB72 /* GoldStarOnBlueShirt-3-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GoldStarOnBlueShirt-3-200x200.jpg"; sourceTree = "<group>"; };
+		1458051F25127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "child-care-provider-kids-m230513-200x200.jpg"; sourceTree = "<group>"; };
+		1458057925127FFC0093DB72 /* 12 Ways to Land That Civilian Job-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Ways to Land That Civilian Job-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057A25127FFC0093DB72 /* mother-child-in-kitchen-T843972432-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-child-in-kitchen-T843972432-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057B25127FFC0093DB72 /* group-of-military-spouses-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "group-of-military-spouses-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057C25127FFC0093DB72 /* Overview of Casualty Assistance - T5246657174-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Overview of Casualty Assistance - T5246657174-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057D25127FFD0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057E25127FFD0093DB72 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Domestic-Abuse-Victims-T164190471-1000x500.jpg"; sourceTree = "<group>"; };
+		1458057F25127FFD0093DB72 /* smiling-military-couple-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "smiling-military-couple-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058025127FFD0093DB72 /* Vacation First Class D550919-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vacation First Class D550919-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058125127FFD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058225127FFD0093DB72 /* Enjoying National Parks as a Military Family-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Enjoying National Parks as a Military Family-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058325127FFD0093DB72 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-getting-covid19-tested-d6241568-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058425127FFD0093DB72 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PCS The Basics About Permanent Change of Station-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058525127FFD0093DB72 /* Tax Forgiveness F7598267402-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tax Forgiveness F7598267402-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058625127FFE0093DB72 /* service-members-in-field-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-members-in-field-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058725127FFE0093DB72 /* Family using computer and reviewing documents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Family using computer and reviewing documents-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058825127FFE0093DB72 /* outdoor-concert-d4200315-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "outdoor-concert-d4200315-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058925127FFE0093DB72 /* The EFMP - D2510599-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The EFMP - D2510599-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058A25127FFE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg"; sourceTree = "<group>"; };
+		1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-1000x500.jpg"; sourceTree = "<group>"; };
+		145805A3251280C10093DB72 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -306,16 +468,6 @@
 		1487F5D024E5EA9400C13817 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		1487F5D424E5EB0500C13817 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1487F5D624E5ED1F00C13817 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
-		149B927C25101F0900E19445 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
-		149B92802510262800E19445 /* Tax Forgiveness F7598267402-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tax Forgiveness F7598267402-1000x500.jpg"; sourceTree = "<group>"; };
-		149B92812510262800E19445 /* Family using computer and reviewing documents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Family using computer and reviewing documents-1000x500.jpg"; sourceTree = "<group>"; };
-		149B92872510262800E19445 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg"; sourceTree = "<group>"; };
-		149B92882510262800E19445 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg"; sourceTree = "<group>"; };
-		149B928A2510262900E19445 /* mother-child-in-kitchen-T843972432-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-child-in-kitchen-T843972432-1000x500.jpg"; sourceTree = "<group>"; };
-		149B928B2510262900E19445 /* The EFMP - D2510599-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The EFMP - D2510599-1000x500.jpg"; sourceTree = "<group>"; };
-		149B928C2510262900E19445 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg"; sourceTree = "<group>"; };
-		149B928D2510262900E19445 /* service-members-in-field-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-members-in-field-1000x500.jpg"; sourceTree = "<group>"; };
-		149B928F2510262900E19445 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-getting-covid19-tested-d6241568-1000x500.jpg"; sourceTree = "<group>"; };
 		14A901B824F1B96E00E2B4CA /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerSwift.h; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQKeyboardManagerSwift.h"; sourceTree = "<group>"; };
 		14A901B924F1B96E00E2B4CA /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift"; sourceTree = "<group>"; };
 		14A901BA24F1B96E00E2B4CA /* IQKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = "../modes-mobile-ios/IQKeyboardManagerSwift/IQKeyboardManager.swift"; sourceTree = "<group>"; };
@@ -340,43 +492,6 @@
 		14C3233624FD7C0B00065579 /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
 		14C3233A24FD7C2800065579 /* CloudDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
 		14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		14D5D60E250FC77F0072A0F9 /* Recreation Programs and Eligibility D2515122-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Recreation Programs and Eligibility D2515122-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D60F250FC77F0072A0F9 /* two-girls-cooking-df2000893480-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-girls-cooking-df2000893480-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D610250FC77F0072A0F9 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nine Ways to Help Your Kids Cope with Moving-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D611250FC77F0072A0F9 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D612250FC7800072A0F9 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D613250FC7800072A0F9 /* Must-Dos-for-Separating-Crop-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Must-Dos-for-Separating-Crop-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D614250FC7800072A0F9 /* group-of-military-spouses-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "group-of-military-spouses-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D615250FC7800072A0F9 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D616250FC7800072A0F9 /* 12 Ways to Land That Civilian Job-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Ways to Land That Civilian Job-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D617250FC7800072A0F9 /* family-advocacy-program-1-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "family-advocacy-program-1-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D618250FC7800072A0F9 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D619250FC7800072A0F9 /* End-Abusive-Relationship-T479704765-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "End-Abusive-Relationship-T479704765-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61A250FC7800072A0F9 /* mother-child-in-kitchen-T843972432-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-child-in-kitchen-T843972432-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61B250FC7800072A0F9 /* mother-reading-to-child-d6137220-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-reading-to-child-d6137220-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61C250FC7810072A0F9 /* outdoor-concert-d4200315-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "outdoor-concert-d4200315-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61D250FC7810072A0F9 /* MWR-affordable-fun-D2239112-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MWR-affordable-fun-D2239112-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61E250FC7810072A0F9 /* How to Write a Resume-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "How to Write a Resume-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D61F250FC7810072A0F9 /* Transferring Your Professional License-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Transferring Your Professional License-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D620250FC7810072A0F9 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WhatYouNeedtoKnow - D2402051-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D621250FC7810072A0F9 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mflc-group-discussion-i1014182332-273023990-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D622250FC7810072A0F9 /* american-forces-travel-1-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "american-forces-travel-1-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D623250FC7810072A0F9 /* MOS4_Family Fitness T514318052-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_Family Fitness T514318052-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D624250FC7810072A0F9 /* Vacation First Class D550919-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vacation First Class D550919-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D625250FC7810072A0F9 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D626250FC7810072A0F9 /* servicemember-on-laptop-g1015450754-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D627250FC7820072A0F9 /* smiling-military-couple-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "smiling-military-couple-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D628250FC7820072A0F9 /* space-a-travel-tips-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "space-a-travel-tips-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D629250FC7820072A0F9 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62A250FC7820072A0F9 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Take Command of Your Move With These 8 Tips - D394733-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62B250FC7820072A0F9 /* Enjoying National Parks as a Military Family-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Enjoying National Parks as a Military Family-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62C250FC7820072A0F9 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Domestic-Abuse-Victims-T164190471-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62D250FC7820072A0F9 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62E250FC7820072A0F9 /* service-member-horizon-working-dog-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-member-horizon-working-dog-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D62F250FC7820072A0F9 /* Status of Forces D2084939-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Status of Forces D2084939-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D630250FC7820072A0F9 /* service-members-learning-about-programs-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "service-members-learning-about-programs-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D631250FC7830072A0F9 /* PCS The Basics About Permanent Change of Station-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PCS The Basics About Permanent Change of Station-200x200.jpg"; sourceTree = "<group>"; };
-		14D5D632250FC7830072A0F9 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg"; sourceTree = "<group>"; };
 		2EEEB15F3B43D58AE0C3CE7E /* Pods-modes-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios/Pods-modes-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		2F9378296D9D34633B9B7CCC /* Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios-modes-mobile-iosUITests/Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53BFBD85939B9DFB16497F8B /* Pods_modes_mobile_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modes_mobile_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,15 +579,6 @@
 		A97BC5F525038C9400312D9D /* Benefits_ByCat_TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableCell.swift; sourceTree = "<group>"; };
 		A97BC5F625038C9400312D9D /* Benefits_ByCat_TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benefits_ByCat_TableCell.xib; sourceTree = "<group>"; };
 		A97BC5F725038C9400312D9D /* Benefits_ByCat_TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits_ByCat_TableDataSource.swift; sourceTree = "<group>"; };
-		A987EDE02510C9DD0027A7D4 /* outdoor-concert-d4200315-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "outdoor-concert-d4200315-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE12510C9DD0027A7D4 /* group-of-military-spouses-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "group-of-military-spouses-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE22510C9DD0027A7D4 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Domestic-Abuse-Victims-T164190471-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE32510C9DE0027A7D4 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PCS The Basics About Permanent Change of Station-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE42510C9DE0027A7D4 /* servicemember-on-laptop-g1015450754-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE52510C9DE0027A7D4 /* smiling-military-couple-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "smiling-military-couple-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE62510C9DE0027A7D4 /* Vacation First Class D550919-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vacation First Class D550919-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE72510C9DE0027A7D4 /* 12 Ways to Land That Civilian Job-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Ways to Land That Civilian Job-1000x500.jpg"; sourceTree = "<group>"; };
-		A987EDE82510C9DE0027A7D4 /* Enjoying National Parks as a Military Family-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Enjoying National Parks as a Military Family-1000x500.jpg"; sourceTree = "<group>"; };
 		A99044472508181200B6AC26 /* RightSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuVC.swift; sourceTree = "<group>"; };
 		A990444A250862E400B6AC26 /* Right_VertTwoCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Right_VertTwoCollCell.xib; sourceTree = "<group>"; };
 		A990444B250862E400B6AC26 /* Right_VertTwoCollDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Right_VertTwoCollDataSource.swift; sourceTree = "<group>"; };
@@ -601,6 +707,100 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		145804C825127F770093DB72 /* small-images */ = {
+			isa = PBXGroup;
+			children = (
+				145804F425127FAA0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */,
+				145804F525127FAA0093DB72 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */,
+				1458051325127FAD0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg */,
+				145804D225127FA60093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg */,
+				145804ED25127FA90093DB72 /* 12 Ways to Land That Civilian Job-200x200.jpg */,
+				145804F225127FAA0093DB72 /* 14 Ways F27003551001-200x200.jpg */,
+				145804DA25127FA70093DB72 /* american-forces-travel-1-200x200.jpg */,
+				145804FC25127FAB0093DB72 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */,
+				1458051F25127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg */,
+				145804EC25127FA90093DB72 /* Commissaries and Exchanges-200x200.jpg */,
+				145804D325127FA60093DB72 /* Commissary On-site Sales D1942052-200x200.jpg */,
+				145804F725127FAA0093DB72 /* coronavirus-img-sq-200x200.jpg */,
+				1458051025127FAD0093DB72 /* couple-looking-out-over-bay-g 979457898-200x200.jpg */,
+				145804CE25127FA60093DB72 /* covid-19-military-male-jogging-outside-md2002117892-200x200.jpg */,
+				145804F625127FAA0093DB72 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */,
+				145804C925127FA50093DB72 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */,
+				1458051525127FAD0093DB72 /* End-Abusive-Relationship-T479704765-200x200.jpg */,
+				1458050825127FAC0093DB72 /* Enjoying National Parks as a Military Family-200x200.jpg */,
+				1458050625127FAC0093DB72 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */,
+				1458050525127FAB0093DB72 /* Family using computer and reviewing documents-200x200.jpg */,
+				145804CD25127FA60093DB72 /* family-advocacy-program-1-200x200.jpg */,
+				145804FB25127FAA0093DB72 /* father-hugs-child-200x200.jpg */,
+				145804FA25127FAA0093DB72 /* Finding a Job Overseas as a Military Spouse-200x200.jpg */,
+				145804D825127FA70093DB72 /* Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg */,
+				1458051E25127FAE0093DB72 /* GoldStarOnBlueShirt-3-200x200.jpg */,
+				145804D425127FA70093DB72 /* group-of-military-spouses-200x200.jpg */,
+				145804D925127FA70093DB72 /* group-talking-200x200.jpg */,
+				145804E825127FA80093DB72 /* happy-boy-on-bike-g170667-200x200.jpg */,
+				145804D725127FA70093DB72 /* How to Get Your Household Goods Overseas-D2632780-200x200.jpg */,
+				1458050725127FAC0093DB72 /* How to Successfully Communicate as a Couple - D968279-200x200.jpg */,
+				145804DC25127FA70093DB72 /* How to Write a Resume-200x200.jpg */,
+				145804F325127FAA0093DB72 /* jets-200x200.jpg */,
+				145804D025127FA60093DB72 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */,
+				145804D625127FA70093DB72 /* Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg */,
+				1458050A25127FAC0093DB72 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */,
+				1458051625127FAD0093DB72 /* Military OneSource call center professional-200x200.jpg */,
+				145804FE25127FAB0093DB72 /* MOS4_Family Fitness T514318052-200x200.jpg */,
+				145804EB25127FA90093DB72 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */,
+				145804D125127FA60093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg */,
+				145804DB25127FA70093DB72 /* MOS4_Support After the Death D3061396-200x200.jpg */,
+				1458051B25127FAE0093DB72 /* mother-child-in-kitchen-T843972432-200x200.jpg */,
+				145804E625127FA80093DB72 /* mother-reading-to-child-d6137220-200x200.jpg */,
+				145804CF25127FA60093DB72 /* Moving_OCONUS_Service Family-D935670-200x200.jpg */,
+				1458050C25127FAC0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-200x200.jpg */,
+				145804FD25127FAB0093DB72 /* Must-Dos-for-Separating-Crop-200x200.jpg */,
+				145804CB25127FA50093DB72 /* MWR-affordable-fun-D2239112-200x200.jpg */,
+				145804EA25127FA90093DB72 /* national-guard-salutes-f4922825665-200x200.jpg */,
+				145804F825127FAA0093DB72 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */,
+				145804CA25127FA50093DB72 /* outdoor-concert-d4200315-200x200.jpg */,
+				145804DD25127FA70093DB72 /* Overview of Casualty Assistance - T5246657174-200x200.jpg */,
+				1458051725127FAD0093DB72 /* PCS The Basics About Permanent Change of Station-200x200.jpg */,
+				145804DE25127FA70093DB72 /* Personal Financial Management Counseling Options-200x200.jpg */,
+				145804D525127FA70093DB72 /* Recreation Programs and Eligibility D2515122-200x200.jpg */,
+				1458051825127FAD0093DB72 /* Relationship Tool Helps You Love Every Day-200x200.jpg */,
+				145804F025127FA90093DB72 /* Service member and woman in wheelchair dancing-200x200.jpg */,
+				1458050025127FAB0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg */,
+				1458051D25127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg */,
+				1458051925127FAE0093DB72 /* service-member-horizon-working-dog-200x200.jpg */,
+				145804E225127FA80093DB72 /* service-member-teaching-class-200x200.jpg */,
+				145804EE25127FA90093DB72 /* service-member-with-daughter-d4230835-200x200.jpg */,
+				145804F125127FA90093DB72 /* Service-Members-Discuss-Around-Table-d4417836-200x200.jpg */,
+				145804E425127FA80093DB72 /* service-members-in-field-200x200.jpg */,
+				1458051C25127FAE0093DB72 /* service-members-learning-about-programs-200x200.jpg */,
+				145804CC25127FA60093DB72 /* Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg */,
+				1458050325127FAB0093DB72 /* servicemember-on-laptop-g1015450754-200x200.jpg */,
+				1458050D25127FAC0093DB72 /* Sesame Street for Military Families-200x200.jpg */,
+				145804E325127FA80093DB72 /* smiling-military-couple-200x200.jpg */,
+				145804F925127FAA0093DB72 /* Soldier kisses wife-200x200.jpg */,
+				145804FF25127FAB0093DB72 /* space-a-travel-tips-200x200.jpg */,
+				1458050125127FAB0093DB72 /* Status of Forces D2084939-200x200.jpg */,
+				1458050B25127FAC0093DB72 /* Stay Fit During Deployment-200x200.jpg */,
+				145804E725127FA80093DB72 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */,
+				1458050225127FAB0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg */,
+				145804DF25127FA80093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg */,
+				145804E525127FA80093DB72 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */,
+				1458050F25127FAD0093DB72 /* Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg */,
+				1458050925127FAC0093DB72 /* Tax Forgiveness F7598267402-200x200.jpg */,
+				1458050425127FAB0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg */,
+				145804E025127FA80093DB72 /* The EFMP - D2510599-200x200.jpg */,
+				1458051425127FAD0093DB72 /* The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg */,
+				145804E125127FA80093DB72 /* Transferring Your Professional License-200x200.jpg */,
+				1458051A25127FAE0093DB72 /* two-girls-cooking-df2000893480-200x200.jpg */,
+				1458050E25127FAC0093DB72 /* two-women-talking-200x200.jpg */,
+				1458051125127FAD0093DB72 /* Vacation First Class D550919-200x200.jpg */,
+				145804E925127FA90093DB72 /* voting-while-youre-away-from-home-200x200.jpg */,
+				145804EF25127FA90093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */,
+				1458051225127FAD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg */,
+			);
+			path = "small-images";
+			sourceTree = "<group>";
+		};
 		1487F58F24E5E6E300C13817 = {
 			isa = PBXGroup;
 			children = (
@@ -629,8 +829,8 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				149B927C25101F0900E19445 /* modes.sqlite3 */,
-				14D5D60D250FC7520072A0F9 /* imges-small */,
+				145805A3251280C10093DB72 /* modes.sqlite3 */,
+				145804C825127F770093DB72 /* small-images */,
 				14D5D5FA250FC7050072A0F9 /* images-large */,
 				A958EB6E24F5262300989D70 /* Navigation */,
 				A99044562509227100B6AC26 /* About */,
@@ -729,70 +929,29 @@
 		14D5D5FA250FC7050072A0F9 /* images-large */ = {
 			isa = PBXGroup;
 			children = (
-				A987EDE72510C9DE0027A7D4 /* 12 Ways to Land That Civilian Job-1000x500.jpg */,
-				A987EDE22510C9DD0027A7D4 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */,
-				A987EDE82510C9DE0027A7D4 /* Enjoying National Parks as a Military Family-1000x500.jpg */,
-				A987EDE12510C9DD0027A7D4 /* group-of-military-spouses-1000x500.jpg */,
-				A987EDE02510C9DD0027A7D4 /* outdoor-concert-d4200315-1000x500.jpg */,
-				A987EDE32510C9DE0027A7D4 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */,
-				A987EDE42510C9DE0027A7D4 /* servicemember-on-laptop-g1015450754-1000x500.jpg */,
-				A987EDE52510C9DE0027A7D4 /* smiling-military-couple-1000x500.jpg */,
-				A987EDE62510C9DE0027A7D4 /* Vacation First Class D550919-1000x500.jpg */,
-				149B92812510262800E19445 /* Family using computer and reviewing documents-1000x500.jpg */,
-				149B92882510262800E19445 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */,
-				149B928A2510262900E19445 /* mother-child-in-kitchen-T843972432-1000x500.jpg */,
-				149B928F2510262900E19445 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */,
-				149B92872510262800E19445 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */,
-				149B928D2510262900E19445 /* service-members-in-field-1000x500.jpg */,
-				149B92802510262800E19445 /* Tax Forgiveness F7598267402-1000x500.jpg */,
-				149B928B2510262900E19445 /* The EFMP - D2510599-1000x500.jpg */,
-				149B928C2510262900E19445 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */,
+				1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */,
+				1458057925127FFC0093DB72 /* 12 Ways to Land That Civilian Job-1000x500.jpg */,
+				1458057E25127FFD0093DB72 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg */,
+				1458058225127FFD0093DB72 /* Enjoying National Parks as a Military Family-1000x500.jpg */,
+				1458058725127FFE0093DB72 /* Family using computer and reviewing documents-1000x500.jpg */,
+				1458057B25127FFC0093DB72 /* group-of-military-spouses-1000x500.jpg */,
+				1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */,
+				1458057A25127FFC0093DB72 /* mother-child-in-kitchen-T843972432-1000x500.jpg */,
+				1458058A25127FFE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg */,
+				1458058825127FFE0093DB72 /* outdoor-concert-d4200315-1000x500.jpg */,
+				1458057C25127FFC0093DB72 /* Overview of Casualty Assistance - T5246657174-1000x500.jpg */,
+				1458058425127FFD0093DB72 /* PCS The Basics About Permanent Change of Station-1000x500.jpg */,
+				1458058325127FFD0093DB72 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg */,
+				1458057D25127FFD0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg */,
+				1458058625127FFE0093DB72 /* service-members-in-field-1000x500.jpg */,
+				1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */,
+				1458057F25127FFD0093DB72 /* smiling-military-couple-1000x500.jpg */,
+				1458058525127FFD0093DB72 /* Tax Forgiveness F7598267402-1000x500.jpg */,
+				1458058925127FFE0093DB72 /* The EFMP - D2510599-1000x500.jpg */,
+				1458058025127FFD0093DB72 /* Vacation First Class D550919-1000x500.jpg */,
+				1458058125127FFD0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg */,
 			);
 			path = "images-large";
-			sourceTree = "<group>";
-		};
-		14D5D60D250FC7520072A0F9 /* imges-small */ = {
-			isa = PBXGroup;
-			children = (
-				14D5D618250FC7800072A0F9 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg */,
-				14D5D62D250FC7820072A0F9 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg */,
-				14D5D616250FC7800072A0F9 /* 12 Ways to Land That Civilian Job-200x200.jpg */,
-				14D5D622250FC7810072A0F9 /* american-forces-travel-1-200x200.jpg */,
-				14D5D612250FC7800072A0F9 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg */,
-				14D5D62C250FC7820072A0F9 /* Domestic-Abuse-Victims-T164190471-200x200.jpg */,
-				14D5D611250FC77F0072A0F9 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg */,
-				14D5D619250FC7800072A0F9 /* End-Abusive-Relationship-T479704765-200x200.jpg */,
-				14D5D62B250FC7820072A0F9 /* Enjoying National Parks as a Military Family-200x200.jpg */,
-				14D5D632250FC7830072A0F9 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg */,
-				14D5D617250FC7800072A0F9 /* family-advocacy-program-1-200x200.jpg */,
-				14D5D614250FC7800072A0F9 /* group-of-military-spouses-200x200.jpg */,
-				14D5D61E250FC7810072A0F9 /* How to Write a Resume-200x200.jpg */,
-				14D5D621250FC7810072A0F9 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg */,
-				14D5D625250FC7810072A0F9 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg */,
-				14D5D623250FC7810072A0F9 /* MOS4_Family Fitness T514318052-200x200.jpg */,
-				14D5D615250FC7800072A0F9 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg */,
-				14D5D61A250FC7800072A0F9 /* mother-child-in-kitchen-T843972432-200x200.jpg */,
-				14D5D61B250FC7800072A0F9 /* mother-reading-to-child-d6137220-200x200.jpg */,
-				14D5D613250FC7800072A0F9 /* Must-Dos-for-Separating-Crop-200x200.jpg */,
-				14D5D61D250FC7810072A0F9 /* MWR-affordable-fun-D2239112-200x200.jpg */,
-				14D5D610250FC77F0072A0F9 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg */,
-				14D5D61C250FC7810072A0F9 /* outdoor-concert-d4200315-200x200.jpg */,
-				14D5D631250FC7830072A0F9 /* PCS The Basics About Permanent Change of Station-200x200.jpg */,
-				14D5D60E250FC77F0072A0F9 /* Recreation Programs and Eligibility D2515122-200x200.jpg */,
-				14D5D62E250FC7820072A0F9 /* service-member-horizon-working-dog-200x200.jpg */,
-				14D5D630250FC7820072A0F9 /* service-members-learning-about-programs-200x200.jpg */,
-				14D5D626250FC7810072A0F9 /* servicemember-on-laptop-g1015450754-200x200.jpg */,
-				14D5D627250FC7820072A0F9 /* smiling-military-couple-200x200.jpg */,
-				14D5D628250FC7820072A0F9 /* space-a-travel-tips-200x200.jpg */,
-				14D5D62F250FC7820072A0F9 /* Status of Forces D2084939-200x200.jpg */,
-				14D5D629250FC7820072A0F9 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg */,
-				14D5D62A250FC7820072A0F9 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg */,
-				14D5D61F250FC7810072A0F9 /* Transferring Your Professional License-200x200.jpg */,
-				14D5D60F250FC77F0072A0F9 /* two-girls-cooking-df2000893480-200x200.jpg */,
-				14D5D624250FC7810072A0F9 /* Vacation First Class D550919-200x200.jpg */,
-				14D5D620250FC7810072A0F9 /* WhatYouNeedtoKnow - D2402051-200x200.jpg */,
-			);
-			path = "imges-small";
 			sourceTree = "<group>";
 		};
 		8363D98A25027BFA005ADB46 /* Connect */ = {
@@ -1242,106 +1401,159 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145805A125127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg in Resources */,
+				1458054525127FAE0093DB72 /* service-member-with-daughter-d4230835-200x200.jpg in Resources */,
+				1458055C25127FAE0093DB72 /* Family using computer and reviewing documents-200x200.jpg in Resources */,
+				1458056E25127FAE0093DB72 /* PCS The Basics About Permanent Change of Station-200x200.jpg in Resources */,
 				A987EDDF2510C8E80027A7D4 /* ML_ByCat_TableCell.xib in Resources */,
-				14D5D655250FC7830072A0F9 /* service-members-learning-about-programs-200x200.jpg in Resources */,
+				1458055925127FAE0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg in Resources */,
+				1458056225127FAE0093DB72 /* Stay Fit During Deployment-200x200.jpg in Resources */,
+				1458055725127FAE0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg in Resources */,
+				145805A4251280C10093DB72 /* modes.sqlite3 in Resources */,
+				1458053725127FAE0093DB72 /* The EFMP - D2510599-200x200.jpg in Resources */,
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
-				14D5D63B250FC7830072A0F9 /* 12 Ways to Land That Civilian Job-200x200.jpg in Resources */,
-				149B929D2510262900E19445 /* The EFMP - D2510599-1000x500.jpg in Resources */,
-				14D5D63A250FC7830072A0F9 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg in Resources */,
-				14D5D64E250FC7830072A0F9 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg in Resources */,
-				14D5D639250FC7830072A0F9 /* group-of-military-spouses-200x200.jpg in Resources */,
-				149B92992510262900E19445 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg in Resources */,
-				14D5D643250FC7830072A0F9 /* How to Write a Resume-200x200.jpg in Resources */,
-				14D5D63E250FC7830072A0F9 /* End-Abusive-Relationship-T479704765-200x200.jpg in Resources */,
-				149B929C2510262900E19445 /* mother-child-in-kitchen-T843972432-1000x500.jpg in Resources */,
-				149B92A12510262900E19445 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg in Resources */,
+				1458052B25127FAE0093DB72 /* group-of-military-spouses-200x200.jpg in Resources */,
+				1458056125127FAE0093DB72 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg in Resources */,
+				1458059F25127FFE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-1000x500.jpg in Resources */,
+				1458055225127FAE0093DB72 /* father-hugs-child-200x200.jpg in Resources */,
+				1458053925127FAE0093DB72 /* service-member-teaching-class-200x200.jpg in Resources */,
+				1458052225127FAE0093DB72 /* MWR-affordable-fun-D2239112-200x200.jpg in Resources */,
+				1458052E25127FAE0093DB72 /* How to Get Your Household Goods Overseas-D2632780-200x200.jpg in Resources */,
+				1458053825127FAE0093DB72 /* Transferring Your Professional License-200x200.jpg in Resources */,
+				1458053F25127FAE0093DB72 /* happy-boy-on-bike-g170667-200x200.jpg in Resources */,
+				1458059A25127FFE0093DB72 /* Tax Forgiveness F7598267402-1000x500.jpg in Resources */,
+				1458054725127FAE0093DB72 /* Service member and woman in wheelchair dancing-200x200.jpg in Resources */,
+				1458052625127FAE0093DB72 /* Moving_OCONUS_Service Family-D935670-200x200.jpg in Resources */,
 				A9620D1D24FECA5400C599DC /* ML_VertTwoCollView.xib in Resources */,
+				1458057225127FAE0093DB72 /* mother-child-in-kitchen-T843972432-200x200.jpg in Resources */,
 				A9620D4A2501108400C599DC /* ML_Articles_TableCell.xib in Resources */,
-				14D5D646250FC7830072A0F9 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg in Resources */,
-				14D5D650250FC7830072A0F9 /* Enjoying National Parks as a Military Family-200x200.jpg in Resources */,
+				1458059D25127FFE0093DB72 /* outdoor-concert-d4200315-1000x500.jpg in Resources */,
+				1458053D25127FAE0093DB72 /* mother-reading-to-child-d6137220-200x200.jpg in Resources */,
 				A9689312250D5164007FD351 /* animatedPreparing.gif in Resources */,
-				14D5D636250FC7830072A0F9 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg in Resources */,
 				A9620D2A24FEDE5900C599DC /* ML_ViewAll_TableCell.xib in Resources */,
-				14D5D64F250FC7830072A0F9 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg in Resources */,
-				14D5D64C250FC7830072A0F9 /* smiling-military-couple-200x200.jpg in Resources */,
-				14D5D649250FC7830072A0F9 /* Vacation First Class D550919-200x200.jpg in Resources */,
-				14D5D642250FC7830072A0F9 /* MWR-affordable-fun-D2239112-200x200.jpg in Resources */,
+				1458053C25127FAE0093DB72 /* Take Command of Your Move With These 8 Tips - D394733-200x200.jpg in Resources */,
+				1458055D25127FAE0093DB72 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg in Resources */,
+				1458059825127FFE0093DB72 /* service-member-getting-covid19-tested-d6241568-1000x500.jpg in Resources */,
+				1458053125127FAE0093DB72 /* american-forces-travel-1-200x200.jpg in Resources */,
+				1458052725127FAE0093DB72 /* mflc-group-discussion-i1014182332-273023990-200x200.jpg in Resources */,
 				A9FEEC0224FB1F3000EB7CA6 /* HomeTableCell.xib in Resources */,
+				1458059525127FFE0093DB72 /* Vacation First Class D550919-1000x500.jpg in Resources */,
+				1458056D25127FAE0093DB72 /* Military OneSource call center professional-200x200.jpg in Resources */,
+				1458055A25127FAE0093DB72 /* servicemember-on-laptop-g1015450754-200x200.jpg in Resources */,
 				A97BC5B22501A96100312D9D /* ML_Connect_TableView.xib in Resources */,
 				A9FEEBFF24FB1F3000EB7CA6 /* HomeTableView.xib in Resources */,
 				A97BC5F825038C9500312D9D /* Benefits_ByCat_TableView.xib in Resources */,
 				A95E942925016EE700233C53 /* ML_Benefits_TableView.xib in Resources */,
+				1458058F25127FFE0093DB72 /* mother-child-in-kitchen-T843972432-1000x500.jpg in Resources */,
 				A95E942725016BEA00233C53 /* ML_Benefits_TableCell.xib in Resources */,
 				A9904455250862E400B6AC26 /* Right_VertTwoCollView.xib in Resources */,
-				A987EDE92510C9DE0027A7D4 /* outdoor-concert-d4200315-1000x500.jpg in Resources */,
-				149B92922510262900E19445 /* Tax Forgiveness F7598267402-1000x500.jpg in Resources */,
 				A97BC5FB25038C9500312D9D /* Benefits_ByCat_TableCell.xib in Resources */,
-				14D5D656250FC7830072A0F9 /* PCS The Basics About Permanent Change of Station-200x200.jpg in Resources */,
 				A97BC5A82501931400312D9D /* ML_Websites_TableView.xib in Resources */,
-				14D5D63D250FC7830072A0F9 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg in Resources */,
-				14D5D63C250FC7830072A0F9 /* family-advocacy-program-1-200x200.jpg in Resources */,
-				14D5D657250FC7830072A0F9 /* Expedite Airline Boarding with TSA Precheck - D1066471-200x200.jpg in Resources */,
-				149B927D25101F0900E19445 /* modes.sqlite3 in Resources */,
-				14D5D644250FC7830072A0F9 /* Transferring Your Professional License-200x200.jpg in Resources */,
-				14D5D637250FC7830072A0F9 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg in Resources */,
+				1458059925127FFE0093DB72 /* PCS The Basics About Permanent Change of Station-1000x500.jpg in Resources */,
+				1458059225127FFE0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-1000x500.jpg in Resources */,
+				1458052325127FAE0093DB72 /* Service-Members-Pose-In-Front-Of-Helicopter-d5720639-200x200.jpg in Resources */,
+				1458056625127FAE0093DB72 /* Take Command of Your Well-Being With a Health and Wellness Coach D2606006-200x200.jpg in Resources */,
+				1458052925127FAE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-200x200.jpg in Resources */,
+				1458055425127FAE0093DB72 /* Must-Dos-for-Separating-Crop-200x200.jpg in Resources */,
+				1458054225127FAE0093DB72 /* MOS4_RecTravel_Recreation_MWR Digital Library D1907818-200x200.jpg in Resources */,
+				1458054C25127FAE0093DB72 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg in Resources */,
 				A958EB7724F5266200989D70 /* Navigation.storyboard in Resources */,
+				1458056525127FAE0093DB72 /* two-women-talking-200x200.jpg in Resources */,
+				1458053325127FAE0093DB72 /* How to Write a Resume-200x200.jpg in Resources */,
 				A9BF9A9124F565530073C0DE /* WorkSans-Bold.ttf in Resources */,
 				A97BC5D325029EE600312D9D /* Benefits_TableCell.xib in Resources */,
-				14D5D652250FC7830072A0F9 /* 7 Tips for Considering Telecommuting as a Military Spouse - T510487452-200x200.jpg in Resources */,
-				14D5D640250FC7830072A0F9 /* mother-reading-to-child-d6137220-200x200.jpg in Resources */,
-				149B929E2510262900E19445 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg in Resources */,
+				1458059C25127FFE0093DB72 /* Family using computer and reviewing documents-1000x500.jpg in Resources */,
+				1458053425127FAE0093DB72 /* Overview of Casualty Assistance - T5246657174-200x200.jpg in Resources */,
+				1458056C25127FAE0093DB72 /* End-Abusive-Relationship-T479704765-200x200.jpg in Resources */,
+				1458052125127FAE0093DB72 /* outdoor-concert-d4200315-200x200.jpg in Resources */,
+				1458059125127FFE0093DB72 /* Overview of Casualty Assistance - T5246657174-1000x500.jpg in Resources */,
+				1458052C25127FAE0093DB72 /* Recreation Programs and Eligibility D2515122-200x200.jpg in Resources */,
+				1458059625127FFE0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-1000x500.jpg in Resources */,
 				143AB89B24EED54D002D0029 /* UserSettings.storyboard in Resources */,
+				1458053025127FAE0093DB72 /* group-talking-200x200.jpg in Resources */,
+				1458057025127FAE0093DB72 /* service-member-horizon-working-dog-200x200.jpg in Resources */,
 				1487F5A824E5E6E400C13817 /* LaunchScreen.storyboard in Resources */,
+				1458056B25127FAE0093DB72 /* The Military Parenting Community Building Resilience One Family at a Time-200x200.jpg in Resources */,
 				A97BC5D225029EE600312D9D /* Benefits_TableView.xib in Resources */,
+				1458057625127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg in Resources */,
+				1458059B25127FFE0093DB72 /* service-members-in-field-1000x500.jpg in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
-				14D5D651250FC7830072A0F9 /* Domestic-Abuse-Victims-T164190471-200x200.jpg in Resources */,
-				A987EDF12510C9DE0027A7D4 /* Enjoying National Parks as a Military Family-1000x500.jpg in Resources */,
-				14D5D64D250FC7830072A0F9 /* space-a-travel-tips-200x200.jpg in Resources */,
+				1458053625127FAE0093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg in Resources */,
+				1458059425127FFE0093DB72 /* smiling-military-couple-1000x500.jpg in Resources */,
+				1458055B25127FAE0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg in Resources */,
+				145805A225127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */,
 				A9620D3224FF1D0700C599DC /* ML_Guides_TableCell.xib in Resources */,
 				A968931D250F84C2007FD351 /* ML_ByCat_TableView.xib in Resources */,
+				1458055F25127FAE0093DB72 /* Enjoying National Parks as a Military Family-200x200.jpg in Resources */,
+				1458053525127FAE0093DB72 /* Personal Financial Management Counseling Options-200x200.jpg in Resources */,
 				A9904450250862E400B6AC26 /* Right_VertTwoCollCell.xib in Resources */,
+				1458057125127FAE0093DB72 /* two-girls-cooking-df2000893480-200x200.jpg in Resources */,
 				A97BC5B12501A96100312D9D /* ML_Connect_TableCell.xib in Resources */,
-				149B929A2510262900E19445 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */,
+				1458059025127FFE0093DB72 /* group-of-military-spouses-1000x500.jpg in Resources */,
+				1458052525127FAE0093DB72 /* covid-19-military-male-jogging-outside-md2002117892-200x200.jpg in Resources */,
 				1487F5D724E5ED1F00C13817 /* Base.storyboard in Resources */,
 				A9B3738424F3D8D800B6D0CC /* Home.storyboard in Resources */,
 				A97BC5EC2502A10500312D9D /* Benefits_ViewAll_TableCell.xib in Resources */,
 				A9620D462501108400C599DC /* ML_Articles_TableView.xib in Resources */,
-				149B929F2510262900E19445 /* service-members-in-field-1000x500.jpg in Resources */,
 				A9BF9A9324F565530073C0DE /* WorkSans-Italic.ttf in Resources */,
-				14D5D634250FC7830072A0F9 /* two-girls-cooking-df2000893480-200x200.jpg in Resources */,
-				14D5D64A250FC7830072A0F9 /* Military Discounts on Recreation and Entertainment - F5804042435-200x200.jpg in Resources */,
-				A987EDF02510C9DE0027A7D4 /* 12 Ways to Land That Civilian Job-1000x500.jpg in Resources */,
-				A987EDEE2510C9DE0027A7D4 /* smiling-military-couple-1000x500.jpg in Resources */,
+				1458059325127FFE0093DB72 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg in Resources */,
+				1458055025127FAE0093DB72 /* Soldier kisses wife-200x200.jpg in Resources */,
+				1458052425127FAE0093DB72 /* family-advocacy-program-1-200x200.jpg in Resources */,
+				1458056025127FAE0093DB72 /* Tax Forgiveness F7598267402-200x200.jpg in Resources */,
+				1458052A25127FAE0093DB72 /* Commissary On-site Sales D1942052-200x200.jpg in Resources */,
 				1487F5A524E5E6E400C13817 /* Assets.xcassets in Resources */,
-				A987EDEC2510C9DE0027A7D4 /* PCS The Basics About Permanent Change of Station-1000x500.jpg in Resources */,
-				14D5D638250FC7830072A0F9 /* Must-Dos-for-Separating-Crop-200x200.jpg in Resources */,
-				14D5D654250FC7830072A0F9 /* Status of Forces D2084939-200x200.jpg in Resources */,
+				1458052825127FAE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-200x200.jpg in Resources */,
+				1458055525127FAE0093DB72 /* MOS4_Family Fitness T514318052-200x200.jpg in Resources */,
+				1458056725127FAE0093DB72 /* couple-looking-out-over-bay-g 979457898-200x200.jpg in Resources */,
+				145805A025127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */,
+				1458054025127FAE0093DB72 /* voting-while-youre-away-from-home-200x200.jpg in Resources */,
 				A9620D1A24FECA5400C599DC /* ML_VertTwoCollCell.xib in Resources */,
-				14D5D641250FC7830072A0F9 /* outdoor-concert-d4200315-200x200.jpg in Resources */,
+				1458052025127FAE0093DB72 /* Eligibility for Confidential, Non-medical Support Services F34103390362-200x200.jpg in Resources */,
 				A920283824F59FBB00747071 /* WorkSans-SemiBold.ttf in Resources */,
 				1487F5A324E5E6E300C13817 /* Main.storyboard in Resources */,
+				1458054425127FAE0093DB72 /* 12 Ways to Land That Civilian Job-200x200.jpg in Resources */,
+				1458054A25127FAE0093DB72 /* jets-200x200.jpg in Resources */,
 				A9BF9A9224F565530073C0DE /* WorkSans-Regular.ttf in Resources */,
-				14D5D633250FC7830072A0F9 /* Recreation Programs and Eligibility D2515122-200x200.jpg in Resources */,
+				1458053225127FAE0093DB72 /* MOS4_Support After the Death D3061396-200x200.jpg in Resources */,
+				1458055E25127FAE0093DB72 /* How to Successfully Communicate as a Couple - D968279-200x200.jpg in Resources */,
+				1458054925127FAE0093DB72 /* 14 Ways F27003551001-200x200.jpg in Resources */,
+				1458058E25127FFE0093DB72 /* 12 Ways to Land That Civilian Job-1000x500.jpg in Resources */,
 				A9FEEBF624FABB5300EB7CA6 /* VertTwoCollView.xib in Resources */,
-				A987EDEF2510C9DE0027A7D4 /* Vacation First Class D550919-1000x500.jpg in Resources */,
+				1458056425127FAE0093DB72 /* Sesame Street for Military Families-200x200.jpg in Resources */,
+				1458052F25127FAE0093DB72 /* Frequently Asked Questions Regarding the New Blended Retirement System-200x200.jpg in Resources */,
+				1458056F25127FAE0093DB72 /* Relationship Tool Helps You Love Every Day-200x200.jpg in Resources */,
 				A9B017BC24F82D5A000E2320 /* CustomNavigationBar.xib in Resources */,
-				14D5D635250FC7830072A0F9 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg in Resources */,
-				149B92932510262900E19445 /* Family using computer and reviewing documents-1000x500.jpg in Resources */,
-				A987EDED2510C9DE0027A7D4 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */,
-				14D5D64B250FC7830072A0F9 /* servicemember-on-laptop-g1015450754-200x200.jpg in Resources */,
-				14D5D645250FC7830072A0F9 /* WhatYouNeedtoKnow - D2402051-200x200.jpg in Resources */,
+				1458054125127FAE0093DB72 /* national-guard-salutes-f4922825665-200x200.jpg in Resources */,
+				1458054F25127FAE0093DB72 /* Nine Ways to Help Your Kids Cope with Moving-200x200.jpg in Resources */,
+				1458054825127FAE0093DB72 /* Service-Members-Discuss-Around-Table-d4417836-200x200.jpg in Resources */,
+				1458055625127FAE0093DB72 /* space-a-travel-tips-200x200.jpg in Resources */,
+				1458056325127FAE0093DB72 /* moving-men-with-protective-face-masks-a235368-v2-200x200.jpg in Resources */,
+				1458054E25127FAE0093DB72 /* coronavirus-img-sq-200x200.jpg in Resources */,
 				A97BC5A62501931400312D9D /* ML_Websites_TableCell.xib in Resources */,
-				14D5D63F250FC7830072A0F9 /* mother-child-in-kitchen-T843972432-200x200.jpg in Resources */,
+				1458054D25127FAE0093DB72 /* Domestic-Abuse-Victims-T164190471-200x200.jpg in Resources */,
+				1458053A25127FAE0093DB72 /* smiling-military-couple-200x200.jpg in Resources */,
+				1458055125127FAE0093DB72 /* Finding a Job Overseas as a Military Spouse-200x200.jpg in Resources */,
+				1458052D25127FAE0093DB72 /* Military Child Care Programs - USAR160416-A-SU468-001-200x200.jpg in Resources */,
+				1458055825127FAE0093DB72 /* Status of Forces D2084939-200x200.jpg in Resources */,
+				1458059E25127FFE0093DB72 /* The EFMP - D2510599-1000x500.jpg in Resources */,
+				1458053B25127FAE0093DB72 /* service-members-in-field-200x200.jpg in Resources */,
+				1458059725127FFE0093DB72 /* Enjoying National Parks as a Military Family-1000x500.jpg in Resources */,
+				1458057325127FAE0093DB72 /* service-members-learning-about-programs-200x200.jpg in Resources */,
+				1458055325127FAE0093DB72 /* Building Job Skills and Funding Your Portable Career - D1157921-200x200.jpg in Resources */,
+				1458057525127FAE0093DB72 /* GoldStarOnBlueShirt-3-200x200.jpg in Resources */,
 				A9B017F524F90E1E000E2320 /* HorzCollView.xib in Resources */,
+				1458056825127FAE0093DB72 /* Vacation First Class D550919-200x200.jpg in Resources */,
 				A97BC5EA2502A10500312D9D /* Benefits_ViewAll_TableView.xib in Resources */,
-				A987EDEB2510C9DE0027A7D4 /* Domestic-Abuse-Victims-T164190471-1000x500.jpg in Resources */,
-				14D5D648250FC7830072A0F9 /* MOS4_Family Fitness T514318052-200x200.jpg in Resources */,
-				A987EDEA2510C9DE0027A7D4 /* group-of-military-spouses-1000x500.jpg in Resources */,
-				14D5D653250FC7830072A0F9 /* service-member-horizon-working-dog-200x200.jpg in Resources */,
-				14D5D647250FC7830072A0F9 /* american-forces-travel-1-200x200.jpg in Resources */,
+				1458056925127FAE0093DB72 /* Your Checklist for Living Positive While Your Partners Deployed-200x200.jpg in Resources */,
+				1458054325127FAE0093DB72 /* Commissaries and Exchanges-200x200.jpg in Resources */,
+				1458053E25127FAE0093DB72 /* Staying or Moving When Your Spouse is Deployed - T78377992-200x200.jpg in Resources */,
+				1458054B25127FAE0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg in Resources */,
+				1458056A25127FAE0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg in Resources */,
 				14D5D5F9250EE51C0072A0F9 /* GoogleService-Info.plist in Resources */,
 				A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */,
+				1458057425127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg in Resources */,
+				1458054625127FAE0093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg in Resources */,
 				A9620D2924FEDE5900C599DC /* ML_ViewAll_TableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
