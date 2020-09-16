@@ -190,6 +190,7 @@ class GuidesViewModel{
 
        
         benefit.id = id
+
         //benefit.benefit = results[0]["Benefit"] as? String
         //benefit.description = results[0]["Short Description"] as? String
         
@@ -198,6 +199,7 @@ class GuidesViewModel{
             benefit.description = results[0]["Short Description"] as? String
         }
        
+
 
         return benefit
 

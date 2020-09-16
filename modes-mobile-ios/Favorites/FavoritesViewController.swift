@@ -12,6 +12,10 @@ class FavoritesViewController: UIViewController {
     var viewModel : FavoritesViewModel?
     var location : Location?
     
+    @IBOutlet weak var viewNoGuides: UIView!
+    @IBOutlet weak var viewNoBenefits: UIView!
+    
+   
     @IBOutlet weak var customNavBar: CustomNavigationBar!
     
     @IBOutlet weak var viewContentView: UIView!
@@ -259,13 +263,39 @@ class FavoritesViewController: UIViewController {
 }
 
 extension FavoritesViewController : UITableViewDelegate, UITableViewDataSource{
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if(tableView == self.tableViewGuides){
             
+            if(viewModel?.getFavoriteGuides().count ?? 0 < 1){
+                
+                self.viewMILLIFEGuides.addSubview(viewNoGuides)
+                tableViewGuides.isHidden = true
+                viewNoGuides.isHidden = false
+            }
+            else{
+                self.viewMILLIFEGuides.addSubview(tableViewGuides)
+                viewNoGuides.isHidden = true
+                tableViewGuides.isHidden = false
+            }
+            
             return viewModel?.getFavoriteGuides().count ?? 0
         }
         else{
+            
+            if(viewModel?.getFavoriteBenefits().count ?? 0 < 1){
+                
+                self.viewBenefits.addSubview(viewNoBenefits)
+                tableViewBenefits.isHidden = true
+                viewNoBenefits.isHidden = false
+            }
+            else{
+                self.viewBenefits.addSubview(tableViewBenefits)
+                viewNoBenefits.isHidden = true
+                tableViewBenefits.isHidden = false
+            }
             return viewModel?.getFavoriteBenefits().count ?? 0
         }
     }
