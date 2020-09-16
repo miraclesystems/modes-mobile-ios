@@ -52,7 +52,8 @@ class BenefitsDetailsContVC: UIViewController {
     }
     
     @IBAction func benefitDetailsBtnTouched(_ sender: Any) {
-        if let url = URL(string: "http://www.militaryonesource.mil") {
+       // if let url = URL(string: "http://www.militaryonesource.mil") {
+        if let url = URL(string: benefit!.BenefitLink!) {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])
             }

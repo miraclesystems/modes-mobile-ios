@@ -50,6 +50,7 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
             let cardTitle = cards?[indexPath.row].cardTitle
             let cardType = cards?[indexPath.row].cardType
             
+            
             switch cardType{
                 
             case "BENEFIT":

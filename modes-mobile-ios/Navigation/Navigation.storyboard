@@ -3237,7 +3237,7 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
@@ -3264,12 +3264,12 @@ OneSource consultant</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="80" width="375" height="800"/>
+                                                <rect key="frame" x="0.0" y="60" width="375" height="600"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="1di-uJ-Bg1"/>
@@ -3280,10 +3280,7 @@ OneSource consultant</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-ao-x62">
-                                                        <rect key="frame" x="20" y="100" width="335" height="300"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="300" id="rIc-VZ-pdU"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="20" y="100" width="335" height="288"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3305,10 +3302,11 @@ OneSource consultant</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="15j-WV-kcg" secondAttribute="bottom" constant="150" id="17v-fY-cUd"/>
                                                     <constraint firstItem="15j-WV-kcg" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="1kh-lu-Gxr"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="4rK-Ic-aF1"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="800" id="7YY-zV-NcN"/>
-                                                    <constraint firstItem="15j-WV-kcg" firstAttribute="top" secondItem="MI3-ao-x62" secondAttribute="bottom" constant="8" id="7l9-KU-FMa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="7YY-zV-NcN"/>
+                                                    <constraint firstItem="15j-WV-kcg" firstAttribute="top" secondItem="MI3-ao-x62" secondAttribute="bottom" constant="20" id="7l9-KU-FMa"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="top" secondItem="wGf-Rl-UIe" secondAttribute="top" id="DCt-xc-zoA"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="Fkb-pS-08g"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="top" secondItem="eHL-hN-4wd" secondAttribute="bottom" constant="20" id="i2s-hl-a6N"/>
@@ -3327,7 +3325,7 @@ OneSource consultant</string>
                                             <constraint firstAttribute="trailing" secondItem="dPM-8K-REc" secondAttribute="trailing" constant="20" id="DYA-r6-fOy"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="4" id="V0S-oS-lmX"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" constant="10" id="V4E-6u-0Rg"/>
-                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="80" id="Ywg-Ps-vdM"/>
+                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="60" id="Ywg-Ps-vdM"/>
                                             <constraint firstAttribute="trailing" secondItem="wGf-Rl-UIe" secondAttribute="trailing" id="l8b-Ig-C8b"/>
                                             <constraint firstItem="dPM-8K-REc" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="25" id="ulC-a9-J3a"/>
                                         </constraints>
