@@ -217,7 +217,7 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
         
         //Handle Feedback web link
         if ( indexPath.row == 8 ) {
-            if let url = URL(string: "https://www.militaryonesource.mil/") {
+            if let url = URL(string: "https://survey.foresee.com/f/M40JDlKiHK") {
                 if UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:])
                 }

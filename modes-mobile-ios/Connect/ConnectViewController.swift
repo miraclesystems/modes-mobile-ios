@@ -42,6 +42,12 @@ class ConnectViewController: UIViewController {
     }
     
     
+    @IBAction func OpenSubscribeLink(_ sender: Any) {
+        
+           let webUrl = URL(string: "https://public.govdelivery.com/accounts/USDODMILITARYONESOURCE/subscriber/new?topic_id=USDODMILITARYONESOURCE_54")!
+                     UIApplication.shared.open(webUrl, options: [:], completionHandler: nil)
+        }
+    
     
     @IBAction func OpenFacebook(_ sender: Any) {
         let webUrl = URL(string: "https://www.facebook.com/military.1source")!
