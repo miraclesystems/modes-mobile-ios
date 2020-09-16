@@ -14,10 +14,10 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UaG-6k-bH4" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-dj-8MO">
                 <rect key="frame" x="0.0" y="0.0" width="500" height="38"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
-                        <rect key="frame" x="30" y="8" width="430" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-Xd-zMk">
+                        <rect key="frame" x="5" y="4" width="480" height="28"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="vqr-8b-kNL"/>
+                            <constraint firstAttribute="height" constant="28" id="vqr-8b-kNL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
@@ -26,9 +26,9 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="30" id="LQD-8z-e75"/>
-                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="30" id="RZr-MY-qb5"/>
-                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="top" secondItem="Esb-dj-8MO" secondAttribute="top" constant="8" id="op6-2z-rrb"/>
+                    <constraint firstAttribute="trailing" secondItem="eJ9-Xd-zMk" secondAttribute="trailing" constant="5" id="LQD-8z-e75"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="leading" secondItem="Esb-dj-8MO" secondAttribute="leading" constant="5" id="RZr-MY-qb5"/>
+                    <constraint firstItem="eJ9-Xd-zMk" firstAttribute="top" secondItem="Esb-dj-8MO" secondAttribute="top" constant="4" id="op6-2z-rrb"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

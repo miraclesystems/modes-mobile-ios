@@ -25,6 +25,9 @@ class MilLifeByCatContVC: UIViewController {
       //  ml_verttwocollview.collectionView.reloadData()
         ml_bycat_tableview.tableDataSource.parentVc = self
         ml_bycat_tableview.tableView.reloadData()
+        
+        parentVc?.byCat_lblTitle.text = parentVc?.viewModel?.selectedCategory
+        //parentVc?.byCat_lblTitle.text = "Is this Working?"
     }
     /*
     func showGuidesTableonParent(){
