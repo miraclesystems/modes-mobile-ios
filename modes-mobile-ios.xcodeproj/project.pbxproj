@@ -2023,9 +2023,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = L543ZBG8CP;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3PQ3S442N;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2035,7 +2035,7 @@
 				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
 				PRODUCT_NAME = "My Military OneSource";
-				PROVISIONING_PROFILE_SPECIFIER = "My Military OneSource-distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2049,9 +2049,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = L543ZBG8CP;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3PQ3S442N;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2061,7 +2061,7 @@
 				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
 				PRODUCT_NAME = "My Military OneSource";
-				PROVISIONING_PROFILE_SPECIFIER = "My Military OneSource-distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
