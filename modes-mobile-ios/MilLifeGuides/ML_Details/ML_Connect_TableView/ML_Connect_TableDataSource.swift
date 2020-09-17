@@ -35,7 +35,8 @@ class ML_Connect_TableDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
         cell.label.text = parentVc?.guide?.ExpertsText?[indexPath.row] as? String
         
-        if cell.label.text == "Here are a few:"  {
+        //if cell.label.text == "Here are a few:"  {
+        if indexPath.row == 0  {
             cell.label.font = UIFont.boldSystemFont(ofSize:13)
         }
         
