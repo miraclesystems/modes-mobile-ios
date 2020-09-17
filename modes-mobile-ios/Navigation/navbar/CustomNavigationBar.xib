@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
             <connections>
                 <outlet property="leftButton" destination="unR-Ml-tWu" id="7JE-za-MQM"/>
                 <outlet property="rightButton" destination="QFB-fL-7aq" id="RUe-Ty-Or6"/>
@@ -21,7 +22,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-fL-7aq" userLabel="Right Button">
                     <rect key="frame" x="413" y="16" width="32" height="32"/>
-                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_checkmarkBtn"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_checkmarkBtn" label="Menu"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="gw5-Qs-hqH"/>
                         <constraint firstAttribute="width" constant="32" id="r8y-MI-Xut"/>
@@ -33,7 +34,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
                     <rect key="frame" x="6" y="4" width="202" height="56"/>
-                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn" label="logo"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn" label="My Military One Source">
+                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
                     <constraints>
                         <constraint firstAttribute="width" constant="202" id="5Qy-cu-a13"/>
                         <constraint firstAttribute="height" constant="56" id="9R3-8y-tAL"/>
@@ -44,10 +48,8 @@
                     </connections>
                 </button>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
             <color key="backgroundColor" red="0.070588235294117646" green="0.20000000000000001" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <accessibility key="accessibilityConfiguration" label="header">
-                <bool key="isElement" value="YES"/>
-            </accessibility>
             <constraints>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" constant="6" id="J4b-q8-FZN"/>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="4" id="TlQ-JK-k9n"/>
@@ -57,7 +59,6 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
             <point key="canvasLocation" x="115.94202898550725" y="39.508928571428569"/>
         </view>
     </objects>
