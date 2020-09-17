@@ -205,7 +205,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
     
     
     @IBAction func didTouchbtnMoreArticles(_ sender: Any) {
-        if let url = URL(string: "http://www.militaryonesource.mil") {
+        if let url = URL(string: guide!.MoreArticlesURL!) {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])
             }
@@ -214,7 +214,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
     }
     
     @IBAction func didTouchbtnMoreBenefits(_ sender: Any) {
-        if let url = URL(string: "http://www.militaryonesource.mil") {
+        if let url = URL(string: guide!.MoreBenefitsURL!) {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])
             }
