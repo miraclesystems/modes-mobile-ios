@@ -90,9 +90,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
         print("Constraints Benefits Count: ", myBenefitsTVCount)
         //Show Max of 4 Benefits
         if myBenefitsTVCount > 4 {
-            constraintH_benefits_tv.constant = CGFloat(106 * 4)
+            constraintH_benefits_tv.constant = CGFloat(119 * 4)
         } else {
-            constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+            constraintH_benefits_tv.constant = CGFloat(119 * (myBenefitsTVCount))
         }
         ml_benefits_tableview.tableView.reloadData()
 
@@ -107,7 +107,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
         print("Constraints Connection Count: ", myConnectTVCount)
-        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount))
+        constraintH_connect_tv.constant = CGFloat(50 * (myConnectTVCount))
         ml_connect_tableview.tableView.reloadData()
         
         
@@ -162,9 +162,9 @@ class MilLifeDetailsGuideContVC: UIViewController {
         print("Constraints Benefits Count: ", myBenefitsTVCount)
         //Show Max of 4 Benefits
         if myBenefitsTVCount > 4 {
-            constraintH_benefits_tv.constant = CGFloat(106 * 4)
+            constraintH_benefits_tv.constant = CGFloat(119 * 4)
         } else {
-            constraintH_benefits_tv.constant = CGFloat(106 * (myBenefitsTVCount))
+            constraintH_benefits_tv.constant = CGFloat(119 * (myBenefitsTVCount))
         }
         ml_benefits_tableview.tableView.reloadData()
 
@@ -179,7 +179,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myConnectTVCount = self.guide?.ExpertsText?.count ?? 0
         print("Constraints Connection Count: ", myConnectTVCount)
-        constraintH_connect_tv.constant = CGFloat(38 * (myConnectTVCount))
+        constraintH_connect_tv.constant = CGFloat(50 * (myConnectTVCount))
         ml_connect_tableview.tableView.reloadData()
         
         
