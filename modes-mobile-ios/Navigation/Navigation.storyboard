@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,12 +19,12 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Home" id="9pv-A4-QxB" customClass="HomeViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="9pv-A4-QxB" customClass="HomeViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97v-w8-c1o" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -112,12 +112,12 @@
         <!--Benefits View Controller-->
         <scene sceneID="7gs-5M-3ty">
             <objects>
-                <viewController title="Benefits Finder" id="VNW-vF-bye" userLabel="Benefits View Controller" customClass="BenefitsController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Benefits Finder" id="VNW-vF-bye" userLabel="Benefits View Controller" customClass="BenefitsController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O1Z-sf-q01">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xze-Y8-xFm" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xze-Y8-xFm" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -301,7 +301,7 @@
                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u6-Tv-yWK" userLabel="TableView" customClass="Benefits_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u6-Tv-yWK" userLabel="TableView" customClass="Benefits_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="106" width="375" height="515"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -374,12 +374,12 @@
         <!--MilLife View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="MilLife Guides" id="8rJ-Kc-sve" userLabel="MilLife View Controller" customClass="MilLifeGuidesController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MilLife Guides" id="8rJ-Kc-sve" userLabel="MilLife View Controller" customClass="MilLifeGuidesController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-m1-Euc" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-m1-Euc" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -561,7 +561,7 @@
                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-nN-Ch0" userLabel="TableView" customClass="ML_Guides_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-nN-Ch0" userLabel="TableView" customClass="ML_Guides_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="106" width="375" height="549"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -701,7 +701,7 @@ Military</string>
                                                             <constraint firstItem="9cL-mP-oP9" firstAttribute="leading" secondItem="X5r-ks-5pw" secondAttribute="leading" id="zEz-w7-nqh"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-ya-mze" customClass="VertTwoCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-ya-mze" customClass="VertTwoCollView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="621" width="365" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -967,7 +967,7 @@ MilitaryOneSource.mil</string>
         <!--Right Side MenuVC-->
         <scene sceneID="RxC-Lt-cKT">
             <objects>
-                <viewController storyboardIdentifier="RightSideMenuVC" id="fqM-ij-If9" customClass="RightSideMenuVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightSideMenuVC" id="fqM-ij-If9" customClass="RightSideMenuVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O8R-xh-uzM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -997,7 +997,7 @@ MilitaryOneSource.mil</string>
                                     <constraint firstAttribute="height" constant="350" id="T7X-Gp-6GF"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-Xd-luQ" customClass="Right_VertTwoCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-Xd-luQ" customClass="Right_VertTwoCollView" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="130" y="439" width="245" height="293"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -1110,7 +1110,7 @@ MilitaryOneSource.mil</string>
         <!--Right Menu View Controller-->
         <scene sceneID="T3D-Wh-jhe">
             <objects>
-                <viewController storyboardIdentifier="RightMenuViewController" id="UQI-aD-Ydr" customClass="RightMenuViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightMenuViewController" id="UQI-aD-Ydr" customClass="RightMenuViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oK9-LB-NRX"/>
                         <viewControllerLayoutGuide type="bottom" id="Egt-1p-2ap"/>
@@ -1129,7 +1129,7 @@ MilitaryOneSource.mil</string>
         <!--Side Menu-->
         <scene sceneID="daA-5V-1zA">
             <objects>
-                <viewController storyboardIdentifier="sidemenu_sbid" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="kLI-m7-dHz" customClass="SSASideMenu" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sidemenu_sbid" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="kLI-m7-dHz" customClass="SSASideMenu" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3cV-EW-edJ"/>
                         <viewControllerLayoutGuide type="bottom" id="BJk-5f-9UC"/>
@@ -1164,12 +1164,12 @@ MilitaryOneSource.mil</string>
         <!--Favorites-->
         <scene sceneID="yMm-Pf-DOs">
             <objects>
-                <viewController title="Favorites" id="zcZ-Ll-l0l" userLabel="Favorites" customClass="FavoritesViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Favorites" id="zcZ-Ll-l0l" userLabel="Favorites" customClass="FavoritesViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icc-ND-kAw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dea-cg-bFm" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dea-cg-bFm" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -1428,7 +1428,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstAttribute="height" priority="1" constant="212" id="yLr-JC-WdP"/>
                                                         </constraints>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GUIDES_CELL" id="SQm-Fy-Vik" customClass="FavoriteGuidesTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GUIDES_CELL" id="SQm-Fy-Vik" customClass="FavoriteGuidesTableViewCell" customModule="My_Military_OneSource" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="28" width="343" height="40"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SQm-Fy-Vik" id="KxR-Ra-SXI">
@@ -1517,7 +1517,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstAttribute="height" constant="212" id="h6A-JR-5vB"/>
                                                         </constraints>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BENEFITS_CELL" id="d7o-Yn-Qyx" customClass="FavoritesBenefitsTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BENEFITS_CELL" id="d7o-Yn-Qyx" customClass="FavoritesBenefitsTableViewCell" customModule="My_Military_OneSource" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="28" width="343" height="43.333332061767578"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d7o-Yn-Qyx" id="4Df-4W-Zxn">
@@ -1754,7 +1754,7 @@ MilitaryOneSource.mil</string>
         <!--Connect-->
         <scene sceneID="xf2-Tl-OB5">
             <objects>
-                <viewController storyboardIdentifier="ConnectViewController" interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConnectViewController" interfaceStyle="dark" id="F8V-Gr-LBT" userLabel="Connect" customClass="ConnectViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h18-4L-uDM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1783,28 +1783,28 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
-                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
                                         <state key="normal" image="Image"/>
                                         <connections>
                                             <action selector="makeCall:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="IXI-aM-Mcp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-p4-SoS">
-                                        <rect key="frame" x="12" y="224" width="351" height="136"/>
+                                        <rect key="frame" x="12" y="224" width="351" height="68"/>
                                         <state key="normal" image="button_call_options"/>
                                         <connections>
                                             <action selector="internationalCalling:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="cnC-PM-nD8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-1i-eCc">
-                                        <rect key="frame" x="12" y="287" width="351" height="132"/>
+                                        <rect key="frame" x="12" y="287" width="351" height="66"/>
                                         <state key="normal" image="button_subscribe"/>
                                         <connections>
                                             <action selector="OpenSubscribeLink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="VE9-dO-LX6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
-                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
+                                        <rect key="frame" x="12" y="344" width="351" height="72"/>
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
                                             <action selector="openWeblink:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0xi-CB-TCO"/>
@@ -1817,7 +1817,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48.666666666666657" y="488" width="34" height="34"/>
+                                        <rect key="frame" x="48.666666666666657" y="416" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="Hsy-ma-1nt"/>
                                             <constraint firstAttribute="height" constant="34" id="dGT-83-RV3"/>
@@ -1828,21 +1828,21 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="109.66666666666667" y="488" width="34.000000000000014" height="34"/>
+                                        <rect key="frame" x="109.66666666666667" y="416" width="34.000000000000014" height="34"/>
                                         <state key="normal" image="twitter"/>
                                         <connections>
                                             <action selector="openTwitter:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="oEe-ca-iuu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="170.66666666666666" y="488" width="34" height="34.333333333333371"/>
+                                        <rect key="frame" x="170.66666666666666" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="youtube"/>
                                         <connections>
                                             <action selector="openYoutube:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="0Jh-KX-7BV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="292.66666666666669" y="488" width="34" height="34.333333333333371"/>
+                                        <rect key="frame" x="292.66666666666669" y="416" width="34" height="34.333333333333314"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
                                             <action selector="openInstagram:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="qA5-YO-cEh"/>
@@ -1859,7 +1859,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="231.66666666666666" y="488" width="33.999999999999972" height="34.333333333333371"/>
+                                        <rect key="frame" x="231.66666666666666" y="416" width="33.999999999999972" height="34.333333333333314"/>
                                         <state key="normal" image="pinterest"/>
                                         <connections>
                                             <action selector="openPinterest:" destination="F8V-Gr-LBT" eventType="touchUpInside" id="ill-Jn-k42"/>
@@ -1876,6 +1876,7 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="8Tn-FP-vcs"/>
                                     <constraint firstItem="VXa-AJ-EJq" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="42" id="9Qx-pD-5xp"/>
                                     <constraint firstItem="nQh-mY-6B9" firstAttribute="width" secondItem="Ib8-uX-hr4" secondAttribute="width" id="9t2-d6-Oaz"/>
+                                    <constraint firstItem="kaa-KV-Vd5" firstAttribute="top" secondItem="uGy-WT-kpc" secondAttribute="bottom" constant="44" id="ARd-F6-0pq"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="height" secondItem="0cY-3W-Ov6" secondAttribute="height" multiplier="1.0098" id="CXH-bu-5LH"/>
                                     <constraint firstItem="nQh-mY-6B9" firstAttribute="top" secondItem="yla-7c-AO2" secondAttribute="bottom" id="DYI-bW-cNx"/>
                                     <constraint firstItem="yla-7c-AO2" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="Dfo-cb-Mz7"/>
@@ -1885,7 +1886,6 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="jgK-p4-SoS" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="224" id="JgB-T5-2Ro"/>
                                     <constraint firstItem="Yzo-1i-eCc" firstAttribute="top" secondItem="Y8w-JM-MXu" secondAttribute="top" constant="287" id="KhS-bJ-vrh"/>
                                     <constraint firstItem="699-Pn-9m7" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="NM1-iR-Hqi"/>
-                                    <constraint firstAttribute="bottom" secondItem="kaa-KV-Vd5" secondAttribute="bottom" constant="112.33333333333331" id="Ok9-O7-m3M"/>
                                     <constraint firstAttribute="trailing" secondItem="yla-7c-AO2" secondAttribute="trailing" constant="12" id="P4i-8u-hhv"/>
                                     <constraint firstItem="uGy-WT-kpc" firstAttribute="width" secondItem="0cY-3W-Ov6" secondAttribute="width" id="PQU-d7-hM7"/>
                                     <constraint firstItem="kaa-KV-Vd5" firstAttribute="centerX" secondItem="Y8w-JM-MXu" secondAttribute="centerX" id="TfE-l8-Gfi"/>
@@ -1915,7 +1915,7 @@ MilitaryOneSource.mil</string>
                                     <constraint firstItem="Ib8-uX-hr4" firstAttribute="leading" secondItem="uGy-WT-kpc" secondAttribute="trailing" constant="27" id="zet-l9-Bcy"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-i3-dSv" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-i3-dSv" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -1956,7 +1956,7 @@ MilitaryOneSource.mil</string>
         <!--AboutVC-->
         <scene sceneID="of5-q7-HId">
             <objects>
-                <viewController storyboardIdentifier="AboutVC" id="Emg-8v-chy" userLabel="AboutVC" customClass="AboutVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutVC" id="Emg-8v-chy" userLabel="AboutVC" customClass="AboutVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQY-Cq-rZ0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2005,14 +2005,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-JY-nfF">
-                                                        <rect key="frame" x="30" y="120" width="325" height="56"/>
+                                                        <rect key="frame" x="30" y="120" width="325" height="70.666666666666686"/>
                                                         <string key="text">The My Military OneSource app was developed to deliver fast, 24/7 access to a world of resources and support available for service members, military spouses, survivors and other members of the military community. </string>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d73-pM-f6z">
-                                                        <rect key="frame" x="30" y="267.33333333333331" width="300" height="168"/>
+                                                        <rect key="frame" x="30" y="282" width="300" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="168" id="im5-3Y-rdl"/>
                                                             <constraint firstAttribute="width" constant="300" id="la3-0u-l0j"/>
@@ -2023,14 +2023,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onesource" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Nt-XqX">
-                                                        <rect key="frame" x="30" y="208.33333333333331" width="101" height="24"/>
+                                                        <rect key="frame" x="30" y="223" width="101" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="Nqz-Be-a7t"/>
                                                             <constraint firstAttribute="width" constant="101" id="qKe-N9-T81"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
-                                                        <rect key="frame" x="30" y="242.33333333333331" width="182" height="17"/>
+                                                        <rect key="frame" x="30" y="257" width="182" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="182" id="WyE-n2-gMe"/>
                                                             <constraint firstAttribute="height" constant="17" id="uyO-AG-bWe"/>
@@ -2040,7 +2040,7 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
-                                                        <rect key="frame" x="30" y="461.33333333333337" width="142" height="53"/>
+                                                        <rect key="frame" x="30" y="476" width="142" height="53"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="53" id="Pr4-ri-ctE"/>
                                                             <constraint firstAttribute="width" constant="142" id="xEx-jY-oin"/>
@@ -2115,7 +2115,7 @@ ONESOURCE</string>
         <!--Search Controller-->
         <scene sceneID="8Wo-Mq-DIO">
             <objects>
-                <viewController interfaceStyle="dark" id="uB8-5V-7Ux" userLabel="Search Controller" customClass="SearchTableViewController" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="uB8-5V-7Ux" userLabel="Search Controller" customClass="SearchTableViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89H-x3-zID">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2154,7 +2154,7 @@ ONESOURCE</string>
                                 <rect key="frame" x="0.0" y="104" width="375" height="509"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="9Ri-Ku-wSn" rowHeight="74" style="IBUITableViewCellStyleDefault" id="gc7-la-80w" customClass="CustomTableViewCell" customModule="modes_mobile_ios" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="9Ri-Ku-wSn" rowHeight="74" style="IBUITableViewCellStyleDefault" id="gc7-la-80w" customClass="CustomTableViewCell" customModule="My_Military_OneSource" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gc7-la-80w" id="hSP-3v-pJg">
@@ -2204,7 +2204,7 @@ ONESOURCE</string>
         <!--HomeContView2-->
         <scene sceneID="Vyi-wR-1Ol">
             <objects>
-                <viewController id="J5p-It-l85" userLabel="HomeContView2" customClass="HomeContView2VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="J5p-It-l85" userLabel="HomeContView2" customClass="HomeContView2VC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHg-Th-I5l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2269,7 +2269,7 @@ ONESOURCE</string>
                                                     <constraint firstItem="Qqh-Pc-ahE" firstAttribute="centerY" secondItem="WAK-7x-87f" secondAttribute="centerY" id="v8v-mX-uK4"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-f2-rF8" customClass="HomeTableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-f2-rF8" customClass="HomeTableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="78" width="375" height="270"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -2308,7 +2308,7 @@ ONESOURCE</string>
                                                     <constraint firstItem="poZ-IN-VHP" firstAttribute="leading" secondItem="F00-ll-Hif" secondAttribute="leading" id="gKV-Ka-hCH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRE-Cg-je4" customClass="VertTwoCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRE-Cg-je4" customClass="VertTwoCollView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="405" width="365" height="116"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -2506,12 +2506,12 @@ OneSource consultant</string>
         <!--HomeContView1-->
         <scene sceneID="vfE-md-12y">
             <objects>
-                <viewController id="jal-YN-89e" userLabel="HomeContView1" customClass="HomeContView1VC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jal-YN-89e" userLabel="HomeContView1" customClass="HomeContView1VC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUp-Gs-ez9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-bn-CVR" userLabel="TopView" customClass="GradientView" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-bn-CVR" userLabel="TopView" customClass="GradientView" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-Bn-JdY">
@@ -2561,7 +2561,7 @@ you with today?</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-F6-mNB" customClass="HorzCollView" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-F6-mNB" customClass="HorzCollView" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="333" width="375" height="280"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -2592,8 +2592,8 @@ you with today?</string>
         <!--MillLifeByCatContView-->
         <scene sceneID="He9-xU-9rY">
             <objects>
-                <viewController id="zWb-Lb-MeR" userLabel="MillLifeByCatContView" customClass="MilLifeByCatContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MUA-HI-sVA" customClass="ML_ByCat_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                <viewController id="zWb-Lb-MeR" userLabel="MillLifeByCatContView" customClass="MilLifeByCatContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUA-HI-sVA" customClass="ML_ByCat_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2610,8 +2610,8 @@ you with today?</string>
         <!--MilLifeViewAllContView-->
         <scene sceneID="97T-X6-lHw">
             <objects>
-                <viewController id="qZY-an-pU6" userLabel="MilLifeViewAllContView" customClass="MilLifeViewAllContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZV6-RL-jAf" customClass="ML_ViewAll_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                <viewController id="qZY-an-pU6" userLabel="MilLifeViewAllContView" customClass="MilLifeViewAllContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZV6-RL-jAf" customClass="ML_ViewAll_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2628,7 +2628,7 @@ you with today?</string>
         <!--DetailsGuideContVC-->
         <scene sceneID="LFz-Pz-CYy">
             <objects>
-                <viewController storyboardIdentifier="MilLifeDetailsGuideContVC" id="mHp-je-He9" userLabel="DetailsGuideContVC" customClass="MilLifeDetailsGuideContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MilLifeDetailsGuideContVC" id="mHp-je-He9" userLabel="DetailsGuideContVC" customClass="MilLifeDetailsGuideContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wr-rQ-1cX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2760,7 +2760,7 @@ Military</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rR-1q-tZY" customClass="ML_Articles_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rR-1q-tZY" customClass="ML_Articles_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="48" width="375" height="360"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2829,7 +2829,7 @@ Military</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubk-XC-Wcw" userLabel="Benefits Table View" customClass="ML_Benefits_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubk-XC-Wcw" userLabel="Benefits Table View" customClass="ML_Benefits_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="48" width="375" height="320"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2897,7 +2897,7 @@ Military</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GD9-NU-IiI" userLabel="Web Sites Table View" customClass="ML_Websites_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GD9-NU-IiI" userLabel="Web Sites Table View" customClass="ML_Websites_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="48" width="375" height="150"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -2962,7 +2962,7 @@ for your military move.</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HY-VJ-qqE" userLabel="Connect Table View" customClass="ML_Connect_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HY-VJ-qqE" userLabel="Connect Table View" customClass="ML_Connect_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="124" width="375" height="360"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -3124,12 +3124,12 @@ OneSource consultant</string>
         <!--In App BrowserVC-->
         <scene sceneID="Iir-8q-9H7">
             <objects>
-                <viewController storyboardIdentifier="InAppBrowserVC" id="P4i-nR-qR8" customClass="InAppBrowserVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InAppBrowserVC" id="P4i-nR-qR8" customClass="InAppBrowserVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MSu-XE-xnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-QH-fbp" customClass="CustomNavigationBar" customModule="modes_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-QH-fbp" customClass="CustomNavigationBar" customModule="My_Military_OneSource" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -3195,8 +3195,8 @@ OneSource consultant</string>
         <!--BenefitsByCatContView-->
         <scene sceneID="8jw-me-KGb">
             <objects>
-                <viewController id="3KV-98-sG5" userLabel="BenefitsByCatContView" customClass="BenefitsByCatContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xpr-1o-nJp" userLabel="Benefits_ByCat_TableVIew" customClass="Benefits_ByCat_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                <viewController id="3KV-98-sG5" userLabel="BenefitsByCatContView" customClass="BenefitsByCatContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xpr-1o-nJp" userLabel="Benefits_ByCat_TableVIew" customClass="Benefits_ByCat_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3213,8 +3213,8 @@ OneSource consultant</string>
         <!--BenefitsViewAllContView-->
         <scene sceneID="jTq-l2-X3P">
             <objects>
-                <viewController id="niU-sm-ZCH" userLabel="BenefitsViewAllContView" customClass="BenefitsViewAllContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kte-0G-Y47" customClass="Benefits_ViewAll_TableView" customModule="modes_mobile_ios" customModuleProvider="target">
+                <viewController id="niU-sm-ZCH" userLabel="BenefitsViewAllContView" customClass="BenefitsViewAllContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kte-0G-Y47" customClass="Benefits_ViewAll_TableView" customModule="My_Military_OneSource" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3231,7 +3231,7 @@ OneSource consultant</string>
         <!--BenefitsDetailsContVC-->
         <scene sceneID="FYg-8h-d5k">
             <objects>
-                <viewController storyboardIdentifier="BenefitsDetailsContVC" id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BenefitsDetailsContVC" id="UMN-Jb-aoq" userLabel="BenefitsDetailsContVC" customClass="BenefitsDetailsContVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPC-Ip-dGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3370,7 +3370,7 @@ OneSource consultant</string>
         <!--SettingsVC-->
         <scene sceneID="Rnz-sH-Ip9">
             <objects>
-                <viewController storyboardIdentifier="SettingsVC" id="pbv-iB-DB7" customClass="SettingsVC" customModule="modes_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" id="pbv-iB-DB7" customClass="SettingsVC" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKf-Xe-ZrT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3537,6 +3537,9 @@ Your information is used only within this app experience. If you delete the app 
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DQX-kY-0UM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
@@ -3588,7 +3591,4 @@ Your information is used only within this app experience. If you delete the app 
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
 </document>
