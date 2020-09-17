@@ -449,7 +449,7 @@
 		1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg"; sourceTree = "<group>"; };
 		1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-1000x500.jpg"; sourceTree = "<group>"; };
 		145805A52512B6930093DB72 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
-		1487F59824E5E6E300C13817 /* modes-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "modes-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1487F59824E5E6E300C13817 /* My Military OneSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Military OneSource.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1487F59F24E5E6E300C13817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -819,7 +819,7 @@
 		1487F59924E5E6E300C13817 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1487F59824E5E6E300C13817 /* modes-mobile-ios.app */,
+				1487F59824E5E6E300C13817 /* My Military OneSource.app */,
 				1487F5AE24E5E6E400C13817 /* modes-mobile-iosTests.xctest */,
 				1487F5B924E5E6E400C13817 /* modes-mobile-iosUITests.xctest */,
 			);
@@ -1310,7 +1310,7 @@
 			);
 			name = "modes-mobile-ios";
 			productName = "modes-mobile-ios";
-			productReference = 1487F59824E5E6E300C13817 /* modes-mobile-ios.app */;
+			productReference = 1487F59824E5E6E300C13817 /* My Military OneSource.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1487F5AD24E5E6E400C13817 /* modes-mobile-iosTests */ = {
@@ -2023,20 +2023,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3PQ3S442N;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L543ZBG8CP;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
+				PRODUCT_NAME = "My Military OneSource";
+				PROVISIONING_PROFILE_SPECIFIER = "My Military OneSource-distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2046,19 +2049,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3PQ3S442N;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L543ZBG8CP;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
+				PRODUCT_NAME = "My Military OneSource";
+				PROVISIONING_PROFILE_SPECIFIER = "My Military OneSource-distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1487F59724E5E6E300C13817"
-               BuildableName = "modes-mobile-ios.app"
+               BuildableName = "My Military OneSource.app"
                BlueprintName = "modes-mobile-ios"
                ReferencedContainer = "container:modes-mobile-ios.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1487F59724E5E6E300C13817"
-            BuildableName = "modes-mobile-ios.app"
+            BuildableName = "My Military OneSource.app"
             BlueprintName = "modes-mobile-ios"
             ReferencedContainer = "container:modes-mobile-ios.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1487F59724E5E6E300C13817"
-            BuildableName = "modes-mobile-ios.app"
+            BuildableName = "My Military OneSource.app"
             BlueprintName = "modes-mobile-ios"
             ReferencedContainer = "container:modes-mobile-ios.xcodeproj">
          </BuildableReference>
