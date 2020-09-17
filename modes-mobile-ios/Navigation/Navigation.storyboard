@@ -945,7 +945,7 @@ MilitaryOneSource.mil</string>
         <!--Home-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabbar_sbid" title="Home" interfaceStyle="dark" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar_sbid" title="Home" interfaceStyle="dark" id="49e-Tb-3d3" customClass="MainTabViewController" customModule="My_Military_OneSource" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -1446,6 +1446,9 @@ MilitaryOneSource.mil</string>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zc-WZ-5hY">
                                                                             <rect key="frame" x="300" y="12.999999999999998" width="20" height="18.333333333333329"/>
+                                                                            <accessibility key="accessibilityConfiguration">
+                                                                                <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                                            </accessibility>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="20" id="PuW-xh-I6o"/>
                                                                                 <constraint firstAttribute="height" constant="18" id="X3I-bY-BSo"/>
@@ -1536,6 +1539,9 @@ MilitaryOneSource.mil</string>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JML-yr-P3k">
                                                                             <rect key="frame" x="300" y="13.999999999999998" width="20" height="18.333333333333329"/>
+                                                                            <accessibility key="accessibilityConfiguration">
+                                                                                <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                                            </accessibility>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="18" id="NQc-zW-qJY"/>
                                                                                 <constraint firstAttribute="width" constant="20" id="au0-fx-ElC"/>
@@ -3538,7 +3544,7 @@ Your information is used only within this app experience. If you delete the app 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
+        <segue reference="jNw-2U-jzd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="351" height="104"/>

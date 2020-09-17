@@ -11,6 +11,7 @@ class FavoritesViewController: UIViewController {
 
     var viewModel : FavoritesViewModel?
     var location : Location?
+    var emailId : String = ""
     
     @IBOutlet weak var viewNoGuides: UIView!
     @IBOutlet weak var viewNoBenefits: UIView!
@@ -90,6 +91,7 @@ class FavoritesViewController: UIViewController {
             // observe the view model
             viewNoInstallation.isHidden = true
             viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
+            viewModel?.addObserver(self, forKeyPath: "emailIdLoaded", options: [.new,.old], context: nil)
         }
         
        
@@ -128,28 +130,13 @@ class FavoritesViewController: UIViewController {
     
     @objc private func emailClicked(_ sender: UITapGestureRecognizer){
         
-        var stUrl = "https://apps.militaryonesource.mil/MOS/f?p=AMS:5:0::::P5_APP_NAME,P5_MSG_TYPE,P5_EID:MilitaryINSTALLATIONS,Installation%20Address,\(location!.id!)"
-        var error = false
-        if(location?.email_address1 != nil && location?.email_address1?.count ?? 0 > 0){
-            
-            if let url = URL(string: "https://www.google.com") {
-            //if let url = URL(string: location?.url1 ?? "") {
-                
-                
-                UIApplication.shared.open(url)
-            }
-            else{
-                error = true
-            }
-            
+        var strUrl = "https://apps.militaryonesource.mil/MOS/f?p=AMS:5:0::::P5_APP_NAME,P5_MSG_TYPE,P5_EID:MilitaryINSTALLATIONS,Installation%20Address,\(self.emailId)"
+      
+    
+        if let url = URL(string: strUrl) {
+            UIApplication.shared.open(url)
         }
         else{
-            error = true
-        }
-        
-        
-        if(error){
-            
             showError(error: "email not available")
         }
         
@@ -255,8 +242,15 @@ class FavoritesViewController: UIViewController {
                         
                         //self.lblEmail.text = location.email_address1
                         //self.lblWebsite.text = location.url1
+                
+                    // get the email id
+                    self.viewModel?.getInstallationEmailId()
                     self.lblPhoneNumber.text = self.location?.phone1
                 }
+        }
+        else{
+            print("do some stuff here for eamil address")
+            self.emailId = self.viewModel?.emailId as! String
         }
     }
 

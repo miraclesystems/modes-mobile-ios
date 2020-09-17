@@ -16,6 +16,8 @@ class FavoriteGuidesTableViewCell: UITableViewCell {
     
     @IBAction func touchFavorite(_ sender: Any) {
         
+        
+        
         ModesDb.shared.setGuideFavorite(favorite: false, name: self.lblFavorite.text!)
         parentVc?.reloadTables()
     }
