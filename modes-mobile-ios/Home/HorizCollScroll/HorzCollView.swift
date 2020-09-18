@@ -12,6 +12,8 @@ class HorzCollView: UIView {
     
     var viewModel : HomeViewModel?
     
+    
+    
     @IBOutlet weak var labelBrowseContent: UILabel!
     let collectionDataSource = HorzCollDataSource()
     //let flowLayout = HorzCollFlowLayout()

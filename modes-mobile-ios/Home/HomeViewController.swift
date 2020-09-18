@@ -39,11 +39,20 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var testMenuButton: UIButton!
     
+    var myCards : [HomePageCardModel] = []
+    
 
   
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if myCards.count == 0 {
+            print("HomveView has not loaded before")
+            myCards = viewModel.getSuggestedCards()
+        } else {
+            print("HomeView has loaded before")
+        }
         
         //link Hamburger Menu to View
         customNavBar.rightButton.addTarget(self, action: #selector(SSASideMenu.presentRightMenuViewController), for: UIControl.Event.touchUpInside)
@@ -75,8 +84,13 @@ class HomeViewController: UIViewController {
         }
         
         
-        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //myCards = viewModel.getSuggestedCards()
+    }
+    
+    
     
     //Set the Initial Focus
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
@@ -90,8 +104,11 @@ class HomeViewController: UIViewController {
         HomeContView1.alpha = 1
         
         
+        
         vc1?.horzCollView.collectionDataSource.viewModel = self.viewModel
         vc1?.horzCollView.collectionView.reloadData()
+        vc1?.horzCollView.collectionView.scrollToItem(at:IndexPath(item: 0, section: 0), at: .left, animated: false)
+
         
         UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.customNavBar.view)
         UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.customNavBar.view)
@@ -102,8 +119,11 @@ class HomeViewController: UIViewController {
     
     func didSelectHorzTile(index: Int){
         print("Back on Home with selection: ", index)
-        let mySelCardType = viewModel.getSuggestedCards()[index].cardType
-        let mySelCardTitle = viewModel.getSuggestedCards()[index].cardTitle
+        //let mySelCardType = viewModel.getSuggestedCards()[index].cardType
+        //let mySelCardTitle = viewModel.getSuggestedCards()[index].cardTitle
+        
+        let mySelCardType = myCards[index].cardType
+        let mySelCardTitle = myCards[index].cardTitle
         
         switch mySelCardType {
         case "MILLIFE GUIDES":
