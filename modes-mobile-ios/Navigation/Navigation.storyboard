@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLI-m7-dHz">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -2020,14 +2020,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-JY-nfF">
-                                                        <rect key="frame" x="30" y="120" width="325" height="56"/>
+                                                        <rect key="frame" x="30" y="120" width="325" height="70.666666666666686"/>
                                                         <string key="text">The My Military OneSource app was developed to deliver fast, 24/7 access to a world of resources and support available for service members, military spouses, survivors and other members of the military community. </string>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
                                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d73-pM-f6z">
-                                                        <rect key="frame" x="30" y="267.33333333333331" width="300" height="168"/>
+                                                        <rect key="frame" x="30" y="282" width="300" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="168" id="im5-3Y-rdl"/>
                                                             <constraint firstAttribute="width" constant="300" id="la3-0u-l0j"/>
@@ -2038,14 +2038,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onesource" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Nt-XqX">
-                                                        <rect key="frame" x="30" y="208.33333333333331" width="101" height="24"/>
+                                                        <rect key="frame" x="30" y="223" width="101" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="Nqz-Be-a7t"/>
                                                             <constraint firstAttribute="width" constant="101" id="qKe-N9-T81"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
-                                                        <rect key="frame" x="30" y="242.33333333333331" width="182" height="17"/>
+                                                        <rect key="frame" x="30" y="257" width="182" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="182" id="WyE-n2-gMe"/>
                                                             <constraint firstAttribute="height" constant="17" id="uyO-AG-bWe"/>
@@ -2055,7 +2055,7 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
-                                                        <rect key="frame" x="30" y="461.33333333333337" width="142" height="53"/>
+                                                        <rect key="frame" x="30" y="476" width="142" height="53"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="53" id="Pr4-ri-ctE"/>
                                                             <constraint firstAttribute="width" constant="142" id="xEx-jY-oin"/>
@@ -3616,7 +3616,4 @@ Your information is used only within this app experience. If you delete the app 
             <color red="0.83099997043609619" green="0.24300000071525574" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="DQX-kY-0UM"/>
-    </inferredMetricsTieBreakers>
 </document>
