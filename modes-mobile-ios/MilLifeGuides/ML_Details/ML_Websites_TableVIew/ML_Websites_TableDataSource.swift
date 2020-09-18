@@ -36,7 +36,9 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         
 
         //cell.label.text = myLabels[indexPath.row]
-        cell.label.text = parentVc?.guide?.RelatedWebsitesText?[indexPath.row]
+        let labelText = parentVc?.guide?.RelatedWebsitesText?[indexPath.row] ?? ""
+        cell.label.text = labelText
+        cell.label.accessibilityLabel = labelText + ", opens in new window"
         //cell.label.text = viewModel?.getWebsites(topic: viewModel?.topic ?? "")[indexPath.row]
         
 

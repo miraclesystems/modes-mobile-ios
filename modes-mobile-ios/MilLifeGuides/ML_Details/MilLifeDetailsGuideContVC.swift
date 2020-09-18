@@ -69,8 +69,10 @@ class MilLifeDetailsGuideContVC: UIViewController {
         self.lblTextOverVIew.text = guide?.Overview
         self.lblArticles.text = guide?.ArticleHeader
         self.btnMoreArticles.setTitle(guide?.MoreArticlesText, for: .normal)
+        self.btnMoreArticles.accessibilityLabel = guide?.MoreArticlesText
         self.btnMoreArticles.titleLabel?.textAlignment = .center
         self.btnMoreBenefits.setTitle(guide?.MoreBenefitsText, for: .normal)
+        self.btnMoreBenefits.accessibilityLabel = guide?.MoreBenefitsText
         self.btnMoreBenefits.titleLabel?.textAlignment = .center
         
         //Show only 3rd word on Button
