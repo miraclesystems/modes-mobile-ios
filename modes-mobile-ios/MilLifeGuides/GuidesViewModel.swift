@@ -28,6 +28,20 @@ class GuidesViewModel{
             "National Guard & Reserve")
 
 
+    func getCategories()-> [String]{
+        
+        var list = [String]()
+        let results = ModesDb.shared.getGuideCategories()
+
+        for item in results{
+        
+            let category = item["Category"] as? String
+            list.append(category!)
+        }
+        return list
+        
+
+    }
 
     /*
     func getGuideCategories():[String]{
@@ -164,13 +178,15 @@ class GuidesViewModel{
     }
 
 
-    func getGuiesByCategory(category : String)-> [String]{
+    func getGuidesByCategory(category : String)-> [Guide]{
 
-        var list = [String]()
+        var list = [Guide]()
         var results = ModesDb.shared.getGuidesByCategory(category: category)
 
+        
         for item in results{
-            list.append(item["Guide"] as! String)
+            self.selectedGuide = item["Guide"] as! String
+            list.append(getGuide())
         }
 
         return list

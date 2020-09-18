@@ -37,7 +37,7 @@ class ML_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
         //cell.label.text = myLabels[indexPath.row]
         //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
         //cell.label.text = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row]
-        cell.label.text = parentVc?.parentVc?.viewModel?.categories[indexPath.row]
+        cell.label.text = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row]
         
         //background
         cell.layer.cornerRadius = 5

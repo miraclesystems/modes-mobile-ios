@@ -15,7 +15,7 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
+        var guides =  parentVc?.viewModel?.getGuidesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
         
         return guides?.count ?? 0
         //return viewModel?.getGuides(topic: viewModel?.topic ?? "").count ?? 0
@@ -44,9 +44,11 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
         
         //cell.label.text = myLabels[indexPath.row]
         
-        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
+        var guides =  parentVc?.viewModel?.getGuidesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
 
-        cell.label.text = guides?[indexPath.row] as! String
+        var guide = guides?[indexPath.row]
+        cell.label.text = guide?.Guide
+        cell.guideImage.image = UIImage(named: (guide?.GuideImage)! + "-200x200.jpg", in: nil, compatibleWith: nil)
         //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
         
         //background
@@ -68,8 +70,8 @@ class ML_Guides_TableDataSource: NSObject, UITableViewDataSource, UITableViewDel
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         //print("label: ", myLabels[indexPath.item])
-        var guides =  parentVc?.viewModel?.getGuiesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
-        parentVc?.viewModel?.selectedGuide = guides?[indexPath.row] as! String
+        var guides =  parentVc?.viewModel?.getGuidesByCategory(category: (parentVc?.viewModel!.selectedCategory)!)
+        parentVc?.viewModel?.selectedGuide = guides?[indexPath.row].Guide as! String
         parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
         parentVc?.vc3?.loadGuide()
     }

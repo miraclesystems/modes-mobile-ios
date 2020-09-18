@@ -19,24 +19,18 @@ class BenefitsViewModel  {
 
 
     func getCategories()-> [String]{
+        
+        var list = [String]()
+        let results = ModesDb.shared.getBenefitCategories()
 
-        let list = [String](arrayLiteral: "New to MilLife*",
-            "Moving & Housing",
-            "Deployment",
-            "Transition Assistance",
-            "Pandemic & Disaster Preparedness",
-            "Survivors & Casualty Assistance",
-            "Relationships",
-            "Military Family Life",
-            "Financial & Legal",
-            "Personal Development & Employment",
-            "Confidential Help & Support",
-            "Health & Wellness*",
-            "Recreation & Travel",
-            "Shopping & Exclusive Offers",
-            "National Guard & Reserve")
-
+        for item in results{
+        
+            let category = item["Category"] as? String
+            list.append(category!)
+        }
         return list
+        
+
     }
 
     func getAllBenefits()->[Benefit]{

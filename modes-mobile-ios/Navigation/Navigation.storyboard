@@ -3255,8 +3255,11 @@ OneSource consultant</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-ac-d8e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
                                                 <constraints>
@@ -3282,11 +3285,8 @@ OneSource consultant</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-Rl-UIe" userLabel="Header">
-                                                <rect key="frame" x="0.0" y="60" width="375" height="600"/>
+                                                <rect key="frame" x="0.0" y="77" width="375" height="485"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_to_white_grad" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-hx-z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
-                                                    </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eHL-hN-4wd">
                                                         <rect key="frame" x="20" y="0.0" width="335" height="80"/>
                                                         <constraints>
@@ -3298,19 +3298,19 @@ OneSource consultant</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-ao-x62">
-                                                        <rect key="frame" x="20" y="100" width="335" height="288"/>
+                                                        <rect key="frame" x="20" y="100" width="335" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15j-WV-kcg">
-                                                        <rect key="frame" x="20" y="408" width="158" height="42"/>
+                                                        <rect key="frame" x="20" y="120" width="195" height="42"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="158" id="Nt4-QC-9cA"/>
+                                                            <constraint firstAttribute="width" constant="195" id="Nt4-QC-9cA"/>
                                                             <constraint firstAttribute="height" constant="42" id="mz9-zl-qSf"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <state key="normal" title="Benefit details" backgroundImage="roundBtn_gray">
+                                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                                                        <state key="normal" title="Benefit details" backgroundImage="benefit-detail-button">
                                                             <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
@@ -3320,32 +3320,32 @@ OneSource consultant</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="15j-WV-kcg" secondAttribute="bottom" constant="150" id="17v-fY-cUd"/>
                                                     <constraint firstItem="15j-WV-kcg" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="1kh-lu-Gxr"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="4rK-Ic-aF1"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="7YY-zV-NcN"/>
                                                     <constraint firstItem="15j-WV-kcg" firstAttribute="top" secondItem="MI3-ao-x62" secondAttribute="bottom" constant="20" id="7l9-KU-FMa"/>
                                                     <constraint firstItem="eHL-hN-4wd" firstAttribute="top" secondItem="wGf-Rl-UIe" secondAttribute="top" id="DCt-xc-zoA"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" constant="20" id="Fkb-pS-08g"/>
                                                     <constraint firstItem="MI3-ao-x62" firstAttribute="top" secondItem="eHL-hN-4wd" secondAttribute="bottom" constant="20" id="i2s-hl-a6N"/>
-                                                    <constraint firstAttribute="bottom" secondItem="t6y-hx-z9l" secondAttribute="bottom" id="jcy-II-ddj"/>
-                                                    <constraint firstItem="t6y-hx-z9l" firstAttribute="leading" secondItem="wGf-Rl-UIe" secondAttribute="leading" id="kH7-EJ-isv"/>
                                                     <constraint firstAttribute="trailing" secondItem="MI3-ao-x62" secondAttribute="trailing" constant="20" id="nFe-fw-Kza"/>
-                                                    <constraint firstItem="t6y-hx-z9l" firstAttribute="top" secondItem="wGf-Rl-UIe" secondAttribute="top" id="rsr-Oa-TFR"/>
-                                                    <constraint firstAttribute="trailing" secondItem="t6y-hx-z9l" secondAttribute="trailing" id="u09-XP-SZ3"/>
+                                                    <constraint firstAttribute="height" constant="485" id="tMm-XJ-dyM"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" id="2no-n6-Tl0"/>
-                                            <constraint firstAttribute="bottom" secondItem="wGf-Rl-UIe" secondAttribute="bottom" constant="20" id="7pV-Ze-6UJ"/>
                                             <constraint firstAttribute="trailing" secondItem="dPM-8K-REc" secondAttribute="trailing" constant="20" id="DYA-r6-fOy"/>
+                                            <constraint firstAttribute="trailing" secondItem="t6y-hx-z9l" secondAttribute="trailing" id="H6h-kk-7EY"/>
+                                            <constraint firstAttribute="bottom" secondItem="t6y-hx-z9l" secondAttribute="bottom" id="UiN-fC-aRf"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="4" id="V0S-oS-lmX"/>
                                             <constraint firstItem="DjP-xm-12V" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" constant="10" id="V4E-6u-0Rg"/>
-                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="60" id="Ywg-Ps-vdM"/>
-                                            <constraint firstAttribute="trailing" secondItem="wGf-Rl-UIe" secondAttribute="trailing" id="l8b-Ig-C8b"/>
+                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="DjP-xm-12V" secondAttribute="bottom" constant="19" id="WUq-cr-Ldn"/>
+                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="top" secondItem="dPM-8K-REc" secondAttribute="bottom" constant="32" id="Ywg-Ps-vdM"/>
+                                            <constraint firstItem="t6y-hx-z9l" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" id="eVi-Dv-uVV"/>
+                                            <constraint firstAttribute="trailing" secondItem="wGf-Rl-UIe" secondAttribute="trailing" id="m2h-7c-tfX"/>
+                                            <constraint firstItem="t6y-hx-z9l" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" id="oGG-mO-t1B"/>
                                             <constraint firstItem="dPM-8K-REc" firstAttribute="top" secondItem="oFr-ac-d8e" secondAttribute="top" constant="25" id="ulC-a9-J3a"/>
+                                            <constraint firstItem="wGf-Rl-UIe" firstAttribute="leading" secondItem="oFr-ac-d8e" secondAttribute="leading" id="uy7-pJ-eoo"/>
+                                            <constraint firstAttribute="height" constant="685" id="wYf-Bx-R7j"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -3380,7 +3380,7 @@ OneSource consultant</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfJ-y4-zf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652" y="671.96401799100454"/>
+            <point key="canvasLocation" x="3652" y="671.30541871921184"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="Rnz-sH-Ip9">
@@ -3562,15 +3562,14 @@ Your information is used only within this app experience. If you delete the app 
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
-
     <inferredMetricsTieBreakers>
         <segue reference="jNw-2U-jzd"/>
     </inferredMetricsTieBreakers>
-
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
         <image name="back_blue" width="24" height="24"/>
+        <image name="benefit-detail-button" width="195" height="32"/>
         <image name="benefits_focused_ic" width="26" height="23.333333969116211"/>
         <image name="benefits_ic" width="26" height="23.333333969116211"/>
         <image name="buttion_visit" width="351" height="72"/>
