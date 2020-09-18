@@ -96,6 +96,8 @@ class UserSettingsInstallationsViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         print("view did appear")
+        
+        searchInstBtn.titleLabel?.text = "Search installations"
     }
     
    

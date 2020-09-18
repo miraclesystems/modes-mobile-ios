@@ -135,7 +135,7 @@ class UserSettingsViewController: UIViewController {
                     vc2.indBtn3Install.setTitle("3", for: .normal)
                     vc2.indBtn3Install.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
                 }
-            
+            vc2.searchInstBtn.setTitle("Search installations", for: UIControl.State.normal)
         }
         
         //TODO:  Animation?

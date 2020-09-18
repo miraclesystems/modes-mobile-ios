@@ -9,10 +9,31 @@ import Foundation
 
 class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
     
+    
+    var emailId : String = ""
+    
     @objc dynamic var dataLoaded = false
+    var gettingInstallationInfo = false
     var hasDataError = false
     var dataError : String = ""
     var locationsModel : LocationsModel?
+    
+    
+    @objc dynamic var emailIdLoaded = false
+    var gettingEmailId = false
+    
+    
+    func getInstallationEmailId(){
+        //https://apps.pre.militaryonesource.mil/omos/pre-production/getInstallationContactsbyDirectory/3145/1
+
+        gettingEmailId = true
+        
+        let id : String =  PreferencesUtil.shared.installation
+        let  urlString =  BASE_URL + "/getInstallationContactsbyDirectory/\(id)/1"
+        let webserviceConnector = WebServiceConnector(urlString: urlString, delegate: self)
+        webserviceConnector.get()
+        
+    }
     
     
     func getInstallation()-> Bool{
@@ -25,6 +46,7 @@ class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
         }
         else {
 
+            gettingInstallationInfo = true
             var  urlString =  BASE_URL + "/getInstallationInfo/" + id
             var webserviceConnector = WebServiceConnector(urlString: urlString, delegate: self)
             webserviceConnector.get()
@@ -81,31 +103,42 @@ class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
     func onSuccess(_ jsonString: String) {
         print("success")
         
-        do{
-             let JSONData = try jsonString.data(using: .utf8)!
-             let model = try JSONDecoder().decode(LocationsModel.self, from: JSONData)
-             self.locationsModel = model
-             print(self.locationsModel)
+        if(gettingInstallationInfo){
+            do{
+                 let JSONData = try jsonString.data(using: .utf8)!
+                 let model = try JSONDecoder().decode(LocationsModel.self, from: JSONData)
+                 self.locationsModel = model
+                 print(self.locationsModel)
+                
+                dataLoaded = true
+                
+             }
+             catch let DecodingError.dataCorrupted(context) {
+                 print(context)
+             } catch let DecodingError.keyNotFound(key, context) {
+                 print("Key '\(key)' not found:", context.debugDescription)
+                 print("codingPath:", context.codingPath)
+             } catch let DecodingError.valueNotFound(value, context) {
+                 print("Value '\(value)' not found:", context.debugDescription)
+                 print("codingPath:", context.codingPath)
+             } catch let DecodingError.typeMismatch(type, context)  {
+                 print("Type '\(type)' mismatch:", context.debugDescription)
+                 print("codingPath:", context.codingPath)
+             } catch {
+                 print("error: ", error)
+             }
+            gettingInstallationInfo = false
+        }
+        else{
+            let JSONData = try jsonString.data(using: .utf8)!
+            let jsonResult = try! JSONSerialization.jsonObject(with: JSONData, options: .mutableLeaves)
+            let result = jsonResult as? Dictionary<String, AnyObject>
             
-            dataLoaded = true
+            let items = result?["items"] as! Array<AnyObject> as Array<AnyObject>
+            self.emailId = String(items[0]["CONT_ID"] as! Int)
             
-         }
-         catch let DecodingError.dataCorrupted(context) {
-             print(context)
-         } catch let DecodingError.keyNotFound(key, context) {
-             print("Key '\(key)' not found:", context.debugDescription)
-             print("codingPath:", context.codingPath)
-         } catch let DecodingError.valueNotFound(value, context) {
-             print("Value '\(value)' not found:", context.debugDescription)
-             print("codingPath:", context.codingPath)
-         } catch let DecodingError.typeMismatch(type, context)  {
-             print("Type '\(type)' mismatch:", context.debugDescription)
-             print("codingPath:", context.codingPath)
-         } catch {
-             print("error: ", error)
-         }
-        
-       
+            emailIdLoaded = true
+        }
     }
     
 
@@ -116,10 +149,10 @@ class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
 
 class FavoritesViewModelObserver : NSObject{
     
-    @objc var viewModel : BaseViewModel
+    @objc var viewModel : FavoritesViewModel
        var observation: NSKeyValueObservation?
     
-    init(object: BaseViewModel) {
+    init(object: FavoritesViewModel) {
         viewModel = object
         super.init()
         
@@ -128,8 +161,12 @@ class FavoritesViewModelObserver : NSObject{
             options: [.old, .new]
         ) { object, change in
             print("data changed")
-            
-            
+        }
+        observation = observe(
+            \.viewModel.emailIdLoaded,
+            options: [.old, .new]
+        ) { object, change in
+            print("data changed")
         }
     }
 }
