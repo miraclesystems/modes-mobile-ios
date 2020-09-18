@@ -102,7 +102,7 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
         
        var list = [HomePageCardModel]()
         
-        var results = ModesDb.shared.getBenefitsByAudience(audience: "spouse")
+        var results = ModesDb.shared.getBenefitsByAudience(audience: PreferencesUtil.shared.userDescription)
         
         for item in results{
             
@@ -115,8 +115,8 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
             list.append(card)
         }
         
-        
-        results = ModesDb.shared.getGuidesByAudience(audience: "spouse")
+        print("userDescription: ", PreferencesUtil.shared.userDescription)
+        results = ModesDb.shared.getGuidesByAudience(audience: PreferencesUtil.shared.userDescription)
         for item in results{
 
             var card = HomePageCardModel()

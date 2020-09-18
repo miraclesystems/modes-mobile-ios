@@ -25,6 +25,7 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var lblInstallation: UILabel!
     @IBOutlet weak var lblBranch: UILabel!
     
+    @IBOutlet weak var lblSettingsText: UILabel!
     
     
     @IBAction func backBtnTouched(_ sender: Any) {
@@ -66,6 +67,23 @@ class SettingsVC: UIViewController {
         lblRole.text = PreferencesUtil.shared.userDescription
         lblInstallation.text = ""
         lblBranch.text = PreferencesUtil.shared.branch
+        
+        
+        let mySettingsText = "The My Military OneSource app is personalized to you. Review or update your information below. \nYour information is used only within this app experience. If you delete the app your personalized settings will not be saved."
+        
+        let attributedString = NSMutableAttributedString(string: mySettingsText)
+
+        // *** Create instance of `NSMutableParagraphStyle`
+        let paragraphStyle = NSMutableParagraphStyle()
+
+        // *** set LineSpacing property in points ***
+        paragraphStyle.lineSpacing = 4 // Whatever line spacing you want in points
+
+        // *** Apply attribute to string ***
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+
+        // *** Set Attributed String to your label ***
+        lblSettingsText.attributedText = attributedString
 
         // Do any additional setup after loading the view.
     }

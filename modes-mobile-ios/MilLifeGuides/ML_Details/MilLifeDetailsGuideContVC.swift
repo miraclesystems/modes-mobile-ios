@@ -42,6 +42,8 @@ class MilLifeDetailsGuideContVC: UIViewController {
     @IBOutlet weak var lblBenefits: UILabel!
     @IBOutlet weak var btnMoreBenefits: UIButton!
     
+    @IBOutlet weak var viewSpeakwith: UIView!
+    
     @IBOutlet weak var buttonFavorite: UIButton!
     @IBAction func touchFavorite(_ sender: Any) {
         
@@ -102,7 +104,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myWebTVCount = self.guide?.RelatedWebsitesText?.count ?? 0
         print("Constraints WebSites Count: ", myWebTVCount)
-        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount))
+        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount) + 30)
         ml_websites_tableview.tableView.reloadData()
 
         ml_connect_tableview.tableDataSource.parentVc = self
@@ -174,7 +176,7 @@ class MilLifeDetailsGuideContVC: UIViewController {
         //Constraint Heights
         let myWebTVCount = self.guide?.RelatedWebsitesText?.count ?? 0
         print("Constraints WebSites Count: ", myWebTVCount)
-        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount))
+        constraintH_websites_tv.constant = CGFloat(38 * (myWebTVCount) + 30)
         ml_websites_tableview.tableView.reloadData()
 
         ml_connect_tableview.tableDataSource.parentVc = self
@@ -255,7 +257,13 @@ class MilLifeDetailsGuideContVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        viewSpeakwith.layer.cornerRadius = 5
+        viewSpeakwith.layer.borderWidth = 0.0
+        viewSpeakwith.layer.shadowColor = UIColor.black.cgColor
+        viewSpeakwith.layer.shadowOffset = CGSize(width: 5, height: 5)
+        viewSpeakwith.layer.shadowRadius = 5.0
+        viewSpeakwith.layer.shadowOpacity = 0.1
+        viewSpeakwith.layer.masksToBounds = false
         
         if(!(selectedGuide?.isEmpty ?? true)){
             var viewModel = GuidesViewModel()

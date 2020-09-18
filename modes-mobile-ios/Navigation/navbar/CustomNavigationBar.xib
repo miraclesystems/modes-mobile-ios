@@ -20,10 +20,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-fL-7aq" userLabel="Right Button">
-                    <rect key="frame" x="413" y="16" width="32" height="32"/>
+                    <rect key="frame" x="413" y="18" width="32" height="34"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_checkmarkBtn" label="Menu"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="32" id="gw5-Qs-hqH"/>
+                        <constraint firstAttribute="height" constant="34" id="gw5-Qs-hqH"/>
                         <constraint firstAttribute="width" constant="32" id="r8y-MI-Xut"/>
                     </constraints>
                     <state key="normal" image="hamburger_menu"/>
@@ -51,7 +51,7 @@
             <constraints>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" constant="6" id="J4b-q8-FZN"/>
                 <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="4" id="TlQ-JK-k9n"/>
-                <constraint firstItem="QFB-fL-7aq" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="16" id="ZIr-g0-IkN"/>
+                <constraint firstItem="QFB-fL-7aq" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="18" id="ZIr-g0-IkN"/>
                 <constraint firstItem="wpF-P1-aoN" firstAttribute="trailing" secondItem="QFB-fL-7aq" secondAttribute="trailing" constant="15" id="vM3-cl-Wtl"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
@@ -62,7 +62,7 @@
         </view>
     </objects>
     <resources>
-        <image name="hamburger_menu" width="32" height="32"/>
+        <image name="hamburger_menu" width="32" height="40"/>
         <image name="modes_logo_appbar" width="172" height="30"/>
     </resources>
 </document>
