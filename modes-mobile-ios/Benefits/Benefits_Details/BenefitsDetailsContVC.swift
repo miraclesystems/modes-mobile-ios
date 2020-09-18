@@ -74,6 +74,9 @@ class BenefitsDetailsContVC: UIViewController {
             benefit = parentVc?.viewModel?.getSelectedBenefit()
         }
         self.benefitsTitle.text = benefit?.Benefit
+        benefitsText.numberOfLines = 0
+        benefitsText.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         self.benefitsText.text = benefit?.LongDescription
         
         if((benefit?.favorite ?? false)){
@@ -84,6 +87,9 @@ class BenefitsDetailsContVC: UIViewController {
             buttonFavorite.setImage(UIImage.init(named: "favorite_unselected"), for: UIControl.State.normal)
             buttonFavorite.setBackgroundImage(UIImage.init(named: "favorite_unselected"), for:  UIControl.State.normal)
         }
+        
+        benefitsText.sizeToFit()
+        
     }
     
     override func viewDidLoad() {
