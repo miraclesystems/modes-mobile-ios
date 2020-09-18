@@ -230,9 +230,11 @@ class FavoritesViewController: UIViewController {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
            
         // the view model chaged
-        if keyPath == "dataLoaded" {
+        if keyPath == "dataLoaded" && viewModel?.dataLoaded == true {
+            sleep(1)
                DispatchQueue.main.async {
                     print("Do some stuff on the ui")
+                
                     self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
                 
                     self.lblInstallationName.text = self.location?.name
@@ -246,6 +248,7 @@ class FavoritesViewController: UIViewController {
                     // get the email id
                     self.viewModel?.getInstallationEmailId()
                     self.lblPhoneNumber.text = self.location?.phone1
+                
                 }
         }
         else{
