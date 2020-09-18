@@ -19,9 +19,14 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
         let cards = viewModel?.getSuggestedCards()
         let card = cards?[indexPath.row]
         
-        cell.label.text = card?.cardTitle
-        cell.labelHeader.text = card?.cardType
+        let labelText = card?.cardTitle ?? ""
+        let titleText = card?.cardType ?? ""
+        
+        cell.label.text = labelText
+        cell.label.accessibilityLabel = titleText + ", " + labelText
+        cell.labelHeader.text = titleText
         cell.imgRecommended.isHidden = !(card?.recommended ?? false)
+        
         
         switch card?.cardType {
         case "MILLIFE GUIDES":

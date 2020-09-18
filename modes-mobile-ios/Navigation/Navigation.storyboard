@@ -265,6 +265,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlV-I7-R8g">
                                         <rect key="frame" x="20" y="14" width="24" height="24"/>
+                                        <accessibility key="accessibilityConfiguration" label="Back"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="Kv4-NZ-KJ0"/>
                                             <constraint firstAttribute="width" constant="24" id="Xug-e0-mZQ"/>
@@ -525,6 +526,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puf-ux-eYK">
                                         <rect key="frame" x="20" y="14" width="24" height="24"/>
+                                        <accessibility key="accessibilityConfiguration" label="Back"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="AA0-nH-ULT"/>
                                             <constraint firstAttribute="width" constant="24" id="Uk6-9n-qGG"/>
@@ -2155,7 +2157,7 @@ ONESOURCE</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Nu-z43">
                                 <rect key="frame" x="11" y="61" width="15" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <accessibility key="accessibilityConfiguration" identifier="back button" label="back button"/>
+                                <accessibility key="accessibilityConfiguration" identifier="back button" label="Back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Hsl-fW-Mh8"/>
                                     <constraint firstAttribute="width" constant="15" id="pYI-Tc-tFi"/>
@@ -3051,6 +3053,7 @@ OneSource consultant</string>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFU-pz-1In">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
+                                                <accessibility key="accessibilityConfiguration" label="Back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="oki-Yu-IZ1"/>
                                                     <constraint firstAttribute="width" constant="54" id="ult-uN-K9U"/>
@@ -3158,6 +3161,7 @@ OneSource consultant</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-kk-yDR">
                                         <rect key="frame" x="20" y="8.6666666666666714" width="22" height="18"/>
+                                        <accessibility key="accessibilityConfiguration" label="Back"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="4KQ-N8-iEH"/>
                                             <constraint firstAttribute="width" constant="22" id="ysy-UU-7Us"/>
@@ -3259,6 +3263,7 @@ OneSource consultant</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-xm-12V">
                                                 <rect key="frame" x="10" y="4" width="54" height="54"/>
+                                                <accessibility key="accessibilityConfiguration" label="Back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="7pd-4F-QIE"/>
                                                     <constraint firstAttribute="width" constant="54" id="iDl-kn-Kcf"/>
