@@ -12,18 +12,21 @@ class HomeContView1VC: UIViewController {
 
     var parentVc : HomeViewController?
     
+   
+    
     @IBOutlet weak var horzCollView: HorzCollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+        horzCollView.collectionDataSource.parentVc = self
+}
     
     override func viewDidAppear(_ animated: Bool) {
         
         UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.horzCollView.labelBrowseContent)
         UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.horzCollView.labelBrowseContent)
-        horzCollView.collectionDataSource.parentVc = self
+        
         //ml_verttwocollview.collectionView.reloadData()
     }
     
