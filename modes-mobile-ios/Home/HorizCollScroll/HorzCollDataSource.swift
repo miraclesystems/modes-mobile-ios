@@ -7,6 +7,8 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
     var viewModel : HomeViewModel?
     
     var parentVc : HomeContView1VC?
+    
+    
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.getSuggestedCards().count ?? 0
@@ -16,19 +18,22 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorzCollCell", for: indexPath) as! HorzCollCell
         
-        let cards = viewModel?.getSuggestedCards()
-        let card = cards?[indexPath.row]
+        //let cards = viewModel?.getSuggestedCards()
+        //let card = cards?[indexPath.row]
         
-        let labelText = card?.cardTitle ?? ""
-        let titleText = card?.cardType ?? ""
+        let cards = parentVc!.parentVc!.myCards
+        let card = cards[indexPath.row]
+        
+        let labelText = card.cardTitle ?? ""
+        let titleText = card.cardType ?? ""
         
         cell.label.text = labelText
         cell.label.accessibilityLabel = titleText + ", " + labelText
         cell.labelHeader.text = titleText
-        cell.imgRecommended.isHidden = !(card?.recommended ?? false)
+        cell.imgRecommended.isHidden = !(card.recommended ?? false)
         
         
-        switch card?.cardType {
+        switch card.cardType {
         case "MILLIFE GUIDES":
             cell.headerImage.image = UIImage(named: "millife_ic")
         
@@ -51,9 +56,15 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
             print ("Selected: ", indexPath.row)
+            /*
             let cards = viewModel?.getSuggestedCards()
             let cardTitle = cards?[indexPath.row].cardTitle
             let cardType = cards?[indexPath.row].cardType
+            */
+            
+            let cards = parentVc!.parentVc!.myCards
+            let cardTitle = cards[indexPath.row].cardTitle
+            let cardType = cards[indexPath.row].cardType
             
             
             switch cardType{
@@ -73,9 +84,13 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     vc.selectedGuide = selectedGuide
                     parentVc?.present(vc, animated: true)
                 case "CONNECT":
+                    /*
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "ConnectViewController") as! ConnectViewController
                     parentVc?.present(vc, animated: true)
+                    */
+                    print("Connect ")
+                    parentVc?.parentVc?.tabBarController!.selectedIndex = 4
                 
                 case "ABOUT US":
                     print("do nothing")
