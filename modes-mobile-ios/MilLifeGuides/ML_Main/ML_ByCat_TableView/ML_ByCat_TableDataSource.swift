@@ -9,14 +9,9 @@ class ML_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
    
     var parentVc : MilLifeByCatContVC?
     
-    
-    var myLabels = [ "Non-Medical Counseling", "Wellness & Life Coaching", "DIscounts & Exclusive Offers"]
-    
-
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return parentVc?.parentVc?.viewModel?.categories.count ?? 0
+        return parentVc?.parentVc?.viewModel?.getCategories().count ?? 0
         //return parentVc?.parentVc?.viewModel?.getCategories().count ?? 0
         //return myLabels.count
        
@@ -30,13 +25,9 @@ class ML_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
 
 
         
-        //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
-        //cell.imageView.image = UIImage(named: myImages[indexPath.item])
+       
+       
         
-        //cell.label.text = parentVc?.parentVc?.viewModel?.getAllBenefits()[indexPath.row]
-        //cell.label.text = myLabels[indexPath.row]
-        //cell.label.text = viewModel?.getBenefits(topic: viewModel?.topic ?? "")[indexPath.row]
-        //cell.label.text = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row]
         cell.label.text = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row]
         
         //background
@@ -60,7 +51,9 @@ class ML_ByCat_TableDataSource: NSObject, UITableViewDataSource, UITableViewDele
 
         //parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row] as! String
     
-        parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.categories[indexPath.row] as! String
+       
+
+        parentVc?.parentVc?.viewModel?.selectedCategory = parentVc?.parentVc?.viewModel?.getCategories()[indexPath.row] as! String
     
          
 
