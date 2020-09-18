@@ -143,7 +143,6 @@
 		145805A025127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */; };
 		145805A125127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */; };
 		145805A225127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */; };
-		145805A62512B6940093DB72 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 145805A52512B6930093DB72 /* modes.sqlite3 */; };
 		1487F59C24E5E6E300C13817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59B24E5E6E300C13817 /* AppDelegate.swift */; };
 		1487F59E24E5E6E300C13817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59D24E5E6E300C13817 /* SceneDelegate.swift */; };
 		1487F5A024E5E6E300C13817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487F59F24E5E6E300C13817 /* ViewController.swift */; };
@@ -181,6 +180,7 @@
 		14C3233B24FD7C2800065579 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3233A24FD7C2800065579 /* CloudDB.swift */; };
 		14CBD49E25140888000426E6 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CBD49D25140888000426E6 /* MainTabViewController.swift */; };
 		14CBD4A025140CCE000426E6 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD49F25140CCE000426E6 /* Navigation.storyboard */; };
+		14CBD4A225145049000426E6 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD4A125145048000426E6 /* modes.sqlite3 */; };
 		14D5D5F9250EE51C0072A0F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */; };
 		8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363D98B25027C15005ADB46 /* ConnectViewController.swift */; };
 		838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -449,7 +449,6 @@
 		1458058B25127FFE0093DB72 /* MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MOS4_RecTravelShp_Commissaries_Inside your Commissary D2069927-1000x500.jpg"; sourceTree = "<group>"; };
 		1458058C25127FFE0093DB72 /* 12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12 Cant-Miss Parenting Resources for Military Parents-1000x500.jpg"; sourceTree = "<group>"; };
 		1458058D25127FFE0093DB72 /* servicemember-on-laptop-g1015450754-1000x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "servicemember-on-laptop-g1015450754-1000x500.jpg"; sourceTree = "<group>"; };
-		145805A52512B6930093DB72 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		1487F59824E5E6E300C13817 /* My Military OneSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Military OneSource.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487F59B24E5E6E300C13817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1487F59D24E5E6E300C13817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -494,6 +493,7 @@
 		14C3233A24FD7C2800065579 /* CloudDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
 		14CBD49D25140888000426E6 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		14CBD49F25140CCE000426E6 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		14CBD4A125145048000426E6 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
 		14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EEEB15F3B43D58AE0C3CE7E /* Pods-modes-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios/Pods-modes-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		2F9378296D9D34633B9B7CCC /* Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios-modes-mobile-iosUITests/Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -831,7 +831,7 @@
 		1487F59A24E5E6E300C13817 /* modes-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				145805A52512B6930093DB72 /* modes.sqlite3 */,
+				14CBD4A125145048000426E6 /* modes.sqlite3 */,
 				145804C825127F770093DB72 /* small-images */,
 				14D5D5FA250FC7050072A0F9 /* images-large */,
 				A958EB6E24F5262300989D70 /* Navigation */,
@@ -1412,7 +1412,7 @@
 				1458055925127FAE0093DB72 /* Survivor Financial Planning - D1722083-200x200.jpg in Resources */,
 				1458056225127FAE0093DB72 /* Stay Fit During Deployment-200x200.jpg in Resources */,
 				1458055725127FAE0093DB72 /* service-member-getting-covid19-tested-d6241568-200x200.jpg in Resources */,
-				145805A62512B6940093DB72 /* modes.sqlite3 in Resources */,
+				14CBD4A225145049000426E6 /* modes.sqlite3 in Resources */,
 				1458053725127FAE0093DB72 /* The EFMP - D2510599-200x200.jpg in Resources */,
 				A9BF9A9024F565530073C0DE /* WorkSans-Black.ttf in Resources */,
 				A9B017F624F90E1E000E2320 /* HorzCollCell.xib in Resources */,
