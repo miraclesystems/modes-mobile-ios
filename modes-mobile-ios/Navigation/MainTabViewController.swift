@@ -23,6 +23,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate {
             print("First tab")
             var vc = viewController as! HomeViewController
             vc.viewDidLoad()
+            vc.viewWillAppear(true)
             
         } else if viewController is MilLifeGuidesController {
             print("Second tab")
