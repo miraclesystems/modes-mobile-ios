@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HorzCollCell" id="gTV-IL-0wX" customClass="HorzCollCell" customModule="modes_mobile_ios" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HorzCollCell" id="gTV-IL-0wX" customClass="HorzCollCell" customModule="My_Military_OneSource" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -24,6 +26,10 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzf-AR-5Z0">
                                         <rect key="frame" x="49.5" y="12" width="44" height="12"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="93c-3C-REL"/>
                                             <constraint firstAttribute="height" constant="12" id="ROf-le-Nr2"/>
@@ -35,6 +41,9 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefits_ic" translatesAutoresizingMaskIntoConstraints="NO" id="8vv-4R-pVU">
                                         <rect key="frame" x="30" y="9" width="15" height="15"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="Zoq-MU-FQc"/>
                                             <constraint firstAttribute="width" constant="15" id="wpf-wk-Y0I"/>
@@ -58,12 +67,15 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommended_round_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Iou-dj-4mX">
                                 <rect key="frame" x="6" y="130" width="123" height="22"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="4IY-v6-MyC"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cwb-5u-Vce" secondAttribute="trailing" constant="10" id="Ajk-2Q-ZYm"/>
                             <constraint firstItem="cwb-5u-Vce" firstAttribute="leading" secondItem="hU8-8c-BdL" secondAttribute="leading" constant="10" id="D63-d0-7uZ"/>
@@ -79,6 +91,7 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="hU8-8c-BdL" secondAttribute="trailing" id="80C-Vw-4oY"/>
@@ -86,7 +99,6 @@
                 <constraint firstItem="hU8-8c-BdL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WuP-aa-168"/>
                 <constraint firstAttribute="bottom" secondItem="hU8-8c-BdL" secondAttribute="bottom" id="vk9-LV-Xoo"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="137" height="143"/>
             <connections>
                 <outlet property="backView" destination="hU8-8c-BdL" id="k7p-2L-Sre"/>
@@ -103,5 +115,8 @@
     <resources>
         <image name="benefits_ic" width="26" height="23.5"/>
         <image name="recommended_round_blue" width="185" height="34"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
