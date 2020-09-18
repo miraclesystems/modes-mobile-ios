@@ -3562,9 +3562,11 @@ Your information is used only within this app experience. If you delete the app 
             <point key="canvasLocation" x="2271.1999999999998" y="4283.4975369458134"/>
         </scene>
     </scenes>
+
     <inferredMetricsTieBreakers>
         <segue reference="jNw-2U-jzd"/>
     </inferredMetricsTieBreakers>
+
     <resources>
         <image name="Image" width="351" height="104"/>
         <image name="back_arrow" width="15" height="12"/>
