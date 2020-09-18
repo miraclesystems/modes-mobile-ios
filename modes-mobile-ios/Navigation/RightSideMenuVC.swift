@@ -45,7 +45,7 @@ class RightSideMenuVC: UIViewController {
     
     @IBOutlet weak var viewforRightVertTwoCol: Right_VertTwoCollView!
     //Array of Page Titles
-    let titles: [String] = ["my Military OneSource", "MilLife Guides", "Benefits", "Favorites", "Connect", "", "About my Military OneSource", "Settings", "Feedback", "", "Military OneSource Network"]
+    let titles: [String] = ["my Military OneSource", "MilLife Guides", "Benefits Finder", "Favorites", "Connect", "", "About my Military OneSource", "Settings", "Feedback", "", "Military OneSource Network"]
     
     
     var customView = UIView()
