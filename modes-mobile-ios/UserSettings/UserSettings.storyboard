@@ -837,7 +837,7 @@ of service </string>
                         <rect key="frame" x="0.0" y="0.0" width="334" height="537.33333333333348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" background="search_bar" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-Oq-ILi">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search by installation name" textAlignment="natural" minimumFontSize="17" background="search_bar" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-Oq-ILi">
                                 <rect key="frame" x="41" y="54" width="248" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
