@@ -47,6 +47,9 @@ class FavoritesViewController: UIViewController {
     @IBOutlet weak var tableViewGuides: UITableView!
     @IBOutlet weak var tableViewBenefits: UITableView!
     
+    // buttons
+    @IBOutlet weak var btnAddInstallation: UIButton!
+    
     
     func showError(error : String){
         
@@ -126,6 +129,13 @@ class FavoritesViewController: UIViewController {
         lblPhoneNumber.addGestureRecognizer(phoneGesture)
         
        
+    }
+    
+    @IBAction func btnAddInstallationTouched(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "UserSettings", bundle:nil)
+        let userSettingsViewController = storyBoard.instantiateViewController(withIdentifier: "UserSettingsViewController") as! UserSettingsViewController
+        self.present(userSettingsViewController, animated:true, completion:nil)
+        userSettingsViewController.showPage2()
     }
     
     @objc private func emailClicked(_ sender: UITapGestureRecognizer){
