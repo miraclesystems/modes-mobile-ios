@@ -74,10 +74,29 @@ class BenefitsDetailsContVC: UIViewController {
             benefit = parentVc?.viewModel?.getSelectedBenefit()
         }
         self.benefitsTitle.text = benefit?.Benefit
+        
+        
         benefitsText.numberOfLines = 0
         benefitsText.lineBreakMode = NSLineBreakMode.byWordWrapping
         
-        self.benefitsText.text = benefit?.LongDescription
+        //self.benefitsText.text = benefit?.LongDescription
+        
+        let attributedString = NSMutableAttributedString(string: benefit?.LongDescription ?? "")
+
+        // *** Create instance of `NSMutableParagraphStyle`
+        let paragraphStyle = NSMutableParagraphStyle()
+
+        // *** set LineSpacing property in points ***
+        paragraphStyle.lineSpacing = 4 // Whatever line spacing you want in points
+
+        // *** Apply attribute to string ***
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+
+        // *** Set Attributed String to your label ***
+        benefitsText.attributedText = attributedString
+        
+        
+        
         
         if((benefit?.favorite ?? false)){
             buttonFavorite.setImage(UIImage.init(named: "favorites_red"), for: UIControl.State.normal)

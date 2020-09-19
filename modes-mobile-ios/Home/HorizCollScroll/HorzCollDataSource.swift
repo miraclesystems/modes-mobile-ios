@@ -93,7 +93,10 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     parentVc?.parentVc?.tabBarController!.selectedIndex = 4
                 
                 case "ABOUT US":
-                    print("do nothing")
+                    let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
+                    parentVc?.present(vc, animated: true)
+                
                 default:
                     print("do nothing")
             }
