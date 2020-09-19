@@ -12,11 +12,14 @@ import WebKit
 class InAppBrowserVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var custNavBar: CustomNavigationBar!
     
     var urlString : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         print("On InAppBrowser")
+        
+        custNavBar.rightButton.isHidden = true
         
         // Do any additional setup after loading the view.
         let url = URL(string: urlString!.trimmingCharacters(in: CharacterSet([" "])))

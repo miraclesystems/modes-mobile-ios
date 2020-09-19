@@ -318,5 +318,28 @@ class MilLifeDetailsGuideContVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    func showInAppBrowserfromGuideDetails(url: String){
+        print("Back on Main showInAppBrowseronGuideDetails with index: ", index)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Navigation", bundle:nil)
+
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "InAppBrowserVC") as! InAppBrowserVC
+        nextVC.urlString = url
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated:true, completion:nil)
+    }
+    
+    func showRelatedWebsitesfromGuideDetails(urlString: String){
+          print ("Back on Main showRelatedWEbsites with index: ", index)
+          
+    
+          let trimmedUrl = urlString.trimmingCharacters(in: CharacterSet([" "]))
+          if let url = URL(string: trimmedUrl) {
+                     if UIApplication.shared.canOpenURL(url) {
+                         UIApplication.shared.open(url, options: [:])
+                     }
+                 }
+      }
 
 }

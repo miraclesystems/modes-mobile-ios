@@ -71,7 +71,8 @@ class ML_Articles_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
         tableView.deselectRow(at: indexPath, animated: true)
         print("label: ", myLabels[indexPath.item])
         //parentVc?.showOverlay(view: (parentVc?.DetailsGuideCont)!)
-        parentVc?.parentVc?.showInAppBrowser(url: (parentVc?.guide?.listArticles?[indexPath.row]?.url)! as String)
+        //parentVc?.parentVc?.showInAppBrowser(url: (parentVc?.guide?.listArticles?[indexPath.row]?.url)! as String)
+        parentVc?.showInAppBrowserfromGuideDetails(url: (parentVc?.guide?.listArticles?[indexPath.row]?.url)! as String)
     
     }
     

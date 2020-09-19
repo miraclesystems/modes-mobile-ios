@@ -54,7 +54,8 @@ class ML_Websites_TableDataSource: NSObject, UITableViewDataSource, UITableViewD
     print("indexPath.row: ", indexPath.row)
     print("myIndex: ", myIndex!.count)
         if indexPath.row <= myIndex!.count - 1 {
-            parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
+            //parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
+            parentVc?.showRelatedWebsitesfromGuideDetails(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)
         }
           
         //parentVc?.parentVc?.showRelatedWebsites(urlString: (parentVc?.guide?.RelatedWebsitesURL?[indexPath.row])!)

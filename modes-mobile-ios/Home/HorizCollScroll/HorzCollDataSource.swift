@@ -75,6 +75,7 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
                     vc.selectedBenefit = selectedBenefit
+                    //vc.modalPresentationStyle = .fullScreen
                     parentVc?.present(vc, animated: true)
                 
                 case "MILLIFE GUIDES":
@@ -82,6 +83,7 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "MilLifeDetailsGuideContVC") as! MilLifeDetailsGuideContVC
                     vc.selectedGuide = selectedGuide
+                    //vc.modalPresentationStyle = .fullScreen
                     parentVc?.present(vc, animated: true)
                 case "CONNECT":
                     /*
