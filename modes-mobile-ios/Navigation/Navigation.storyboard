@@ -1200,7 +1200,7 @@ MilitaryOneSource.mil</string>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-cn-Vmy" userLabel="View No Benefits">
                                                 <rect key="frame" x="15" y="1300" width="344" height="170"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Benefits Favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7X-mWf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Benefits saved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7X-mWf">
                                                         <rect key="frame" x="69" y="28" width="206" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="OrD-lE-1zI"/>
@@ -1211,11 +1211,11 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To favorite and save a benefit, click the ♡ in the corner of the benefit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
-                                                        <rect key="frame" x="43.666666666666657" y="62" width="257" height="45"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To save a benefit to your favorites, tap on the ♡ in the top corner of the benefit description screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
+                                                        <rect key="frame" x="42" y="53" width="260" height="64"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="c0r-lL-xqH"/>
-                                                            <constraint firstAttribute="width" constant="257" id="lL6-Qs-xKC"/>
+                                                            <constraint firstAttribute="height" constant="64" id="c0r-lL-xqH" userLabel="height = 64"/>
+                                                            <constraint firstAttribute="width" constant="260" id="lL6-Qs-xKC" userLabel="width = 260"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -1224,15 +1224,15 @@ MilitaryOneSource.mil</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="centerX" secondItem="lsy-cn-Vmy" secondAttribute="centerX" id="DfL-As-Adr"/>
                                                     <constraint firstItem="7VN-7X-mWf" firstAttribute="top" secondItem="lsy-cn-Vmy" secondAttribute="top" constant="28" id="UrH-gq-PAp"/>
+                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="top" secondItem="7VN-7X-mWf" secondAttribute="bottom" constant="17" id="eXB-2s-o5K"/>
                                                     <constraint firstAttribute="height" constant="170" id="fpK-ds-aZX"/>
-                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="top" secondItem="7VN-7X-mWf" secondAttribute="bottom" constant="17" id="tC6-Vm-ewm"/>
                                                     <constraint firstItem="7VN-7X-mWf" firstAttribute="centerX" secondItem="lsy-cn-Vmy" secondAttribute="centerX" id="yYH-hS-gBH"/>
+                                                    <constraint firstItem="hfm-jP-OZj" firstAttribute="centerX" secondItem="lsy-cn-Vmy" secondAttribute="centerX" id="zIJ-r2-foE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Ol-ub2" userLabel="View Header">
-                                                <rect key="frame" x="102.66666666666667" y="15" width="169.66666666666663" height="64"/>
+                                                <rect key="frame" x="100.66666666666669" y="15" width="174" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-uK-lw0">
                                                         <rect key="frame" x="20" y="23" width="22" height="19"/>
@@ -1242,7 +1242,7 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
-                                                        <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="34"/>
+                                                        <rect key="frame" x="43.999999999999986" y="20" width="110.00000000000001" height="34"/>
                                                         <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1657,7 +1657,7 @@ MilitaryOneSource.mil</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-se-bPo" userLabel="No Guides">
                                                 <rect key="frame" x="16" y="442" width="343" height="170"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No MiLife Guides Favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-8Q-L0p">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No MiLife Guides saved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-8Q-L0p">
                                                         <rect key="frame" x="68.666666666666686" y="29" width="206" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="fRB-VB-JeN"/>
@@ -1667,12 +1667,12 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To favorite and save a guide, click the ♡ in the corner of the guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
-                                                        <rect key="frame" x="55" y="54" width="233" height="45"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To save a guide to your favorites, tap on the ♡ in the top corner of the guide screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
+                                                        <rect key="frame" x="41.666666666666657" y="54" width="260" height="64"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="3cP-bh-wXt"/>
-                                                            <constraint firstAttribute="width" constant="233" id="65K-RM-nXG"/>
-                                                            <constraint firstAttribute="height" constant="45" id="u1d-hv-tqQ"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="3cP-bh-wXt"/>
+                                                            <constraint firstAttribute="width" constant="260" id="65K-RM-nXG"/>
+                                                            <constraint firstAttribute="height" constant="64" id="u1d-hv-tqQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -1981,7 +1981,7 @@ MilitaryOneSource.mil</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kps-z4-Qu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="2827.0935960591132"/>
+            <point key="canvasLocation" x="1980" y="2961"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="of5-q7-HId">
@@ -2678,7 +2678,7 @@ you with today?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDF-fQ-TZh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="620.99999999999977"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Y2-wE-gDL" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2645.3333333333335"/>
