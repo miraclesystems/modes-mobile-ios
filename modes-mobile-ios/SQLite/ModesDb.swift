@@ -208,14 +208,14 @@ class ModesDb{
     func getBenefitCategories()->[[String:Any?]]{
         let db = SQLiteDB.shared
         db.open()
-        let data = db.query(sql: "SELECT DISTINCT category from benefits")
+        let data = db.query(sql: "SELECT DISTINCT category from benefits order by category ASC")
         return data
     }
     
     func getGuideCategories()->[[String:Any?]]{
            let db = SQLiteDB.shared
            db.open()
-           let data = db.query(sql: "SELECT DISTINCT category from guides")
+           let data = db.query(sql: "SELECT DISTINCT category from guides order by category ASC")
            return data
        }
 
