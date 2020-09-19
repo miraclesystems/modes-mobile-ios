@@ -14,6 +14,8 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     let picker: UIPickerView = UIPickerView()
     
+    var alert : UIAlertController?
+    
     var filteredArray = [String]()
     var geoLocation = false
     
@@ -50,15 +52,17 @@ class UserSettingsInstallationsViewController: UIViewController {
     }
     
     func showOverlay(){
-        let alert = UIAlertController(title: nil, message: "Loading Location...", preferredStyle: .alert)
+        alert = UIAlertController(title: nil, message: "Loading Location...", preferredStyle: .alert)
 
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
 
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
+        alert?.view.addSubview(loadingIndicator)
+        present((alert)!, animated: true, completion: {
+        
+        })
         
     }
     
@@ -143,7 +147,10 @@ class UserSettingsInstallationsViewController: UIViewController {
         
         DispatchQueue.main.async {
                 //dismiss the overlay
-                self.dismiss(animated: false, completion: nil)
+            self.alert?.dismiss(animated: true, completion: {
+                
+            })
+                //self.dismiss(animated: false, completion: nil)
                  
                 let names = self.parentVc?.viewModel?.locationsModel.items!.map { $0!.name! }
                 self.filteredArray = names!
