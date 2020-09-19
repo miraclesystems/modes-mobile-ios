@@ -2041,7 +2041,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
+				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
 				PRODUCT_NAME = "My Military OneSource";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
@@ -2067,7 +2067,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
+				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
 				PRODUCT_NAME = "My Military OneSource";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
