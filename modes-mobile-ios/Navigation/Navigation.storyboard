@@ -1213,6 +1213,7 @@ MilitaryOneSource.mil</string>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To save a benefit to your favorites, tap on the ♡ in the top corner of the benefit description screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
                                                         <rect key="frame" x="42" y="53" width="260" height="64"/>
+                                                        <accessibility key="accessibilityConfiguration" label="To save a benefit to your favorites, tap on the heart icon in the top corner of the benefit description screen."/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="64" id="c0r-lL-xqH" userLabel="height = 64"/>
                                                             <constraint firstAttribute="width" constant="260" id="lL6-Qs-xKC" userLabel="width = 260"/>
@@ -1269,6 +1270,9 @@ MilitaryOneSource.mil</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR INSTALLATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-bb-TS4">
                                                                 <rect key="frame" x="20" y="14" width="166" height="10"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="g2w-hb-oaP"/>
                                                                 </constraints>
@@ -1418,6 +1422,9 @@ MilitaryOneSource.mil</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR MILLIFE GUIDES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-de-W9b">
                                                                 <rect key="frame" x="20" y="14" width="166" height="10"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="I8y-vl-dbI"/>
                                                                 </constraints>
@@ -1508,6 +1515,9 @@ MilitaryOneSource.mil</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Qv-2pv">
                                                                 <rect key="frame" x="20" y="14" width="166" height="10"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="MVw-P9-t7M"/>
                                                                 </constraints>
@@ -1601,6 +1611,9 @@ MilitaryOneSource.mil</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR INSTALLATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyE-aN-vhv">
                                                                 <rect key="frame" x="10" y="14" width="166" height="10"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="Yjc-Bg-RN8"/>
                                                                 </constraints>
@@ -1669,6 +1682,7 @@ MilitaryOneSource.mil</string>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To save a guide to your favorites, tap on the ♡ in the top corner of the guide screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
                                                         <rect key="frame" x="41.666666666666657" y="54" width="260" height="64"/>
+                                                        <accessibility key="accessibilityConfiguration" label="To save a guide to your favorites, tap on the heart icon in the top corner of the guide screen."/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="3cP-bh-wXt"/>
                                                             <constraint firstAttribute="width" constant="260" id="65K-RM-nXG"/>
