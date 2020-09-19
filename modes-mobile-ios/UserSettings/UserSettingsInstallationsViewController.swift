@@ -33,6 +33,7 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     //This Calls the Manual Location Search
     @IBAction func touchSearchInstBtn(_ sender: Any) {
+        self.parentVc?.viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new, .old], context: nil)
         gotoSearchInstalltions()
     }
     
@@ -40,6 +41,7 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     //This Calls the GeoLocation Methods
     @IBAction func touchLocation(_ sender: Any) {
+        self.parentVc?.viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new, .old], context: nil)
         goGeoLocate()
     }
 
@@ -86,6 +88,8 @@ class UserSettingsInstallationsViewController: UIViewController {
         picker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         picker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         picker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
+        
     }
     
     
@@ -116,7 +120,8 @@ class UserSettingsInstallationsViewController: UIViewController {
     func gotoSearchInstalltions(){
         print("In gotoSearchInstalltions")
         geoLocation = false
-        self.performSegue(withIdentifier: "LocTableSegue", sender: nil)
+        parentVc?.viewModel?.getInstallations()
+        //self.performSegue(withIdentifier: "LocTableSegue", sender: nil)
     }
     
     func goGeoLocate(){
@@ -153,17 +158,7 @@ class UserSettingsInstallationsViewController: UIViewController {
                  
                 let names = self.parentVc?.viewModel?.locationsModel.items!.map { $0!.name! }
                 self.filteredArray = names!
-                           
-                           //let names = parentVc?.viewModel?.locationsModel.items.map { $0[0]}
-                //print(names)   //["Apples", "Banana", "Orange"]
-                           
-                           
-                           //self.filteredArray = names!.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
-                           //self.filteredArray.insert("", at: 0)
-                          
                 
-                //self.picker.isHidden = false
-                //self.picker.reloadAllComponents()
                 
                 self.performSegue(withIdentifier: "LocTableSegue", sender: nil)
             }
