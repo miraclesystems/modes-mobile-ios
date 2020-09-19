@@ -18,6 +18,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     var mySelection = ""
     var backWithData = false
     var searching:Bool = false
+
     
     //from Geo Located
     var fromGeoLoc = false

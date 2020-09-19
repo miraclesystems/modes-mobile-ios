@@ -56,12 +56,12 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
                     
                     
                 }
-                dataLoaded = true
+               
             }
         
             
             print(self.locationsModel)
-            
+            dataLoaded = true
             
 
         }
@@ -99,7 +99,7 @@ class UserSettingsViewModel : NSObject, WebServiceConnectorDelegate{
         let urlString = BASE_URL + "/getInstallations/"
         let webserviceConnector = WebServiceConnector(urlString: urlString, delegate: self)
         webserviceConnector.get()
-        dataLoaded = true
+        //dataLoaded = true
         
         loadingLocations = true
         loadingLocationsByPostal = false
