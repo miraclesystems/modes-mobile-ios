@@ -1232,7 +1232,7 @@ MilitaryOneSource.mil</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Ol-ub2" userLabel="View Header">
-                                                <rect key="frame" x="100.66666666666669" y="15" width="174" height="64"/>
+                                                <rect key="frame" x="102.66666666666667" y="15" width="169.66666666666663" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites_focused_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-uK-lw0">
                                                         <rect key="frame" x="20" y="23" width="22" height="19"/>
@@ -1242,7 +1242,7 @@ MilitaryOneSource.mil</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-Qc-fN1">
-                                                        <rect key="frame" x="43.999999999999986" y="20" width="110.00000000000001" height="34"/>
+                                                        <rect key="frame" x="43.999999999999979" y="20" width="105.66666666666669" height="34"/>
                                                         <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1636,6 +1636,9 @@ MilitaryOneSource.mil</string>
                                                         <state key="normal" title="Add an installation" backgroundImage="button_round">
                                                             <color key="titleColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnAddInstallationTouched:" destination="zcZ-Ll-l0l" eventType="touchUpInside" id="Gyz-IW-Xmc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1743,6 +1746,7 @@ MilitaryOneSource.mil</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="btnAddInstallation" destination="q3o-ux-6xo" id="Q8d-yd-s9H"/>
                         <outlet property="constraintInstallationHeigth" destination="ARi-c7-xp2" id="6Hh-bG-Nxr"/>
                         <outlet property="constraintNoInstallationTop" destination="5aZ-Pc-3Uv" id="98V-IC-oX0"/>
                         <outlet property="customNavBar" destination="dea-cg-bFm" id="cDI-Va-Jgo"/>
