@@ -71,7 +71,7 @@ class UserSettingsViewController: UIViewController {
                 } else {
                     vc1.indDesc2.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                     vc1.indDesc2.setTitle("2", for: .normal)
-                    vc1.indDesc2.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                    vc1.indDesc2.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                 }
             
                 if threeComplete == true {
@@ -80,7 +80,7 @@ class UserSettingsViewController: UIViewController {
                 } else {
                     vc1.indDesc3.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                     vc1.indDesc3.setTitle("3", for: .normal)
-                    vc1.indDesc3.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                    vc1.indDesc3.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                 }
             
         }
@@ -115,7 +115,7 @@ class UserSettingsViewController: UIViewController {
                 } else {
                     vc2.indBtn1Install.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                     vc2.indBtn1Install.setTitle("1", for: .normal)
-                    vc2.indBtn1Install.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                    vc2.indBtn1Install.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                 }
             
                 if twoComplete == true {
@@ -133,9 +133,17 @@ class UserSettingsViewController: UIViewController {
                 } else {
                     vc2.indBtn3Install.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                     vc2.indBtn3Install.setTitle("3", for: .normal)
-                    vc2.indBtn3Install.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                    vc2.indBtn3Install.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                 }
-            vc2.searchInstBtn.setTitle("Search installations", for: UIControl.State.normal)
+                
+                if vc2.mySelect == "" {
+                    vc2.searchInstBtn.setTitle("Search installations", for: .normal)
+                } else {
+                    vc2.searchInstBtn.setTitle(vc2.mySelect, for: .normal)
+                }
+            
+            
+            
         }
         
         //TODO:  Animation?
@@ -180,7 +188,7 @@ class UserSettingsViewController: UIViewController {
                     } else {
                         vc3.indBtn1Branch.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                         vc3.indBtn1Branch.setTitle("1", for: .normal)
-                        vc3.indBtn1Branch.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                        vc3.indBtn1Branch.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                     }
                 
                     if twoComplete == true {
@@ -189,7 +197,7 @@ class UserSettingsViewController: UIViewController {
                     } else {
                         vc3.indBtn2Branch.setBackgroundImage(UIImage(named:"selector"), for: .normal)
                         vc3.indBtn2Branch.setTitle("2", for: .normal)
-                        vc3.indBtn2Branch.setTitleColor(UIColor(hex: 0x7577E2), for: .normal)
+                        vc3.indBtn2Branch.setTitleColor(UIColor(hex: 0x76B8E2), for: .normal)
                     }
                 
                     if threeComplete == true {
@@ -269,7 +277,8 @@ class UserSettingsViewController: UIViewController {
             print("Current 2")
             twoComplete = false
             for case let vc2 as UserSettingsInstallationsViewController in self.children {
-                vc2.searchInstBtn.setTitle("", for: .normal)
+                //vc2.searchInstBtn.setTitle("", for: .normal)
+                vc2.mySelect = ""
             }
             
             

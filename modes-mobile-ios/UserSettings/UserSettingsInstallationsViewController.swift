@@ -23,7 +23,7 @@ class UserSettingsInstallationsViewController: UIViewController {
     @IBOutlet weak var indBtn3Install: UIButton!
     
     
-    
+    var mySelect = ""
     
     let locationManager = CLLocationManager()
 
@@ -97,7 +97,6 @@ class UserSettingsInstallationsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         print("view did appear")
         
-        searchInstBtn.titleLabel?.text = "Search installations"
     }
     
    
@@ -185,7 +184,7 @@ class UserSettingsInstallationsViewController: UIViewController {
         print("Back on presenting VC's unwindtoViewController method")
         
         if source?.backWithData == true {
-            let mySelect = source?.mySelection
+            mySelect = source!.mySelection
             print("mySelect: ", mySelect)
             
             searchInstBtn.setTitle(mySelect, for: .normal)
