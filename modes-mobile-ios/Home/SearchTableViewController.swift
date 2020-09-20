@@ -85,7 +85,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
     @IBAction func txtNameEditingChanged(_ sender: Any) {
         print("txtName = " + (txtName.text ?? ""))
         
-        searchText  = txtName.text ?? ""
+        searchText  = (txtName.text ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
         
         if(searchText.count >= 1) {
             searchNamesArrRes = viewModel?.getTopics(topic: searchText) as! [String]
@@ -155,7 +155,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
        
         print("Running Click")
     
-        self.viewModel?.topic = title!        
+        self.viewModel?.topic = title!
         
         self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
     }

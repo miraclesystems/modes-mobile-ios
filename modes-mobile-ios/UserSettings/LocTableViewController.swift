@@ -75,7 +75,7 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     }
     
     @IBAction func txtNameEditingChanged(_ sender: Any) {
-        let searchText  = txtName.text ?? ""
+        let searchText  = (txtName.text ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
         
         //add matching text to arrays
         searchNamesArrRes = namesArr.filter { $0.range(of: searchText, options: .caseInsensitive) != nil }
