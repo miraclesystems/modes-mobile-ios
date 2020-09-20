@@ -182,7 +182,7 @@
 		14CBD4A025140CCE000426E6 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD49F25140CCE000426E6 /* Navigation.storyboard */; };
 		14CBD4A82516B703000426E6 /* 4440521767_9fce1fa8ce_o-200x200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD4A72516B703000426E6 /* 4440521767_9fce1fa8ce_o-200x200.jpg */; };
 		14CBD4AE2516ECF7000426E6 /* modes.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD4AD2516ECF7000426E6 /* modes.sqlite3 */; };
-		14D5D5F9250EE51C0072A0F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */; };
+		14CBD4B02517F714000426E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14CBD4AF2517F714000426E6 /* GoogleService-Info.plist */; };
 		8363D98C25027C15005ADB46 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363D98B25027C15005ADB46 /* ConnectViewController.swift */; };
 		838EFFD324F8CAF800A178A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 838EFFD224F8CAF800A178A1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		83DA073324F42DDC0054C817 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA073224F42DDC0054C817 /* HomeModel.swift */; };
@@ -497,7 +497,7 @@
 		14CBD49F25140CCE000426E6 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		14CBD4A72516B703000426E6 /* 4440521767_9fce1fa8ce_o-200x200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4440521767_9fce1fa8ce_o-200x200.jpg"; sourceTree = "<group>"; };
 		14CBD4AD2516ECF7000426E6 /* modes.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = modes.sqlite3; sourceTree = "<group>"; };
-		14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14CBD4AF2517F714000426E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EEEB15F3B43D58AE0C3CE7E /* Pods-modes-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios/Pods-modes-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		2F9378296D9D34633B9B7CCC /* Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-modes-mobile-ios-modes-mobile-iosUITests/Pods-modes-mobile-ios-modes-mobile-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53BFBD85939B9DFB16497F8B /* Pods_modes_mobile_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modes_mobile_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -811,7 +811,7 @@
 		1487F58F24E5E6E300C13817 = {
 			isa = PBXGroup;
 			children = (
-				14D5D5F8250EE51B0072A0F9 /* GoogleService-Info.plist */,
+				14CBD4AF2517F714000426E6 /* GoogleService-Info.plist */,
 				14C3233324FD7B9100065579 /* ModesDb.swift */,
 				838EFFE324F9514400A178A1 /* Bridging-Header.h */,
 				1487F59A24E5E6E300C13817 /* modes-mobile-ios */,
@@ -1487,6 +1487,7 @@
 				1458057625127FAE0093DB72 /* child-care-provider-kids-m230513-200x200.jpg in Resources */,
 				1458059B25127FFE0093DB72 /* service-members-in-field-1000x500.jpg in Resources */,
 				A9620D3524FF1D0700C599DC /* ML_Guides_TableView.xib in Resources */,
+				14CBD4B02517F714000426E6 /* GoogleService-Info.plist in Resources */,
 				1458053625127FAE0093DB72 /* Survivors_Tax_Extensions_Survivors_d1160370-200x200.jpg in Resources */,
 				1458059425127FFE0093DB72 /* smiling-military-couple-1000x500.jpg in Resources */,
 				1458055B25127FAE0093DB72 /* Teacher-working-with-special-needs-child-g891832646-200x200.jpg in Resources */,
@@ -1560,7 +1561,6 @@
 				14CBD4A025140CCE000426E6 /* Navigation.storyboard in Resources */,
 				1458054B25127FAE0093DB72 /* 7 Counseling Options for Service Members and Their Families - T187621262-200x200.jpg in Resources */,
 				1458056A25127FAE0093DB72 /* 10 Tips for Keeping a Relationship Strong During Deployment and Separation - D1263922-200x200.jpg in Resources */,
-				14D5D5F9250EE51C0072A0F9 /* GoogleService-Info.plist in Resources */,
 				A9FEEBF424FABB5300EB7CA6 /* VertTwoCollCell.xib in Resources */,
 				1458057425127FAE0093DB72 /* service-member-holiday-d5887954-200x200.jpg in Resources */,
 				1458054625127FAE0093DB72 /* WhatYouNeedtoKnow - D2402051-200x200.jpg in Resources */,
@@ -2037,7 +2037,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3PQ3S442N;
+				DEVELOPMENT_TEAM = L543ZBG8CP;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2045,7 +2045,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
 				PRODUCT_NAME = "My Military OneSource";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
@@ -2063,7 +2063,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3PQ3S442N;
+				DEVELOPMENT_TEAM = L543ZBG8CP;
 				INFOPLIST_FILE = "modes-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2071,7 +2071,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "miraclesystems.modes-mobile-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = mil.dod.mcfp.mymilitaryonesource;
 				PRODUCT_NAME = "My Military OneSource";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
