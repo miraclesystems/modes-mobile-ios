@@ -28,14 +28,18 @@ class HomeTableDataSource: NSObject, UITableViewDataSource, UITableViewDelegate{
         //let cell = tableView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath) as! HomeTableCell
         
-
-       
-        cell.guideImage.image = UIImage(named: "guide_placeholder")
-
+        let guide = viewModel?.getHomeGuides(topic: viewModel?.topic ?? "")[indexPath.row]
+        
+        //cell.guideImage.image = UIImage(named: "guide_placeholder")
+        cell.guideImage.image = UIImage(named: (guide?.GuideImage)! + "-200x200.jpg", in: nil, compatibleWith: nil)
+        cell.guideImage.contentMode = UIImageView.ContentMode.scaleAspectFill
+        cell.guideImage.clipsToBounds = true
+        cell.guideImage.layer.masksToBounds = true
         
         //cell.backgroundColor = UIColor(hex: myBkgColor[indexPath.item])
         //cell.imageView.image = UIImage(named: myImages[indexPath.item])
-        cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
+        //cell.label.text = viewModel?.getGuides(topic: viewModel?.topic ?? "")[indexPath.row]
+        cell.label.text = guide?.GuideTitle
         cell.layer.cornerRadius = 5
         cell.layer.borderWidth = 0.0
         cell.layer.shadowColor = UIColor.black.cgColor

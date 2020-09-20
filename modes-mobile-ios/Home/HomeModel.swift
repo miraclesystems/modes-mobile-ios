@@ -13,6 +13,12 @@ class HomeModel : Codable{
     
 }
 
+class HomePageGuide : Codable{
+    var ID : Int?
+    var GuideTitle : String?
+    var GuideImage : String?
+}
+
 
 class HomePageCardModel : Codable{
 

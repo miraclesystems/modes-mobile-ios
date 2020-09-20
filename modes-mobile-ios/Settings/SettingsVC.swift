@@ -106,18 +106,22 @@ class SettingsVC: UIViewController {
         if keyPath == "dataLoaded" {
                DispatchQueue.main.async {
                     print("Do some stuff on the ui")
-                    self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
+                    let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+                    if var topController = keyWindow?.rootViewController {
+                        while let presentedViewController = topController.presentedViewController {
+                            topController = presentedViewController
+                        }
+                    // topController should now be your topmost view controller
+                        if self.viewModel?.locationsModel?.items?[0] != nil  {
+                            print("It Exisits")
+                            self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
+                            self.lblInstallation.text = self.location?.name
+                        } else {
+                            print("It is nil")
+                        }
+                    }
                 
-                    self.lblInstallation.text = self.location?.name
-                    /*
-                    self.lblBranch.text = self.location?.branch
-                    self.lblAddress1.text = self.location?.address_line1
-                    self.lblCityStateZip.text = "\(self.location?.city ?? ""), \(self.location?.stat_id ?? "")  \(self.location?.postal_code ?? "")"
-                        
-                        //self.lblEmail.text = location.email_address1
-                        //self.lblWebsite.text = location.url1
-                    self.lblPhoneNumber.text = self.location?.phone1
-                    */
+                    
                 }
         }
     }

@@ -245,21 +245,27 @@ class FavoritesViewController: UIViewController {
                DispatchQueue.main.async {
                     print("Do some stuff on the ui")
                 
-                    self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
-                
-                    self.lblInstallationName.text = self.location?.name
-                    self.lblBranch.text = self.location?.branch
-                    self.lblAddress1.text = self.location?.address_line1
-                    self.lblCityStateZip.text = "\(self.location?.city ?? ""), \(self.location?.stat_id ?? "")  \(self.location?.postal_code ?? "")"
-                        
-                        //self.lblEmail.text = location.email_address1
-                        //self.lblWebsite.text = location.url1
-                
-                    // get the email id
-                    self.viewModel?.getInstallationEmailId()
-                    self.lblPhoneNumber.text = self.location?.phone1
+                    if self.viewModel?.locationsModel?.items?[0] != nil {
+                        print("It Exisits")
+                        self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
+                    
+                        self.lblInstallationName.text = self.location?.name
+                        self.lblBranch.text = self.location?.branch
+                        self.lblAddress1.text = self.location?.address_line1
+                        self.lblCityStateZip.text = "\(self.location?.city ?? ""), \(self.location?.stat_id ?? "")  \(self.location?.postal_code ?? "")"
+                            
+                            //self.lblEmail.text = location.email_address1
+                            //self.lblWebsite.text = location.url1
+                    
+                        // get the email id
+                        self.viewModel?.getInstallationEmailId()
+                        self.lblPhoneNumber.text = self.location?.phone1
+                    } else {
+                        print ("It is nil")
+                    }
                 
                 }
+                
         }
         else{
             print("do some stuff here for eamil address")
