@@ -848,6 +848,9 @@ of service </string>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtNameEditingChanged:" destination="9XN-gu-Gy5" eventType="editingChanged" id="RJN-7C-Fpm"/>
+                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Hs4-ly-giw">
                                 <rect key="frame" x="252" y="59" width="25" height="25"/>

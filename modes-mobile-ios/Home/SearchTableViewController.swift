@@ -22,13 +22,13 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
     var mySelection = ""
     var backWithData = false
     var searching:Bool = false
+    var searchText = ""
     
     //from Geo Located
     var fromGeoLoc = false
     
     //data
     var namesArr = [String]()
-    
     
     //filtered data from TextField
     var searchNamesArrRes = [String]()
@@ -82,32 +82,46 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         return true
     }
     
-    public func textFieldDidBeginEditing(_ textField: UITextField) {
-       
-    }
-    
-   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
-        //input text
+    @IBAction func txtNameEditingChanged(_ sender: Any) {
+        print("txtName = " + (txtName.text ?? ""))
         
-       let searchText  = textField.text! + string
-        //add matching text to arrays
-    
-        if(searchText.count >= 1){
+        searchText  = txtName.text ?? ""
         
+        if(searchText.count >= 1) {
             searchNamesArrRes = viewModel?.getTopics(topic: searchText) as! [String]
-            
             //searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
             
-            if(searchNamesArrRes.count == 0){
+            if(searchNamesArrRes.count == 0) {
                 searching = false
-            }else{
+            } else {
                 searching = true
             }
             self.tableView.reloadData();
-        }
-        
-        return true
+         }
     }
+    
+//   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
+//        //input text
+//
+//       let searchText  = textField.text! + string
+//        //add matching text to arrays
+//
+//        if(searchText.count >= 1){
+//
+//            searchNamesArrRes = viewModel?.getTopics(topic: searchText) as! [String]
+//
+//            //searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
+//
+//            if(searchNamesArrRes.count == 0){
+//                searching = false
+//            }else{
+//                searching = true
+//            }
+//            self.tableView.reloadData();
+//        }
+//
+//        return true
+//    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -141,14 +155,9 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
        
         print("Running Click")
     
-        self.viewModel?.topic = title!
-        
+        self.viewModel?.topic = title!        
         
         self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
-        
-    
-    
-        
     }
 
    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -158,7 +167,7 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         let label = UILabel()
         label.frame = CGRect.init(x: 10, y: 5, width: headerView.frame.width-10, height: headerView.frame.height-10)
     if searching == true {
-        label.text = "TOPICS RELATED TO \"" + (txtName.text ?? "") + "\""
+        label.text = "TOPICS RELATED TO \"" + (searchText) + "\""
     } else {
         label.text = "SUGGESTED CONTENT"
     }

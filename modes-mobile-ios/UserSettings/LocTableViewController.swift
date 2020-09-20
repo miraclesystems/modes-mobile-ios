@@ -40,9 +40,6 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         self.txtName.isAccessibilityElement = true
         UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.txtName)
         UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.txtName)
-        
-            
-            
     }
     
     override func viewDidLoad() {
@@ -72,35 +69,38 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         
     }
     
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
-        //input text
-       let searchText  = textField.text! + string
-        //add matching text to arrays
-        searchNamesArrRes = namesArr.filter { $0.range(of: textField.text!, options: .caseInsensitive) != nil }
+    @IBAction func txtNameEditingChanged(_ sender: Any) {
+        let searchText  = txtName.text ?? ""
         
-        /*
-        if(searchNamesArrRes.count == 0){
-            searching = false
-        }else{
-            searching = true
-        }
-        */
+        //add matching text to arrays
+        searchNamesArrRes = namesArr.filter { $0.range(of: searchText, options: .caseInsensitive) != nil }
         searching = true
         self.tableView.reloadData();
-    
+        
         UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.tableView)
         UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.tableView)
-    
-        
-        
-        return true
+
     }
+    
+//   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
+//        //input text
+//       let searchText  = textField.text! + string
+//        //add matching text to arrays
+//        searchNamesArrRes = namesArr.filter { $0.range(of: searchText, options: .caseInsensitive) != nil }
+//    
+//        searching = true
+//        self.tableView.reloadData();
+//    
+//        UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: self.tableView)
+//        UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: self.tableView)
+//    
+//        return true
+//    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -128,33 +128,27 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
     }
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
-    print("title: ", title)
-    mySelection = title!
-    backWithData = true
-    
-    
-    for location in viewModel?.locationsModel.items ?? []{
-        if(location?.name == title){
-            var id : String = String(location?.id ?? 0)
-            var installation = PreferencesUtil.shared.installation
-            PreferencesUtil.shared.installation = id
-        }
+        let title = tableView.cellForRow(at: indexPath as IndexPath)?.textLabel?.text
+        print("title: ", title)
+        mySelection = title!
+        backWithData = true        
         
-    }
+        for location in viewModel?.locationsModel.items ?? []{
+            if(location?.name == title){
+                let id : String = String(location?.id ?? 0)
+                //var installation = PreferencesUtil.shared.installation
+                PreferencesUtil.shared.installation = id
+            }
+        
+        }
 
-    /*
-    // get our selected location
-    var location = viewModel?.locationsModel.items?[indexPath.row]
-    var id : String = String(location?.id ?? 0)
-    var installation = PreferencesUtil.shared.installation
-    */
-    
-
-    
-    
-
-    performSegue(withIdentifier: "unwindSegue", sender: title)
+        /*
+        // get our selected location
+        var location = viewModel?.locationsModel.items?[indexPath.row]
+        var id : String = String(location?.id ?? 0)
+        var installation = PreferencesUtil.shared.installation
+        */
+        performSegue(withIdentifier: "unwindSegue", sender: title)
     }
 
     
