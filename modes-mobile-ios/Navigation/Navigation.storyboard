@@ -2184,6 +2184,9 @@ ONESOURCE</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtNameEditingChanged:" destination="uB8-5V-7Ux" eventType="editingChanged" id="MPU-et-CtW"/>
+                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-S2-f8n">
                                 <rect key="frame" x="285" y="59" width="25" height="25"/>
