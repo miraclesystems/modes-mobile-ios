@@ -47,9 +47,9 @@ class SettingsViewModel: NSObject, WebServiceConnectorDelegate{
              let JSONData = try jsonString.data(using: .utf8)!
              let model = try JSONDecoder().decode(LocationsModel.self, from: JSONData)
              self.locationsModel = model
-             print(self.locationsModel)
+             //print(self.locationsModel)
             
-            dataLoaded = true
+            self.dataLoaded = true
             
          }
          catch let DecodingError.dataCorrupted(context) {

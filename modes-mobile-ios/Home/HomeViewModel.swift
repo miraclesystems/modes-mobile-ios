@@ -15,6 +15,8 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
     
     var topic = ""
     
+    var selectedGuide = ""
+    
     let model = HomeModel()
     
     func onError(_ apiError: Error) {
@@ -30,6 +32,41 @@ class HomeViewModel : NSObject, WebServiceConnectorDelegate{
 
     func getValue(){
         dataLoaded = true
+    }
+    
+    func getHomeGuides(topic: String)-> [HomePageGuide]{
+
+        var list = [HomePageGuide]()
+
+        var results = ModesDb.shared.getGuidesByKeyWordSearch(searchTerm: topic)
+        for result in results{
+            /*
+            let guide = result["Guide"] as! HomePageGuide
+            guide.ID = results[0]["ID"] as? Int
+            guide.GuideTitle = results[0]["Guide"] as? String
+            guide.GuideImage = results[0]["Guide Image"] as? String
+            list.append(guide)
+    `       */
+            self.selectedGuide = result["Guide"] as! String
+            //var guide = result["Guide"] as! String
+            list.append(getMyGuide())
+            
+            
+        }
+        return list
+    }
+    
+    func getMyGuide()->HomePageGuide{
+    
+        var guide = HomePageGuide()
+    
+        var results = ModesDb.shared.getGuideByName(guide: self.selectedGuide)
+    
+        guide.ID = results[0]["ID"] as? Int
+        guide.GuideTitle = results[0]["Guide"] as? String
+        guide.GuideImage = results[0]["Guide Image"] as? String
+        
+        return guide
     }
     
     

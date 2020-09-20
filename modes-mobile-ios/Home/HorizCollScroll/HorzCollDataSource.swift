@@ -75,6 +75,7 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "BenefitsDetailsContVC") as! BenefitsDetailsContVC
                     vc.selectedBenefit = selectedBenefit
+                    //vc.modalPresentationStyle = .fullScreen
                     parentVc?.present(vc, animated: true)
                 
                 case "MILLIFE GUIDES":
@@ -82,6 +83,7 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "MilLifeDetailsGuideContVC") as! MilLifeDetailsGuideContVC
                     vc.selectedGuide = selectedGuide
+                    //vc.modalPresentationStyle = .fullScreen
                     parentVc?.present(vc, animated: true)
                 case "CONNECT":
                     /*
@@ -93,9 +95,17 @@ class HorzCollDataSource: NSObject, UICollectionViewDataSource, UICollectionView
                     parentVc?.parentVc?.tabBarController!.selectedIndex = 4
                 
                 case "ABOUT US":
+                    /*
                     let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
                     parentVc?.present(vc, animated: true)
+                    */
+                    //Feedback WebLink
+                    if let url = URL(string: "https://survey.foresee.com/f/M40JDlKiHK") {
+                        if UIApplication.shared.canOpenURL(url) {
+                            UIApplication.shared.open(url, options: [:])
+                        }
+                    }
                 
                 default:
                     print("do nothing")
