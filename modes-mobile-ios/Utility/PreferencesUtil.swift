@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 class PreferencesUtil{
     
@@ -37,15 +38,18 @@ class PreferencesUtil{
             return userId ?? ""
         }
         set(val){
+            Analytics.setUserProperty(val, forName: "audienceType")
             UserDefaults.standard.set(val, forKey: "userDescription")
         }
     }
     var installation : String{
         get{
+            
             let userId = UserDefaults.standard.string(forKey: "installation")
             return userId ?? ""
         }
         set(val){
+            Analytics.setUserProperty(val, forName: "installation")
             UserDefaults.standard.set(val, forKey: "installation")
         }
     }
@@ -55,6 +59,7 @@ class PreferencesUtil{
             return userId ?? ""
         }
         set(val){
+            Analytics.setUserProperty(val, forName: "branchName")
             UserDefaults.standard.set(val, forKey: "branch")
         }
     }
