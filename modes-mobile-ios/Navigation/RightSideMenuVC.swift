@@ -217,11 +217,18 @@ extension RightSideMenuVC: UITableViewDelegate, UITableViewDataSource {
         
         //Handle Feedback web link
         if ( indexPath.row == 8 ) {
+            /*
             if let url = URL(string: "https://survey.foresee.com/f/M40JDlKiHK") {
                 if UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:])
                 }
             }
+            */
+            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "InAppBrowserVC") as! InAppBrowserVC
+            vc.urlString = "https://survey.foresee.com/f/M40JDlKiHK"
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated:true, completion:nil)
             
           return
         }
