@@ -72,8 +72,25 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         
         print("namesArr:", namesArr)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(SearchTableViewController.keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SearchTableViewController.keyboardWillHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        
         txtName.becomeFirstResponder()
         
+    }
+    
+    // MARK: Keyboard Notifications, for TableView Scroll Fix
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight, right: 0)
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.2, animations: {
+            // For some reason adding inset in keyboardWillShow is animated by itself but removing is not, that's why we have to use animateWithDuration here
+            self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        })
     }
     
     
@@ -81,6 +98,17 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         textField.resignFirstResponder()
         return true
     }
+    
+    /*
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        let txtFieldPosition = textField.convert(textField.bounds.origin, to: tableView)
+        let indexPath = tableView.indexPathForRow(at: txtFieldPosition)
+        if indexPath != nil {
+            tableView.scrollToRow(at: indexPath!, at: .top, animated: true)
+        }
+        return true
+    }
+    */
     
     @IBAction func txtNameEditingChanged(_ sender: Any) {
         print("txtName = " + (txtName.text ?? ""))
@@ -97,7 +125,11 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
                 searching = true
             }
             self.tableView.reloadData();
-         }
+        } else {
+            searching = false
+            self.tableView.reloadData();
+        }
+        
     }
     
 //   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
