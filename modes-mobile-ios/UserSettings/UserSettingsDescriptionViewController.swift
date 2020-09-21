@@ -42,7 +42,7 @@ class UserSettingsDescriptionViewController: UIViewController {
     
     @IBAction func touchSpouse(_ sender: Any) {
         self.parentVc?.oneComplete = true
-        userDescription = "Spouse"
+        userDescription = "Military Spouse"
         updatePrefs()
         btn1.isSelected = false
         btn2.isSelected = true

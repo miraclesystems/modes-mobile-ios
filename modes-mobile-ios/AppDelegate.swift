@@ -44,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         
+        Analytics.setUserProperty("buildType", forName: "debug")
         
         return true
     }

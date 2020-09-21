@@ -12,6 +12,8 @@ class FavoritesViewController: UIViewController {
     var viewModel : FavoritesViewModel?
     var location : Location?
     var emailId : String = ""
+    var alert : UIAlertController? = nil
+    var alerLoaded = false
     
     @IBOutlet weak var viewNoGuides: UIView!
     @IBOutlet weak var viewNoBenefits: UIView!
@@ -61,6 +63,11 @@ class FavoritesViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    func hide(){
+        self.alert?.dismiss(animated: true, completion: {
+            
+        })
+    }
     func reloadTables(){
         self.tableViewBenefits.reloadData()
         self.tableViewGuides.reloadData()
@@ -90,11 +97,31 @@ class FavoritesViewController: UIViewController {
             
         }
         else{
-            print("get the installation info")
-            // observe the view model
-            viewNoInstallation.isHidden = true
-            viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
-            viewModel?.addObserver(self, forKeyPath: "emailIdLoaded", options: [.new,.old], context: nil)
+            
+            if(lblInstallationName.text?.trimmingCharacters(in: .whitespaces) == ""){
+                if(alert == nil){
+                    alert = UIAlertController(title: nil, message: "Loading Intallation ...", preferredStyle: .alert)
+                }
+
+                let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+                loadingIndicator.hidesWhenStopped = true
+                loadingIndicator.style = UIActivityIndicatorView.Style.gray
+                loadingIndicator.startAnimating();
+
+                alert?.view.addSubview(loadingIndicator)
+                
+                if(!alert!.isBeingPresented){
+                    present((alert)!, animated: true, completion: {
+                        
+                    })
+                }
+                    
+                print("get the installation info")
+                // observe the view model
+                viewNoInstallation.isHidden = true
+                viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
+                viewModel?.addObserver(self, forKeyPath: "emailIdLoaded", options: [.new,.old], context: nil)
+            }
         }
         
        
@@ -263,13 +290,18 @@ class FavoritesViewController: UIViewController {
                     } else {
                         print ("It is nil")
                     }
-                
+                    
                 }
+            
                 
         }
         else{
             print("do some stuff here for eamil address")
-            self.emailId = self.viewModel?.emailId as! String
+            DispatchQueue.main.async {
+                self.emailId = self.viewModel?.emailId as! String
+                
+                self.hide()
+            }
         }
     }
 
