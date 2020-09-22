@@ -1198,7 +1198,7 @@ MilitaryOneSource.mil</string>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-cn-Vmy" userLabel="View No Benefits">
                                                 <rect key="frame" x="15" y="1300" width="344" height="170"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Benefits saved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7X-mWf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Benefits favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7X-mWf">
                                                         <rect key="frame" x="69" y="28" width="206" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="OrD-lE-1zI"/>
@@ -1209,7 +1209,7 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215690000001" green="0.28235294119999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To save a benefit to your favorites, tap on the ♡ in the top corner of the benefit description screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To favorite and save a benefit, click the ♡ in the corner of the benefit description screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-jP-OZj">
                                                         <rect key="frame" x="42" y="53" width="260" height="64"/>
                                                         <accessibility key="accessibilityConfiguration" label="To save a benefit to your favorites, tap on the heart icon in the top corner of the benefit description screen."/>
                                                         <constraints>
@@ -1628,7 +1628,7 @@ MilitaryOneSource.mil</string>
                                                             <constraint firstAttribute="height" constant="40" id="ddk-Mk-PFz"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" No Installation Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSy-Ag-KL2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" No Installation selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSy-Ag-KL2">
                                                         <rect key="frame" x="68" y="68" width="207" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="fid-Al-3Iz"/>
@@ -1668,7 +1668,7 @@ MilitaryOneSource.mil</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-se-bPo" userLabel="No Guides">
                                                 <rect key="frame" x="16" y="442" width="343" height="170"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No MilLife Guides saved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-8Q-L0p">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No MilLife Guides favorited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-8Q-L0p">
                                                         <rect key="frame" x="68.666666666666686" y="29" width="206" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="fRB-VB-JeN"/>
@@ -1678,7 +1678,7 @@ MilitaryOneSource.mil</string>
                                                         <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To save a guide to your favorites, tap on the ♡ in the top corner of the guide screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To favorite and save a guide, click the ♡ in the corner of the guide screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Zh-tUx">
                                                         <rect key="frame" x="41.666666666666657" y="54" width="260" height="64"/>
                                                         <accessibility key="accessibilityConfiguration" label="To save a guide to your favorites, tap on the heart icon in the top corner of the guide screen."/>
                                                         <constraints>
@@ -2061,7 +2061,7 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d73-pM-f6z">
-                                                        <rect key="frame" x="30" y="300" width="310" height="168"/>
+                                                        <rect key="frame" x="30" y="293.66666666666669" width="310" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="168" id="im5-3Y-rdl"/>
                                                         </constraints>
@@ -2078,14 +2078,14 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onesource" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-Nt-XqX">
-                                                        <rect key="frame" x="30" y="240" width="101" height="24"/>
+                                                        <rect key="frame" x="30" y="235.66666666666669" width="149" height="35"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="24" id="Nqz-Be-a7t"/>
-                                                            <constraint firstAttribute="width" constant="101" id="qKe-N9-T81"/>
+                                                            <constraint firstAttribute="height" constant="35" id="Nqz-Be-a7t"/>
+                                                            <constraint firstAttribute="width" constant="149" id="qKe-N9-T81"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
-                                                        <rect key="frame" x="30" y="279" width="182" height="17"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Military OneSource " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-nc-jyj">
+                                                        <rect key="frame" x="30" y="276.66666666666669" width="182" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="182" id="WyE-n2-gMe"/>
                                                             <constraint firstAttribute="height" constant="17" id="uyO-AG-bWe"/>
@@ -2095,7 +2095,7 @@ ONESOURCE</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dod_dark" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-sP-nli">
-                                                        <rect key="frame" x="30" y="494" width="142" height="53"/>
+                                                        <rect key="frame" x="30" y="487.66666666666663" width="142" height="53"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="53" id="Pr4-ri-ctE"/>
                                                             <constraint firstAttribute="width" constant="142" id="xEx-jY-oin"/>
@@ -2106,11 +2106,11 @@ ONESOURCE</string>
                                                 <constraints>
                                                     <constraint firstItem="6Mb-0S-huH" firstAttribute="top" secondItem="Cjh-cY-xQJ" secondAttribute="top" constant="40" id="0V6-x9-AfS"/>
                                                     <constraint firstItem="d73-pM-f6z" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="1fO-xB-hOn"/>
-                                                    <constraint firstItem="w9d-Nt-XqX" firstAttribute="top" secondItem="Gqa-JY-nfF" secondAttribute="bottom" constant="32.329999999999998" id="3A6-Fb-h37"/>
+                                                    <constraint firstItem="w9d-Nt-XqX" firstAttribute="top" secondItem="Gqa-JY-nfF" secondAttribute="bottom" constant="28" id="3A6-Fb-h37"/>
                                                     <constraint firstItem="Gqa-JY-nfF" firstAttribute="top" secondItem="6Mb-0S-huH" secondAttribute="bottom" id="9Wi-Ud-U8Q"/>
                                                     <constraint firstItem="6Mb-0S-huH" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="ECW-ys-joG"/>
-                                                    <constraint firstItem="d73-pM-f6z" firstAttribute="top" secondItem="MoW-nc-jyj" secondAttribute="bottom" constant="4" id="J5Q-jH-0Jp"/>
-                                                    <constraint firstItem="MoW-nc-jyj" firstAttribute="top" secondItem="w9d-Nt-XqX" secondAttribute="bottom" constant="15" id="OYg-jk-ol9"/>
+                                                    <constraint firstItem="d73-pM-f6z" firstAttribute="top" secondItem="MoW-nc-jyj" secondAttribute="bottom" id="J5Q-jH-0Jp"/>
+                                                    <constraint firstItem="MoW-nc-jyj" firstAttribute="top" secondItem="w9d-Nt-XqX" secondAttribute="bottom" constant="6" id="OYg-jk-ol9"/>
                                                     <constraint firstItem="Gqa-JY-nfF" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="VaR-Jr-0rh"/>
                                                     <constraint firstItem="qCv-sP-nli" firstAttribute="leading" secondItem="Cjh-cY-xQJ" secondAttribute="leading" constant="30" id="ZjI-cf-Tbk"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="800" id="afo-bA-50A"/>
@@ -2165,7 +2165,7 @@ ONESOURCE</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgF-Au-ks0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="3697"/>
+            <point key="canvasLocation" x="2045.5999999999999" y="3696.7980295566504"/>
         </scene>
         <!--Search Controller-->
         <scene sceneID="8Wo-Mq-DIO">
@@ -2446,7 +2446,7 @@ MilitaryOneSource.mil</string>
                                                                 <string key="text">Speak with a Military
 OneSource consultant</string>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" red="0.098039215686274508" green="0.28235294117647058" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqR-tz-Sin">
