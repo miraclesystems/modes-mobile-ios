@@ -1816,7 +1816,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-Pn-9m7">
-                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="104"/>
+                                        <rect key="frame" x="16" y="132.66666666666666" width="343" height="207.99999999999997"/>
                                         <accessibility key="accessibilityConfiguration" label="Call Us 800-342-9647"/>
                                         <state key="normal" image="Image"/>
                                         <connections>
@@ -1846,7 +1846,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swb-c6-U8z">
-                                        <rect key="frame" x="48.666666666666657" y="416" width="34" height="34"/>
+                                        <rect key="frame" x="48.666666666666657" y="488" width="34" height="34"/>
                                         <accessibility key="accessibilityConfiguration" label="Facebook"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="Hsy-ma-1nt"/>
@@ -1858,7 +1858,7 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-3W-Ov6">
-                                        <rect key="frame" x="109.66666666666667" y="416" width="34.000000000000014" height="34"/>
+                                        <rect key="frame" x="109.66666666666667" y="488" width="34.000000000000014" height="34"/>
                                         <accessibility key="accessibilityConfiguration" label="Twitter"/>
                                         <state key="normal" image="twitter"/>
                                         <connections>
@@ -1866,7 +1866,7 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-WT-kpc">
-                                        <rect key="frame" x="170.66666666666666" y="416" width="34" height="34.333333333333314"/>
+                                        <rect key="frame" x="170.66666666666666" y="488" width="34" height="34.333333333333371"/>
                                         <accessibility key="accessibilityConfiguration" label="YouTube"/>
                                         <state key="normal" image="youtube"/>
                                         <connections>
@@ -1874,7 +1874,7 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-mY-6B9">
-                                        <rect key="frame" x="292.66666666666669" y="416" width="34" height="34.333333333333314"/>
+                                        <rect key="frame" x="292.66666666666669" y="488" width="34" height="34.333333333333371"/>
                                         <accessibility key="accessibilityConfiguration" label="Instagram"/>
                                         <state key="normal" image="instagram"/>
                                         <connections>
@@ -1882,7 +1882,7 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMING SOON - Live Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-KV-Vd5">
-                                        <rect key="frame" x="111.00000000000001" y="494.33333333333337" width="153.33333333333337" height="14.333333333333314"/>
+                                        <rect key="frame" x="111.00000000000001" y="566.33333333333337" width="153.33333333333337" height="14.333333333333371"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153.33000000000001" id="IRb-q5-l3O"/>
                                             <constraint firstAttribute="height" constant="14.33" id="lcD-0M-710"/>
@@ -1892,7 +1892,7 @@ MilitaryOneSource.mil</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-uX-hr4">
-                                        <rect key="frame" x="231.66666666666666" y="416" width="33.999999999999972" height="34.333333333333314"/>
+                                        <rect key="frame" x="231.66666666666666" y="488" width="33.999999999999972" height="34.333333333333371"/>
                                         <accessibility key="accessibilityConfiguration" label="Pinterest"/>
                                         <state key="normal" image="pinterest"/>
                                         <connections>
@@ -1900,7 +1900,7 @@ MilitaryOneSource.mil</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yla-7c-AO2">
-                                        <rect key="frame" x="12" y="344" width="351" height="72"/>
+                                        <rect key="frame" x="12" y="344" width="351" height="144"/>
                                         <accessibility key="accessibilityConfiguration" label="Visit Military One Source dot mil"/>
                                         <state key="normal" image="buttion_visit"/>
                                         <connections>
