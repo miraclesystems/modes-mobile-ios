@@ -14,7 +14,7 @@ class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
     
     @objc dynamic var dataLoaded = false
     var gettingInstallationInfo = false
-    var hasDataError = false
+    @objc dynamic var hasDataError = false
     var dataError : String = ""
     var locationsModel : LocationsModel?
     
@@ -97,7 +97,8 @@ class FavoritesViewModel: NSObject, WebServiceConnectorDelegate{
     //let model = ()
     
     func onError(_ apiError: Error) {
-        print("error")
+        print("onError Favorites")
+        hasDataError = true
     }
     
     func onSuccess(_ jsonString: String) {
@@ -168,5 +169,13 @@ class FavoritesViewModelObserver : NSObject{
         ) { object, change in
             print("data changed")
         }
+        observation = observe(
+            \.viewModel.hasDataError,
+            options: [.old, .new]
+        ) { object, change in
+            print("hasDataError changed")
+        }
+        
+        
     }
 }
