@@ -60,6 +60,7 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         // instantiate the view model
         viewModel = SettingsViewModel()
         
@@ -107,11 +108,11 @@ class SettingsVC: UIViewController {
             }
             
         }
-
+        */
         
         
         lblRole.text = PreferencesUtil.shared.userDescription
-        //lblInstallation.text = ""
+        lblInstallation.text = PreferencesUtil.shared.installationName
         lblBranch.text = PreferencesUtil.shared.branch
         
         
@@ -145,7 +146,7 @@ class SettingsVC: UIViewController {
     }
     */
     
-    
+    /*
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         
@@ -189,6 +190,6 @@ class SettingsVC: UIViewController {
         
         
     }
-
+    */
 
 }

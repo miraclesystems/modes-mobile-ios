@@ -279,12 +279,15 @@ class UserSettingsViewController: UIViewController {
             for case let vc2 as UserSettingsInstallationsViewController in self.children {
                 //vc2.searchInstBtn.setTitle("", for: .normal)
                 vc2.mySelect = ""
+                PreferencesUtil.shared.installationName = ""
+                PreferencesUtil.shared.installation = ""
             }
             
             
             showPage3()
         case 3:
             print("Current 3")
+            PreferencesUtil.shared.branch = ""
             //Goto to Home
             buttonSkipAll_Touched(self)
             

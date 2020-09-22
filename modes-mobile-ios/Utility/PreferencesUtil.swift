@@ -42,6 +42,7 @@ class PreferencesUtil{
             UserDefaults.standard.set(val, forKey: "userDescription")
         }
     }
+    
     var installation : String{
         get{
             
@@ -53,6 +54,18 @@ class PreferencesUtil{
             UserDefaults.standard.set(val, forKey: "installation")
         }
     }
+    var installationName : String{
+        get{
+            
+            let userId = UserDefaults.standard.string(forKey: "installationName")
+            return userId ?? ""
+        }
+        set(val){
+            UserDefaults.standard.set(val, forKey: "installationName")
+        }
+    }
+    
+    
     var branch : String{
         get{
             let userId = UserDefaults.standard.string(forKey: "branch")
