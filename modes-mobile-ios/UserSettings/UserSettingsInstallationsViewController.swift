@@ -68,6 +68,14 @@ class UserSettingsInstallationsViewController: UIViewController {
         
     }
     
+    func hideOverlay(){
+        DispatchQueue.main.async {
+            //dismiss the overlay
+            self.alert?.dismiss(animated: true, completion: {
+            })
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -138,8 +146,6 @@ class UserSettingsInstallationsViewController: UIViewController {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
     
-        
-        
         if keyPath == "dataLoaded"{
             print("dataLoaded happend")
             print(change![NSKeyValueChangeKey.newKey] as!  Bool)
@@ -148,12 +154,13 @@ class UserSettingsInstallationsViewController: UIViewController {
                 return
             }
         
+            //Remove Loading Overlay
+            hideOverlay()
         
-        DispatchQueue.main.async {
+            DispatchQueue.main.async {
                 //dismiss the overlay
-            self.alert?.dismiss(animated: true, completion: {
-                
-            })
+                //self.alert?.dismiss(animated: true, completion: {
+                //})
                 //self.dismiss(animated: false, completion: nil)
                  
                 let names = self.parentVc?.viewModel?.locationsModel.items!.map { $0!.name! }
@@ -191,6 +198,9 @@ class UserSettingsInstallationsViewController: UIViewController {
             
             searchInstBtn.setTitle(mySelect, for: .normal)
             //self.parentVc?.viewModel?.setInstallation(installation: mySelect ?? "")
+            
+            //Set Name to SharedPrefs
+            PreferencesUtil.shared.installationName = mySelect
             
             let seconds = 0.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
@@ -283,6 +293,7 @@ extension UserSettingsInstallationsViewController  : CLLocationManagerDelegate{
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
             if (error != nil) {
                 print("Reverse geocoder failed with error" + error!.localizedDescription)
+                self.hideOverlay()
                    return
                }
         

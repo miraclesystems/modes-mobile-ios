@@ -51,7 +51,7 @@ class HomeContView2VC: UIViewController, UICollectionViewDelegate {
         //TableView and CollectionView Height based on number of articles
         //MilLife Guides
         var myTVCount = self.parentVc?.viewModel.getGuides(topic: self.parentVc?.viewModel.topic ?? "").count
-        print("Milife Guide Count: ", myTVCount!)
+        print("MilLife Guide Count: ", myTVCount!)
         //No More than Three Rows of Guides
         if myTVCount! > 3 {
             myTVCount = 3
