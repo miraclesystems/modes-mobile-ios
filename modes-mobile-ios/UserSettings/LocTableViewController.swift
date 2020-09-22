@@ -67,6 +67,9 @@ class LocTableViewController: UIViewController ,UITableViewDelegate,UITableViewD
         
         print("namesArr:", namesArr)
         
+        namesArr = namesArr.sorted(by: <)
+        
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
