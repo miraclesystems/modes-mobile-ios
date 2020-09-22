@@ -191,27 +191,52 @@ class SearchTableViewController: UIViewController ,UITableViewDelegate,UITableVi
         
         self.performSegue(withIdentifier: "unwindFromSearchTable", sender: title)
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if searchNamesArrRes.count == 0 && searchText.count > 0 {
+            return 100
+        } else {
+            return 50
+        }
+        
+    }
 
    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        
+        var headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        var newFrame = headerView.frame
+        newFrame.size.width = tableView.frame.width
         headerView.backgroundColor = UIColor(hex: 0xEFF4F7)
 
         let label = UILabel()
-        label.frame = CGRect.init(x: 10, y: 5, width: headerView.frame.width-10, height: headerView.frame.height-10)
-    if searching == true {
-        label.text = "TOPICS RELATED TO \"" + (searchText) + "\""
-    } else {
-        label.text = "SUGGESTED CONTENT"
-    }
-        label.font = UIFont.boldSystemFont(ofSize:14)
+        label.frame = CGRect.init(x: 20, y: 5, width: headerView.frame.width-20, height: headerView.frame.height-10)
+    
+        if searching == true {
+            label.font = UIFont(name: "WorkSans-Bold", size: 14)
+            label.text = "TOPICS RELATED TO \"" + (searchText) + "\""
+        } else {
+            
+            if searchNamesArrRes.count == 0 && searchText.count > 0 {
+                newFrame.size.height = 100
+                headerView.frame = newFrame
+                label.frame = CGRect.init(x: 20, y: 5, width: headerView.frame.width-20, height: newFrame.size.height)
+                label.numberOfLines = 4
+                label.font = UIFont(name: "WorkSans-Regular", size: 14)
+                label.text = "No results found for \"" + (searchText) + "\", search again or select a topic below. \n\n SUGGESTED TOPICS"
+            } else {
+                newFrame.size.height = 50
+                headerView.frame = newFrame
+                label.font = UIFont(name: "WorkSans-Bold", size: 14)
+                label.text = "SUGGESTED TOPICS"
+            }
+    
+        }
+        
         label.textColor = UIColor(hex: 0x4A4A4A) // my custom colour
         headerView.addSubview(label)
 
         return headerView
    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
-    }
     
 }
 

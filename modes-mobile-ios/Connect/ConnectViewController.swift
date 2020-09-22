@@ -43,10 +43,18 @@ class ConnectViewController: UIViewController {
     
     
     @IBAction func OpenSubscribeLink(_ sender: Any) {
-        
+            /*
            let webUrl = URL(string: "https://public.govdelivery.com/accounts/USDODMILITARYONESOURCE/subscriber/new?topic_id=USDODMILITARYONESOURCE_54")!
                      UIApplication.shared.open(webUrl, options: [:], completionHandler: nil)
-        }
+            */
+        
+            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "InAppBrowserVC") as! InAppBrowserVC
+            vc.urlString = "https://public.govdelivery.com/accounts/USDODMILITARYONESOURCE/subscriber/new?topic_id=USDODMILITARYONESOURCE_54"
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated:true, completion:nil)
+        
+    }
     
     
     @IBAction func OpenFacebook(_ sender: Any) {

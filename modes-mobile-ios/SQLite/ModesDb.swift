@@ -95,7 +95,7 @@ class ModesDb{
 
         let db = SQLiteDB.shared
          db.open()
-        let data = db.query(sql: "SELECT * FROM guides")
+        let data = db.query(sql: "SELECT * FROM guides order by guide ASC")
         return data
     }
 
@@ -239,7 +239,7 @@ class ModesDb{
 
         let db = SQLiteDB.shared
         db.open()
-        let data = db.query(sql: "SELECT * FROM benefits")
+        let data = db.query(sql: "SELECT * FROM benefits order by benefit ASC")
         return data
 
     }
