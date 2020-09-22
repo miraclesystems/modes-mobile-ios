@@ -100,7 +100,7 @@ class FavoritesViewController: UIViewController {
             
             if(lblInstallationName.text?.trimmingCharacters(in: .whitespaces) == ""){
                 if(alert == nil){
-                    alert = UIAlertController(title: nil, message: "Loading Intallation ...", preferredStyle: .alert)
+                    alert = UIAlertController(title: nil, message: "Loading Installation...", preferredStyle: .alert)
                 }
 
                 let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
@@ -121,6 +121,7 @@ class FavoritesViewController: UIViewController {
                 viewNoInstallation.isHidden = true
                 viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
                 viewModel?.addObserver(self, forKeyPath: "emailIdLoaded", options: [.new,.old], context: nil)
+                viewModel?.addObserver(self, forKeyPath: "hasDataError", options: [.new,.old], context: nil)
             }
         }
         
@@ -268,7 +269,7 @@ class FavoritesViewController: UIViewController {
            
         // the view model chaged
         if keyPath == "dataLoaded" && viewModel?.dataLoaded == true {
-            sleep(1)
+                sleep(1)
                DispatchQueue.main.async {
                     print("Do some stuff on the ui")
                 
@@ -303,6 +304,18 @@ class FavoritesViewController: UIViewController {
                 self.hide()
             }
         }
+        
+        //Error Handling
+        if keyPath == "hasDataError" && viewModel?.hasDataError == true {
+            let seconds = 1.5
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                print("Something else happened, hide the alert")
+                //Hide the Alert
+                self.hide()
+            }
+        }
+        
+        
     }
 
 }

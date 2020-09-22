@@ -1,5 +1,5 @@
 //
-//  FavoritesViewModel.swift
+//  SettingsViewModel.swift
 //  modes-mobile-ios
 //
 //  Created by yada on 9/5/20.
@@ -10,7 +10,7 @@ import Foundation
 class SettingsViewModel: NSObject, WebServiceConnectorDelegate{
     
     @objc dynamic var dataLoaded = false
-    var hasDataError = false
+    @objc dynamic var hasDataError = false
     var dataError : String = ""
     var locationsModel : LocationsModel?
     
@@ -37,7 +37,8 @@ class SettingsViewModel: NSObject, WebServiceConnectorDelegate{
     
     
     func onError(_ apiError: Error) {
-        print("error")
+        print("error ran in Settings Model")
+        self.hasDataError = true
     }
     
     func onSuccess(_ jsonString: String) {
@@ -78,10 +79,10 @@ class SettingsViewModel: NSObject, WebServiceConnectorDelegate{
 
 class SettingsViewModelObserver : NSObject{
     
-    @objc var viewModel : BaseViewModel
+    @objc var viewModel : SettingsViewModel
        var observation: NSKeyValueObservation?
     
-    init(object: BaseViewModel) {
+    init(object: SettingsViewModel) {
         viewModel = object
         super.init()
         
@@ -90,8 +91,15 @@ class SettingsViewModelObserver : NSObject{
             options: [.old, .new]
         ) { object, change in
             print("data changed")
-            
-            
         }
+        
+        observation = observe(
+            \.viewModel.hasDataError,
+            options: [.old, .new]
+        ) { object, change in
+            print("hasDataError changed")
+        }
+        
+        
     }
 }

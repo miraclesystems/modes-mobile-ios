@@ -11,6 +11,8 @@ class SettingsVC: UIViewController {
     
     var viewModel : SettingsViewModel?
     var location : Location?
+    var alert : UIAlertController? = nil
+    var alerLoaded = false
     
     //For Sending Back to Previous Page
     var delegate : returntoPreviousProtocol?
@@ -36,6 +38,25 @@ class SettingsVC: UIViewController {
         callDelegate()
         
     }
+    
+    func showError(error : String){
+        
+        let alert = UIAlertController(title: "", message: error, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+       
+
+        self.present(alert, animated: true)
+    }
+    
+    func hide(){
+        self.alert?.dismiss(animated: true, completion: {
+            
+        })
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,16 +77,41 @@ class SettingsVC: UIViewController {
             */
         }
         else{
-            print("get the installation info")
-            // observe the view model
-            //viewNoInstallation.isHidden = true
-            viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
+            print("label text: ", lblInstallation.text)
+            if(lblInstallation.text?.trimmingCharacters(in: .whitespaces) == "") && (viewModel!.hasDataError == false){
+                if(alert == nil){
+                    alert = UIAlertController(title: nil, message: "Loading Installation...", preferredStyle: .alert)
+                }
+
+                let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+                loadingIndicator.hidesWhenStopped = true
+                loadingIndicator.style = UIActivityIndicatorView.Style.gray
+                loadingIndicator.startAnimating();
+
+                alert?.view.addSubview(loadingIndicator)
+            
+                if(!alert!.isBeingPresented){
+                    DispatchQueue.main.async {
+                        self.present((self.alert)!, animated: true, completion: {
+                    
+                        })
+                    }
+                }
+            
+            
+                print("get the installation info")
+                // observe the view model
+                //viewNoInstallation.isHidden = true
+                viewModel?.addObserver(self, forKeyPath: "dataLoaded", options: [.new,.old], context: nil)
+                viewModel?.addObserver(self, forKeyPath: "hasDataError", options: [.new,.old], context: nil)
+            }
+            
         }
 
         
         
         lblRole.text = PreferencesUtil.shared.userDescription
-        lblInstallation.text = ""
+        //lblInstallation.text = ""
         lblBranch.text = PreferencesUtil.shared.branch
         
         
@@ -101,29 +147,47 @@ class SettingsVC: UIViewController {
     
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-           
+        
+        
+        print("observeValue is running")
         // the view model chaged
-        if keyPath == "dataLoaded" {
-               DispatchQueue.main.async {
+        if keyPath == "dataLoaded" && viewModel?.dataLoaded == true {
+            sleep(1)
+            DispatchQueue.main.async {
                     print("Do some stuff on the ui")
+                    //Hide the Alert
+                    self.hide()
+                
+                    /*
                     let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
                     if var topController = keyWindow?.rootViewController {
                         while let presentedViewController = topController.presentedViewController {
                             topController = presentedViewController
                         }
                     // topController should now be your topmost view controller
-                        if self.viewModel?.locationsModel?.items?[0] != nil  {
+                    */
+                
+                    if self.viewModel?.locationsModel?.items?[0] != nil  {
                             print("It Exisits")
                             self.location = (self.viewModel?.locationsModel?.items?[0])! as Location
                             self.lblInstallation.text = self.location?.name
-                        } else {
+                    } else {
                             print("It is nil")
-                        }
                     }
-                
+            }
                     
-                }
         }
+        
+        if keyPath == "hasDataError" && viewModel?.hasDataError == true {
+            let seconds = 1.5
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                print("Something else happened, hide the alert")
+                //Hide the Alert
+                self.hide()
+            }
+        }
+        
+        
     }
 
 
